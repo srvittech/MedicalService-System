@@ -1,0 +1,17 @@
+1 Creating a new branch -> git checkout -b newBranchName
+
+2 Switching between the branch -> git checkout branchName
+
+3 Pushing the code -> git push -u origin YourBranchName
+
+4 Fetching All New barnches -> git fetch origin
+
+5 For displaying all branches -> git branch -a
+
+NOTE:- 1 Before merging we have to push our previous code by (git add . , git commit -m "message", git push) 	
+       2  If Merging|BranchName is comming use -> git commit -m "message"
+       3* After step 1 use "git pull"
+
+6 For merging 2 branches locally-> git merge branchName
+
+7 For merging 2 branches remote location-> git merge origin/branchName
