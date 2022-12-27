@@ -9,7 +9,7 @@ import com.medicalservice.doctor.model.Doctor;
 import com.medicalservice.doctor.repository.DoctorRepository;
 
 @Service
-public class DoctorServiceImp implements DoctorService {
+public class DoctorServiceImpl implements DoctorService {
 	@Autowired
 	DoctorRepository doctorRepo;
 
@@ -25,11 +25,13 @@ public class DoctorServiceImp implements DoctorService {
 		doctorRepo.save(doctor);
 	}
 
-//	@Override
-//	public void updateDoctor(Doctor doctor) {
-//	
-//		
-//	}
+	@Override
+	public void updateDoctor(Doctor doctor) {
+		Doctor doctorToUpdate = doctorRepo.findById(doctor.getId()).orElse(null);
+		doctorToUpdate.setPatientAssigned(doctor.getPatientAssigned());
+		doctorRepo.save(doctorToUpdate);
+		
+	}
 
 	@Override
 	public Doctor findDoctorById(Long id) {

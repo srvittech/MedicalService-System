@@ -1,39 +1,32 @@
 package com.medicalservice.doctor.model;
 
+import java.util.ArrayList;
 import java.util.List;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
-@Entity
-@Table(name = "Doctor")
+@Document(collection = "Doctors")
 public class Doctor {
+	
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
 	private String name;
 	private String specialization;
-	private boolean availability = true;
-	private Long mobile;
-	private List<Doctor> doctorAssignedToPatient;
+	private boolean availability = false;
+	private long mobile;
+	private List<String> patientAssigned = new ArrayList<>();
+
+	public List<String> getPatientAssigned() {
+		return patientAssigned;
+	}
+
+	public void setPatientAssigned(List<String> patientAssigned) {
+		this.patientAssigned = patientAssigned;
+	}
 
 	public Long getId() {
 		return id;
-	}
-
-	public void setId(Long id) {
-		this.id = id;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
 	}
 
 	public String getSpecialization() {
@@ -52,20 +45,24 @@ public class Doctor {
 		this.availability = availability;
 	}
 
-	public Long getMobile() {
+	public long getMobile() {
 		return mobile;
 	}
 
-	public void setMobile(Long mobile) {
+	public void setMobile(long mobile) {
 		this.mobile = mobile;
 	}
 
-	public List<Doctor> getDoctorAssignedToPatient() {
-		return doctorAssignedToPatient;
+	public void setId(Long id) {
+		this.id = id;
 	}
 
-	public void setDoctorAssignedToPatient(List<Doctor> doctorAssignedToPatient) {
-		this.doctorAssignedToPatient = doctorAssignedToPatient;
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
 	}
 
 }
