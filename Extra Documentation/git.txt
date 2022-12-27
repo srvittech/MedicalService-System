@@ -15,3 +15,5 @@ NOTE:- 1 Before merging we have to push our previous code by (git add . , git co
 6 For merging 2 branches locally-> git merge branchName
 
 7 For merging 2 branches remote location-> git merge origin/branchName
+
+8 For aborting the merge --> git merge --abort
