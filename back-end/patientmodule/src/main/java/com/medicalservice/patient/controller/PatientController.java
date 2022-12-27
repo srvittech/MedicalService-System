@@ -9,29 +9,30 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
-import com.medicalservice.patient.model.patient;
-import com.medicalservice.patient.service.patientserviceimp;
+import com.medicalservice.patient.model.Patient;
+import com.medicalservice.patient.service.PatientServiceImp;
 
-public class patientcontroller {
+
+public class PatientController {
 	@Autowired
-	patientserviceimp patientserviceimp;
+	PatientServiceImp patientServiceImp;
 	
 	@GetMapping("/getpatient")
-	public List<patient> getpatients(){
-		return patientserviceimp.getpatient();
+	public List<Patient> getpatients(){
+		return patientServiceImp.getPatient();
 	}
 	@PostMapping("/addpatient")
-	public void addpatient(@RequestBody patient patient) {
-		patientserviceimp.addpatient(patient);
+	public void addpatient(@RequestBody Patient patient) {
+		patientServiceImp.addPatient(patient);
 	}
 
 	@GetMapping("/findpatientById")
-	public patient findpatientById(@PathVariable int id) {
-		return patientserviceimp.findpatientById(id);
+	public Patient findpatientById(@PathVariable int id) {
+		return patientServiceImp.findPatientById(id);
 	}
 	@DeleteMapping("/deletepatientById")
 	public void deletepatientById(@PathVariable int id) {
-		patientserviceimp.deletepatientById(id);
+		patientServiceImp.deletePatientById(id);
 	}
 
 

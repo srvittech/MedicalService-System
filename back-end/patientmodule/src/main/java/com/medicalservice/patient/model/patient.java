@@ -1,7 +1,6 @@
 package com.medicalservice.patient.model;
 
-
-public class patient {
+public class Patient {
 	private int id;
 	private String name;
 	private int age;
@@ -9,8 +8,8 @@ public class patient {
 	private String disease;
 	private String status;
 	private int weight;
-	public patient(){}
-	public patient(int id, String name, int age, String address, String disease, String status, int weight) {
+	public Patient(){}
+	public Patient(int id, String name, int age, String address, String disease, String status, int weight) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -64,12 +63,10 @@ public class patient {
 	}
 	@Override
 	public String toString() {
-		return "patient [id=" + id + ", name=" + name + ", age=" + age + ", address=" + address + ", disease=" + disease
+		return "Patient [id=" + id + ", name=" + name + ", age=" + age + ", address=" + address + ", disease=" + disease
 				+ ", status=" + status + ", weight=" + weight + "]";
 	}
-	
-	
-	
-	
-
 }
+
+
+
