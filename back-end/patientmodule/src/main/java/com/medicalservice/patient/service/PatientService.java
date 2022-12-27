@@ -4,9 +4,6 @@ import java.util.List;
 
 import com.medicalservice.patient.model.Patient;
 
-
-
-
 public interface PatientService {
 	public List<Patient> getPatient();
 	public void  addPatient(Patient patient);
