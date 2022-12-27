@@ -7,14 +7,15 @@ import org.springframework.stereotype.Service;
 
 import com.medicalservice.doctor.model.Doctor;
 import com.medicalservice.doctor.repository.DoctorRepository;
+
 @Service
-public class DoctorServiceImp implements DoctorService{
+public class DoctorServiceImp implements DoctorService {
 	@Autowired
 	DoctorRepository doctorRepo;
-	
+
 	@Override
 	public List<Doctor> getDoctors() {
-	
+
 		return doctorRepo.findAll();
 	}
 
@@ -31,17 +32,15 @@ public class DoctorServiceImp implements DoctorService{
 //	}
 
 	@Override
-	public Doctor findDoctorById(int id) {
-	
+	public Doctor findDoctorById(Long id) {
+		// TODO Auto-generated method stub
 		return doctorRepo.findById(id).orElse(null);
 	}
 
 	@Override
-	public void deleteDoctorById(int id) {
-	
+	public void deleteDoctorById(Long id) {
+		// TODO Auto-generated method stub
 		doctorRepo.deleteById(id);
-		
-		
 	}
 
 }

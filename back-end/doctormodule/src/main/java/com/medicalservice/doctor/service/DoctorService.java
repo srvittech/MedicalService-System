@@ -6,9 +6,12 @@ import com.medicalservice.doctor.model.Doctor;
 
 public interface DoctorService {
 	public List<Doctor> getDoctors();
-	public void  addDoctor(Doctor doctor);
+
+	public void addDoctor(Doctor doctor);
+
 //	public void updateDoctor(Doctor doctor);
-	public Doctor findDoctorById(int id);
-	public void deleteDoctorById(int id);
+	public Doctor findDoctorById(Long id);
+
+	public void deleteDoctorById(Long id);
 
 }
