@@ -4,11 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class DoctormoduleApplication {
+public class Doctormodule1Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DoctormoduleApplication.class, args);
-		
+		SpringApplication.run(Doctormodule1Application.class, args);
 	}
 
 }

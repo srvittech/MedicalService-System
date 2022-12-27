@@ -16,24 +16,18 @@ public class Doctor {
 	private String specialization;
 	private boolean availability = true;
 	private Long mobile;
-	private List doctorAssignedToPatient;
+	//private List doctorAssignedToPatient;
 	public Doctor(){}
-	public Doctor(int id, String name, String specialization, boolean availability, Long mobile,
-			List doctorAssignedToPatient) {
+	public Doctor(int id, String name, String specialization, boolean availability, Long mobile) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.specialization = specialization;
 		this.availability = availability;
 		this.mobile = mobile;
-		this.doctorAssignedToPatient = doctorAssignedToPatient;
+		//this.doctorAssignedToPatient = doctorAssignedToPatient;
 	}
-	public List getDoctorAssignedToPatient() {
-		return doctorAssignedToPatient;
-	}
-	public void setDoctorAssignedToPatient(List doctorAssignedToPatient) {
-		this.doctorAssignedToPatient = doctorAssignedToPatient;
-	}
+	
 	public int getId() {
 		return id;
 	}
@@ -67,7 +61,7 @@ public class Doctor {
 	@Override
 	public String toString() {
 		return "Doctor [id=" + id + ", name=" + name + ", specialization=" + specialization + ", availability="
-				+ availability + ", mobile=" + mobile + ", doctorAssignedToPatient=" + doctorAssignedToPatient + "]";
+				+ availability + ", mobile=" + mobile+"]";
 	}
 	
 	

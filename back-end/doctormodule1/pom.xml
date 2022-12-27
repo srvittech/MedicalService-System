@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.medicalservice.doctor</groupId>
-	<artifactId>doctormodule</artifactId>
+	<artifactId>doctormodule1</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>doctormodule</name>
-	<description>demo with springboot example</description>
+	<name>doctormodule1</name>
+	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
@@ -21,17 +21,12 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
-		
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-<dependency>
-			<groupId>com.h2database</groupId>
-			<artifactId>h2</artifactId>
-			
-		</dependency>
-	<dependency>
+
+		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
 			<scope>runtime</scope>
