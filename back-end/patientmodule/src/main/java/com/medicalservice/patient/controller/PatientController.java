@@ -8,11 +8,12 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
 
 import com.medicalservice.patient.model.Patient;
 import com.medicalservice.patient.service.PatientServiceImp;
 
-
+@RestController
 public class PatientController {
 	@Autowired
 	PatientServiceImp patientServiceImp;
@@ -27,11 +28,11 @@ public class PatientController {
 	}
 
 	@GetMapping("/findpatientById")
-	public Patient findpatientById(@PathVariable int id) {
+	public Patient findpatientById(@PathVariable Long id) {
 		return patientServiceImp.findPatientById(id);
 	}
 	@DeleteMapping("/deletepatientById")
-	public void deletepatientById(@PathVariable int id) {
+	public void deletepatientById(@PathVariable Long id) {
 		patientServiceImp.deletePatientById(id);
 	}
 

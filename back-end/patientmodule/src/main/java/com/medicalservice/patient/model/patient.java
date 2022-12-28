@@ -1,28 +1,28 @@
 package com.medicalservice.patient.model;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table (name="Patient")
 public class Patient {
-	private int id;
+	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
+	private Long id;
 	private String name;
 	private int age;
 	private String address;
 	private String disease;
 	private String status;
 	private int weight;
-	public Patient(){}
-	public Patient(int id, String name, int age, String address, String disease, String status, int weight) {
-		super();
-		this.id = id;
-		this.name = name;
-		this.age = age;
-		this.address = address;
-		this.disease = disease;
-		this.status = status;
-		this.weight = weight;
-	}
-	public int getId() {
+
+	public Long getId() {
 		return id;
 	}
-	public void setId(int id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 	public String getName() {
