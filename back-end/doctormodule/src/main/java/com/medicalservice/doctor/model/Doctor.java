@@ -15,13 +15,13 @@ public class Doctor {
 	private String specialization;
 	private boolean availability = false;
 	private long mobile;
-	private List<String> patientAssigned = new ArrayList<>();
+	private List<Integer> patientAssigned = new ArrayList<>();
 
-	public List<String> getPatientAssigned() {
+	public List<Integer> getPatientAssigned() {
 		return patientAssigned;
 	}
 
-	public void setPatientAssigned(List<String> patientAssigned) {
+	public void setPatientAssigned(List<Integer> patientAssigned) {
 		this.patientAssigned = patientAssigned;
 	}
 
