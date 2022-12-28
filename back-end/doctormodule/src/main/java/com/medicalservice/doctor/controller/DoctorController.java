@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import com.medicalservice.doctor.model.Doctor;
-import com.medicalservice.doctor.service.DoctorServiceImpl;
+
 
 @RestController
 @RequestMapping

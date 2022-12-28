@@ -29,13 +29,13 @@ public class PatientServiceImp implements PatientService{
 
 
 	@Override
-	public Patient findPatientById(int id) {
+	public Patient findPatientById(Long id) {
 	
 		return patientRepository.findById(id).orElse(null);
 	}
 
 	@Override
-	public void deletePatientById(int id) {
+	public void deletePatientById(Long id) {
 	
 		patientRepository.deleteById(id);
 		

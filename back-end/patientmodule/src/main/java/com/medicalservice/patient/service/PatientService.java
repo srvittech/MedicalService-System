@@ -7,7 +7,6 @@ import com.medicalservice.patient.model.Patient;
 public interface PatientService {
 	public List<Patient> getPatient();
 	public void  addPatient(Patient patient);
-	public Patient findPatientById(int id);
-	public void deletePatientById(int id);
-
+	public Patient findPatientById(Long id);
+	public void deletePatientById(Long id);
 }
