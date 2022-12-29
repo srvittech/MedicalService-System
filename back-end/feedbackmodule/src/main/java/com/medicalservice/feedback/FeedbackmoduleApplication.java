@@ -1,14 +1,13 @@
-package com.medicalservice.doctor;
+package com.medicalservice.feedback;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
-public class DoctormoduleApplication {
+public class FeedbackmoduleApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DoctormoduleApplication.class, args);
+		SpringApplication.run(FeedbackmoduleApplication.class, args);
 	}
 
 }

@@ -12,10 +12,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import com.medicalservice.doctor.model.Doctor;
-
+import com.medicalservice.doctor.service.DoctorServiceImpl;
 
 @RestController
-@RequestMapping
+
 public class DoctorController {
 	@Autowired
 	DoctorServiceImpl doctorServiceImpl;
@@ -31,9 +31,10 @@ public class DoctorController {
 	}
 
 	@PutMapping("/updateDoctor")
-	public void updateDoctor(@RequestBody Doctor doctor){
+	public void updateDoctor(@RequestBody Doctor doctor) {
 		doctorServiceImpl.updateDoctor(doctor);
 	}
+
 	@GetMapping("/findDoctorById/{id}")
 	public Doctor findDoctorById(@PathVariable Long id) {
 		return doctorServiceImpl.findDoctorById(id);

@@ -11,6 +11,7 @@ public interface DoctorService {
 	public void addDoctor(Doctor doctor);
 
 	public void updateDoctor(Doctor doctor);
+
 	public Doctor findDoctorById(Long id);
 
 	public void deleteDoctorById(Long id);

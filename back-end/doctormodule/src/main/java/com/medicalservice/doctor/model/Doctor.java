@@ -2,26 +2,28 @@ package com.medicalservice.doctor.model;
 
 import java.util.ArrayList;
 import java.util.List;
-
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
+import com.medicalservice.doctor.repository.DoctorRepository;
 
 @Document(collection = "Doctors")
 public class Doctor {
-	
 	@Id
 	private Long id;
 	private String name;
 	private String specialization;
 	private boolean availability = false;
 	private long mobile;
-	private List<Integer> patientAssigned = new ArrayList<>();
+	private List<String> patientAssigned = new ArrayList<>();
+	@Autowired
+	DoctorRepository doctorRepo;
 
-	public List<Integer> getPatientAssigned() {
+	public List<String> getPatientAssigned() {
 		return patientAssigned;
 	}
 
-	public void setPatientAssigned(List<Integer> patientAssigned) {
+	public void setPatientAssigned(List<String> patientAssigned) {
 		this.patientAssigned = patientAssigned;
 	}
 
