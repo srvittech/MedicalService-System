@@ -9,8 +9,11 @@ import org.springframework.web.bind.annotation.RestController;
 import com.medicalservice.user.model.User;
 import com.medicalservice.user.service.UserServiceImpl;
 
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
+
 
 @RestController
+@EnableSwagger2
 public class UserController {
 	@Autowired
 	UserServiceImpl userServiceImpl;
