@@ -1,4 +1,5 @@
 package com.medicalservice.doctor.model;
+
 import java.util.ArrayList;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,6 +18,7 @@ public class Doctor {
 	private List<String> patientAssigned = new ArrayList<>();
 	@Autowired
 	DoctorRepository doctorRepo;
+
 	public List<String> getPatientAssigned() {
 		return patientAssigned;
 	}
@@ -60,7 +62,7 @@ public class Doctor {
 	public String getName() {
 		return name;
 	}
-	
+
 	public void setName(String name) {
 		this.name = name;
 	}

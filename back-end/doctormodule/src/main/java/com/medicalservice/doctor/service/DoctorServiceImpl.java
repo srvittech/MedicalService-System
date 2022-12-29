@@ -30,7 +30,7 @@ public class DoctorServiceImpl implements DoctorService {
 		Doctor doctorToUpdate = doctorRepo.findById(doctor.getId()).orElse(null);
 		doctorToUpdate.setPatientAssigned(doctor.getPatientAssigned());
 		doctorRepo.save(doctorToUpdate);
-		
+
 	}
 
 	@Override
