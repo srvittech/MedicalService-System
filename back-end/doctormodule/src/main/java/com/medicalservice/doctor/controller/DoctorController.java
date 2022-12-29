@@ -26,13 +26,23 @@ public class DoctorController {
 	}
 
 	@PostMapping("/addDoctor")
-	public void addDoctor(@RequestBody Doctor doctor) {
-		doctorServiceImpl.addDoctor(doctor);
+	public Doctor addDoctor(@RequestBody Doctor doctor) {
+		return doctorServiceImpl.addDoctor(doctor);
 	}
 
-	@PutMapping("/updateDoctor")
-	public void updateDoctor(@RequestBody Doctor doctor) {
-		doctorServiceImpl.updateDoctor(doctor);
+	@PutMapping("/updateDoctorPassword")
+	public Doctor updateDoctorPassword(@RequestBody Doctor doctor) {
+		return doctorServiceImpl.updateDoctorPassword(doctor);
+	}
+
+	@PutMapping("/updateDoctorSpecialization")
+	public Doctor updateDoctorSpecialization(@RequestBody Doctor doctor) {
+		return doctorServiceImpl.updateDoctorSpecialization(doctor);
+	}
+
+	@PutMapping("/updateDoctorYearsOfExperience")
+	public Doctor updateDoctorYearsOfExperience(@RequestBody Doctor doctor) {
+		return doctorServiceImpl.updateDoctorYearsOfExperience(doctor);
 	}
 
 	@GetMapping("/findDoctorById/{id}")

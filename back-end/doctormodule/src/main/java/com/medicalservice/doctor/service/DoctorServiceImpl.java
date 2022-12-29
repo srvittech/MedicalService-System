@@ -15,34 +15,47 @@ public class DoctorServiceImpl implements DoctorService {
 
 	@Override
 	public List<Doctor> getDoctors() {
-
 		return doctorRepo.findAll();
 	}
 
 	@Override
-	public void addDoctor(Doctor doctor) {
-
-		doctorRepo.save(doctor);
-	}
-
-	@Override
-	public void updateDoctor(Doctor doctor) {
-		Doctor doctorToUpdate = doctorRepo.findById(doctor.getId()).orElse(null);
-		doctorToUpdate.setPatientAssigned(doctor.getPatientAssigned());
-		doctorRepo.save(doctorToUpdate);
-
+	public Doctor addDoctor(Doctor doctor) {
+		return doctorRepo.save(doctor);
 	}
 
 	@Override
 	public Doctor findDoctorById(Long id) {
-		// TODO Auto-generated method stub
 		return doctorRepo.findById(id).orElse(null);
 	}
 
 	@Override
 	public void deleteDoctorById(Long id) {
-		// TODO Auto-generated method stub
 		doctorRepo.deleteById(id);
+	}
+
+	@Override
+	public Doctor updateDoctorPassword(Doctor doctor) {
+		// Doctor doctorToUpdate = doctorRepo.findById(doctor.getId()).orElse(null);
+		// doctorToUpdate.setPassword(doctor.getPassword());
+		// return doctorRepo.save(doctorToUpdate);
+		doctor.setDoctorName(doctor.getDoctorName());
+		doctor.setPassword(doctor.getPassword());
+		return doctorRepo.save(doctor);
+	}
+
+	@Override
+	public Doctor updateDoctorSpecialization(Doctor doctor) {
+		doctor.setSpecialization(doctor.getSpecialization());
+		return doctorRepo.save(doctor);
+
+	}
+
+	@Override
+	public Doctor updateDoctorYearsOfExperience(Doctor doctor) {
+		Doctor doctorToUpdate = doctorRepo.findById(doctor.getId()).orElse(null);
+		doctorToUpdate.setYearsOfExperience(doctor.getYearsOfExperience());
+		return doctorRepo.save(doctorToUpdate);
+
 	}
 
 }
