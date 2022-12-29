@@ -8,9 +8,13 @@ public interface DoctorService {
 
 	public List<Doctor> getDoctors();
 
-	public void addDoctor(Doctor doctor);
+	public Doctor addDoctor(Doctor doctor);
 
-	public void updateDoctor(Doctor doctor);
+	public Doctor updateDoctorPassword(Doctor doctor);
+
+	public Doctor updateDoctorSpecialization(Doctor doctor);
+
+	public Doctor updateDoctorYearsOfExperience(Doctor doctor);
 
 	public Doctor findDoctorById(Long id);
 
