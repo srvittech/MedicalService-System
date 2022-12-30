@@ -21,9 +21,9 @@ public class FeedbackController {
 		return feedbackServiceImp.addFeedback(feedback);
 	}
 	
-	@GetMapping("/findFeedbackById/{patientId}")
-	public Feedback findFeedbackById(@PathVariable int patientId) {
-		return feedbackServiceImp.findFeedbackById(patientId);
+	@GetMapping("/findFeedbackById/{feedbackId}")
+	public Feedback findFeedbackById(@PathVariable int feedbackId) {
+		return feedbackServiceImp.findFeedbackById(feedbackId);
 	}
 	
 	@PutMapping("/updateFeedback")
