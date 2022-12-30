@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+
 import com.medicalservicesystem.patient.model.Patient;
 import com.medicalservicesystem.patient.service.PatientServiceImp;
 
@@ -29,18 +30,19 @@ public class PatientController {
 		patientServiceImp.addPatient(patient);
 	}
 
-	@GetMapping("/findpatientById")
-	public Patient findpatientById(@PathVariable Long id) {
+	@GetMapping("/findPatientById/{id}")
+	public Patient findPatientById(@PathVariable Long id) {
 		return patientServiceImp.findPatientById(id);
 	}
 
-	@DeleteMapping("/deletepatientById")
-	public void deletepatientById(@PathVariable Long id) {
+	@DeleteMapping("/deletePatientById/{id}")
+	public void deletePatientById(@PathVariable Long id) {
 		patientServiceImp.deletePatientById(id);
 	}
-	@PutMapping
-	public void updatePatient(Patient patient) {
-		patientServiceImp.updatePatient(patient);
+	
+	@PutMapping("/updatePatientById/{id}")
+	public Patient updatePatient(@RequestBody Patient patient) {
+		return patientServiceImp.updatePatient(patient);
 	}
 
 }
