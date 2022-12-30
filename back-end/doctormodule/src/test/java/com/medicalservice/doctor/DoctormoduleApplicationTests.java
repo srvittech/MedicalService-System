@@ -6,6 +6,7 @@ import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -17,7 +18,6 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.boot.test.context.SpringBootTest;
-
 import com.medicalservice.doctor.model.Doctor;
 import com.medicalservice.doctor.repository.DoctorRepository;
 import com.medicalservice.doctor.service.DoctorServiceImpl;
@@ -59,6 +59,24 @@ class DoctormoduleApplicationTests {
 		verify(doctorRepo).findById(doctor.getId());
 
 	}
+	
+	@Test
+	public void findBySpecializationTest() {
+		List<Doctor> all = new LinkedList<>();
+
+		all.add(new Doctor(1L, "John", "password", 5, "Eye", false));
+
+		all.add(new Doctor(2L, "John1", "password", 5, "Eye", false));
+
+		all.add(new Doctor(3L, "John2", "password", 5, "Eye", false));
+
+		all.add(new Doctor(4L, "John3", "password", 5, "Eye", false));
+		
+		when(doctorRepo.findBySpecialization("Eye")).thenReturn(all);
+		assertEquals(all,doctorServiceImp.findBySpecialization("Eye"));
+		
+	}
+
 
 	@Test
 	public void deleteDoctorByIdTest() {
