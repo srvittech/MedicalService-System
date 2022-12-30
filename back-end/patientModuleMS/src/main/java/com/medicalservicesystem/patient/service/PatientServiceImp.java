@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+
 import com.medicalservicesystem.patient.model.Patient;
 import com.medicalservicesystem.patient.repository.PatientRepository;
 
@@ -20,9 +21,9 @@ public class PatientServiceImp implements PatientService {
 	}
 
 	@Override
-	public void addPatient(Patient patient) {
+	public Patient addPatient(Patient patient) {
 
-		patientRepository.save(patient);
+		return patientRepository.save(patient);
 	}
 
 	@Override
@@ -36,6 +37,25 @@ public class PatientServiceImp implements PatientService {
 
 		patientRepository.deleteById(id);
 
+	}
+
+	@Override
+	public Patient updatePatient(Patient patient) {
+		 Patient patientToUpdate = patientRepository.findById(patient.getId()).orElse(null);
+		 if(patient.getPassword()!=null) {
+			 patientToUpdate.setPassword(patient.getPassword()); 
+		 }
+		 if(patient.getAddress()!=null) {
+			 patientToUpdate.setAddress(patient.getAddress()); 
+		 }
+		 if(patient.getDisease()!=null) {
+			 patientToUpdate.setDisease(patient.getDisease()); 
+		 }
+		 if(patient.getAge()!=0) {
+			 patientToUpdate.setAge((patient.getAge())); 
+		 }
+		 return patientRepository.save(patientToUpdate);
+		
 	}
 
 }

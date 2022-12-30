@@ -78,8 +78,12 @@ class DoctormoduleApplicationTests {
 
 	}
 
+<<<<<<< HEAD
 	
 
 	
+=======
+
+>>>>>>> origin/sourav
 
 }

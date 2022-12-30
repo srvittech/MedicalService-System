@@ -24,11 +24,7 @@ public class DoctorController {
 	public List<Doctor> getDoctors() {
 		return doctorServiceImpl.getDoctors();
 	}
-	
-	@GetMapping("/findDoctorById/{id}")
-	public Doctor findDoctorById(@PathVariable Long id) {
-		return doctorServiceImpl.findDoctorById(id);
-	}
+
 
 	@PostMapping("/addDoctor")
 	public Doctor addDoctor(@RequestBody Doctor doctor) {
@@ -36,10 +32,23 @@ public class DoctorController {
 	}
 
 	@PutMapping("/updateDoctor")
+<<<<<<< HEAD
 	public Doctor updateDoctorPassword(@RequestBody Doctor doctor) {
 		return doctorServiceImpl.updateDoctor(doctor);
 	}
 
+=======
+	public Doctor updateDoctor(@RequestBody Doctor doctor) {
+		return doctorServiceImpl.updateDoctor(doctor);
+	}
+
+	@GetMapping("/findDoctorById/{id}")
+	public Doctor findDoctorById(@PathVariable Long id) {
+		return doctorServiceImpl.findDoctorById(id);
+	}
+
+	
+>>>>>>> origin/sourav
 	@DeleteMapping("/deleteDoctorById/{id}")
 	public String deleteDoctorById(@PathVariable Long id) {
 		return doctorServiceImpl.deleteDoctorById(id);

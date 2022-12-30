@@ -53,9 +53,12 @@ public class DoctorServiceImpl implements DoctorService {
 		 if(doctor.getPassword()!=null) {
 			 doctorToUpdate.setPassword(doctor.getPassword()); 
 		 }
+<<<<<<< HEAD
 		 if(doctor.getDoctorName()!=null) {
 			 doctorToUpdate.setDoctorName(doctor.getDoctorName()); 
 		 }
+=======
+>>>>>>> origin/sourav
 		 
 		 if(doctor.getYearsOfExperience()!=0) {
 			 doctorToUpdate.setYearsOfExperience(doctor.getYearsOfExperience()); 
@@ -63,11 +66,17 @@ public class DoctorServiceImpl implements DoctorService {
 		 if(doctor.getSpecialization()!=null) {
 			 doctorToUpdate.setSpecialization(doctor.getSpecialization());
 		 }
+<<<<<<< HEAD
 		 
 		
 		 return doctorRepo.save(doctorToUpdate);
 	}
 
 
+=======
+		
+		 return doctorRepo.save(doctor);
+	}
+>>>>>>> origin/sourav
 
 }
