@@ -23,54 +23,36 @@ public class TransactionController {
 		return transactionService.addTransaction(transaction);
 	}
 
-	@GetMapping("/getTransaction")
+	@GetMapping("/getAllTransaction")
 	public List<Transaction> getAllTransaction() {
 		return transactionService.getAllTransaction();
 	}
 
-	@GetMapping("/getTransactionBasedOnStatus")
-	public Transaction getTransactionBasedOnStatus(@PathVariable String status) {
+	@GetMapping("/getTransactionBasedOnStatus/{status}")
+	public List<Transaction> getTransactionBasedOnStatus(@PathVariable String status) {
 		return transactionService.getTransactionBasedOnStatus(status);
 	}
 
-	@GetMapping("/getTransactionByDoctorId")
-	public Transaction getTransactionByDoctorId(@PathVariable Long doctorId) {
+	@GetMapping("/getTransactionByDoctorId/{doctorId}")
+	public List<Transaction> getTransactionByDoctorId(@PathVariable Long doctorId) {
 		return transactionService.getTransactionByDoctorId(doctorId);
 	}
 
-	@GetMapping("/getTransactionByPatientId")
-	public Transaction getTransactionByPatientId(@PathVariable Long patientId) {
+	@GetMapping("/getTransactionByPatientId/{patientId}")
+	public List<Transaction> getTransactionByPatientId(@PathVariable Long patientId) {
 		return transactionService.getTransactionByPatientId(patientId);
 	}
 
-	@GetMapping("/getTransactionByTransactionId")
+	@GetMapping("/getTransactionByTransactionId/{transactionId}")
 	public Transaction getTransactionByTransactionId(Long transactionId) {
 		return transactionService.getTransactionByTransactionId(transactionId);
 	}
 
-	@PutMapping("/updateTransactionStatus")
-	public void updateTransactionStatus(@RequestBody Transaction transaction) {
-		transactionService.updateTransactionStatus(transaction);
+	@PutMapping("/updateTransaction")
+	public void updateTransaction(@RequestBody Transaction transaction) {
+		transactionService.updateTransaction(transaction);
 	}
 
-	@PutMapping("/updateTransactionByPatient")
-	public void updateTransactionByPatient(@RequestBody Transaction transaction) {
-		transactionService.updateTransactionStatus(transaction);
-	}
 
-	@PutMapping("/updateTransactionByKiosk")
-	public void updateTransactionByKiosk(@RequestBody Transaction transaction) {
-		transactionService.updateTransactionStatus(transaction);
-	}
-
-	@PutMapping("/updateTransactionByDoctor")
-	public void updateTransactionByDoctor(@RequestBody Transaction transaction) {
-		transactionService.updateTransactionStatus(transaction);
-	}
-
-	@PutMapping("/updateTreatment")
-	public void updateTreatment(@RequestBody Transaction transaction) {
-		transactionService.updateTreatment(transaction);
-	}
 
 }

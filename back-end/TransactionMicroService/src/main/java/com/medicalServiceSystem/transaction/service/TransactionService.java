@@ -13,22 +13,14 @@ public interface TransactionService {
 
 	public List<Transaction> getAllTransaction();
 
-	public Transaction getTransactionBasedOnStatus(String status);
+	public List<Transaction> getTransactionBasedOnStatus(String status);
 
-	public Transaction getTransactionByDoctorId(Long doctorId);
+	public List<Transaction> getTransactionByDoctorId(Long doctorId);
 
-	public Transaction getTransactionByPatientId(Long patientId);
-
-	public void updateTransactionStatus(Transaction transaction);
-
-	public void updateTreatment(Transaction transaction);
+	public List<Transaction> getTransactionByPatientId(Long patientId);
 
 	public Transaction getTransactionByTransactionId(Long transactionId);
 
-	public void updateTransactionByPatient(@RequestBody Transaction transaction);
-
-	public void updateTransactionByKiosk(@RequestBody Transaction transaction);
-
-	public void updateTransactionByDoctor(@RequestBody Transaction transaction);
+	public Transaction updateTransaction(@RequestBody Transaction transaction);
 
 }
