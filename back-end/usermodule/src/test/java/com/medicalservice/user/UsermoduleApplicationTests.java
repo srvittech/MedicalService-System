@@ -43,5 +43,27 @@ class UsermoduleApplicationTests {
 		when(userRepository.findAll()).thenReturn(all);
 		assertEquals(all,userServiceImpl.getLogin());			
 	}
+<<<<<<< HEAD
 	
+=======
+	@Test
+	public void  addLoginTest() {
+		User user =new User(1L,"userpassword","admin","admin123");
+		when(userRepository.save(user)).thenReturn(user);
+		assertEquals(user, userServiceImpl.addLogin(user));
+	}
+	@Test
+	public void updateLoginTest() {
+		User user =new User(1L,"userpassword","admin","admin123");
+		User user1 =new User(2L,"userpassword","admin","admin123");
+		User user2 =new User(3L,"userpassword","admin","admin123");
+		User user3 =new User(1L,"userpasswordabcd","admin","admin123");
+		when(userRepository.findById(user.getId())).thenReturn(Optional.of(user));
+		when(userRepository.findById(user1.getId())).thenReturn(Optional.of(user1));
+		when(userRepository.findById(user2.getId())).thenReturn(Optional.of(user2));
+		userServiceImpl.updateLogin(user3);
+		assertEquals(user,userServiceImpl.updateLogin(user3));	
+	}
+
+>>>>>>> origin/pavani
 }
