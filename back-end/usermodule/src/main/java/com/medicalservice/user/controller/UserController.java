@@ -18,5 +18,6 @@ public class UserController {
 	public List<User> getLogin() {
 		return userServiceImpl.getLogin();
 	}
+	
 
 }

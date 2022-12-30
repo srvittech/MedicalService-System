@@ -27,24 +27,11 @@ public class DoctorServiceImpl implements DoctorService {
 	public Doctor findDoctorById(Long id) {
 		return doctorRepo.findById(id).orElse(null);
 	}
-
-	@Override
-	public String deleteDoctorById(Long id) {
-		Doctor d = this.doctorRepo.findById(id).orElse(null);
-		this.doctorRepo.deleteById(id);
-		return "Id  "+d.getId()+" is"+" Deleted";
-	}
 	
 	@Override
-	public Doctor updateDoctors(Doctor doctor) {
-		Doctor doctorUpdate=doctorRepo.findById(doctor.getMedicineCode())
-				.orElse(null);
-		existingMedicine.setMedicineName(pharm.getMedicineName());
-		existingMedicine.setPrice(pharm.getPrice());
-		existingMedicine.setQuantity(pharm.getQuantity());
-		existingMedicine.setExpiry(pharm.getExpiry());
-		existingMedicine.setManufacturerName(pharm.getManufacturerName());
-		return pharmRepo.save(existingMedicine);
+	public List<Doctor> getSpecialization(String specialization){
+		System.out.println("Specialization");
+		return doctorRepo.findBySpecialization(specialization);
 	}
 
 	@Override
@@ -53,12 +40,9 @@ public class DoctorServiceImpl implements DoctorService {
 		 if(doctor.getPassword()!=null) {
 			 doctorToUpdate.setPassword(doctor.getPassword()); 
 		 }
-<<<<<<< HEAD
 		 if(doctor.getDoctorName()!=null) {
 			 doctorToUpdate.setDoctorName(doctor.getDoctorName()); 
 		 }
-=======
->>>>>>> origin/sourav
 		 
 		 if(doctor.getYearsOfExperience()!=0) {
 			 doctorToUpdate.setYearsOfExperience(doctor.getYearsOfExperience()); 
@@ -66,17 +50,16 @@ public class DoctorServiceImpl implements DoctorService {
 		 if(doctor.getSpecialization()!=null) {
 			 doctorToUpdate.setSpecialization(doctor.getSpecialization());
 		 }
-<<<<<<< HEAD
 		 
+		return doctorRepo.save(doctorToUpdate);
+	}
+
+	@Override
+	public void deleteDoctorById(Long id) {
+		doctorRepo.deleteById(id);
 		
-		 return doctorRepo.save(doctorToUpdate);
 	}
 
 
-=======
-		
-		 return doctorRepo.save(doctor);
-	}
->>>>>>> origin/sourav
 
 }

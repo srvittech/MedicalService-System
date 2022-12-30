@@ -32,12 +32,12 @@ public class DoctorController {
 	}
 
 	@PutMapping("/updateDoctor")
-<<<<<<< HEAD
+
 	public Doctor updateDoctorPassword(@RequestBody Doctor doctor) {
 		return doctorServiceImpl.updateDoctor(doctor);
 	}
 
-=======
+
 	public Doctor updateDoctor(@RequestBody Doctor doctor) {
 		return doctorServiceImpl.updateDoctor(doctor);
 	}
@@ -46,12 +46,16 @@ public class DoctorController {
 	public Doctor findDoctorById(@PathVariable Long id) {
 		return doctorServiceImpl.findDoctorById(id);
 	}
-
 	
->>>>>>> origin/sourav
+	@GetMapping("getSpecialization/{specialization}")
+	public List<Doctor> getSpecialization(String specialization){
+		return doctorServiceImpl.getSpecialization(specialization);
+	}
+
+
 	@DeleteMapping("/deleteDoctorById/{id}")
-	public String deleteDoctorById(@PathVariable Long id) {
-		return doctorServiceImpl.deleteDoctorById(id);
+	public void deleteDoctorById(@PathVariable Long id) {
+		doctorServiceImpl.deleteDoctorById(id);
 		
 	}
 

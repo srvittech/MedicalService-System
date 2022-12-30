@@ -41,7 +41,7 @@ class FeedbackmoduleApplicationTests {
 	}
 	
 	@Test
-	public void findDoctorByIdTest() {
+	public void findFeedbackByIdTest() {
 		Feedback feedback = new Feedback(1,101, "vijay", "Treatment is good", "No comments");
 		when(feedbackRepo.findById(feedback.getFeedbackId())).thenReturn(Optional.of(feedback));
 		Feedback expected = feedbackServiceImp.findFeedbackById(feedback.getFeedbackId());

@@ -77,13 +77,4 @@ class DoctormoduleApplicationTests {
 		assertThat(updatedDoctor.getPassword()).isEqualTo("password1");
 
 	}
-
-<<<<<<< HEAD
-	
-
-	
-=======
-
->>>>>>> origin/sourav
-
 }
