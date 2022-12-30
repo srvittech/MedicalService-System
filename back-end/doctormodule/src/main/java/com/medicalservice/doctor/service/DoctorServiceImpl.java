@@ -47,10 +47,7 @@ public class DoctorServiceImpl implements DoctorService {
 	public Doctor updateDoctorSpecialization(Doctor doctor) {
 		doctor.setSpecialization(doctor.getSpecialization());
 		return doctorRepo.save(doctor);
-<<<<<<< HEAD
-=======
 
->>>>>>> origin/lakshman
 	}
 
 	@Override

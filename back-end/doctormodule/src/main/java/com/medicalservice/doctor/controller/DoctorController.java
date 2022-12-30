@@ -24,9 +24,7 @@ public class DoctorController {
 	public List<Doctor> getDoctors() {
 		return doctorServiceImpl.getDoctors();
 	}
-<<<<<<< HEAD
-	
-=======
+
 
 	@PostMapping("/addDoctor")
 	public Doctor addDoctor(@RequestBody Doctor doctor) {
@@ -48,34 +46,13 @@ public class DoctorController {
 		return doctorServiceImpl.updateDoctorYearsOfExperience(doctor);
 	}
 
->>>>>>> origin/lakshman
+
 	@GetMapping("/findDoctorById/{id}")
 	public Doctor findDoctorById(@PathVariable Long id) {
 		return doctorServiceImpl.findDoctorById(id);
 	}
 
-	@PostMapping("/addDoctor")
-	public Doctor addDoctor(@RequestBody Doctor doctor) {
-		return doctorServiceImpl.addDoctor(doctor);
-	}
-
-	@PutMapping("/updateDoctorPassword")
-	public Doctor updateDoctorPassword(@RequestBody Doctor doctor) {
-		return doctorServiceImpl.updateDoctorPassword(doctor);
-	}
-
-	@PutMapping("/updateDoctorSpecialization")
-	public Doctor updateDoctorSpecialization(@RequestBody Doctor doctor) {
-		return doctorServiceImpl.updateDoctorSpecialization(doctor);
-	}
-
-	@PutMapping("/updateDoctorYearsOfExperience")
-	public Doctor updateDoctorYearsOfExperience(@RequestBody Doctor doctor) {
-		return doctorServiceImpl.updateDoctorYearsOfExperience(doctor);
-	}
-
 	
-
 	@DeleteMapping("/deleteDoctorById/{id}")
 	public void deleteDoctorById(@PathVariable Long id) {
 		doctorServiceImpl.deleteDoctorById(id);
