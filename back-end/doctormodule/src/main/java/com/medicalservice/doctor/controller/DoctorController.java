@@ -31,21 +31,10 @@ public class DoctorController {
 		return doctorServiceImpl.addDoctor(doctor);
 	}
 
-	@PutMapping("/updateDoctorPassword")
-	public Doctor updateDoctorPassword(@RequestBody Doctor doctor) {
-		return doctorServiceImpl.updateDoctorPassword(doctor);
+	@PutMapping("/updateDoctor")
+	public Doctor updateDoctor(@RequestBody Doctor doctor) {
+		return doctorServiceImpl.updateDoctor(doctor);
 	}
-
-	@PutMapping("/updateDoctorSpecialization")
-	public Doctor updateDoctorSpecialization(@RequestBody Doctor doctor) {
-		return doctorServiceImpl.updateDoctorSpecialization(doctor);
-	}
-
-	@PutMapping("/updateDoctorYearsOfExperience")
-	public Doctor updateDoctorYearsOfExperience(@RequestBody Doctor doctor) {
-		return doctorServiceImpl.updateDoctorYearsOfExperience(doctor);
-	}
-
 
 	@GetMapping("/findDoctorById/{id}")
 	public Doctor findDoctorById(@PathVariable Long id) {

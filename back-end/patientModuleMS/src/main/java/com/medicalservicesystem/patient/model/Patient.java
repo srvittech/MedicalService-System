@@ -12,12 +12,38 @@ public class Patient {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
+	private String password;
 	private String name;
 	private int age;
 	private String address;
 	private String disease;
-	private String status;
 	private int weight;
+	
+	
+
+	public Patient() {
+		super();
+	}
+
+	public Patient(Long id, String password, String name, int age, String address, String disease,
+			int weight) {
+		super();
+		this.id = id;
+		this.password = password;
+		this.name = name;
+		this.age = age;
+		this.address = address;
+		this.disease = disease;
+		this.weight = weight;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
 
 	public Long getId() {
 		return id;
@@ -59,14 +85,6 @@ public class Patient {
 		this.disease = disease;
 	}
 
-	public String getStatus() {
-		return status;
-	}
-
-	public void setStatus(String status) {
-		this.status = status;
-	}
-
 	public int getWeight() {
 		return weight;
 	}
@@ -77,7 +95,9 @@ public class Patient {
 
 	@Override
 	public String toString() {
-		return "Patient [id=" + id + ", name=" + name + ", age=" + age + ", address=" + address + ", disease=" + disease
-				+ ", status=" + status + ", weight=" + weight + "]";
+		return "Patient [id=" + id + ", password=" + password + ", name=" + name + ", age=" + age + ", address="
+				+ address + ", disease=" + disease + ", weight=" + weight + "]";
 	}
+
+
 }

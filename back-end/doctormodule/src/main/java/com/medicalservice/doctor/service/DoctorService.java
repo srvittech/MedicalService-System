@@ -10,11 +10,7 @@ public interface DoctorService {
 
 	public Doctor addDoctor(Doctor doctor);
 
-	public Doctor updateDoctorPassword(Doctor doctor);
-
-	public Doctor updateDoctorSpecialization(Doctor doctor);
-
-	public Doctor updateDoctorYearsOfExperience(Doctor doctor);
+	public Doctor updateDoctor(Doctor doctor);
 
 	public Doctor findDoctorById(Long id);
 

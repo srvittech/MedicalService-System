@@ -1,0 +1,2 @@
+@Query("{medicineName : ?0}")
+	List<Pharmaceutical> findByMedicineName(String medicineName);
