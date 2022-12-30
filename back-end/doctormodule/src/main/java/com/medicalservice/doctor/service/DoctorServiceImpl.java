@@ -34,28 +34,20 @@ public class DoctorServiceImpl implements DoctorService {
 	}
 
 	@Override
-	public Doctor updateDoctorPassword(Doctor doctor) {
-		// Doctor doctorToUpdate = doctorRepo.findById(doctor.getId()).orElse(null);
-		// doctorToUpdate.setPassword(doctor.getPassword());
-		// return doctorRepo.save(doctorToUpdate);
-		doctor.setDoctorName(doctor.getDoctorName());
-		doctor.setPassword(doctor.getPassword());
-		return doctorRepo.save(doctor);
-	}
-
-	@Override
-	public Doctor updateDoctorSpecialization(Doctor doctor) {
-		doctor.setSpecialization(doctor.getSpecialization());
-		return doctorRepo.save(doctor);
-
-	}
-
-	@Override
-	public Doctor updateDoctorYearsOfExperience(Doctor doctor) {
-		Doctor doctorToUpdate = doctorRepo.findById(doctor.getId()).orElse(null);
-		doctorToUpdate.setYearsOfExperience(doctor.getYearsOfExperience());
-		return doctorRepo.save(doctorToUpdate);
-
+	public Doctor updateDoctor(Doctor doctor) {
+		 Doctor doctorToUpdate = doctorRepo.findById(doctor.getId()).orElse(null);
+		 if(doctor.getPassword()!=null) {
+			 doctorToUpdate.setPassword(doctor.getPassword()); 
+		 }
+		 
+		 if(doctor.getYearsOfExperience()!=0) {
+			 doctorToUpdate.setYearsOfExperience(doctor.getYearsOfExperience()); 
+		 }
+		 if(doctor.getSpecialization()!=null) {
+			 doctorToUpdate.setSpecialization(doctor.getSpecialization());
+		 }
+		
+		 return doctorRepo.save(doctor);
 	}
 
 }

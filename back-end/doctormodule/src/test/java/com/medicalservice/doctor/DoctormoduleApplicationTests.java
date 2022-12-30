@@ -69,35 +69,15 @@ class DoctormoduleApplicationTests {
 
 	@Test
 
-	public void updateDoctorPasswordTest() {
+	public void updateDoctorTest() {
 		Doctor doctor = new Doctor(1L, "John", "password", 5, "Eye", false);
 		when(doctorRepo.save(doctor)).thenReturn(doctor);
 		doctor.setPassword("password1");
-		Doctor updatedDoctor = doctorServiceImp.updateDoctorPassword(doctor);
+		Doctor updatedDoctor = doctorServiceImp.updateDoctor(doctor);
 		assertThat(updatedDoctor.getPassword()).isEqualTo("password1");
 
 	}
 
-	@Test
 
-	public void updateDoctorSpecializationTest() {
-		Doctor doctor = new Doctor(1L, "John", "password", 5, "Eye", false);
-		when(doctorRepo.save(doctor)).thenReturn(doctor);
-		doctor.setSpecialization("Heart");
-		Doctor updatedDoctor = doctorServiceImp.updateDoctorSpecialization(doctor);
-		assertThat(updatedDoctor.getSpecialization()).isEqualTo("Heart");
-
-	}
-
-	@Test
-
-	public void updateDoctorYearsOfExperienceTest() {
-		Doctor doctor = new Doctor(1L, "John", "password", 5, "Eye", false);
-		when(doctorRepo.save(doctor)).thenReturn(doctor);
-		doctor.setYearsOfExperience(6);
-		Doctor updatedDoctor = doctorServiceImp.updateDoctorSpecialization(doctor);
-		assertThat(updatedDoctor.getYearsOfExperience()).isEqualTo(6);
-
-	}
 
 }

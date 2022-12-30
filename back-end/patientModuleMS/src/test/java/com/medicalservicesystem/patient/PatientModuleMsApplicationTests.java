@@ -1,13 +1,92 @@
 package com.medicalservicesystem.patient;
 
+import static org.junit.Assert.assertEquals;
+import static org.mockito.Mockito.when;
+
+import java.util.List;
+
 import org.junit.jupiter.api.Test;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
 import org.springframework.boot.test.context.SpringBootTest;
+
+import com.medicalservicesystem.patient.model.Patient;
+import com.medicalservicesystem.patient.repository.PatientRepository;
+import com.medicalservicesystem.patient.service.PatientServiceImp;
 
 @SpringBootTest
 class PatientModuleMsApplicationTests {
 
 	@Test
 	void contextLoads() {
+	}
+	
+	@InjectMocks
+	private PatientServiceImp patientServiceImp;
+
+	@Mock
+	private PatientRepository patientRepository;
+	
+//	
+//	public List<Patient> getPatient();
+//
+//	public void addPatient(Patient patient);
+//
+//	public Patient findPatientById(Long id);
+//
+//	public void deletePatientById(Long id);
+
+	@Test
+	public void  addPatientTest() {
+		Patient patient =new Patient();
+		when(patientRepository.save(patient)).thenReturn(new Patient());
+		assertEquals(patient, patientServiceImp.addPatient(patient));
+	}
+	
+	@Test
+	public void deleteBlogById() {
+		Blog blog2 = new Blog(1L,"test3");
+		blogRepository.deleteById(blog2.getId());
+		assertEquals(null, blogServiceImpl.getBlog(1L));	
+	}
+	
+
+	
+	@Test
+	public void findPatientByIdTest() {
+		Blog blog = new Blog(1L,"test1");
+		Blog blog1 = new Blog(2L,"test2");
+		Blog blog2 = new Blog(3L,"test3");
+		Blog blog3 = new Blog(4L,"test4");
+		when(blogRepository.findById(blog.getId())).thenReturn(Optional.of(blog));
+		when(blogRepository.findById(blog1.getId())).thenReturn(Optional.of(blog1));
+		when(blogRepository.findById(blog2.getId())).thenReturn(Optional.of(blog2));
+		when(blogRepository.findById(blog3.getId())).thenReturn(Optional.of(blog3));
+		assertEquals(blog1, blogServiceImpl.getBlog((long) 2));	
+	}
+	@Test
+	public void getPatientTest() {
+		Blog blog = new Blog(1L,"test1");
+		Blog blog1 = new Blog(2L,"test2");
+		Blog blog2 = new Blog(3L,"test3");
+		Blog blog3 = new Blog(4L,"test4");
+		when(blogRepository.findById(blog.getId())).thenReturn(Optional.of(blog));
+		when(blogRepository.findById(blog1.getId())).thenReturn(Optional.of(blog1));
+		when(blogRepository.findById(blog2.getId())).thenReturn(Optional.of(blog2));
+		when(blogRepository.findById(blog3.getId())).thenReturn(Optional.of(blog3));
+		assertEquals(blog1, blogServiceImpl.getBlog((long) 2));	
+	}
+	@Test
+	public void updatePatientTest() {
+		Blog blog = new Blog(1L,"test1");
+		Blog blog1 = new Blog(2L,"test2");
+		Blog blog2 = new Blog(3L,"test3");
+		Blog blog3 = new Blog(1L,"test4");
+		when(blogRepository.findById(blog.getId())).thenReturn(Optional.of(blog));
+		when(blogRepository.findById(blog1.getId())).thenReturn(Optional.of(blog1));
+		when(blogRepository.findById(blog2.getId())).thenReturn(Optional.of(blog2));
+		blogServiceImpl.updateBlog(blog3);
+		assertEquals(blog, blogServiceImpl.getBlog(1L));	
 	}
 
 }

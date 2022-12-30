@@ -1,13 +1,13 @@
-package com.medicalServiceSystem.transacation;
+package com.medicalServiceSystem.transaction;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class TransacationMicroServiceApplication {
+public class TransactionMicroServiceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(TransacationMicroServiceApplication.class, args);
+		SpringApplication.run(TransactionMicroServiceApplication.class, args);
 	}
 
 }

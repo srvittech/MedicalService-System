@@ -25,24 +25,15 @@ public class DoctorController {
 		return doctorServiceImpl.getDoctors();
 	}
 
+
 	@PostMapping("/addDoctor")
 	public Doctor addDoctor(@RequestBody Doctor doctor) {
 		return doctorServiceImpl.addDoctor(doctor);
 	}
 
-	@PutMapping("/updateDoctorPassword")
-	public Doctor updateDoctorPassword(@RequestBody Doctor doctor) {
-		return doctorServiceImpl.updateDoctorPassword(doctor);
-	}
-
-	@PutMapping("/updateDoctorSpecialization")
-	public Doctor updateDoctorSpecialization(@RequestBody Doctor doctor) {
-		return doctorServiceImpl.updateDoctorSpecialization(doctor);
-	}
-
-	@PutMapping("/updateDoctorYearsOfExperience")
-	public Doctor updateDoctorYearsOfExperience(@RequestBody Doctor doctor) {
-		return doctorServiceImpl.updateDoctorYearsOfExperience(doctor);
+	@PutMapping("/updateDoctor")
+	public Doctor updateDoctor(@RequestBody Doctor doctor) {
+		return doctorServiceImpl.updateDoctor(doctor);
 	}
 
 	@GetMapping("/findDoctorById/{id}")
@@ -50,6 +41,7 @@ public class DoctorController {
 		return doctorServiceImpl.findDoctorById(id);
 	}
 
+	
 	@DeleteMapping("/deleteDoctorById/{id}")
 	public void deleteDoctorById(@PathVariable Long id) {
 		doctorServiceImpl.deleteDoctorById(id);

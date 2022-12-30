@@ -1,4 +1,4 @@
-package com.medicalServiceSystem.transacation.model;
+package com.medicalServiceSystem.transaction.model;
 
 import java.util.Date;
 
@@ -10,24 +10,32 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "TreatmentForm")
-public class Transacation {
+public class Transaction {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private int transactionId;
-	private int patientId;
+	private Long transactionId;
+	private Long patientId;
 	private Date dateOfRequest;
-	private int doctorId;
+	private Long doctorId;
 	private String disease;
 	private String status = "pending";
 	private Date dateOfTreatment;
 	private String prescription;
 
-	public Transacation() {
+	public Transaction() {
 		super();
 	}
 
-	public Transacation(int transactionId, int patientId, Date dateOfRequest, int doctorId, String disease, String status,
-			Date dateOfTreatment, String prescription) {
+	public Long getPatientId() {
+		return patientId;
+	}
+
+	public Long getDoctorId() {
+		return doctorId;
+	}
+
+	public Transaction(Long transactionId, Long patientId, Date dateOfRequest, Long doctorId, String disease,
+			String status, Date dateOfTreatment, String prescription) {
 		super();
 		this.transactionId = transactionId;
 		this.patientId = patientId;
@@ -39,20 +47,20 @@ public class Transacation {
 		this.prescription = prescription;
 	}
 
-	public int getTransactionId() {
+	public void setPatientId(Long patientId) {
+		this.patientId = patientId;
+	}
+
+	public void setDoctorId(Long doctorId) {
+		this.doctorId = doctorId;
+	}
+
+	public Long getTransactionId() {
 		return transactionId;
 	}
 
-	public void setTransactionId(int transactionId) {
+	public void setTransactionId(Long transactionId) {
 		this.transactionId = transactionId;
-	}
-
-	public int getPatientId() {
-		return patientId;
-	}
-
-	public void setPatientId(int patientId) {
-		this.patientId = patientId;
 	}
 
 	public Date getDateOfRequest() {
@@ -61,14 +69,6 @@ public class Transacation {
 
 	public void setDateOfRequest(Date dateOfRequest) {
 		this.dateOfRequest = dateOfRequest;
-	}
-
-	public int getDoctorId() {
-		return doctorId;
-	}
-
-	public void setDoctorId(int doctorId) {
-		this.doctorId = doctorId;
 	}
 
 	public String getDisease() {

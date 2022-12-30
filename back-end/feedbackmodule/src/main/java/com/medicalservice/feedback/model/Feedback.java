@@ -1,21 +1,40 @@
 package com.medicalservice.feedback.model;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class Feedback {
+	@Id
 	private int feedbackId;
-	private String patientId;
+	private int patientId;
 	private String patientName;
 	private String description;
 	private String solution;
+	
+	public Feedback() {
+		
+	}
+	public Feedback(int feedbackId, int patientId, String patientName, String description, String solution) {
+		super();
+		this.feedbackId = feedbackId;
+		this.patientId = patientId;
+		this.patientName = patientName;
+		this.description = description;
+		this.solution = solution;
+	}
 	public int getFeedbackId() {
 		return feedbackId;
 	}
 	public void setFeedbackId(int feedbackId) {
 		this.feedbackId = feedbackId;
 	}
-	public String getPatientId() {
+	public int getPatientId() {
 		return patientId;
 	}
-	public void setPatientId(String patientId) {
+	public void setPatientId(int patientId) {
 		this.patientId = patientId;
 	}
 	public String getPatientName() {
