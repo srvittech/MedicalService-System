@@ -24,6 +24,11 @@ public class DoctorController {
 	public List<Doctor> getDoctors() {
 		return doctorServiceImpl.getDoctors();
 	}
+	
+	@GetMapping("/findDoctorById/{id}")
+	public Doctor findDoctorById(@PathVariable Long id) {
+		return doctorServiceImpl.findDoctorById(id);
+	}
 
 	@PostMapping("/addDoctor")
 	public Doctor addDoctor(@RequestBody Doctor doctor) {
@@ -45,10 +50,7 @@ public class DoctorController {
 		return doctorServiceImpl.updateDoctorYearsOfExperience(doctor);
 	}
 
-	@GetMapping("/findDoctorById/{id}")
-	public Doctor findDoctorById(@PathVariable Long id) {
-		return doctorServiceImpl.findDoctorById(id);
-	}
+	
 
 	@DeleteMapping("/deleteDoctorById/{id}")
 	public void deleteDoctorById(@PathVariable Long id) {
