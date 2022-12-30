@@ -30,7 +30,6 @@ class PatientModuleMsApplicationTests {
 	void contextLoads() {
 	}
 	
-<<<<<<< HEAD
 	@InjectMocks
 	private PatientServiceImp patientServiceImp;
 
@@ -81,6 +80,7 @@ class PatientModuleMsApplicationTests {
 		blogServiceImpl.updateBlog(blog3);
 		assertEquals(blog, blogServiceImpl.getBlog(1L));	
 	}*/
+<<<<<<< HEAD
 =======
 //	@InjectMocks
 //	private PatientServiceImp patientServiceImp;
@@ -200,6 +200,8 @@ class PatientModuleMsApplicationTests {
 //		blogServiceImpl.updateBlog(blog3);
 //		assertEquals(blog, blogServiceImpl.getBlog(1L));	
 //	}
+>>>>>>> origin/sourav
+=======
 >>>>>>> origin/sourav
 
 >>>>>>> origin/sourav
