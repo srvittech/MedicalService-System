@@ -29,32 +29,45 @@ public class DoctorServiceImpl implements DoctorService {
 	}
 
 	@Override
-	public void deleteDoctorById(Long id) {
-		doctorRepo.deleteById(id);
+	public String deleteDoctorById(Long id) {
+		Doctor d = this.doctorRepo.findById(id).orElse(null);
+		this.doctorRepo.deleteById(id);
+		return "Id  "+d.getId()+" is"+" Deleted";
+	}
+	
+	@Override
+	public Doctor updateDoctors(Doctor doctor) {
+		Doctor doctorUpdate=doctorRepo.findById(doctor.getMedicineCode())
+				.orElse(null);
+		existingMedicine.setMedicineName(pharm.getMedicineName());
+		existingMedicine.setPrice(pharm.getPrice());
+		existingMedicine.setQuantity(pharm.getQuantity());
+		existingMedicine.setExpiry(pharm.getExpiry());
+		existingMedicine.setManufacturerName(pharm.getManufacturerName());
+		return pharmRepo.save(existingMedicine);
 	}
 
 	@Override
-	public Doctor updateDoctorPassword(Doctor doctor) {
-		// Doctor doctorToUpdate = doctorRepo.findById(doctor.getId()).orElse(null);
-		// doctorToUpdate.setPassword(doctor.getPassword());
-		// return doctorRepo.save(doctorToUpdate);
-		doctor.setDoctorName(doctor.getDoctorName());
-		doctor.setPassword(doctor.getPassword());
-		return doctorRepo.save(doctor);
+	public Doctor updateDoctor(Doctor doctor) {
+		 Doctor doctorToUpdate = doctorRepo.findById(doctor.getId()).orElse(null);
+		 if(doctor.getPassword()!=null) {
+			 doctorToUpdate.setPassword(doctor.getPassword()); 
+		 }
+		 if(doctor.getDoctorName()!=null) {
+			 doctorToUpdate.setDoctorName(doctor.getDoctorName()); 
+		 }
+		 
+		 if(doctor.getYearsOfExperience()!=0) {
+			 doctorToUpdate.setYearsOfExperience(doctor.getYearsOfExperience()); 
+		 }
+		 if(doctor.getSpecialization()!=null) {
+			 doctorToUpdate.setSpecialization(doctor.getSpecialization());
+		 }
+		 
+		
+		 return doctorRepo.save(doctorToUpdate);
 	}
 
-	@Override
-	public Doctor updateDoctorSpecialization(Doctor doctor) {
-		doctor.setSpecialization(doctor.getSpecialization());
-		return doctorRepo.save(doctor);
-	}
 
-	@Override
-	public Doctor updateDoctorYearsOfExperience(Doctor doctor) {
-		Doctor doctorToUpdate = doctorRepo.findById(doctor.getId()).orElse(null);
-		doctorToUpdate.setYearsOfExperience(doctor.getYearsOfExperience());
-		return doctorRepo.save(doctorToUpdate);
-
-	}
 
 }
