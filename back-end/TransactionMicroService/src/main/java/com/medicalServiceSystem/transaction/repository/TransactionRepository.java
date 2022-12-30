@@ -1,11 +1,21 @@
 package com.medicalServiceSystem.transaction.repository;
 
-import org.springframework.data.jpa.repository.JpaRepository;
+import java.util.List;
+
+import org.springframework.data.mongodb.repository.MongoRepository;
+import org.springframework.data.mongodb.repository.Query;
 import org.springframework.stereotype.Repository;
 
 import com.medicalServiceSystem.transaction.model.Transaction;
 
 @Repository
-public interface TransactionRepository extends JpaRepository<Transaction, Long> {
-
+public interface TransactionRepository extends MongoRepository<Transaction, Long> {
+	
+	@Query("{status : ?0}")
+	List<Transaction> getTransactionBasedOnStatus(String status);
+	@Query("{doctorId : ?0}")
+	List<Transaction> getTransactionByDoctorId(Long doctorId);
+	@Query("{patientId : ?0}")
+	List<Transaction> getTransactionByPatientId(Long patientId);
+	
 }

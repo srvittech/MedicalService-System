@@ -1,0 +1,7 @@
+com\medicalServiceSystem\transacation\service\TransacationService.class
+com\medicalServiceSystem\transacation\service\TransacationServiceImpl.class
+com\medicalServiceSystem\transacation\config\TransacationConfig.class
+com\medicalServiceSystem\transacation\TransacationMicroServiceApplication.class
+com\medicalServiceSystem\transacation\controller\TransacationController.class
+com\medicalServiceSystem\transacation\model\Transacation.class
+com\medicalServiceSystem\transacation\repository\TransacationRepository.class

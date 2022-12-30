@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 import com.medicalServiceSystem.transaction.model.Transaction;
 import com.medicalServiceSystem.transaction.repository.TransactionRepository;
+
 @Service
 public class TransactionServiceImpl implements TransactionService {
 	@Autowired
@@ -23,30 +24,19 @@ public class TransactionServiceImpl implements TransactionService {
 	}
 
 	@Override
-	public Transaction getTransactionBasedOnStatus(String status) {
+	public List<Transaction> getTransactionBasedOnStatus(String status) {
 
-		return null;
+		return transactionRepo.getTransactionBasedOnStatus(status);
 	}
 
 	@Override
-	public Transaction getTransactionByDoctorId(Long doctorId) {
-		return null;
+	public List<Transaction> getTransactionByDoctorId(Long doctorId) {
+		return transactionRepo.getTransactionByDoctorId(doctorId);
 	}
 
 	@Override
-	public Transaction getTransactionByPatientId(Long patientId) {
-		return null;
-	}
-
-	@Override
-	public void updateTransactionStatus(Transaction transaction) {
-		// TODO Auto-generated method stub
-
-	}
-
-	@Override
-	public void updateTreatment(Transaction transaction) {
-		// TODO Auto-generated method stub
+	public List<Transaction> getTransactionByPatientId(Long patientId) {
+		return getTransactionByPatientId(patientId);
 	}
 
 	@Override
@@ -55,21 +45,36 @@ public class TransactionServiceImpl implements TransactionService {
 	}
 
 	@Override
-	public void updateTransactionByPatient(Transaction transaction) {
-		// TODO Auto-generated method stub
-
+	public Transaction updateTransaction(Transaction transaction) {
+		
+		Transaction transactionToUpdate = transactionRepo.findById(transaction.getTransactionId()).orElse(null);
+		 if(transaction.getDoctorId()!=null) {
+			 transactionToUpdate.setDoctorId(transaction.getDoctorId()); 
+		 }
+		 if(transaction.getPatientId()!=null) {
+			 transactionToUpdate.setPatientId(transaction.getPatientId()); 
+		 }
+		 if(transaction.getDisease()!=null) {
+			 transactionToUpdate.setDisease(transaction.getDisease()); 
+		 }
+		 if(transaction.getStatus()!=null) {
+			 transactionToUpdate.setStatus(transaction.getStatus()); 
+		 }
+		 
+		 if(transaction.getDateOfRequest()!=null) {
+			 transactionToUpdate.setDateOfRequest(transaction.getDateOfRequest()); 
+		 }
+		 if(transaction.getDateOfTreatment()!=null) {
+			 transactionToUpdate.setDateOfTreatment(transaction.getDateOfTreatment()); 
+		 }
+		 if(transaction.getPrescription()!=null) {
+			 transactionToUpdate.setPrescription(transaction.getPrescription()); 
+		 }
+		 
+		
+		 return transactionRepo.save(transactionToUpdate);
 	}
 
-	@Override
-	public void updateTransactionByKiosk(Transaction transaction) {
-		// TODO Auto-generated method stub
 
-	}
-
-	@Override
-	public void updateTransactionByDoctor(Transaction transaction) {
-		// TODO Auto-generated method stub
-
-	}
 
 }
