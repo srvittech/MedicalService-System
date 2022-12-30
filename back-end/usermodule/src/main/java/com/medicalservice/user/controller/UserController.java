@@ -21,6 +21,7 @@ public class UserController {
 	public List<User> getLogin() {
 		return userServiceImpl.getLogin();
 	}
+<<<<<<< HEAD
 	@PostMapping("/addLogin")
 	public User addLogin(@RequestBody User user) {
 		return userServiceImpl.addLogin(user);
@@ -32,3 +33,6 @@ public class UserController {
 	}
 
 
+=======
+}
+>>>>>>> origin/sourav
