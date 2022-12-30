@@ -66,28 +66,15 @@ class PatientModuleMsApplicationTests {
 	
 	@Test
 	public void updatePatientTest() {
-<<<<<<< HEAD
-		Blog blog = new Blog(1L,"test1");
-		Blog blog1 = new Blog(2L,"test2");
-		Blog blog2 = new Blog(3L,"test3");
-		Blog blog3 = new Blog(1L,"test4");
-		when(blogRepository.findById(blog.getId())).thenReturn(Optional.of(blog));
-		when(blogRepository.findById(blog1.getId())).thenReturn(Optional.of(blog1));
-		when(blogRepository.findById(blog2.getId())).thenReturn(Optional.of(blog2));
-		blogServiceImpl.updateBlog(blog3);
-		assertEquals(blog, blogServiceImpl.getBlog(1L));	
-	}*/
-=======
 		Patient patient = new Patient(1L, "password1", "lakshmi", 26, "hyderabad", "cold",70);
 		Patient patient1 = new Patient(2L, "password1", "lakshmi", 26, "hyderabad", "cold",70);
 		Patient patient2 = new Patient(3L, "password1", "lakshmi", 26, "hyderabad", "cold",70);
-		Patient patient3 = new Patient(1L, "passwordCHECK", "RAM", 26, "hyderabad", "cold",70);
+		Patient patient3 = new Patient(1L, "passwordCHECK", "lakshmi", 26, "hyderabad", "cold",70);
 		when(patientRepository.findById(patient.getId())).thenReturn(Optional.of(patient));
 		when(patientRepository.findById(patient1.getId())).thenReturn(Optional.of(patient1));
 		when(patientRepository.findById(patient2.getId())).thenReturn(Optional.of(patient2));
 		patientServiceImp.updatePatient(patient3);
-		assertEquals(patient,  patientServiceImp.findPatientById(1L));	
+		assertEquals(patient, patientServiceImp.findPatientById(1L));	
 	}
->>>>>>> origin/sourav
 
 }

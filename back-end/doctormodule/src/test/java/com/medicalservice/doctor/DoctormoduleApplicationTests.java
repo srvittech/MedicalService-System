@@ -68,13 +68,11 @@ class DoctormoduleApplicationTests {
 	}
 
 	@Test
-
-	public void updateDoctorTest() {
+	public void updateFeedbackTest() {
 		Doctor doctor = new Doctor(1L, "John", "password", 5, "Eye", false);
-		when(doctorRepo.save(doctor)).thenReturn(doctor);
-		doctor.setPassword("password1");
-		Doctor updatedDoctor = doctorServiceImp.updateDoctor(doctor);
-		assertThat(updatedDoctor.getPassword()).isEqualTo("password1");
-
+		Doctor updatedDoctor = new Doctor(1L, "James", "password1", 5, "Eye", true);
+		when(doctorRepo.findById(doctor.getId())).thenReturn(Optional.of(doctor));
+		doctorServiceImp.updateDoctor(updatedDoctor);
+		assertEquals(doctor,doctorServiceImp.findDoctorById(1L));	
 	}
 }
