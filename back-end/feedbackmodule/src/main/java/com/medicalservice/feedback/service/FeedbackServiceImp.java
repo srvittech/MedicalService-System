@@ -25,8 +25,17 @@ public class FeedbackServiceImp implements FeedbackService {
 
 	@Override
 	public Feedback updateFeedback(Feedback feedback) {
-		feedback.setDescription(feedback.getDescription());
-		return feedbackRepo.save(feedback);
+		Feedback feedbackToUpdate = feedbackRepo.findById(feedback.getFeedbackId()).orElse(null);
+		 if(feedback.getPatientName()!=null) {
+			 feedbackToUpdate.setPatientName(feedback.getPatientName()); 
+		 }
+		 if(feedback.getDescription()!=null) {
+			 feedbackToUpdate.setDescription(feedback.getDescription()); 
+		 }
+		 if(feedback.getSolution()!=null) {
+			 feedbackToUpdate.setSolution(feedback.getSolution()); 
+		 }
+		return feedbackRepo.save(feedbackToUpdate);
 	}
 
 	

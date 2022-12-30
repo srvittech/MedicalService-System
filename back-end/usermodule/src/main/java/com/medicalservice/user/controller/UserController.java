@@ -21,6 +21,7 @@ public class UserController {
 	public List<User> getLogin() {
 		return userServiceImpl.getLogin();
 	}
+	
 
 	@PostMapping("/addLogin")
 	public User addLogin(@RequestBody User user) {

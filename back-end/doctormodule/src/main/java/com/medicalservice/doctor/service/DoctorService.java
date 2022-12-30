@@ -7,6 +7,8 @@ import com.medicalservice.doctor.model.Doctor;
 public interface DoctorService {
 
 	public List<Doctor> getDoctors();
+	
+	public List<Doctor> getSpecialization(String specialization);
 
 	public Doctor addDoctor(Doctor doctor);
 
@@ -15,5 +17,6 @@ public interface DoctorService {
 	public Doctor findDoctorById(Long id);
 
 	public void deleteDoctorById(Long id);
+	
 
 }

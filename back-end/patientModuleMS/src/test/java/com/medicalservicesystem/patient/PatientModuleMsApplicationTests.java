@@ -1,9 +1,18 @@
 package com.medicalservicesystem.patient;
 
+<<<<<<< HEAD
 //import static org.junit.Assert.assertEquals;
+=======
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.verify;
+>>>>>>> origin/komali
 import static org.mockito.Mockito.when;
 
 import java.util.List;
+import java.util.Optional;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
@@ -21,6 +30,58 @@ class PatientModuleMsApplicationTests {
 	void contextLoads() {
 	}
 	
+<<<<<<< HEAD
+	@InjectMocks
+	private PatientServiceImp patientServiceImp;
+
+	@Mock
+	private PatientRepository patientRepository;
+
+	@Test
+	public void  addPatientTest() {
+		Patient patient =new Patient(1L, "password1", "lakshmi", 26, "hyderabad", "cold",70);
+		when(patientRepository.save(patient)).thenReturn(patient);
+		assertEquals(patient, patientServiceImp.addPatient(patient));
+	}
+	
+	@Test
+	public void deletePatientById() {
+		Patient patient = new Patient(1L, "password1", "lakshmi", 26, "hyderabad", "cold",70);
+		patientRepository.deleteById(patient.getId());
+		verify(patientRepository, times(1)).deleteById(patient.getId());	
+	}
+	
+
+	
+	@Test
+	public void findPatientByIdTest() {
+		Patient patient = new Patient(1L, "password1", "lakshmi", 26, "hyderabad", "cold",70);
+		when(patientRepository.findById(patient.getId())).thenReturn(Optional.of(patient));
+		Patient expected = patientServiceImp.findPatientById(patient.getId());
+		verify(patientRepository).findById(patient.getId());
+
+	}
+	
+	@Test
+	public void getPatientTest() {
+		Patient patient = new Patient(1L, "password1", "lakshmi", 26, "hyderabad", "cold",70);
+		when(patientRepository.findAll()).thenReturn(Stream.of(new Patient(1L, "password1", "lakshmi", 26, "hyderabad", "cold",70)).collect(Collectors.toList()));
+		assertEquals(1, patientServiceImp.getPatient().size());
+	}
+	
+	/*@Test
+	public void updatePatientTest() {
+		Blog blog = new Blog(1L,"test1");
+		Blog blog1 = new Blog(2L,"test2");
+		Blog blog2 = new Blog(3L,"test3");
+		Blog blog3 = new Blog(1L,"test4");
+		when(blogRepository.findById(blog.getId())).thenReturn(Optional.of(blog));
+		when(blogRepository.findById(blog1.getId())).thenReturn(Optional.of(blog1));
+		when(blogRepository.findById(blog2.getId())).thenReturn(Optional.of(blog2));
+		blogServiceImpl.updateBlog(blog3);
+		assertEquals(blog, blogServiceImpl.getBlog(1L));	
+	}*/
+=======
 //	@InjectMocks
 //	private PatientServiceImp patientServiceImp;
 //
@@ -139,6 +200,7 @@ class PatientModuleMsApplicationTests {
 //		blogServiceImpl.updateBlog(blog3);
 //		assertEquals(blog, blogServiceImpl.getBlog(1L));	
 //	}
+>>>>>>> origin/sourav
 
 >>>>>>> origin/sourav
 }

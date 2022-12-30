@@ -27,10 +27,11 @@ public class DoctorServiceImpl implements DoctorService {
 	public Doctor findDoctorById(Long id) {
 		return doctorRepo.findById(id).orElse(null);
 	}
-
+	
 	@Override
-	public void deleteDoctorById(Long id) {
-		doctorRepo.deleteById(id);
+	public List<Doctor> getSpecialization(String specialization){
+		System.out.println("Specialization");
+		return doctorRepo.findBySpecialization(specialization);
 	}
 
 	@Override
@@ -39,6 +40,9 @@ public class DoctorServiceImpl implements DoctorService {
 		 if(doctor.getPassword()!=null) {
 			 doctorToUpdate.setPassword(doctor.getPassword()); 
 		 }
+		 if(doctor.getDoctorName()!=null) {
+			 doctorToUpdate.setDoctorName(doctor.getDoctorName()); 
+		 }
 		 
 		 if(doctor.getYearsOfExperience()!=0) {
 			 doctorToUpdate.setYearsOfExperience(doctor.getYearsOfExperience()); 
@@ -46,8 +50,16 @@ public class DoctorServiceImpl implements DoctorService {
 		 if(doctor.getSpecialization()!=null) {
 			 doctorToUpdate.setSpecialization(doctor.getSpecialization());
 		 }
-		
-		 return doctorRepo.save(doctor);
+		 
+		return doctorRepo.save(doctorToUpdate);
 	}
+
+	@Override
+	public void deleteDoctorById(Long id) {
+		doctorRepo.deleteById(id);
+		
+	}
+
+
 
 }
