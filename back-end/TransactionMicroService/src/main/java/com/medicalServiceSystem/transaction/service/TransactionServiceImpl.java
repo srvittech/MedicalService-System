@@ -36,7 +36,7 @@ public class TransactionServiceImpl implements TransactionService {
 
 	@Override
 	public List<Transaction> getTransactionByPatientId(Long patientId) {
-		return getTransactionByPatientId(patientId);
+		return transactionRepo.getTransactionByPatientId(patientId);
 	}
 
 	@Override
