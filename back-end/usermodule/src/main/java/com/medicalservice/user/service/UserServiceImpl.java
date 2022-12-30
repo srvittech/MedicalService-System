@@ -19,4 +19,24 @@ public class UserServiceImpl implements Userservice {
 		return userRepo.findAll();
 	}
 
+	@Override
+	public User addLogin(User user) {
+		// TODO Auto-generated method stub
+		return userRepo.save(user);
+	}
+
+	@Override
+	public User updateLogin(User user) {
+		// TODO Auto-generated method stub
+		User userToUpdate = userRepo.findById(user.getId()).orElse(null);
+		 if(user.getPassword()!=null) {
+			 userToUpdate.setPassword(user.getPassword()); 
+		 }
+		 if(user.getUserName()!=null) {
+			 userToUpdate.setUserName(user.getUserName()); 
+		 }
+		 return userRepo.save(userToUpdate);
+
+	}
+
 }
