@@ -8,7 +8,7 @@ public interface DoctorService {
 
 	public List<Doctor> getDoctors();
 	
-	public List<Doctor> getSpecialization(String specialization);
+	public List<Doctor> findBySpecialization(String specialization);
 
 	public Doctor addDoctor(Doctor doctor);
 

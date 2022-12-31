@@ -19,6 +19,7 @@ import com.medicalservice.feedback.model.Feedback;
 import com.medicalservice.feedback.repository.FeedbackRepository;
 import com.medicalservice.feedback.service.FeedbackServiceImp;
 
+
 @SpringBootTest
 @ExtendWith(MockitoExtension.class)
 class FeedbackmoduleApplicationTests {
@@ -49,14 +50,12 @@ class FeedbackmoduleApplicationTests {
 	}
 	
 	@Test
-
 	public void updateFeedbackTest() {
 		Feedback feedback = new Feedback(1,101, "vijay", "Treatment is good", "No comments");
-		when(feedbackRepo.save(feedback)).thenReturn(feedback);
-		feedback.setDescription("Treatment is not good");
-		Feedback updatedFeedback = feedbackServiceImp.updateFeedback(feedback);
-		assertThat(updatedFeedback.getDescription()).isEqualTo("Treatment is not good");
-
+		Feedback updatedFeedback = new Feedback(1,102, "kumar", "Treatment is  not good", "No comments");
+		when(feedbackRepo.findById(feedback.getFeedbackId())).thenReturn(Optional.of(feedback));
+		feedbackServiceImp.updateFeedback(updatedFeedback);
+		assertEquals(feedback, feedbackServiceImp.findFeedbackById(1));	
 	}
 
 }

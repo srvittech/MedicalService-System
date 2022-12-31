@@ -29,8 +29,8 @@ public class DoctorServiceImpl implements DoctorService {
 	}
 	
 	@Override
-	public List<Doctor> getSpecialization(String specialization){
-		System.out.println("Specialization");
+	public List<Doctor> findBySpecialization(String specialization){
+		//System.out.println("Specialization");
 		return doctorRepo.findBySpecialization(specialization);
 	}
 
