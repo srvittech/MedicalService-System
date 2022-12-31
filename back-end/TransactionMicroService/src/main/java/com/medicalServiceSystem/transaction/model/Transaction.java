@@ -5,6 +5,8 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document(collection = "TreatmentForm")
 public class Transaction {
+	
+	
 	@Id
 	private Long transactionId;
 	private Long patientId;

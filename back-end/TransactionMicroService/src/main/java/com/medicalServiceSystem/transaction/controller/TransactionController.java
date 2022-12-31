@@ -2,6 +2,8 @@ package com.medicalServiceSystem.transaction.controller;
 
 import java.util.List;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -10,11 +12,14 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.medicalServiceSystem.transaction.TransactionMicroServiceApplication;
 import com.medicalServiceSystem.transaction.model.Transaction;
 import com.medicalServiceSystem.transaction.service.TransactionService;
 
 @RestController
 public class TransactionController {
+	
+	static Logger logger = LogManager.getLogger(TransactionMicroServiceApplication.class);
 	@Autowired
 	TransactionService transactionService;
 
@@ -25,6 +30,7 @@ public class TransactionController {
 
 	@GetMapping("/getAllTransaction")
 	public List<Transaction> getAllTransaction() {
+		logger.info("controller working ");
 		return transactionService.getAllTransaction();
 	}
 
