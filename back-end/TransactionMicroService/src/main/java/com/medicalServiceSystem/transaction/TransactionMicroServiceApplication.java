@@ -6,11 +6,11 @@ import org.apache.logging.log4j.Logger;
 
 @SpringBootApplication
 public class TransactionMicroServiceApplication {
-	static Logger logger = LogManager.getLogger(TransactionMicroServiceApplication.class);
+	//static Logger logger = LogManager.getLogger(TransactionMicroServiceApplication.class);
 	public static void main(String[] args) {
 		SpringApplication.run(TransactionMicroServiceApplication.class, args);
-		logger.info("Info meassage");
-		logger.warn("warning message");
+		//logger.info("Info meassage");
+		//logger.warn("warning message");
 	}
 
 }
