@@ -1,14 +1,13 @@
 package com.medicalservice.doctor.model;
 
-import java.util.ArrayList;
-import java.util.List;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.annotation.Id;
+import org.springframework.data.annotation.Transient;
 import org.springframework.data.mongodb.core.mapping.Document;
-import com.medicalservice.doctor.repository.DoctorRepository;
 
 @Document(collection = "Doctors")
 public class Doctor {
+	@Transient
+	public static final String SEQUENCE_NAME = "user_sequence";
 	@Id
 	private Long id;
 	private String doctorName;
