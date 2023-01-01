@@ -12,18 +12,22 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import com.medicalServiceSystem.transaction.model.Transaction;
-import com.medicalServiceSystem.transaction.service.TransactionService;
+import com.medicalServiceSystem.transaction.service.TransactionServiceImpl;
 
 @RestController
 public class TransactionController {
 	
 	private static final Logger LOGGER = LoggerFactory.getLogger(TransactionController.class);
 	@Autowired
-	TransactionService transactionService;
-
+	TransactionServiceImpl transactionService;
+	{
+		LOGGER.info("Entering Inside TransactionController");
+	}
 	@PostMapping("/addTransaction")
 	public Transaction addTransaction(@RequestBody Transaction transaction) {
 		LOGGER.info("Entering Method addTransaction in TransactionController");
+//		transaction.setTransactionId(transactionService.
+//				generateSequence(Transaction.SEQUENCE_NAME));
 		return transactionService.addTransaction(transaction);
 	}
 
