@@ -86,7 +86,7 @@ class DoctormoduleApplicationTests {
 	}
 
 	@Test
-	public void updateFeedbackTest() {
+	public void updateDoctorTest() {
 		Doctor doctor = new Doctor(1L, "John", "password", 5, "Eye", false);
 		Doctor updatedDoctor = new Doctor(1L, "James", "password1", 5, "Eye", true);
 		when(doctorRepo.findById(doctor.getId())).thenReturn(Optional.of(doctor));

@@ -4,10 +4,13 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
 
 @Entity
 public class Feedback {
 	@Id
+	@GeneratedValue(generator="feedback_seq", strategy = GenerationType.AUTO)
+	@SequenceGenerator(name="feedback_seq",sequenceName="feedback_seq",initialValue=5091753,allocationSize=1)
 	private int feedbackId;
 	private int patientId;
 	private String patientName;
