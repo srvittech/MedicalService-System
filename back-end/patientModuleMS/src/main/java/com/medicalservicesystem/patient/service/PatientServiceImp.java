@@ -1,6 +1,8 @@
 package com.medicalservicesystem.patient.service;
 
 import java.util.List;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -13,6 +15,7 @@ import com.medicalservicesystem.patient.repository.PatientRepository;
 public class PatientServiceImp implements PatientService {
 	@Autowired
 	PatientRepository patientRepository;
+	private static final Logger LOGGER = LoggerFactory.getLogger(PatientServiceImp.class);
 
 	@Override
 	public List<Patient> getPatient() {
