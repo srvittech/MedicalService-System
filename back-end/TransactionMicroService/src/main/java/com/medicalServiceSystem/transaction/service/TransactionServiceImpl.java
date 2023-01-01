@@ -1,17 +1,9 @@
 package com.medicalServiceSystem.transaction.service;
-
-import static org.springframework.data.mongodb.core.FindAndModifyOptions.options;
-import static org.springframework.data.mongodb.core.query.Criteria.where;
-import static org.springframework.data.mongodb.core.query.Query.query;
-
 import java.util.List;
-import java.util.Objects;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.mongodb.core.MongoOperations;
-import org.springframework.data.mongodb.core.query.Update;
+
 import org.springframework.stereotype.Service;
 import com.medicalServiceSystem.transaction.model.Transaction;
 import com.medicalServiceSystem.transaction.repository.TransactionRepository;
@@ -19,21 +11,10 @@ import com.medicalServiceSystem.transaction.repository.TransactionRepository;
 @Service
 public class TransactionServiceImpl implements TransactionService {
 	private static final Logger LOGGER = LoggerFactory.getLogger(TransactionServiceImpl.class);
-	{
-		LOGGER.info("Entering Inside TransactionServiceImpl");
-	}
+
 	@Autowired
 	TransactionRepository transactionRepo;
-//	@Autowired
-//	private MongoOperations mongoOperations;
-//	@Override
-//	public Long generateSequence(String seqName) {
-//
-//		DatabaseSequence counter = mongoOperations.findAndModify(query(where("_id").is(seqName)),
-//		new Update().inc("seq", 1), options().returnNew(true).upsert(true), DatabaseSequence.class);
-//		return !Objects.isNull(counter) ? counter.getSeq() : 556556;
-//
-//	}
+
 
 	@Override
 	public Transaction addTransaction(Transaction transaction) {
@@ -108,26 +89,7 @@ public class TransactionServiceImpl implements TransactionService {
 		 return transactionRepo.save(transactionToUpdate);
 	}
 
-//	@Override
-//	public Long generateNewTransactionId() {
-//	
-//		LOGGER.info("Entering Method  generateNewTransactionId From TransactionServiceImpl  .....");
-//		try {
-//			LOGGER.info("Entering Try block inside generateNewTransactionId  From TransactionServiceImpl.....");
-//			int transactionsListLength = transactionRepo.findAll().size();
-//			Long newTransactionId = transactionRepo.findAll().get(transactionsListLength - 1).getTransactionId()+1L;
-//			LOGGER.info("TransactionId Generated.....");
-//			System.out.println(transactionRepo.findAll().size());
-//			return newTransactionId;
-//			
-//		} catch (Exception e) {
-//			e.printStackTrace();
-//			LOGGER.info("Generating First TransactionId.....");
-//			return 505055L;
-//		}
-//		
-//		
-//	}
+
 
 
 

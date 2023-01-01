@@ -20,14 +20,9 @@ public class TransactionController {
 	private static final Logger LOGGER = LoggerFactory.getLogger(TransactionController.class);
 	@Autowired
 	TransactionServiceImpl transactionService;
-	{
-		LOGGER.info("Entering Inside TransactionController");
-	}
 	@PostMapping("/addTransaction")
 	public Transaction addTransaction(@RequestBody Transaction transaction) {
 		LOGGER.info("Entering Method addTransaction in TransactionController");
-//		transaction.setTransactionId(transactionService.
-//				generateSequence(Transaction.SEQUENCE_NAME));
 		return transactionService.addTransaction(transaction);
 	}
 
