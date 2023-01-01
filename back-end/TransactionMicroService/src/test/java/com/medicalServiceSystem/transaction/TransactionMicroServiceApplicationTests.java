@@ -15,7 +15,6 @@ import com.medicalServiceSystem.transaction.model.Transaction;
 import com.medicalServiceSystem.transaction.repository.TransactionRepository;
 import com.medicalServiceSystem.transaction.service.TransactionServiceImpl;
 
-
 @SpringBootTest
 @ExtendWith(MockitoExtension.class)
 class TransactionMicroServiceApplicationTests {
@@ -64,17 +63,18 @@ class TransactionMicroServiceApplicationTests {
 
 		List<Transaction> all = new LinkedList<>();
 
-		all.add(new Transaction(1L,2L,3L,"FEVER","PENDING","PARACETAMOL","12-12-2022","13-12-2022"));
+		all.add(new Transaction(1L, 2L, 3L, "FEVER", "PENDING", "PARACETAMOL", "12-12-2022", "13-12-2022"));
 
-		all.add(new Transaction(5L,2L,3L,"FEVER","PENDING","PARACETAMOL","12-12-2022","13-12-2022"));
+		all.add(new Transaction(5L, 2L, 3L, "FEVER", "PENDING", "PARACETAMOL", "12-12-2022", "13-12-2022"));
 
-		all.add(new Transaction(6L,2L,3L,"FEVER","PENDING","PARACETAMOL","12-12-2022","13-12-2022"));
+		all.add(new Transaction(6L, 2L, 3L, "FEVER", "PENDING", "PARACETAMOL", "12-12-2022", "13-12-2022"));
 
-		all.add(new Transaction(8L,2L,3L,"FEVER","PENDING","PARACETAMOL","12-12-2022","13-12-2022"));
-		Transaction transaction=new Transaction(1L,2L,3L,"FEVER","PENDING","PARACETAMOL","12-12-2022","13-12-2022");
+		all.add(new Transaction(8L, 2L, 3L, "FEVER", "PENDING", "PARACETAMOL", "12-12-2022", "13-12-2022"));
+		Transaction transaction = new Transaction(1L, 2L, 3L, "FEVER", "PENDING", "PARACETAMOL", "12-12-2022",
+				"13-12-2022");
 
 		when(transactionRepository.getTransactionBasedOnStatus("PENDING")).thenReturn(all);
-		assertEquals(all, transactionServiceImp.getTransactionBasedOnStatus("PENDING"));	
+		assertEquals(all, transactionServiceImp.getTransactionBasedOnStatus("PENDING"));
 	}
 
 	@Test
@@ -82,48 +82,51 @@ class TransactionMicroServiceApplicationTests {
 
 		List<Transaction> all = new LinkedList<>();
 
-		all.add(new Transaction(1L,2L,3L,"FEVER","PENDING","PARACETAMOL","12-12-2022","13-12-2022"));
+		all.add(new Transaction(1L, 2L, 3L, "FEVER", "PENDING", "PARACETAMOL", "12-12-2022", "13-12-2022"));
 
-		all.add(new Transaction(5L,2L,3L,"FEVER","PENDING","PARACETAMOL","12-12-2022","13-12-2022"));
+		all.add(new Transaction(5L, 2L, 3L, "FEVER", "PENDING", "PARACETAMOL", "12-12-2022", "13-12-2022"));
 
-		all.add(new Transaction(6L,2L,3L,"FEVER","PENDING","PARACETAMOL","12-12-2022","13-12-2022"));
+		all.add(new Transaction(6L, 2L, 3L, "FEVER", "PENDING", "PARACETAMOL", "12-12-2022", "13-12-2022"));
 
-		all.add(new Transaction(8L,2L,3L,"FEVER","PENDING","PARACETAMOL","12-12-2022","13-12-2022"));
+		all.add(new Transaction(8L, 2L, 3L, "FEVER", "PENDING", "PARACETAMOL", "12-12-2022", "13-12-2022"));
 
 		when(transactionRepository.getTransactionByDoctorId(3L)).thenReturn(all);
 		assertEquals(all, transactionServiceImp.getTransactionByDoctorId(3L));
 	}
 
 	@Test
-	public void  getTransactionByPatientIdTest() {
+	public void getTransactionByPatientIdTest() {
 		List<Transaction> all = new LinkedList<>();
 
-		all.add(new Transaction(1L,2L,3L,"FEVER","PENDING","PARACETAMOL","12-12-2022","13-12-2022"));
+		all.add(new Transaction(1L, 2L, 3L, "FEVER", "PENDING", "PARACETAMOL", "12-12-2022", "13-12-2022"));
 
-		all.add(new Transaction(5L,2L,3L,"FEVER","PENDING","PARACETAMOL","12-12-2022","13-12-2022"));
+		all.add(new Transaction(5L, 2L, 3L, "FEVER", "PENDING", "PARACETAMOL", "12-12-2022", "13-12-2022"));
 
-		all.add(new Transaction(6L,2L,3L,"FEVER","PENDING","PARACETAMOL","12-12-2022","13-12-2022"));
+		all.add(new Transaction(6L, 2L, 3L, "FEVER", "PENDING", "PARACETAMOL", "12-12-2022", "13-12-2022"));
 
-		all.add(new Transaction(8L,2L,3L,"FEVER","PENDING","PARACETAMOL","12-12-2022","13-12-2022"));
+		all.add(new Transaction(8L, 2L, 3L, "FEVER", "PENDING", "PARACETAMOL", "12-12-2022", "13-12-2022"));
 
-		when(transactionRepository. getTransactionByPatientId(2L)).thenReturn(all);
+		when(transactionRepository.getTransactionByPatientId(2L)).thenReturn(all);
 		assertEquals(all, transactionServiceImp.getTransactionByPatientId(2L));
 	}
 
 	@Test
 	public void getTransactionByTransactionIdTest() {
-		Transaction transaction = new Transaction(1L,2L,3L,"FEVER","PENDING","PARACETAMOL","12-12-2022","13-12-2022");
+		Transaction transaction = new Transaction(1L, 2L, 3L, "FEVER", "PENDING", "PARACETAMOL", "12-12-2022",
+				"13-12-2022");
 		when(transactionRepository.findById(1L)).thenReturn(Optional.of(transaction));
 		assertEquals(transaction, transactionServiceImp.getTransactionByTransactionId(1L));
 	}
 
 	@Test
 	public void updateTransactionTest() {
-		Transaction transaction = new Transaction(1L,2L,3L,"FEVER","PENDING","PARACETAMOL","12-12-2022","13-12-2022");
-		Transaction updatedTransaction = new Transaction(1L,6L,9L,"high FEVER","Accepted","PARACETAMOL","12-12-2022","13-12-2022");
+		Transaction transaction = new Transaction(1L, 2L, 3L, "FEVER", "PENDING", "PARACETAMOL", "12-12-2022",
+				"13-12-2022");
+		Transaction updatedTransaction = new Transaction(1L, 6L, 9L, "high FEVER", "Accepted", "PARACETAMOL",
+				"12-12-2022", "13-12-2022");
 		when(transactionRepository.findById(transaction.getTransactionId())).thenReturn(Optional.of(transaction));
-		 transactionServiceImp.updateTransaction(updatedTransaction);
-		assertEquals(transaction,   transactionServiceImp.getTransactionByTransactionId(1L));	
+		transactionServiceImp.updateTransaction(updatedTransaction);
+		assertEquals(transaction, transactionServiceImp.getTransactionByTransactionId(1L));
 	}
 
 }

@@ -2,9 +2,6 @@ package com.medicalServiceSystem.transaction.service;
 
 import java.util.List;
 
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-
 import com.medicalServiceSystem.transaction.model.Transaction;
 
 public interface TransactionService {
@@ -21,6 +18,6 @@ public interface TransactionService {
 
 	public Transaction getTransactionByTransactionId(Long transactionId);
 
-	public Transaction updateTransaction(@RequestBody Transaction transaction);
+	public Transaction updateTransaction(Transaction transaction);
 
 }
