@@ -6,8 +6,8 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document(collection = "TreatmentForm")
 public class Transaction {
-@Transient
-public static final String SEQUENCE_NAME = "user_sequence";
+	@Transient
+	public static final String SEQUENCE_NAME = "user_sequence";
 	@Id
 	private Long transactionId;
 	private Long patientId;
@@ -18,10 +18,9 @@ public static final String SEQUENCE_NAME = "user_sequence";
 	private String dateOfRequest;
 	private String dateOfTreatment;
 
-
 	public Transaction() {
 		super();
-	
+
 	}
 
 	public Transaction(Long transactionId, Long patientId, Long doctorId, String disease, String status,

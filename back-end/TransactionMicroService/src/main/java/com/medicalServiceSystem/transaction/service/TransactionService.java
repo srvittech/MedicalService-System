@@ -2,7 +2,6 @@ package com.medicalServiceSystem.transaction.service;
 
 import java.util.List;
 
-
 import com.medicalServiceSystem.transaction.model.Transaction;
 
 public interface TransactionService {
@@ -20,6 +19,5 @@ public interface TransactionService {
 	public Transaction getTransactionByTransactionId(Long transactionId);
 
 	public Transaction updateTransaction(Transaction transaction);
-	
 
 }

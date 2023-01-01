@@ -16,10 +16,11 @@ import com.medicalServiceSystem.transaction.service.TransactionServiceImpl;
 
 @RestController
 public class TransactionController {
-	
+
 	private static final Logger LOGGER = LoggerFactory.getLogger(TransactionController.class);
 	@Autowired
 	TransactionServiceImpl transactionService;
+
 	@PostMapping("/addTransaction")
 	public Transaction addTransaction(@RequestBody Transaction transaction) {
 		LOGGER.info("Entering Method addTransaction in TransactionController");
@@ -61,7 +62,5 @@ public class TransactionController {
 		LOGGER.info("Entering Method updateTransaction in TransactionController");
 		transactionService.updateTransaction(transaction);
 	}
-
-
 
 }
