@@ -19,25 +19,25 @@ public class PatientServiceImp implements PatientService {
 
 	@Override
 	public List<Patient> getPatient() {
-
+		LOGGER.info("Enter into patient Service Implemention and getting the method getpatients");
 		return patientRepository.findAll();
 	}
 
 	@Override
 	public Patient addPatient(Patient patient) {
-
+		LOGGER.info("Enter into patient Service Implemention and getting the method addPatient");
 		return patientRepository.save(patient);
 	}
 
 	@Override
 	public Patient findPatientById(Long id) {
-
+		LOGGER.info("Enter into patient Service Implemention and getting the method findPatientById");
 		return patientRepository.findById(id).orElse(null);
 	}
 
 	@Override
 	public void deletePatientById(Long id) {
-
+		LOGGER.info("Enter into patient Service Implemention and getting the method deletePatientById");
 		patientRepository.deleteById(id);
 
 	}

@@ -115,3 +115,20 @@
 2023-01-01 23:01:53,780 [main] INFO  o.a.c.h.Http11NioProtocol                          -Starting ProtocolHandler ["http-nio-9098"] 
 2023-01-01 23:01:53,809 [main] INFO  o.s.b.w.e.t.TomcatWebServer                        -Tomcat started on port(s): 9098 (http) with context path '' 
 2023-01-01 23:01:54,036 [main] INFO  c.m.p.PatientModuleMsApplication                   -Started PatientModuleMsApplication in 6.05 seconds (JVM running for 7.219) 
+2023-01-01 23:06:58,514 [http-nio-9098-exec-2] INFO  o.a.c.c.C.[.[.[/]                                  -Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2023-01-01 23:06:58,515 [http-nio-9098-exec-2] INFO  o.s.w.s.DispatcherServlet                          -Initializing Servlet 'dispatcherServlet' 
+2023-01-01 23:06:58,517 [http-nio-9098-exec-2] INFO  o.s.w.s.DispatcherServlet                          -Completed initialization in 1 ms 
+2023-01-01 23:06:58,731 [http-nio-9098-exec-2] INFO  c.m.p.s.PatientServiceImp                          -Enter into patient Controller and getting the method addpatient 
+2023-01-01 23:07:09,391 [http-nio-9098-exec-3] INFO  c.m.p.s.PatientServiceImp                          -Enter into patient Controller and getting the method getpatients 
+2023-01-01 23:07:19,616 [http-nio-9098-exec-4] INFO  c.m.p.s.PatientServiceImp                          -Enter into patient Controller and getting the method getpatients 
+2023-01-01 23:07:34,282 [http-nio-9098-exec-5] INFO  c.m.p.s.PatientServiceImp                          -Enter into patient Controller and getting the method addpatient 
+2023-01-01 23:07:44,525 [http-nio-9098-exec-6] INFO  c.m.p.s.PatientServiceImp                          -Enter into patient Controller and getting the method getpatients 
+2023-01-01 23:46:59,133 [RMI TCP Connection(52)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin -Application shutdown requested. 
+2023-01-01 23:46:59,224 [RMI TCP Connection(52)-127.0.0.1] INFO  o.a.c.h.Http11NioProtocol                          -Pausing ProtocolHandler ["http-nio-9098"] 
+2023-01-01 23:46:59,226 [RMI TCP Connection(52)-127.0.0.1] INFO  o.a.c.c.StandardService                            -Stopping service [Tomcat] 
+2023-01-01 23:46:59,232 [RMI TCP Connection(52)-127.0.0.1] INFO  o.a.c.c.C.[.[.[/]                                  -Destroying Spring FrameworkServlet 'dispatcherServlet' 
+2023-01-01 23:46:59,254 [RMI TCP Connection(52)-127.0.0.1] INFO  o.a.c.h.Http11NioProtocol                          -Stopping ProtocolHandler ["http-nio-9098"] 
+2023-01-01 23:46:59,261 [RMI TCP Connection(52)-127.0.0.1] INFO  o.a.c.h.Http11NioProtocol                          -Destroying ProtocolHandler ["http-nio-9098"] 
+2023-01-01 23:46:59,276 [RMI TCP Connection(52)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     -Closing JPA EntityManagerFactory for persistence unit 'default' 
+2023-01-01 23:46:59,290 [RMI TCP Connection(52)-127.0.0.1] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown initiated... 
+2023-01-01 23:46:59,357 [RMI TCP Connection(52)-127.0.0.1] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown completed. 
