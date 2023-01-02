@@ -46,19 +46,19 @@ public class PatientServiceImp implements PatientService {
 	public Patient updatePatient(Patient patient) {
 		 Patient patientToUpdate = patientRepository.findById(patient.getId()).orElse(null);
 		 if(patient.getPassword()!=null) {
-			 LOGGER.info("Updating Patient Password From TransactionService.....");
+			 LOGGER.info("Updating Patient Password From PatientService.....");
 			 patientToUpdate.setPassword(patient.getPassword()); 
 		 }
 		 if(patient.getAddress()!=null) {
-			 LOGGER.info("Updating Patient Address From TransactionService.....")
+			 LOGGER.info("Updating Patient Address From PatientService.....");
 			 patientToUpdate.setAddress(patient.getAddress()); 
 		 }
 		 if(patient.getDisease()!=null) {
-			 LOGGER.info("Updating Patient Disease From TransactionService.....")
+			 LOGGER.info("Updating Patient Disease From PatientService.....");
 			 patientToUpdate.setDisease(patient.getDisease()); 
 		 }
 		 if(patient.getAge()!=0) {
-			 LOGGER.info("Updating Patient Age From TransactionService.....")
+			 LOGGER.info("Updating Patient Age From PatientService.....");
 			 patientToUpdate.setAge((patient.getAge())); 
 		 }
 		 return patientRepository.save(patientToUpdate);
