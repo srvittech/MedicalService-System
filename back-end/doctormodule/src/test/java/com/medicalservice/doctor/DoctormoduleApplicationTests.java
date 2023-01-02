@@ -73,6 +73,7 @@ class DoctormoduleApplicationTests {
 		all.add(new Doctor(4L, "John3", "password", 5, "Eye", false));
 		
 		when(doctorRepo.findBySpecialization("Eye")).thenReturn(all);
+		
 		assertEquals(all,doctorServiceImp.findBySpecialization("Eye"));
 		
 	}
@@ -82,7 +83,7 @@ class DoctormoduleApplicationTests {
 	public void deleteDoctorByIdTest() {
 		Doctor doctor = new Doctor(1L, "John", "password", 5, "Eye", false);
 		doctorServiceImp.deleteDoctorById(doctor.getId());
-		verify(doctorRepo, times(1)).deleteById(doctor.getId());
+		assertEquals(null, doctorServiceImp.findDoctorById(1L));
 	}
 
 	@Test

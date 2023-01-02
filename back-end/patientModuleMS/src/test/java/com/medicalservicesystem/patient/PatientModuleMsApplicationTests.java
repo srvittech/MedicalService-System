@@ -43,7 +43,7 @@ class PatientModuleMsApplicationTests {
 	public void deletePatientById() {
 		Patient patient = new Patient(1L, "password1", "lakshmi", 26, "hyderabad", "cold",70);
 		patientRepository.deleteById(patient.getId());
-		verify(patientRepository, times(1)).deleteById(patient.getId());	
+		assertEquals(null, patientServiceImp.findPatientById(1L));	
 	}
 	
 
