@@ -19,25 +19,25 @@ public class PatientServiceImp implements PatientService {
 
 	@Override
 	public List<Patient> getPatient() {
-		LOGGER.info("Enter into patient Service Implemention and getting the method getpatients");
+		LOGGER.info("Getting All Patients From PatientService.....");
 		return patientRepository.findAll();
 	}
 
 	@Override
 	public Patient addPatient(Patient patient) {
-		LOGGER.info("Enter into patient Service Implemention and getting the method addPatient");
+		LOGGER.info("Adding Patient From PatientService.....");
 		return patientRepository.save(patient);
 	}
 
 	@Override
 	public Patient findPatientById(Long id) {
-		LOGGER.info("Enter into patient Service Implemention and getting the method findPatientById");
+		LOGGER.info("Getting Patient By Patient Id From PatientService.....");
 		return patientRepository.findById(id).orElse(null);
 	}
 
 	@Override
 	public void deletePatientById(Long id) {
-		LOGGER.info("Enter into patient Service Implemention and getting the method deletePatientById");
+		LOGGER.info("Deleting Patient By Patient Id From PatientService.....");
 		patientRepository.deleteById(id);
 
 	}
@@ -46,15 +46,19 @@ public class PatientServiceImp implements PatientService {
 	public Patient updatePatient(Patient patient) {
 		 Patient patientToUpdate = patientRepository.findById(patient.getId()).orElse(null);
 		 if(patient.getPassword()!=null) {
+			 LOGGER.info("Updating Patient Password From TransactionService.....");
 			 patientToUpdate.setPassword(patient.getPassword()); 
 		 }
 		 if(patient.getAddress()!=null) {
+			 LOGGER.info("Updating Patient Address From TransactionService.....")
 			 patientToUpdate.setAddress(patient.getAddress()); 
 		 }
 		 if(patient.getDisease()!=null) {
+			 LOGGER.info("Updating Patient Disease From TransactionService.....")
 			 patientToUpdate.setDisease(patient.getDisease()); 
 		 }
 		 if(patient.getAge()!=0) {
+			 LOGGER.info("Updating Patient Age From TransactionService.....")
 			 patientToUpdate.setAge((patient.getAge())); 
 		 }
 		 return patientRepository.save(patientToUpdate);
