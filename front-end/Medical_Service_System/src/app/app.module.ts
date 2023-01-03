@@ -9,6 +9,7 @@ import { KioskComponentComponent } from './model/kiosk-component/kiosk-component
 import { AdminComponentComponent } from './model/admin-component/admin-component.component';
 import { LoginComponentComponent } from './model/login-component/login-component.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AboutComponentComponent } from './model/about-component/about-component.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     PatientComponentComponent,
     KioskComponentComponent,
     AdminComponentComponent,
-    LoginComponentComponent
+    LoginComponentComponent,
+    AboutComponentComponent
   ],
   imports: [
     BrowserModule,
