@@ -62,13 +62,13 @@ public class TransactionServiceImpl implements TransactionService {
 
 	@Override
 	public List<Transaction> getTransactionByPatientId(Long patientId) {
-		LOGGER.info("Getting All Transactions By Patient Id From TransactionService.....");
+		LOGGER.info("Getting Transactions By Patient Id From TransactionService.....");
 		return transactionRepo.getTransactionByPatientId(patientId);
 	}
 
 	@Override
 	public Transaction getTransactionByTransactionId(Long transactionId) {
-		LOGGER.info("Getting All Transactions By Transaction Id From TransactionService.....");
+		LOGGER.info("Getting Transaction By Transaction Id From TransactionService.....");
 		return transactionRepo.findById(transactionId).orElse(null);
 	}
 

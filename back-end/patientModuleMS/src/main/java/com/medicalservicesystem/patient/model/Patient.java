@@ -3,6 +3,7 @@ package com.medicalservicesystem.patient.model;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 import javax.persistence.Entity;
 
@@ -10,7 +11,8 @@ import javax.persistence.Entity;
 @Table(name = "Patient")
 public class Patient {
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(generator="patient_seq", strategy = GenerationType.AUTO)
+	@SequenceGenerator(name="patient_seq",sequenceName="patient_seq",initialValue=5091753,allocationSize=1)
 	private Long id;
 	private String password;
 	private String name;
