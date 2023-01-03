@@ -6,19 +6,12 @@ import static org.mockito.Mockito.when;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
-<<<<<<< HEAD
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
-=======
->>>>>>> origin/pavani
-
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.boot.test.context.SpringBootTest;
-
 import com.medicalservice.user.model.User;
 import com.medicalservice.user.repository.UserRepository;
 import com.medicalservice.user.service.UserServiceImpl;
@@ -43,9 +36,7 @@ class UsermoduleApplicationTests {
 		when(userRepository.findAll()).thenReturn(all);
 		assertEquals(all,userServiceImpl.getLogin());			
 	}
-<<<<<<< HEAD
-	
-=======
+
 	@Test
 	public void  addLoginTest() {
 		User user =new User(1L,"userpassword","admin","admin123");
@@ -61,5 +52,5 @@ class UsermoduleApplicationTests {
 		assertEquals(user,userServiceImpl.updateLogin(user3));	
 	}
 
->>>>>>> origin/pavani
+
 }
