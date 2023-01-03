@@ -5,6 +5,7 @@ import static org.mockito.Mockito.when;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
@@ -43,13 +44,9 @@ class UsermoduleApplicationTests {
 	@Test
 	public void updateLoginTest() {
 		User user =new User(1L,"userpassword","admin","admin123");
-		User user1 =new User(2L,"userpassword","admin","admin123");
-		User user2 =new User(3L,"userpassword","admin","admin123");
 		User user3 =new User(1L,"userpasswordabcd","admin","admin123");
 		when(userRepository.findById(user.getId())).thenReturn(Optional.of(user));
-		when(userRepository.findById(user1.getId())).thenReturn(Optional.of(user1));
-		when(userRepository.findById(user2.getId())).thenReturn(Optional.of(user2));
-		userServiceImpl.updateLogin(user3);
+
 		assertEquals(user,userServiceImpl.updateLogin(user3));	
 	}
 

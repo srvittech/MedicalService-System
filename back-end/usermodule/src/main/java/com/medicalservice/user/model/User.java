@@ -4,13 +4,16 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
 @Entity
 @Table(name = "Login")
 public class User {
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(generator="user_seq", strategy = GenerationType.AUTO)
+	@SequenceGenerator(name="user_seq",sequenceName="user_seq",initialValue=5091753,allocationSize=1)
+	
 	private Long id;
 	private String password;
 	private String role;
