@@ -132,3 +132,37 @@
 2023-01-01 23:46:59,276 [RMI TCP Connection(52)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     -Closing JPA EntityManagerFactory for persistence unit 'default' 
 2023-01-01 23:46:59,290 [RMI TCP Connection(52)-127.0.0.1] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown initiated... 
 2023-01-01 23:46:59,357 [RMI TCP Connection(52)-127.0.0.1] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown completed. 
+2023-01-02 11:52:04,060 [main] INFO  c.m.p.PatientModuleMsApplication                   -Starting PatientModuleMsApplication using Java 17.0.5 on LakshmanReddy with PID 24288 (C:\Users\laksh\OneDrive\Desktop\Final Project\MedicalService-System\back-end\patientModuleMS\target\classes started by laksh in C:\Users\laksh\OneDrive\Desktop\Final Project\MedicalService-System\back-end\patientModuleMS) 
+2023-01-02 11:52:04,221 [main] INFO  c.m.p.PatientModuleMsApplication                   -No active profile set, falling back to 1 default profile: "default" 
+2023-01-02 11:52:08,964 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          -Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2023-01-02 11:52:09,339 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          -Finished Spring Data repository scanning in 350 ms. Found 1 JPA repository interfaces. 
+2023-01-02 11:52:11,517 [main] INFO  o.s.b.w.e.t.TomcatWebServer                        -Tomcat initialized with port(s): 9098 (http) 
+2023-01-02 11:52:11,545 [main] INFO  o.a.c.h.Http11NioProtocol                          -Initializing ProtocolHandler ["http-nio-9098"] 
+2023-01-02 11:52:11,549 [main] INFO  o.a.c.c.StandardService                            -Starting service [Tomcat] 
+2023-01-02 11:52:11,553 [main] INFO  o.a.c.c.StandardEngine                             -Starting Servlet engine: [Apache Tomcat/9.0.70] 
+2023-01-02 11:52:11,885 [main] INFO  o.a.c.c.C.[.[.[/]                                  -Initializing Spring embedded WebApplicationContext 
+2023-01-02 11:52:11,885 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext     -Root WebApplicationContext: initialization completed in 7216 ms 
+2023-01-02 11:52:12,293 [main] INFO  o.h.j.i.u.LogHelper                                -HHH000204: Processing PersistenceUnitInfo [name: default] 
+2023-01-02 11:52:12,471 [main] INFO  o.h.Version                                        -HHH000412: Hibernate ORM core version 5.6.14.Final 
+2023-01-02 11:52:12,937 [main] INFO  o.h.a.c.Version                                    -HCANN000001: Hibernate Commons Annotations {5.1.2.Final} 
+2023-01-02 11:52:13,296 [main] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Starting... 
+2023-01-02 11:52:14,188 [main] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Start completed. 
+2023-01-02 11:52:14,230 [main] INFO  o.h.d.Dialect                                      -HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect 
+2023-01-02 11:52:16,202 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator                 -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 
+2023-01-02 11:52:16,220 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     -Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2023-01-02 11:52:16,235 [main] INFO  c.m.p.s.PatientServiceImp                          -Inside the patient Controller  
+2023-01-02 11:52:17,645 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2023-01-02 11:52:19,050 [main] INFO  o.a.c.h.Http11NioProtocol                          -Starting ProtocolHandler ["http-nio-9098"] 
+2023-01-02 11:52:19,138 [main] INFO  o.s.b.w.e.t.TomcatWebServer                        -Tomcat started on port(s): 9098 (http) with context path '' 
+2023-01-02 11:52:19,715 [main] INFO  c.m.p.PatientModuleMsApplication                   -Started PatientModuleMsApplication in 17.79 seconds (JVM running for 24.52) 
+2023-01-02 13:59:50,601 [HikariPool-1 housekeeper] WARN  c.z.h.p.HikariPool                                 -HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h10m5s360ms41µs399ns). 
+2023-01-02 14:51:00,956 [HikariPool-1 housekeeper] WARN  c.z.h.p.HikariPool                                 -HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m9s539ms434µs500ns). 
+2023-01-03 09:12:20,887 [HikariPool-1 housekeeper] WARN  c.z.h.p.HikariPool                                 -HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15h51m49s926ms996µs500ns). 
+2023-01-03 09:32:39,966 [RMI TCP Connection(295)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin -Application shutdown requested. 
+2023-01-03 09:32:40,385 [RMI TCP Connection(295)-127.0.0.1] INFO  o.a.c.h.Http11NioProtocol                          -Pausing ProtocolHandler ["http-nio-9098"] 
+2023-01-03 09:32:40,386 [RMI TCP Connection(295)-127.0.0.1] INFO  o.a.c.c.StandardService                            -Stopping service [Tomcat] 
+2023-01-03 09:32:40,550 [RMI TCP Connection(295)-127.0.0.1] INFO  o.a.c.h.Http11NioProtocol                          -Stopping ProtocolHandler ["http-nio-9098"] 
+2023-01-03 09:32:40,579 [RMI TCP Connection(295)-127.0.0.1] INFO  o.a.c.h.Http11NioProtocol                          -Destroying ProtocolHandler ["http-nio-9098"] 
+2023-01-03 09:32:40,632 [RMI TCP Connection(295)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     -Closing JPA EntityManagerFactory for persistence unit 'default' 
+2023-01-03 09:32:40,687 [RMI TCP Connection(295)-127.0.0.1] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown initiated... 
+2023-01-03 09:32:40,743 [RMI TCP Connection(295)-127.0.0.1] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown completed. 
