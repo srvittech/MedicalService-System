@@ -25,7 +25,7 @@ export class PatientLoginComponentComponent {
 
   submit(){
     if(this.id==this.form.value.userId&&this.pass==this.form.value.password){
-      this.openDialog()
+      // this.openDialog()
       this.router.navigate(['patient'])
     }
     else{
