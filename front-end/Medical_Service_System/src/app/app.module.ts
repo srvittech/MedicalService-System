@@ -13,6 +13,8 @@ import { AboutComponentComponent } from './model/about-component/about-component
 import { AppointmentComponent } from './model/doctor-component/appointment/appointment.component';
 import { PatientListComponent } from './model/doctor-component/patient-list/patient-list.component';
 import { FeedbackComponent } from './model/doctor-component/feedback/feedback.component';
+import { PatientAppointmentsComponent } from './model/kiosk-component/patient-appointments/patient-appointments.component';
+import { DoctorAvailComponent } from './model/kiosk-component/doctor-avail/doctor-avail.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { FeedbackComponent } from './model/doctor-component/feedback/feedback.co
     AboutComponentComponent,
     AppointmentComponent,
     PatientListComponent,
-    FeedbackComponent
+    FeedbackComponent,
+    PatientAppointmentsComponent,
+    DoctorAvailComponent
   ],
   imports: [
     BrowserModule,

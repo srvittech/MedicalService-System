@@ -2,17 +2,18 @@
     <div id="navbar">
         <nav class="navbar navbar-expand-lg">
             <a class="navbar-brand" href="#">Hello Doctor!</a>
-           <div class="button">
-            <button class="btn btn-outline-success my-2 my-sm-0 ml-auto" type="submit" id="logout">Change Password</button>
-            &nbsp;
-            <button class="btn btn-outline-success my-2 my-sm-0 ml-auto" type="submit" id="logout">Logout</button>
+            <div class="button">
+                <button class="btn btn-outline-success my-2 my-sm-0 ml-auto" type="submit" id="logout">Change
+                    Password</button>
+                &nbsp;
+                <button class="btn btn-outline-success my-2 my-sm-0 ml-auto" type="submit" id="logout">Logout</button>
             </div>
         </nav>
     </div>
     <br>
     <br>
     <div class="row market-updates">
-        <div (click) = "showAppointments()" class="col-md-4 market-update-gd">
+        <div (click)="showAppointments()" class="col-md-4 market-update-gd">
             <div class="market-update-block clr-block-1">
                 <div class="col-md-8 market-update-left">
                     <h4>View Appointments</h4>
@@ -22,7 +23,7 @@
                 </div>
             </div>
         </div>
-        <div (click) = "showPatientList()" class="col-md-4 market-update-gd">
+        <div (click)="showPatientList()" class="col-md-4 market-update-gd">
             <div class="market-update-block clr-block-2">
                 <div class="col-md-8 market-update-left">
                     <h4>Patient List Under You</h4>
@@ -32,7 +33,7 @@
                 </div>
             </div>
         </div>
-        <div (click) = "showFeedback()" class="col-md-4 market-update-gd">
+        <div (click)="showFeedback()" class="col-md-4 market-update-gd">
             <div class="market-update-block clr-block-3">
                 <div class="col-md-8 market-update-left">
                     <h4>View Feedback</h4>
@@ -42,7 +43,7 @@
                 </div>
             </div>
         </div>
-       
+
     </div>
     <div>
         <router-outlet></router-outlet>
