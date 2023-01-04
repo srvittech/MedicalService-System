@@ -12,7 +12,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AboutComponentComponent } from './model/about-component/about-component.component';
 import { AppointmentComponent } from './model/doctor-component/appointment/appointment.component';
 import { PatientListComponent } from './model/doctor-component/patient-list/patient-list.component';
-<<<<<<< HEAD
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LoginDialogComponent } from './model/login-component/login-dialog/login-dialog.component';
 import { MatDialogModule } from '@angular/material/dialog';
@@ -24,11 +23,9 @@ import { PatientLoginComponentComponent } from './model/patient-login-component/
 import { PatientSingupDialogComponent } from './model/patient-login-component/patient-singup-dialog/patient-singup-dialog.component';
 
 
-=======
 import { FeedbackComponent } from './model/doctor-component/feedback/feedback.component';
 import { PatientAppointmentsComponent } from './model/kiosk-component/patient-appointments/patient-appointments.component';
 import { DoctorAvailComponent } from './model/kiosk-component/doctor-avail/doctor-avail.component';
->>>>>>> origin/komali
 
 @NgModule({
   declarations: [
@@ -41,16 +38,12 @@ import { DoctorAvailComponent } from './model/kiosk-component/doctor-avail/docto
     AboutComponentComponent,
     AppointmentComponent,
     PatientListComponent,
-<<<<<<< HEAD
     LoginDialogComponent,
     PatientLoginComponentComponent,
-    PatientSingupDialogComponent
-   
-=======
+    PatientSingupDialogComponent,
     FeedbackComponent,
     PatientAppointmentsComponent,
     DoctorAvailComponent
->>>>>>> origin/komali
   ],
   imports: [
     BrowserModule,
