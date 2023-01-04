@@ -25,13 +25,21 @@
     margin-right: 0.8em;
     transition: 0.5s all;
   }
-
+  .market-update-block.clr-block-3 {
+    background: #7FE9DE;
+    margin-right: 0.8em;
+    transition: 0.5s all;
+  }
   .market-update-block.clr-block-1:hover {
     background: #EAFDFC;
     transition: 0.5s all;
   }
 
   .market-update-block.clr-block-2:hover {
+    background: #EAFDFC;
+    transition: 0.5s all;
+  }
+  .market-update-block.clr-block-3:hover {
     background: #EAFDFC;
     transition: 0.5s all;
   }
@@ -56,6 +64,19 @@
     background: #fff;
     text-align: center;
     border-radius: 49px;
+    line-height: 1.7em;
+  }
+  .market-update-right i.fa.fa-commenting {
+    font-size: 3em;
+    color: #337AB7;
+    width: 80px;
+    height: 80px;
+    background: #fff;
+    text-align: center;
+    border-radius: 49px;
+    -webkit-border-radius: 49px;
+    -moz-border-radius: 49px;
+    -o-border-radius: 49px;
     line-height: 1.7em;
   }
 
