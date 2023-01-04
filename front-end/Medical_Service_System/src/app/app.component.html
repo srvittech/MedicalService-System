@@ -2,8 +2,8 @@
   <div class="row flex-nowrap">
     <div class="col-auto col-md-3.1 col-xl-2.1 px-sm-2 px-0 "   id="sidebar">
       
-      <div class=" d-flex flex-column align-items-center  align-items-sm-start px-3 pt-2 min-vh-100">
-        <div class="brand d-flex flex-column align-items-center align-items-sm-start px-3 pt-2">
+      <div class=" d-flex flex-column align-items-center  align-items-sm-start px-15 pt-2 min-vh-100">
+        <div class="brand d-flex flex-column align-items-center align-items-sm-start px-15 pt-2">
           <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto  text-decoration-none">
             <span class="fs-5 d-none d-sm-inline" > <img src="assets/img/brand.jpg" alt="none" width="190px"></span>
           </a>
@@ -13,7 +13,7 @@
           <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
             <div id="sidebar-content-1">
               <li class="nav-item">
-                <a routerLink="/about"class="nav-link align-middle px-0"  id="links" style="color:red"} >
+                <a routerLink="/about"class="nav-link align-middle px-0"  id="links" (click)="changeColor('about')" [style.color]="colorDiary.about" >
                   <i class="fs-3 fa fa-info-circle" aria-hidden="true"></i><span id="core-content-sidebar"
                  class="ms-1 d-none d-sm-inline">    About</span>
                 </a>
@@ -21,28 +21,28 @@
             </div>
             <div id="sidebar-content-1">
             <li>
-              <a routerLink="/admin"class="nav-link px-0 align-middle"  id="links">
+              <a routerLink="/admin"class="nav-link px-0 align-middle"  id="links"  (click)="changeColor('admin')" [style.color]="colorDiary.admin">
                 <i class="fs-3 fa fa-user" aria-hidden="true"></i><span id="core-content-sidebar"
                   class="ms-1 d-none d-sm-inline"> Administrator</span> </a>
             </li>
           </div>
           <div id="sidebar-content-1">
             <li>
-              <a routerLink="/kiosk" class="nav-link px-0 align-middle"  id="links">
+              <a routerLink="/kiosk" class="nav-link px-0 align-middle"  id="links"  (click)="changeColor('kiosk')" [style.color]="colorDiary.kiosk">
                 <i class="fs-3 fa fa-laptop" aria-hidden="true"></i><span id="core-content-sidebar" class="ms-1 d-none d-sm-inline"> Kiosk</span>
               </a>
             </li>
           </div>
           <div id="sidebar-content-1">
             <li>
-              <a routerLink="/doctor" class="nav-link px-0 align-middle"  id="links">
+              <a routerLink="/doctor" class="nav-link px-0 align-middle"  id="links"  (click)="changeColor('doctor')" [style.color]="colorDiary.doctor">
                 <i class="fs-3 fa fa-user-md" aria-hidden="true"></i> <span id="core-content-sidebar"
                   class="ms-1 d-none d-sm-inline"> Doctors</span> </a>
             </li>
           </div>
           <div id="sidebar-content-1">
             <li>
-              <a routerLink="/patient" class="nav-link px-0 align-middle"  id="links">
+              <a routerLink="/patient" class="nav-link px-0 align-middle"  id="links"  (click)="changeColor('patient')" [style.color]="colorDiary.patient">
                 <i class="fs-3 fa fa-user-plus" aria-hidden="true"></i> 
                 <span id="core-content-sidebar"
                   class="ms-1 d-none d-sm-inline"> Patient</span> </a>
