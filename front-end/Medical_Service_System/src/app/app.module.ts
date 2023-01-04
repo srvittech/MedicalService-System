@@ -10,6 +10,8 @@ import { AdminComponentComponent } from './model/admin-component/admin-component
 import { LoginComponentComponent } from './model/login-component/login-component.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AboutComponentComponent } from './model/about-component/about-component.component';
+import { AppointmentComponent } from './model/doctor-component/appointment/appointment.component';
+import { PatientListComponent } from './model/doctor-component/patient-list/patient-list.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { AboutComponentComponent } from './model/about-component/about-component
     KioskComponentComponent,
     AdminComponentComponent,
     LoginComponentComponent,
-    AboutComponentComponent
+    AboutComponentComponent,
+    AppointmentComponent,
+    PatientListComponent
   ],
   imports: [
     BrowserModule,
