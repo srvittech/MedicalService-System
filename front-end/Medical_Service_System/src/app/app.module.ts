@@ -12,6 +12,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AboutComponentComponent } from './model/about-component/about-component.component';
 import { AppointmentComponent } from './model/doctor-component/appointment/appointment.component';
 import { PatientListComponent } from './model/doctor-component/patient-list/patient-list.component';
+import { FeedbackComponent } from './model/doctor-component/feedback/feedback.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { PatientListComponent } from './model/doctor-component/patient-list/pati
     LoginComponentComponent,
     AboutComponentComponent,
     AppointmentComponent,
-    PatientListComponent
+    PatientListComponent,
+    FeedbackComponent
   ],
   imports: [
     BrowserModule,
