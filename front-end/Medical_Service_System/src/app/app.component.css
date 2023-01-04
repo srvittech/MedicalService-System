@@ -28,6 +28,7 @@
   #sidebar{
     background-color: #EAFDFC;
     position: fixed;
+    float: left;
   /* Full-height: remove this if you want "auto" height */
 
   }
