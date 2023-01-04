@@ -7,7 +7,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 60px;
+    margin-top: 7%;
    
 
 
@@ -15,7 +15,7 @@
   #sidebar-content-1{
 
     align-items: center;
-    margin: 20px;
+    margin: 12px;
 
   }
   #core-content-sidebar{
@@ -29,6 +29,7 @@
     background-color: #EAFDFC;
     position: fixed;
     float: left;
+    height: 100%;
   /* Full-height: remove this if you want "auto" height */
 
   }
