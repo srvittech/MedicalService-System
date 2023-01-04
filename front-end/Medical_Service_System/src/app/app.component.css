@@ -7,7 +7,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 60px;
+    margin-top: 7%;
    
 
 
@@ -27,14 +27,16 @@
   }
   #sidebar{
     background-color: #EAFDFC;
-    position: fixed;
+    position: sticky;
+    top: 0;
     float: left;
+    height: 100%;
   /* Full-height: remove this if you want "auto" height */
 
   }
 
  #links{
-    color: #3E6D9C
+    /* color: #3E6D9C */
 
   }
   #links:hover{
