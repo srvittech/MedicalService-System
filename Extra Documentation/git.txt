@@ -19,3 +19,5 @@ NOTE:- 1 Before merging we have to push our previous code by (git add . , git co
 8 For aborting the merge --> git merge --abort
 
 9 If there will be any conflicts while merging use (git add . , git commit -m "message", git push) 
+
+10 Force override to any another branch --> git reset --hard origin/branch_to_overwrite

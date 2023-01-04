@@ -12,6 +12,17 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AboutComponentComponent } from './model/about-component/about-component.component';
 import { AppointmentComponent } from './model/doctor-component/appointment/appointment.component';
 import { PatientListComponent } from './model/doctor-component/patient-list/patient-list.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { LoginDialogComponent } from './model/login-component/login-dialog/login-dialog.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { HttpClientModule } from '@angular/common/http';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { PatientLoginComponentComponent } from './model/patient-login-component/patient-login-component.component';
+import { PatientSingupDialogComponent } from './model/patient-login-component/patient-singup-dialog/patient-singup-dialog.component';
+
+
 
 @NgModule({
   declarations: [
@@ -23,12 +34,26 @@ import { PatientListComponent } from './model/doctor-component/patient-list/pati
     LoginComponentComponent,
     AboutComponentComponent,
     AppointmentComponent,
-    PatientListComponent
+    PatientListComponent,
+    LoginDialogComponent,
+    PatientLoginComponentComponent,
+    PatientSingupDialogComponent
+   
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ReactiveFormsModule,
+    MatDialogModule,
+    MatDialogModule,
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    HttpClientModule,
+    MatButtonModule,
+    MatIconModule,
+    FormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

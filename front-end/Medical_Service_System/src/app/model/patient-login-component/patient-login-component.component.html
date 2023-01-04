@@ -1,19 +1,12 @@
 <div class="fluid-conatiner" id="loginmaincontent">
   <div class="row" id="loginform">
     <div id="login" class="col-md-5">
-      <h1>Employee Login Page</h1>
+      <h1>Patient Login</h1>
       <div id="hr">
       </div><br>
       <form [formGroup]="form" class="form" (ngSubmit)="submit()">
-        <div class="mb-3" >
-        <label class="mb-3"  for="logintype">Employee Type</label>  
-            <select name="role" formControlName="role" id="logintype" class="form-control">  
-                <option class="form-control">Choose Role</option>  
-                <option class="form-control" *ngFor="let role of roles">{{role}}</option>  
-            </select>  
-          </div>
         <div class="mb-3">
-          <label class="mb-3" for="userId">Employee User Id</label>
+          <label class="mb-3" for="userId">Patient User Id</label>
           <input type="text" class="form-control " id="userId" name="userId" formControlName="userId" placeholder="User Id">
         </div>    
         <div class="mb-3">
@@ -22,7 +15,8 @@
         </div>
         <button style="background-color: #001253; border:1px solid #9388A2" type="submit"
           class="btn btn-primary">Login</button>
-      </form>
+      </form><br>
+      <a style="color:	#3E6D9C;margin-top:10px ;" routerLink="/signup" (click)="openDialog()">New User ? Click To Signup!!!</a>
     </div>
   </div>
 </div>
