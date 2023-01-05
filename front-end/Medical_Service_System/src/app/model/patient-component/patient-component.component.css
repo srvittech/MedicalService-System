@@ -1,35 +1,31 @@
-#ft-form{
-    text-align: center;
-    background-image: url("https://www.gigadocs.com/blog/wp-content/uploads/2019/12/blog.jpg");
-    background-size: cover;
-    padding: 100px;
-    
-    
+#loginmaincontent {
+    height: 100vh;
+    width: 100%;
+    color: 	#001253;
+    font-size: large;
+    font-weight: 500;
+    border: 2px solid white;
 }
-.bookappointment{
-    background-color: #BFEAF5;
-    border-radius: 15px;
-    
-    
+#hr{
+    border: 1px solid #3E6D9C;
+    width: 100%;
 }
-.title{
-    color: #001253;
-    
-
+#loginform{
+    /* background-color: red; */
+   display: flex;
+   margin-top: 10%;
+   justify-content: center;
 }
-.label{
-    
-    border-color: #5AB0DB;
-    border-radius: 5px;
+#dropdownMenuButton1{
+    background-color: #3E6D9C;
+    width: 50%;
 }
-.label:hover {
-   
-    border: 3px solid #5AB0DB;
-    border-radius: 5px;
-    box-shadow: 2px 2px 5px #61C5FA;
+#logout{
+    border: none;
+}
+#navbar{
+    background-color:#EAFDFC;
+}
+.fill-space {
+    flex: 1 1 auto;
   }
-.btn{
-    background-color: #001253;
-    color: white;
-    margin-top: 2%;
-}
