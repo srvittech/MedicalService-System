@@ -26,6 +26,7 @@ import { PatientSingupDialogComponent } from './model/patient-login-component/pa
 import { FeedbackComponent } from './model/doctor-component/feedback/feedback.component';
 import { PatientAppointmentsComponent } from './model/kiosk-component/patient-appointments/patient-appointments.component';
 import { DoctorAvailComponent } from './model/kiosk-component/doctor-avail/doctor-avail.component';
+import { AddDoctorDialogComponent } from './model/admin-component/add-doctor-dialog/add-doctor-dialog.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { DoctorAvailComponent } from './model/kiosk-component/doctor-avail/docto
     PatientSingupDialogComponent,
     FeedbackComponent,
     PatientAppointmentsComponent,
-    DoctorAvailComponent
+    DoctorAvailComponent,
+    AddDoctorDialogComponent
   ],
   imports: [
     BrowserModule,
