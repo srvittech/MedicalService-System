@@ -4,6 +4,9 @@
 #navbar{
     background-color:#EAFDFC;
 }
+.fill-space {
+  flex: 1 1 auto;
+}
 .market-update-block {
     padding: 2em 2em;
     background: #999;

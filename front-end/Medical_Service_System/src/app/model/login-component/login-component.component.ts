@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup,FormBuilder, Validators } from '@angular/forms';
 import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
-import { InternalService } from 'src/app/services/internalService/internal.service';
 
 @Component({
   selector: 'app-login-component',
@@ -13,8 +12,8 @@ export class LoginComponentComponent implements OnInit {
   registerForm!: FormGroup
   submitted = false;
   loginType: any = ""
-  constructor(public dialog: MatDialog, public router: Router, private internalService: InternalService, private formBuilder: FormBuilder) {
-    this.loginType = this.internalService.loginType
+  constructor(public dialog: MatDialog, public router: Router, private formBuilder: FormBuilder) {
+
   }
   ngOnInit(): void {
     this.registerForm = this.formBuilder.group({

@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { FormGroup,FormBuilder ,Validators} from '@angular/forms';
 import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
-import { InternalService } from 'src/app/services/internalService/internal.service';
+
 import { PatientSingupDialogComponent } from './patient-singup-dialog/patient-singup-dialog.component';
 
 @Component({
@@ -14,8 +14,8 @@ export class PatientLoginComponentComponent {
   registerForm!: FormGroup
   submitted = false;
   loginType:any=""
-  constructor(public dialog: MatDialog,public router:Router,private internalService:InternalService,private formBuilder:FormBuilder){
-    this.loginType=this.internalService.loginType
+  constructor(public dialog: MatDialog,public router:Router,private formBuilder:FormBuilder){
+
   }
   ngOnInit(): void {
     this.registerForm = this.formBuilder.group({
