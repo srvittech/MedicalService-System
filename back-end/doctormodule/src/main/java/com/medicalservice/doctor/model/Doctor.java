@@ -14,6 +14,8 @@ public class Doctor {
 	private String password;
 	private int yearsOfExperience;
 	private String specialization;
+	private String email;
+    private Long mobile;
 	private boolean availability = false;
 
 	public Doctor() {
@@ -21,13 +23,15 @@ public class Doctor {
 	}
 
 	public Doctor(Long id, String doctorName, String password, int yearsOfExperience, String specialization,
-			boolean availability) {
+			String email, Long mobile, boolean availability) {
 		super();
 		this.id = id;
 		this.doctorName = doctorName;
 		this.password = password;
 		this.yearsOfExperience = yearsOfExperience;
 		this.specialization = specialization;
+		this.email = email;
+		this.mobile = mobile;
 		this.availability = availability;
 	}
 
@@ -71,6 +75,22 @@ public class Doctor {
 		this.specialization = specialization;
 	}
 
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public Long getMobile() {
+		return mobile;
+	}
+
+	public void setMobile(Long mobile) {
+		this.mobile = mobile;
+	}
+
 	public boolean isAvailability() {
 		return availability;
 	}
@@ -78,4 +98,8 @@ public class Doctor {
 	public void setAvailability(boolean availability) {
 		this.availability = availability;
 	}
+
+
+
+	
 }

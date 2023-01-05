@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 @Injectable({
@@ -5,5 +6,9 @@ import { Injectable } from '@angular/core';
 })
 export class PatientServiceService {
 
-  constructor() { }
+  constructor(private httpClient:HttpClient) { }
+
+  addPatient(form:any){
+    return this.httpClient.post("http://localhost:9098/addpatient",form)
+  }
 }

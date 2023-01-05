@@ -1,0 +1,81 @@
+<div class="fluid-container" id="outer-dialog-layer">
+    <h1>Edit Profile</h1>
+    <hr>
+    <form>
+      <form [formGroup]="signupForm" (ngSubmit)="signup()">
+        <div class="mb-3" class="form-group">
+          <label for="exampleInputPassword1" class="form-label">Name</label>
+          <input [ngClass]="{'is-invalid':submitted && signupForm.controls['doctorName'].errors}" ControlName="doctorName" type="text" class="form-control" id="exampleInputPassword1">
+          <div *ngIf="submitted && signupForm.controls['doctorName'].errors" class="text-danger">
+            <div *ngIf="submitted && signupForm.controls['doctorName'].errors['required']">
+               Doctor Name is required
+            </div>
+          </div>
+        </div>
+        <div class="mb-3" class="form-group">
+          <label class="mb-3" for="logintype" class="form-label">Specialization</label>
+          <select [ngClass]="{'is-invalid':submitted && signupForm.controls['specialization'].errors}" name="Specialization" formControlName="specialization" id="logintype" class="form-control">
+            <option class="form-control">Choose Specialization</option>
+            <option class="form-control" *ngFor="let specialization of roles">{{specialization}}</option>
+          </select>
+          <div *ngIf="submitted && signupForm.controls['specialization'].errors" class="text-danger">
+            <div *ngIf="submitted && signupForm.controls['specialization'].errors['required']">
+              Specialization is required
+            </div>
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Mobile Number</label>
+          <input [ngClass]="{'is-invalid':submitted && signupForm.controls['mobile'].errors}" formControlName="mobile" type="number" class="form-control" id="exampleInputPassword1">
+          <div *ngIf="submitted && signupForm.controls['mobile'].errors" class="text-danger">
+            <div *ngIf="submitted && signupForm.controls['mobile'].errors['required']">
+              Mobile Number  is required
+            </div>
+            <div *ngIf="submitted && signupForm.controls['mobile'].errors['pattern']">
+              Mobile Number should be have 10 digits
+            </div>
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Years Of Experience</label>
+          <input [ngClass]="{'is-invalid':submitted && signupForm.controls['mobile'].errors}" formControlName="yearsOfExperience" type="number" class="form-control" id="exampleInputPassword1">
+          <div *ngIf="submitted && signupForm.controls['yearsOfExperience'].errors" class="text-danger">
+            <div *ngIf="submitted && signupForm.controls['yearsOfExperience'].errors['required']">
+              Years Of Experience is required
+            </div>
+            
+          </div>
+        </div>
+  
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input [ngClass]="{'is-invalid':submitted && signupForm.controls['email'].errors}"  formControlName="email" type="email" class="form-control" id="exampleInputEmail1"
+            aria-describedby="emailHelp">
+            <div *ngIf="submitted && signupForm.controls['email'].errors" class="text-danger">
+              <div *ngIf="submitted && signupForm.controls['email'].errors['required']">
+                Email Address is required
+              </div>
+              <div *ngIf="submitted && signupForm.controls['email'].errors['email']">
+                Email Address is not Valid
+              </div>
+            </div>
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input [ngClass]="{'is-invalid':submitted && signupForm.controls['password'].errors}" formControlName="password" type="password" class="form-control" id="exampleInputPassword1">
+          <div *ngIf="submitted && signupForm.controls['password'].errors" class="text-danger">
+            <div *ngIf="submitted && signupForm.controls['password'].errors['required']">
+              Password is required
+            </div>
+            <div *ngIf="submitted && signupForm.controls['password'].errors['minlength']">
+              Password should be atleast 6 characters
+            </div>
+          </div>
+        </div>
+  
+        <button type="submit" class="btn btn-primary mb-3">Add Doctor</button>
+      </form>
+    </form>
+  
+  </div>

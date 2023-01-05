@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
+import { DoctorServiceService } from 'src/app/services/doctor-Service/doctor-service.service';
 
 @Component({
   selector: 'app-add-doctor-dialog',
@@ -11,26 +12,48 @@ import { Router } from '@angular/router';
 export class AddDoctorDialogComponent {
   public signupForm !: FormGroup;
   submitted = false
-  constructor(private formBuilder : FormBuilder,private router:Router,private dialog:MatDialog) {}
+  constructor(private formBuilder: FormBuilder, private router: Router, 
+    private dialog: MatDialog, private doctorService: DoctorServiceService) { }
 
   ngOnInit(): void {
+
     this.signupForm = this.formBuilder.group({
-      name:['',Validators.required],
-      specialization:['',Validators.required],
-      email:['', [Validators.required,Validators.email]],
-      password:['', [Validators.required,Validators.minLength(6)]],
-      mobile:['', [Validators.required,Validators.pattern("^((\\+91-?)|0)?[0-9]{10}$")]],
-      yearsOfExperience:['',Validators.required]
+      doctorName: ['', Validators.required],
+      specialization: ['', Validators.required],
+      email: ['', [Validators.required, Validators.email]],
+      password: ['', [Validators.required, Validators.minLength(6)]],
+      mobile: ['', [Validators.required, Validators.pattern("^((\\+91-?)|0)?[0-9]{10}$")]],
+      yearsOfExperience: ['', Validators.required]
     })
   }
-  roles:any= ["Eye", "ENT", "Heart"]
-    signup(){
-      this.submitted = true
-    if (this.signupForm.invalid){return}
-    alert("Success")
-    }
-    close(){
-      this.dialog.closeAll()
+  roles: any = ["Eye", "ENT", "Heart"]
+  signup() {
+    
+    this.submitted = true
+    if (!this.signupForm.invalid) {
+      this.doctorService.addDoctor(this.signupForm.value).subscribe(res=>{
+        console.log("Doctor Added");
+      })
+      console.table(this.signupForm.value);
+      alert("Success")
     }
 
+  }
+  close() {
+    this.dialog.closeAll()
+  }
+
 }
+// this.empService.postEmployee(this.employeesObject)
+//        .subscribe((values)=>
+//          {
+//             console.log(values);
+//             alert('Employee Details Saved')
+//              this.formValue.reset();
+//              let btn = document.getElementById('close');
+//              btn?.click();
+//              this.getEmployeeData();
+//             },
+//             error=>alert('data not saved')
+
+//             );

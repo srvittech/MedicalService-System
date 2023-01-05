@@ -32,17 +32,18 @@ class PatientModuleMsApplicationTests {
 
 	@Mock
 	private PatientRepository patientRepository;
-
+//	Patient(Long id, String password, String name, int age, String address, String disease, int weight,
+//			String email, Long mobile)
 	@Test
 	public void  addPatientTest() {
-		Patient patient =new Patient(1L, "password1", "lakshmi", 26, "hyderabad", "cold",70);
+		Patient patient =new Patient(1L, "password1", "lakshmi", 26, "hyderabad", "cold",70,"xyz",89633L);
 		when(patientRepository.save(patient)).thenReturn(patient);
 		assertEquals(patient, patientServiceImp.addPatient(patient));
 	}
 	
 	@Test
 	public void deletePatientById() {
-		Patient patient = new Patient(1L, "password1", "lakshmi", 26, "hyderabad", "cold",70);
+		Patient patient = new Patient(1L, "password1", "lakshmi", 26, "hyderabad", "cold",70,"xyz",89633L);
 		patientRepository.deleteById(patient.getId());
 		assertEquals(null, patientServiceImp.findPatientById(1L));	
 	}
@@ -51,7 +52,7 @@ class PatientModuleMsApplicationTests {
 	
 	@Test
 	public void findPatientByIdTest() {
-		Patient patient = new Patient(1L, "password1", "lakshmi", 26, "hyderabad", "cold",70);
+		Patient patient = new Patient(1L, "password1", "lakshmi", 26, "hyderabad", "cold",70,"xyz",89633L);
 		when(patientRepository.findById(patient.getId())).thenReturn(Optional.of(patient));
 		Patient expected = patientServiceImp.findPatientById(patient.getId());
 		verify(patientRepository).findById(patient.getId());
@@ -60,17 +61,17 @@ class PatientModuleMsApplicationTests {
 	
 	@Test
 	public void getPatientTest() {
-		Patient patient = new Patient(1L, "password1", "lakshmi", 26, "hyderabad", "cold",70);
-		when(patientRepository.findAll()).thenReturn(Stream.of(new Patient(1L, "password1", "lakshmi", 26, "hyderabad", "cold",70)).collect(Collectors.toList()));
+		Patient patient = new Patient(1L, "password1", "lakshmi", 26, "hyderabad", "cold",70,"xyz",89633L);
+		when(patientRepository.findAll()).thenReturn(Stream.of(new Patient(1L, "password1", "lakshmi", 26, "hyderabad", "cold",70,"xyz",89633L)).collect(Collectors.toList()));
 		assertEquals(1, patientServiceImp.getPatient().size());
 	}
 	
 	@Test
 	public void updatePatientTest() {
-		Patient patient = new Patient(1L, "password1", "lakshmi", 26, "hyderabad", "cold",70);
-		Patient patient1 = new Patient(2L, "password1", "lakshmi", 26, "hyderabad", "cold",70);
-		Patient patient2 = new Patient(3L, "password1", "lakshmi", 26, "hyderabad", "cold",70);
-		Patient patient3 = new Patient(1L, "passwordCHECK", "lakshmi", 26, "hyderabad", "cold",70);
+		Patient patient = new Patient(1L, "password1", "lakshmi", 26, "hyderabad", "cold",70,"xyz",89633L);
+		Patient patient1 = new Patient(2L, "password1", "lakshmi", 26, "hyderabad", "cold",70,"xyz",89633L);
+		Patient patient2 = new Patient(3L, "password1", "lakshmi", 26, "hyderabad", "cold",70,"xyz",89633L);
+		Patient patient3 = new Patient(1L, "passwordCHECK", "lakshmi", 26, "hyderabad", "cold",70,"xyz",89633L);
 		when(patientRepository.findById(patient.getId())).thenReturn(Optional.of(patient));
 		when(patientRepository.findById(patient1.getId())).thenReturn(Optional.of(patient1));
 		when(patientRepository.findById(patient2.getId())).thenReturn(Optional.of(patient2));
