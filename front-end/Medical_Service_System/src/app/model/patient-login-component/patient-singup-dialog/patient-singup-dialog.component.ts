@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormGroup, FormBuilder,Validators } from '@angular/forms';
+import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 
 @Component({
@@ -10,7 +11,7 @@ import { Router } from '@angular/router';
 export class PatientSingupDialogComponent {
   public signupForm !: FormGroup;
   submitted = false
-  constructor(private formBuilder : FormBuilder,private router:Router) {}
+  constructor(private formBuilder : FormBuilder,private router:Router,private dialog:MatDialog) {}
 
   ngOnInit(): void {
     this.signupForm = this.formBuilder.group({
@@ -25,6 +26,9 @@ export class PatientSingupDialogComponent {
       this.submitted = true
     if (this.signupForm.invalid){return}
     alert("Success")
+    }
+    close(){
+      this.dialog.closeAll()
     }
 
 
