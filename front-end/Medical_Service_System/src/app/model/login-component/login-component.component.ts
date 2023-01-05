@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormControl } from '@angular/forms';
+import { FormGroup,FormBuilder, Validators } from '@angular/forms';
 import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 import { InternalService } from 'src/app/services/internalService/internal.service';
@@ -9,43 +9,53 @@ import { InternalService } from 'src/app/services/internalService/internal.servi
   templateUrl: './login-component.component.html',
   styleUrls: ['./login-component.component.css']
 })
-export class LoginComponentComponent implements OnInit{
- loginType:any=""
-  constructor(public dialog: MatDialog,public router:Router,private internalService:InternalService){
-    this.loginType=this.internalService.loginType
+export class LoginComponentComponent implements OnInit {
+  registerForm!: FormGroup
+  submitted = false;
+  loginType: any = ""
+  constructor(public dialog: MatDialog, public router: Router, private internalService: InternalService, private formBuilder: FormBuilder) {
+    this.loginType = this.internalService.loginType
   }
   ngOnInit(): void {
-    
-  }
-  id:any="user";
-  pass:any="root123";
-  form = new FormGroup({
-    userId: new FormControl(""),
-    password: new FormControl(""),
-    role: new FormControl("")
-  })
-  roles:any=["Admin","Kiosk","Doctor"]
+    this.registerForm = this.formBuilder.group({
+      userId: ['',Validators.required ],
+      password:['', [Validators.required,Validators.minLength(6)]],
+      role: ['', Validators.required]
+    })
 
-  submit(){
-    if(this.id==this.form.value.userId&&this.pass==this.form.value.password&&this.form.value.role=="Admin"){
-      this.openDialog()
-      this.router.navigate(['admin'])
-    }
-    else if(this.id==this.form.value.userId&&this.pass==this.form.value.password&&this.form.value.role=="Kiosk"){
-      this.openDialog()
-      this.router.navigate(['kiosk'])
-   
-    }
-    else if(this.id==this.form.value.userId&&this.pass==this.form.value.password&&this.form.value.role=="Doctor"){
-      this.openDialog()
-      this.router.navigate(['doctor'])
-    }
-    else{
-      // this.dialog.open(WrongDialogComponent);
-    }
-    this.form.reset()
-}
-openDialog(){
-  // this.dialog.open(DialogComponent);
-}
+  }
+  id: any = "user";
+  pass: any = "root123";
+  /*registerForm = new registerFormGroup({
+    userId: new registerFormControl(""),
+    password: new registerFormControl(""),
+    role: new registerFormControl("")
+  })*/
+  roles: any = ["Admin", "Kiosk", "Doctor"]
+
+  submit() {
+    this.submitted = true
+    if (this.registerForm.invalid){return 
+    }alert("Success")
+      if (this.id == this.registerForm.value.userId && this.pass == this.registerForm.value.password && this.registerForm.value.role == "Admin") {
+        this.openDialog()
+        this.router.navigate(['admin'])
+      }
+      else if (this.id == this.registerForm.value.userId && this.pass == this.registerForm.value.password && this.registerForm.value.role == "Kiosk") {
+        this.openDialog()
+        this.router.navigate(['kiosk'])
+
+      }
+      else if (this.id == this.registerForm.value.userId && this.pass == this.registerForm.value.password && this.registerForm.value.role == "Doctor") {
+        this.openDialog()
+        this.router.navigate(['doctor'])
+      }
+      else {
+        // this.dialog.open(WrongDialogComponent);
+      }
+    //this.registerForm.reset()
+  }
+  openDialog() {
+    // this.dialog.open(DialogComponent);
+  }
 }

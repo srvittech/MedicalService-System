@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormGroup, FormBuilder } from '@angular/forms';
+import { FormGroup, FormBuilder,Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 
 @Component({
@@ -9,21 +9,22 @@ import { Router } from '@angular/router';
 })
 export class PatientSingupDialogComponent {
   public signupForm !: FormGroup;
-
+  submitted = false
   constructor(private formBuilder : FormBuilder,private router:Router) {}
 
   ngOnInit(): void {
     this.signupForm = this.formBuilder.group({
-      name:[''],
-      email:[''],
-      password:[''],
-      mobile:['']
+      name:['',Validators.required],
+      email:['', [Validators.required,Validators.email]],
+      password:['', [Validators.required,Validators.minLength(6)]],
+      mobile:['', [Validators.required,Validators.pattern("^((\\+91-?)|0)?[0-9]{10}$")]]
     })
     
   }
     signup(){
-      
-        
+      this.submitted = true
+    if (this.signupForm.invalid){return}
+    alert("Success")
     }
 
 

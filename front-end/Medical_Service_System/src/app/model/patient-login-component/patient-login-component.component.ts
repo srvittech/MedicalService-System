@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormGroup, FormControl } from '@angular/forms';
+import { FormGroup,FormBuilder ,Validators} from '@angular/forms';
 import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 import { InternalService } from 'src/app/services/internalService/internal.service';
@@ -11,27 +11,39 @@ import { PatientSingupDialogComponent } from './patient-singup-dialog/patient-si
   styleUrls: ['./patient-login-component.component.css']
 })
 export class PatientLoginComponentComponent {
+  registerForm!: FormGroup
+  submitted = false;
   loginType:any=""
-  constructor(public dialog: MatDialog,public router:Router,private internalService:InternalService){
+  constructor(public dialog: MatDialog,public router:Router,private internalService:InternalService,private formBuilder:FormBuilder){
     this.loginType=this.internalService.loginType
+  }
+  ngOnInit(): void {
+    this.registerForm = this.formBuilder.group({
+      userId: ['',Validators.required ],
+      password:['', [Validators.required,Validators.minLength(6)]]
+    })
   }
   id:any="user";
   pass:any="root123";
-  form = new FormGroup({
-    userId: new FormControl(""),
-    password: new FormControl("")
-  })
-  roles:any=["Admin","Kiosk","Doctor"]
+  /*registerForm = new registerFormGroup({
+    userId: new registerFormControl(""),
+    password: new registerFormControl("")
+  })*/
 
+  roles:any=["Admin","Kiosk","Doctor"]
+  
   submit(){
-    if(this.id==this.form.value.userId&&this.pass==this.form.value.password){
+    this.submitted = true
+    if (this.registerForm.invalid){return}
+    alert("Success")
+    if(this.id==this.registerForm.value.userId&&this.pass==this.registerForm.value.password){
       // this.openDialog()
       this.router.navigate(['patient'])
     }
     else{
       // this.dialog.open(WrongDialogComponent);
     }
-    this.form.reset()
+    //this.registerForm.reset()
 }
 openDialog(){
   this.dialog.open(PatientSingupDialogComponent);
