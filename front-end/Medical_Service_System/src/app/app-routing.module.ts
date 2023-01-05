@@ -39,7 +39,9 @@ const routes: Routes = [
 
     ]
   },
-  { path: "login", component: LoginComponentComponent }
+  { path: "login", component: LoginComponentComponent },
+  { path: "login1", component: LoginComponentComponent },
+  { path: "login2", component: LoginComponentComponent }
 
 ];
 

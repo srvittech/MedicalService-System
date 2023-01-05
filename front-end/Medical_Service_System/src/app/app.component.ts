@@ -4,7 +4,8 @@ import { InternalService } from './services/internalService/internal.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
+  styles :['#links.active{background-color:red},{color:green}']
 })
 export class AppComponent implements OnInit{
   title = 'Medical_Service_System';
