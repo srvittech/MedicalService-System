@@ -5,14 +5,27 @@
       <h1>Patient Login</h1>
       <div id="hr">
       </div><br>
-      <form [formGroup]="form" class="form" (ngSubmit)="submit()">
-        <div class="mb-3">
+      <form [formGroup]="registerForm" class="form" (ngSubmit)="submit()">
+        <div class="mb-3" class="form-group">
           <label class="mb-3" for="userId">Patient User Id</label>
-          <input type="text" class="form-control " id="userId" name="userId" formControlName="userId" placeholder="User Id">
+          <input [ngClass]="{'is-invalid':submitted && registerForm.controls['userId'].errors}" type="text" class="form-control " id="userId" name="userId" formControlName="userId" placeholder="User Id">
+          <div *ngIf="submitted && registerForm.controls['userId'].errors" class="text-danger">
+            <div *ngIf="submitted && registerForm.controls['userId'].errors['required']">
+              User ID is required
+            </div>
+          </div>
         </div>    
         <div class="mb-3">
           <label class="mb-3" for="password">Password</label>
-          <input type="password" class="form-control" id="password" name="password" formControlName="password" placeholder="Password">
+          <input [ngClass]="{'is-invalid':submitted && registerForm.controls['password'].errors}" type="password" class="form-control" id="password" name="password" formControlName="password" placeholder="Password">
+          <div *ngIf="submitted && registerForm.controls['password'].errors" class="text-danger">
+            <div *ngIf="submitted && registerForm.controls['password'].errors['required']">
+              Password is required
+            </div>
+            <div *ngIf="submitted && registerForm.controls['password'].errors['minlength']">
+              Password should be atleast 6 characters
+            </div>
+          </div>
         </div>
         <button style="background-color: #001253; border:1px solid #9388A2" type="submit"
           class="btn btn-primary">Login</button>
