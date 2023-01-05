@@ -1,8 +1,5 @@
 package com.medicalservice.doctor;
-
-import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
@@ -34,10 +31,11 @@ class DoctormoduleApplicationTests {
 	private DoctorServiceImpl doctorServiceImp;
 	@Mock
 	private DoctorRepository doctorRepo;
-
+//	public Doctor(Long id, String doctorName, String password, int yearsOfExperience, String specialization,
+//			String email, Long mobile, boolean availability)
 	@Test
 	public void addDoctorTest() {
-		Doctor doctor = new Doctor(1L, "John", "password", 5, "Eye", false);
+		Doctor doctor = new Doctor(1L, "John", "password", 5, "Eye","xyz",8269L, false);
 		when(doctorRepo.save(doctor)).thenReturn(doctor);
 		assertEquals(doctor, doctorServiceImp.addDoctor(doctor));
 
@@ -45,15 +43,15 @@ class DoctormoduleApplicationTests {
 
 	@Test
 	public void getDoctosTest() {
-		Doctor doctor = new Doctor(1L, "John", "password", 5, "Eye", false);
-		when(doctorRepo.findAll()).thenReturn(Stream.of(new Doctor(2L, "James", "password1", 4, "Heart", false),
-				new Doctor(3L, "Bond", "password2", 3, "Neuro", true)).collect(Collectors.toList()));
+		Doctor doctor = new Doctor(1L, "John", "password", 5, "Eye","xyz",8269L, false);
+		when(doctorRepo.findAll()).thenReturn(Stream.of(new Doctor(2L, "James", "password1", 4, "Heart","xyz",8269L, false),
+				new Doctor(3L, "Bond", "password2", 3, "Neuro","xyz",8269L, true)).collect(Collectors.toList()));
 		assertEquals(2, doctorServiceImp.getDoctors().size());
 	}
 
 	@Test
 	public void findDoctorByIdTest() {
-		Doctor doctor = new Doctor(1L, "John", "password", 5, "Eye", false);
+		Doctor doctor = new Doctor(1L, "John", "password", 5, "Eye","xyz",8269L, false);
 		when(doctorRepo.findById(doctor.getId())).thenReturn(Optional.of(doctor));
 		Doctor expected = doctorServiceImp.findDoctorById(doctor.getId());
 		verify(doctorRepo).findById(doctor.getId());
@@ -64,13 +62,13 @@ class DoctormoduleApplicationTests {
 	public void findBySpecializationTest() {
 		List<Doctor> all = new LinkedList<>();
 
-		all.add(new Doctor(1L, "John", "password", 5, "Eye", false));
+		all.add(new Doctor(1L, "John", "password", 5, "Eye","xyz",8269L, false));
 
-		all.add(new Doctor(2L, "John1", "password", 5, "Eye", false));
+		all.add(new Doctor(2L, "John1", "password", 5, "Eye","xyz",8269L, false));
 
-		all.add(new Doctor(3L, "John2", "password", 5, "Eye", false));
+		all.add(new Doctor(3L, "John2", "password", 5, "Eye","xyz",8269L, false));
 
-		all.add(new Doctor(4L, "John3", "password", 5, "Eye", false));
+		all.add(new Doctor(4L, "John3", "password", 5, "Eye","xyz",8269L, false));
 		
 		when(doctorRepo.findBySpecialization("Eye")).thenReturn(all);
 		
@@ -81,15 +79,15 @@ class DoctormoduleApplicationTests {
 
 	@Test
 	public void deleteDoctorByIdTest() {
-		Doctor doctor = new Doctor(1L, "John", "password", 5, "Eye", false);
+		Doctor doctor = new Doctor(1L, "John", "password", 5, "Eye","xyz",8269L, false);
 		doctorServiceImp.deleteDoctorById(doctor.getId());
 		assertEquals(null, doctorServiceImp.findDoctorById(1L));
 	}
 
 	@Test
 	public void updateDoctorTest() {
-		Doctor doctor = new Doctor(1L, "John", "password", 5, "Eye", false);
-		Doctor updatedDoctor = new Doctor(1L, "James", "password1", 5, "Eye", true);
+		Doctor doctor = new Doctor(1L, "John", "password", 5, "Eye","xyz",8269L, false);
+		Doctor updatedDoctor = new Doctor(1L, "James", "password1", 5, "Eye","xyz",8269L, true);
 		when(doctorRepo.findById(doctor.getId())).thenReturn(Optional.of(doctor));
 		doctorServiceImp.updateDoctor(updatedDoctor);
 		assertEquals(doctor,doctorServiceImp.findDoctorById(1L));	

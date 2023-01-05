@@ -20,6 +20,8 @@ public class Patient {
 	private String address;
 	private String disease;
 	private int weight;
+	private String email;
+	private Long mobile;
 	
 	
 
@@ -27,8 +29,10 @@ public class Patient {
 		super();
 	}
 
-	public Patient(Long id, String password, String name, int age, String address, String disease,
-			int weight) {
+
+
+	public Patient(Long id, String password, String name, int age, String address, String disease, int weight,
+			String email, Long mobile) {
 		super();
 		this.id = id;
 		this.password = password;
@@ -37,63 +41,119 @@ public class Patient {
 		this.address = address;
 		this.disease = disease;
 		this.weight = weight;
+		this.email = email;
+		this.mobile = mobile;
 	}
 
-	public String getPassword() {
-		return password;
-	}
 
-	public void setPassword(String password) {
-		this.password = password;
-	}
 
 	public Long getId() {
 		return id;
 	}
 
+
+
 	public void setId(Long id) {
 		this.id = id;
 	}
+
+
+
+	public String getPassword() {
+		return password;
+	}
+
+
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+
 
 	public String getName() {
 		return name;
 	}
 
+
+
 	public void setName(String name) {
 		this.name = name;
 	}
+
+
 
 	public int getAge() {
 		return age;
 	}
 
+
+
 	public void setAge(int age) {
 		this.age = age;
 	}
+
+
 
 	public String getAddress() {
 		return address;
 	}
 
+
+
 	public void setAddress(String address) {
 		this.address = address;
 	}
+
+
 
 	public String getDisease() {
 		return disease;
 	}
 
+
+
 	public void setDisease(String disease) {
 		this.disease = disease;
 	}
+
+
 
 	public int getWeight() {
 		return weight;
 	}
 
+
+
 	public void setWeight(int weight) {
 		this.weight = weight;
 	}
+
+
+
+	public String getEmail() {
+		return email;
+	}
+
+
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+
+
+	public Long getMobile() {
+		return mobile;
+	}
+
+
+
+	public void setMobile(Long mobile) {
+		this.mobile = mobile;
+	}
+
+
 
 	@Override
 	public String toString() {

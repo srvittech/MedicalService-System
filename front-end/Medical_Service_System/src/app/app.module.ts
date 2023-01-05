@@ -21,12 +21,11 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { PatientLoginComponentComponent } from './model/patient-login-component/patient-login-component.component';
 import { PatientSingupDialogComponent } from './model/patient-login-component/patient-singup-dialog/patient-singup-dialog.component';
-
-
 import { FeedbackComponent } from './model/doctor-component/feedback/feedback.component';
 import { PatientAppointmentsComponent } from './model/kiosk-component/patient-appointments/patient-appointments.component';
 import { DoctorAvailComponent } from './model/kiosk-component/doctor-avail/doctor-avail.component';
 import { AddDoctorDialogComponent } from './model/admin-component/add-doctor-dialog/add-doctor-dialog.component';
+import { EditDoctorComponent } from './model/doctor-component/edit-doctor/edit-doctor.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +44,8 @@ import { AddDoctorDialogComponent } from './model/admin-component/add-doctor-dia
     FeedbackComponent,
     PatientAppointmentsComponent,
     DoctorAvailComponent,
-    AddDoctorDialogComponent
+    AddDoctorDialogComponent,
+    EditDoctorComponent
   ],
   imports: [
     BrowserModule,
