@@ -5,7 +5,7 @@ import { InternalService } from './services/internalService/internal.service';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  styles :['#links.active{background-color:red},{color:green}']
+  styles :['#links.active{color:#001253}']
 })
 export class AppComponent implements OnInit{
   title = 'Medical_Service_System';
