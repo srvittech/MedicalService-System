@@ -33,6 +33,11 @@
     margin-right: 0.8em;
     transition: 0.5s all;
   }
+  .market-update-block.clr-block-4 {
+    background: #579BB1;
+    margin-right: 0.8em;
+    transition: 0.5s all;
+  }
   .market-update-block.clr-block-1:hover {
     background: #EAFDFC;
     transition: 0.5s all;
@@ -43,6 +48,10 @@
     transition: 0.5s all;
   }
   .market-update-block.clr-block-3:hover {
+    background: #EAFDFC;
+    transition: 0.5s all;
+  }
+  .market-update-block.clr-block-4:hover {
     background: #EAFDFC;
     transition: 0.5s all;
   }

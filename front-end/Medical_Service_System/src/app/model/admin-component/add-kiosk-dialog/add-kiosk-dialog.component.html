@@ -1,0 +1,44 @@
+<div class="fluid-container" id="outer-dialog-layer">
+    <h1>Add Kisok</h1>
+    <hr>
+    <form>
+        <form [formGroup]="signupForm" (ngSubmit)="signup()">
+            <div class="mb-3" class="form-group">
+                <label for="exampleInputPassword1" class="form-label">Name</label>
+                <input [ngClass]="{'is-invalid':submitted && signupForm.controls['userName'].errors}"
+                    formControlName="userName" type="text" class="form-control" id="exampleInputPassword1">
+                <div *ngIf="submitted && signupForm.controls['userName'].errors" class="text-danger">
+                    <div *ngIf="submitted && signupForm.controls['userName'].errors['required']">
+                        User Name is required
+                    </div>
+                </div>
+            </div>
+            <div class="mb-3" class="form-group">
+                <label for="exampleInputPassword1" class="form-label">Role</label>
+                <input [ngClass]="{'is-invalid':submitted && signupForm.controls['role'].errors}" formControlName="role"
+                    type="text" class="form-control" id="exampleInputPassword1">
+                <div *ngIf="submitted && signupForm.controls['role'].errors" class="text-danger">
+                    <div *ngIf="submitted && signupForm.controls['role'].errors['required']">
+                        Role is required
+                    </div>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input [ngClass]="{'is-invalid':submitted && signupForm.controls['password'].errors}"
+                    formControlName="password" type="password" class="form-control" id="exampleInputPassword1">
+                <div *ngIf="submitted && signupForm.controls['password'].errors" class="text-danger">
+                    <div *ngIf="submitted && signupForm.controls['password'].errors['required']">
+                        Password is required
+                    </div>
+                    <div *ngIf="submitted && signupForm.controls['password'].errors['minlength']">
+                        Password should be atleast 6 characters
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary mb-3">Add Kiosk</button>
+        </form>
+    </form>
+
+</div>

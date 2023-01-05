@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { AddDoctorDialogComponent } from './add-doctor-dialog/add-doctor-dialog.component';
+import { AddKioskDialogComponent } from './add-kiosk-dialog/add-kiosk-dialog.component';
 
 @Component({
   selector: 'app-admin-component',
@@ -13,5 +14,8 @@ export class AdminComponentComponent {
   }
   openAddDoctorDialog() {
     this.dialog.open(AddDoctorDialogComponent)
+  }
+  openAddKioskDialog(){
+    this.dialog.open(AddKioskDialogComponent)
   }
 }
