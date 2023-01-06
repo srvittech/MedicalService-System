@@ -56,7 +56,7 @@ public class PatientController {
 		patientServiceImp.deletePatientById(id);
 	}
 	
-	@PutMapping("/updatePatientById/{id}")
+	@PutMapping("/updatePatient")
 	public Patient updatePatient(@RequestBody Patient patient) {
 		LOGGER.info("Enter into patient Controller and getting the updatePatientById method");
 		return patientServiceImp.updatePatient(patient);
