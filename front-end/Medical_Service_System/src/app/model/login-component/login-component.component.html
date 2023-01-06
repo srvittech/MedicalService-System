@@ -21,17 +21,16 @@
         <br>
         <div class="mb-3" class="form-group">
           <label class="mb-3" for="userId">Employee User Id</label>
-          <input [ngClass]="{'is-invalid':submitted && registerForm.controls['userName'].errors}" type="text"
-            class="form-control " id="userId" name="userName" formControlName="userName" placeholder="userNamed">
-            <div *ngIf="submitted && registerForm.controls['userName'].errors" class="text-danger">
-              <div *ngIf="submitted && registerForm.controls['userName'].errors['required']">
+          <input [ngClass]="{'is-invalid':submitted && registerForm.controls['id'].errors}" type="text"
+            class="form-control " id="userId" name="id" formControlName="id" placeholder="Employee Id">
+            <div *ngIf="submitted && registerForm.controls['id'].errors" class="text-danger">
+              <div *ngIf="submitted && registerForm.controls['id'].errors['required']">
                 User Name is required
               </div>
             </div>
         </div>
         <br>
-        <div class="mb-3" class="form-group">
-          <label class="mb-3" for="password">Password</label>
+        <div class="mb-3" class="form-group">userId   <label class="mb-3" for="password">Password</label>
           <input [ngClass]="{'is-invalid':submitted && registerForm.controls['password'].errors}"  type="password" class="form-control" id="password" name="password" formControlName="password"
             placeholder="Password">
             <div *ngIf="submitted && registerForm.controls['password'].errors" class="text-danger">

@@ -18,7 +18,7 @@ export class LoginComponentComponent implements OnInit {
   }
   ngOnInit(): void {
     this.registerForm = this.formBuilder.group({
-      userName: ['', Validators.required],
+      id: ['', Validators.required],
       password: ['', [Validators.required, Validators.minLength(6)]],
       role: ['', Validators.required]
     })
@@ -30,11 +30,6 @@ export class LoginComponentComponent implements OnInit {
     role: null,
     userName: null
   }
-  /*registerForm = new registerFormGroup({
-    userId: new registerFormControl(""),
-    password: new registerFormControl(""),
-    role: new registerFormControl("")
-  })*/
   roles: any = ["Admin", "Kiosk", "Doctor"]
 
   submit() {
@@ -42,21 +37,29 @@ export class LoginComponentComponent implements OnInit {
     if (this.registerForm.invalid) {
       return
     } alert("Success")
-    this.userService.getLogin(this.registerForm.value.email).subscribe(res => {
+    this.userService.getLogin(this.registerForm.value.id).subscribe(res => {
       this.user = res
       this.userService.user = this.user
       console.table(this.user);
-      if (this.user.id == this.registerForm.value.userId && this.user.password == this.registerForm.value.password && this.registerForm.value.role.toLowerCase() == this.user.role.toLowerCase()) {
+      if (this.user.id == this.registerForm.value.id && this.user.password == this.registerForm.value.password && this.registerForm.value.role.toLowerCase =="admin") {
         //this.openDialog()
+        console.log(this.registerForm.value.role );
+        console.log(this.user.role);
+
+        
         this.router.navigate(['admin'])
       }
-      else if (this.user.id == this.registerForm.value.userId && this.user.password == this.registerForm.value.password && this.registerForm.value.role.toLowerCase() == this.user.role.toLowerCase()) {
+      else if (this.user.id == this.registerForm.value.id && this.user.password == this.registerForm.value.password && this.registerForm.value.role.toLowerCase() == "kiosk" ){
         //this.openDialog()
+        console.log("kiosk");
+
         this.router.navigate(['kiosk'])
 
       }
-      else if (this.user.id == this.registerForm.value.userId && this.user.password == this.registerForm.value.password && this.registerForm.value.role.toLowerCase() == this.user.role.toLowerCase()) {
+      else if (this.user.id == this.registerForm.value.id && this.user.password == this.registerForm.value.password && this.registerForm.value.role.toLowerCase() == "doctor") {
         //this.openDialog()
+        console.log("doc");
+
         this.router.navigate(['doctor'])
       }
       else {

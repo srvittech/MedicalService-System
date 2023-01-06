@@ -27,6 +27,7 @@ import { DoctorAvailComponent } from './model/kiosk-component/doctor-avail/docto
 import { AddDoctorDialogComponent } from './model/admin-component/add-doctor-dialog/add-doctor-dialog.component';
 import { EditDoctorComponent } from './model/doctor-component/edit-doctor/edit-doctor.component';
 import { AddKioskDialogComponent } from './model/admin-component/add-kiosk-dialog/add-kiosk-dialog.component';
+import { PatientFeedbackComponent } from './model/patient-component/patient-feedback/patient-feedback.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { AddKioskDialogComponent } from './model/admin-component/add-kiosk-dialo
     DoctorAvailComponent,
     AddDoctorDialogComponent,
     EditDoctorComponent,
-    AddKioskDialogComponent
+    AddKioskDialogComponent,
+    PatientFeedbackComponent
   ],
   imports: [
     BrowserModule,

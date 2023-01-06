@@ -24,4 +24,7 @@ export class PatientServiceService {
   getPatientByEmail(email:any):Observable<object>{
     return this.httpClient.get("http://localhost:9098/findPatientByEmail/"+email)
   }
+  updatePatient(form:any):Observable<object>{
+    return this.httpClient.put("http://localhost:9098//updatePatient",form)
+  }
 }

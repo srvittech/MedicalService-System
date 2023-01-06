@@ -12,6 +12,7 @@ import { PatientListComponent } from './model/doctor-component/patient-list/pati
 import { FeedbackComponent } from './model/doctor-component/feedback/feedback.component';
 import { PatientAppointmentsComponent } from './model/kiosk-component/patient-appointments/patient-appointments.component';
 import { DoctorAvailComponent } from './model/kiosk-component/doctor-avail/doctor-avail.component';
+import { PatientFeedbackComponent } from './model/patient-component/patient-feedback/patient-feedback.component';
 
 const routes: Routes = [
   { path: "", redirectTo: "/about", pathMatch: "full" },
@@ -25,8 +26,16 @@ const routes: Routes = [
       { path: 'patientlist', component: PatientListComponent },
       { path: 'feedback', component: FeedbackComponent }
     ]
+    
   },
-  { path: "patient", component: PatientComponentComponent },
+  { path: "patient", component: PatientComponentComponent,
+
+  children: [
+    { path: 'feedback', component: PatientFeedbackComponent }
+   
+  ]
+
+},
   { path: "kiosk", component: KioskComponentComponent },
   { path: "login", component: LoginComponentComponent },
   { path: "patientLogin", component: PatientLoginComponentComponent },
