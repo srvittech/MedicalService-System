@@ -29,3 +29,89 @@
 .fill-space {
     flex: 1 1 auto;
   }
+  #loginform{
+    /* background-color: red; */
+   display: flex;
+   margin-top: 10%;
+   justify-content: center;
+}
+.market-update-block {
+    padding: 2em 2em;
+    background: #999;
+    border-radius: 10px;
+  }
+ .market-update-block h4 {
+    font-size: 1.2em;
+    color: black;
+    margin: 0.3em 0em;
+    font-family: 'Carrois Gothic', sans-serif;
+  }
+  .market-update-block.clr-block-1 {
+    background: #82AAE3;
+    margin-right: 0.8em;
+    transition: 0.5s all;
+  }
+
+  .market-update-block.clr-block-2 {
+    background: #91D8E4;
+    
+    transition: 0.5s all;
+  }
+  .market-update-block.clr-block-3 {
+    background: #7FE9DE;
+    margin-right: 0.8em;
+    transition: 0.5s all;
+  }
+  .market-update-block.clr-block-1:hover {
+    background: #EAFDFC;
+    transition: 0.5s all;
+  }
+
+  .market-update-block.clr-block-2:hover {
+    background: #EAFDFC;
+    transition: 0.5s all;
+  }
+  .market-update-block.clr-block-3:hover {
+    background: #EAFDFC;
+    transition: 0.5s all;
+  }
+  .market-update-right i.fa.fa-user-o {
+    font-size: 3em;
+    color: #68AE00;
+    width: 80px;
+    height: 80px;
+    background: #fff;
+    text-align: center;
+    border-radius: 49px;
+    -webkit-border-radius: 49px;
+    -moz-border-radius: 49px;
+    -o-border-radius: 49px;
+    line-height: 1.7em;
+  }
+  .market-update-right i.fa.fa-calendar {
+    font-size: 3em;
+    color: #337AB7;
+    width: 80px;
+    height: 80px;
+    background: #fff;
+    text-align: center;
+    border-radius: 49px;
+    line-height: 1.7em;
+  }
+  .market-update-right i.fa.fa-commenting {
+    font-size: 3em;
+    color: #337AB7;
+    width: 80px;
+    height: 80px;
+    background: #fff;
+    text-align: center;
+    border-radius: 49px;
+    -webkit-border-radius: 49px;
+    -moz-border-radius: 49px;
+    -o-border-radius: 49px;
+    line-height: 1.7em;
+  }
+
+  .market-update-left {
+    padding: 0px;
+  }
