@@ -3846,3 +3846,39 @@ Identify and stop the process that's listening on port 9091 or configure this ap
 2023-01-05 20:57:19,555 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     -Closing JPA EntityManagerFactory for persistence unit 'default' 
 2023-01-05 20:57:19,578 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown initiated... 
 2023-01-05 20:57:19,618 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown completed. 
+2023-01-05 20:57:36,666 [main] INFO  c.m.u.UsermoduleApplication                        -Starting UsermoduleApplication using Java 17.0.5 on DESKTOP-IO5RF1D with PID 7012 (C:\Users\Komali\Desktop\MedicalService-System\back-end\usermodule\target\classes started by Komali in C:\Users\Komali\Desktop\MedicalService-System\back-end\usermodule) 
+2023-01-05 20:57:36,694 [main] INFO  c.m.u.UsermoduleApplication                        -No active profile set, falling back to 1 default profile: "default" 
+2023-01-05 20:57:38,158 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          -Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2023-01-05 20:57:38,245 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          -Finished Spring Data repository scanning in 68 ms. Found 1 JPA repository interfaces. 
+2023-01-05 20:57:39,164 [main] INFO  o.s.b.w.e.t.TomcatWebServer                        -Tomcat initialized with port(s): 9091 (http) 
+2023-01-05 20:57:39,181 [main] INFO  o.a.c.h.Http11NioProtocol                          -Initializing ProtocolHandler ["http-nio-9091"] 
+2023-01-05 20:57:39,184 [main] INFO  o.a.c.c.StandardService                            -Starting service [Tomcat] 
+2023-01-05 20:57:39,185 [main] INFO  o.a.c.c.StandardEngine                             -Starting Servlet engine: [Apache Tomcat/9.0.70] 
+2023-01-05 20:57:39,412 [main] INFO  o.a.c.c.C.[.[.[/]                                  -Initializing Spring embedded WebApplicationContext 
+2023-01-05 20:57:39,413 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext     -Root WebApplicationContext: initialization completed in 2631 ms 
+2023-01-05 20:57:39,738 [main] INFO  o.h.j.i.u.LogHelper                                -HHH000204: Processing PersistenceUnitInfo [name: default] 
+2023-01-05 20:57:39,852 [main] INFO  o.h.Version                                        -HHH000412: Hibernate ORM core version 5.6.14.Final 
+2023-01-05 20:57:40,189 [main] INFO  o.h.a.c.Version                                    -HCANN000001: Hibernate Commons Annotations {5.1.2.Final} 
+2023-01-05 20:57:40,373 [main] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Starting... 
+2023-01-05 20:57:40,923 [main] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Start completed. 
+2023-01-05 20:57:40,957 [main] INFO  o.h.d.Dialect                                      -HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect 
+2023-01-05 20:57:42,060 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator                 -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 
+2023-01-05 20:57:42,077 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     -Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2023-01-05 20:57:42,848 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2023-01-05 20:57:43,549 [main] INFO  o.a.c.h.Http11NioProtocol                          -Starting ProtocolHandler ["http-nio-9091"] 
+2023-01-05 20:57:43,598 [main] INFO  o.s.b.w.e.t.TomcatWebServer                        -Tomcat started on port(s): 9091 (http) with context path '' 
+2023-01-05 20:57:43,701 [main] INFO  c.m.u.UsermoduleApplication                        -Started UsermoduleApplication in 7.675 seconds (JVM running for 9.748) 
+2023-01-05 20:58:47,842 [http-nio-9091-exec-1] INFO  o.a.c.c.C.[.[.[/]                                  -Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2023-01-05 20:58:47,842 [http-nio-9091-exec-1] INFO  o.s.w.s.DispatcherServlet                          -Initializing Servlet 'dispatcherServlet' 
+2023-01-05 20:58:47,845 [http-nio-9091-exec-1] INFO  o.s.w.s.DispatcherServlet                          -Completed initialization in 3 ms 
+2023-01-05 20:58:48,046 [http-nio-9091-exec-2] INFO  c.m.u.s.UserServiceImpl                            -Enter into user Controller and adding the method addlogin 
+2023-01-05 20:58:48,046 [http-nio-9091-exec-2] INFO  c.m.u.s.UserServiceImpl                            -adding All User From UserService..... 
+2023-01-05 21:04:25,633 [RMI TCP Connection(15)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin -Application shutdown requested. 
+2023-01-05 21:04:25,874 [RMI TCP Connection(15)-127.0.0.1] INFO  o.a.c.h.Http11NioProtocol                          -Pausing ProtocolHandler ["http-nio-9091"] 
+2023-01-05 21:04:25,875 [RMI TCP Connection(15)-127.0.0.1] INFO  o.a.c.c.StandardService                            -Stopping service [Tomcat] 
+2023-01-05 21:04:25,937 [RMI TCP Connection(15)-127.0.0.1] INFO  o.a.c.c.C.[.[.[/]                                  -Destroying Spring FrameworkServlet 'dispatcherServlet' 
+2023-01-05 21:04:25,947 [RMI TCP Connection(15)-127.0.0.1] INFO  o.a.c.h.Http11NioProtocol                          -Stopping ProtocolHandler ["http-nio-9091"] 
+2023-01-05 21:04:25,951 [RMI TCP Connection(15)-127.0.0.1] INFO  o.a.c.h.Http11NioProtocol                          -Destroying ProtocolHandler ["http-nio-9091"] 
+2023-01-05 21:04:25,964 [RMI TCP Connection(15)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     -Closing JPA EntityManagerFactory for persistence unit 'default' 
+2023-01-05 21:04:25,967 [RMI TCP Connection(15)-127.0.0.1] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown initiated... 
+2023-01-05 21:04:26,035 [RMI TCP Connection(15)-127.0.0.1] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown completed. 

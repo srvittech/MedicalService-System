@@ -43,6 +43,12 @@ public class PatientController {
 		LOGGER.info("Enter into patient Controller and getting the findPatientById method ");
 		return patientServiceImp.findPatientById(id);
 	}
+	
+	@GetMapping("/findPatientByEmail/{email}")
+	public Patient findPatientById(@PathVariable String email) {
+		LOGGER.info("Enter into patient Controller and getting the findPatientByEmail method ");
+		return patientServiceImp.findPatientByEmail(email);
+	}
 
 	@DeleteMapping("/deletePatientById/{id}")
 	public void deletePatientById(@PathVariable Long id) {

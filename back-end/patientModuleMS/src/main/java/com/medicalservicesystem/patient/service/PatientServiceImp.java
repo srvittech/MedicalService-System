@@ -65,4 +65,10 @@ public class PatientServiceImp implements PatientService {
 		
 	}
 
+	@Override
+	public Patient findPatientByEmail(String email) {
+		LOGGER.info("Getting Patient By Patient Email From PatientService.....");
+		return patientRepository.findByName(email).orElse(null);
+	}
+
 }
