@@ -1,78 +1,54 @@
 <html>
 
 <body>
-  <div class="container " id="ft-form">
-    <div class="row">
-      <form action="SEND ADDRESS" class="col-4 bookappointment">
-        <fieldset>
-          <legend class="title py-4">Book Appointment</legend>
-          <hr>
-          <label class="py-2 mb-1">
-            Name:&nbsp;&nbsp;&nbsp;
-            <input class="label" type="text" name="name" required>
-          </label>
-          <br>
-          <label class="py-2">
-            Age:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <input class="label" type="text" name="age" required>
-          </label>
-          <br>
-          <label class="py-2">
-            Address:
-            <input class="label" type="text" name="address" required>
-          </label>
-          <br>
-          <label class="py-2">
-            Disease:
-            <input class="label" type="text" name="disease" required>
-          </label>
-          <br>
-          <label class="py-2">
-            Weight:&nbsp;
-            <input class="label" type="text" name="weight" required>
-          </label>
-          <br>
-          <label class="py-2">
-            Date of Appointment:
-            <input class="label" type="date" name="Appointment request" required>
-          </label>
-        </fieldset>
-        <button type="button" class="btn">Book </button>
-      </form>
-    </div>
+
+  <div id="navbar">
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand" href="#">Hello Patient!</a>
+
+      <span class="fill-space"></span>
+      <div class="button">
+        <button class="btn btn-outline-success my-2 my-sm-0 ml-auto" type="submit" id="logout">Change
+          Password</button>
+        &nbsp;
+        <button class="btn btn-outline-success my-2 my-sm-0 ml-auto" type="submit" id="logout">Logout</button>
+      </div>
+    </nav>
   </div>
 
+  <div class="fluid-conatiner" id="loginmaincontent">
+    <div class="row" id="loginform">
+      <div id="login" class="col-md-5">
+        <h1>Book Appointment</h1>
+        <div id="hr">
+        </div><br>
+        <form class="form">
+
+          <div class="mb-3">
+            <label class="mb-1" for="age">Age</label>
+            <input type="text" class="form-control " id="age" name="age" formControlName="age" placeholder="Age">
+          </div>
+          <div class="mb-3">
+            <label class="mb-1" for="address">Address</label>
+            <input type="text" class="form-control" id="address" name="address" formControlName="address"
+              placeholder="Address">
+          </div>
+          <div class="mb-3">
+            <label class="mb-1" for="disease">Disease</label>
+            <input type="text" class="form-control" id="disease" name="disease" formControlName="disease"
+              placeholder="Disease">
+          </div>
+          <div class="mb-3">
+            <label class="mb-1" for="weight">Weight</label>
+            <input type="text" class="form-control" id="weight" name="weight" formControlName="weight"
+              placeholder="Weight">
+          </div>
+          <button style="background-color: #001253; border:1px solid #9388A2" type="submit"
+            class="btn btn-primary">Book</button>
+        </form>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
-
-<!--
-  <div class="fluid-conatiner" id="loginmaincontent">
-  <div class="row" id="loginform">
-    <div id="login" class="col-md-5">
-      <h1>{{loginType}} Login</h1>
-      <div id="hr">
-      </div><br>
-      <form [formGroup]="form" class="form" (ngSubmit)="submit()">
-        <div class="mb-3" >
-        <label class="mb-3"  for="logintype">Login Type</label>  
-            <select formControlName="website" id="logintype" class="form-control">  
-                <option class="form-control">Choose Role</option>  
-                <option class="form-control" *ngFor="let role of roles">{{role}}</option>  
-            </select>  
-          </div>
-        <div class="mb-3">
-          <label class="mb-3" for="userId">User Id</label>
-          <input type="text" class="form-control " id="userId" name="userId" formControlName="userId" placeholder="User Id">
-        </div>    
-        <div class="mb-3">
-          <label class="mb-3" for="password">Password</label>
-          <input type="password" class="form-control" id="password" name="password" formControlName="password" placeholder="Password">
-        </div>
-        <button style="background-color: #001253; border:1px solid #9388A2" type="submit"
-          class="btn btn-primary">Login</button>
-      </form>
-    </div>
-  </div>
-</div>
--->
