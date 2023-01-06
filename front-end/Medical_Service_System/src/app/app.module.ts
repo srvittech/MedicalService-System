@@ -61,8 +61,7 @@ import { AddKioskDialogComponent } from './model/admin-component/add-kiosk-dialo
     HttpClientModule,
     MatButtonModule,
     MatIconModule,
-    FormsModule
-
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
