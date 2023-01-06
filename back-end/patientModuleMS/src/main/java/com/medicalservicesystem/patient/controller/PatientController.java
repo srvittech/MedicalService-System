@@ -45,7 +45,7 @@ public class PatientController {
 	}
 	
 	@GetMapping("/findPatientByEmail/{email}")
-	public Patient findPatientById(@PathVariable String email) {
+	public Patient findPatientByEmail(@PathVariable String email) {
 		LOGGER.info("Enter into patient Controller and getting the findPatientByEmail method ");
 		return patientServiceImp.findPatientByEmail(email);
 	}

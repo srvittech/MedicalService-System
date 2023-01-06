@@ -7,6 +7,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -21,10 +22,10 @@ public class UserController {
 	@Autowired
 	UserServiceImpl userServiceImpl;
 	private static final Logger LOGGER = LoggerFactory.getLogger(UserServiceImpl.class);
-	@GetMapping("/getLogin")
-	public List<User> getLogin() {
+	@GetMapping("/getLogin/{id}")
+	public User getLogin(@PathVariable Long id) {
 		LOGGER.info("Enter into user Controller and getting the method getlogin");
-		return userServiceImpl.getLogin();
+		return userServiceImpl.getLogin(id);
 	}
 	
 

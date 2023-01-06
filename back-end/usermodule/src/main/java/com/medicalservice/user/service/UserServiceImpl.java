@@ -19,9 +19,9 @@ public class UserServiceImpl implements Userservice {
 
 	@Override
 
-	public List<User> getLogin() {
+	public User getLogin(Long id) {
 		LOGGER.info("Getting All User From UserService.....");
-		return userRepo.findAll();
+		return userRepo.findById(id).orElse(null);
 	}
 	
 	@Override
