@@ -27,6 +27,7 @@ import { FeedbackComponent } from './model/doctor-component/feedback/feedback.co
 import { PatientAppointmentsComponent } from './model/kiosk-component/patient-appointments/patient-appointments.component';
 import { DoctorAvailComponent } from './model/kiosk-component/doctor-avail/doctor-avail.component';
 import { AddDoctorDialogComponent } from './model/admin-component/add-doctor-dialog/add-doctor-dialog.component';
+import { PatientFeedbackComponent } from './model/patient-component/patient-feedback/patient-feedback.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { AddDoctorDialogComponent } from './model/admin-component/add-doctor-dia
     FeedbackComponent,
     PatientAppointmentsComponent,
     DoctorAvailComponent,
-    AddDoctorDialogComponent
+    AddDoctorDialogComponent,
+    PatientFeedbackComponent
   ],
   imports: [
     BrowserModule,
