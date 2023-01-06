@@ -61,6 +61,10 @@ public class PatientServiceImp implements PatientService {
 			 LOGGER.info("Updating Patient Age From PatientService.....");
 			 patientToUpdate.setAge((patient.getAge())); 
 		 }
+		 if(patient.getWeight()!=0) {
+			 LOGGER.info("Updating Weight Age From PatientService.....");
+			 patientToUpdate.setWeight((patient.getWeight())); 
+		 }
 		 return patientRepository.save(patientToUpdate);
 		
 	}

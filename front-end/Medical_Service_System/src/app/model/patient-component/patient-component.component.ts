@@ -34,16 +34,21 @@ export class PatientComponentComponent{
 
 ngOnInit(): void {
   this.registerForm = this.formBuilder.group({
+    id:[this.user.id],
     age: ['',Validators.required ],
     address: ['', Validators.required],
     disease:['', Validators.required],
-    
     weight: ['',Validators.required ]
   })}
   submit() {
     this.submitted = true
     if (this.registerForm.invalid){return 
-    }alert("Success")
+    }
+    this.patientService.updatePatient(this.registerForm.value).subscribe(res=>{
+      console.table(res);
+    })
+
+    alert("Success")
   }
 
   
