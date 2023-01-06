@@ -25,12 +25,9 @@ import { FeedbackComponent } from './model/doctor-component/feedback/feedback.co
 import { PatientAppointmentsComponent } from './model/kiosk-component/patient-appointments/patient-appointments.component';
 import { DoctorAvailComponent } from './model/kiosk-component/doctor-avail/doctor-avail.component';
 import { AddDoctorDialogComponent } from './model/admin-component/add-doctor-dialog/add-doctor-dialog.component';
-<<<<<<< HEAD
 import { EditDoctorComponent } from './model/doctor-component/edit-doctor/edit-doctor.component';
 import { AddKioskDialogComponent } from './model/admin-component/add-kiosk-dialog/add-kiosk-dialog.component';
-=======
 import { PatientFeedbackComponent } from './model/patient-component/patient-feedback/patient-feedback.component';
->>>>>>> origin/lakshman
 
 @NgModule({
   declarations: [
@@ -50,12 +47,9 @@ import { PatientFeedbackComponent } from './model/patient-component/patient-feed
     PatientAppointmentsComponent,
     DoctorAvailComponent,
     AddDoctorDialogComponent,
-<<<<<<< HEAD
     EditDoctorComponent,
-    AddKioskDialogComponent
-=======
+    AddKioskDialogComponent,
     PatientFeedbackComponent
->>>>>>> origin/lakshman
   ],
   imports: [
     BrowserModule,

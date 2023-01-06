@@ -1,13 +1,10 @@
 import { Component } from '@angular/core';
-<<<<<<< HEAD
 import { PatientServiceService } from 'src/app/services/patient-Service/patient-service.service';
-=======
 import { FormGroup,FormBuilder, Validators } from '@angular/forms';
 import { MatDialog } from '@angular/material/dialog';
 import { ActivatedRoute, Router } from '@angular/router';
 
 
->>>>>>> origin/lakshman
 @Component({
   selector: 'app-patient-component',
   templateUrl: './patient-component.component.html',
@@ -16,7 +13,6 @@ import { ActivatedRoute, Router } from '@angular/router';
 
 
 export class PatientComponentComponent{
-<<<<<<< HEAD
   user: any = {
     address: null,age:null,
     disease:null,
@@ -26,17 +22,13 @@ export class PatientComponentComponent{
     name:null,
     weight:null
   }
-  constructor(private patientService:PatientServiceService){
-    this.user = this.patientService.patient
-  }
-=======
+
   registerForm!: FormGroup
   submitted = false;
   loginType: any = ""
-  constructor(private route:ActivatedRoute,public dialog: MatDialog, public router: Router, private formBuilder: FormBuilder) {
-
+  constructor(private patientService:PatientServiceService,private route:ActivatedRoute,public dialog: MatDialog, public router: Router, private formBuilder: FormBuilder) {
+    this.user = this.patientService.patient
     
->>>>>>> origin/lakshman
 }
 
 
