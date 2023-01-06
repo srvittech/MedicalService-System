@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
-import { FormGroup,FormBuilder ,Validators} from '@angular/forms';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
+import { PatientServiceService } from 'src/app/services/patient-Service/patient-service.service';
 
 import { PatientSingupDialogComponent } from './patient-singup-dialog/patient-singup-dialog.component';
 
@@ -13,39 +14,50 @@ import { PatientSingupDialogComponent } from './patient-singup-dialog/patient-si
 export class PatientLoginComponentComponent {
   registerForm!: FormGroup
   submitted = false;
-  loginType:any=""
-  constructor(public dialog: MatDialog,public router:Router,private formBuilder:FormBuilder){
+  constructor(public dialog: MatDialog, public router: Router, private formBuilder: FormBuilder, private patientService: PatientServiceService) {
 
   }
   ngOnInit(): void {
     this.registerForm = this.formBuilder.group({
-      userId: ['',Validators.required ],
-      password:['', [Validators.required,Validators.minLength(6)]]
+      email: ['', Validators.required],
+      password: ['', [Validators.required, Validators.minLength(6)]]
     })
   }
-  id:any="user";
-  pass:any="root123";
-  /*registerForm = new registerFormGroup({
-    userId: new registerFormControl(""),
-    password: new registerFormControl("")
-  })*/
+  user: any = {
+    address: null,age:null,
+    disease:null,
+    email:null,
+    id:null,
+    mobile:null,
+    name:null,
+    weight:null
+  }
 
-  roles:any=["Admin","Kiosk","Doctor"]
-  
-  submit(){
+  submit() {
     this.submitted = true
-    if (this.registerForm.invalid){return}
+    if (this.registerForm.invalid) { return }
+
+    this.patientService.getPatientByEmail(this.registerForm.value.email).subscribe(res => {
+      this.user = res
+      this.patientService.patient = this.user
+      console.table(this.user);
+      if (this.user.email.toLowerCase() == this.registerForm.value.email.toLowerCase() && this.user.password == this.registerForm.value.password) {
+        // this.openDialog()
+        this.router.navigate(['patient'])
+      }
+      else {
+        // this.dialog.open(WrongDialogComponent);
+      }
+
+    });
+
+
+
     alert("Success")
-    if(this.id==this.registerForm.value.userId&&this.pass==this.registerForm.value.password){
-      // this.openDialog()
-      this.router.navigate(['patient'])
-    }
-    else{
-      // this.dialog.open(WrongDialogComponent);
-    }
+
     //this.registerForm.reset()
-}
-openDialog(){
-  this.dialog.open(PatientSingupDialogComponent);
-}
+  }
+  openDialog() {
+    this.dialog.open(PatientSingupDialogComponent);
+  }
 }

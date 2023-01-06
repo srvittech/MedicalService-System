@@ -1,23 +1,25 @@
 <div class="fluid-conatiner" id="loginmaincontent">
   <div class="row" id="loginform">
-    <div class="col-md-6" ><img  src="https://login.highmark.com/assets/img/prelogin3.svg" alt=""></div>
+    <div class="col-md-6"><img src="https://login.highmark.com/assets/img/prelogin3.svg" alt=""></div>
     <div id="login" class="col-md-5">
       <h1>Patient Login</h1>
       <div id="hr">
       </div><br>
       <form [formGroup]="registerForm" class="form" (ngSubmit)="submit()">
         <div class="mb-3" class="form-group">
-          <label class="mb-3" for="userId">Patient User Id</label>
-          <input [ngClass]="{'is-invalid':submitted && registerForm.controls['userId'].errors}" type="text" class="form-control " id="userId" name="userId" formControlName="userId" placeholder="User Id">
-          <div *ngIf="submitted && registerForm.controls['userId'].errors" class="text-danger">
-            <div *ngIf="submitted && registerForm.controls['userId'].errors['required']">
-              User ID is required
+          <label class="mb-3" for="email">Patient Email</label>
+          <input [ngClass]="{'is-invalid':submitted && registerForm.controls['email'].errors}" type="text"
+            class="form-control " id="email" name="email" formControlName="email" placeholder="Email">
+          <div *ngIf="submitted && registerForm.controls['email'].errors" class="text-danger">
+            <div *ngIf="submitted && registerForm.controls['email'].errors['required']">
+              Email is required
             </div>
           </div>
-        </div>    
+        </div>
         <div class="mb-3">
           <label class="mb-3" for="password">Password</label>
-          <input [ngClass]="{'is-invalid':submitted && registerForm.controls['password'].errors}" type="password" class="form-control" id="password" name="password" formControlName="password" placeholder="Password">
+          <input [ngClass]="{'is-invalid':submitted && registerForm.controls['password'].errors}" type="password"
+            class="form-control" id="password" name="password" formControlName="password" placeholder="Password">
           <div *ngIf="submitted && registerForm.controls['password'].errors" class="text-danger">
             <div *ngIf="submitted && registerForm.controls['password'].errors['required']">
               Password is required
