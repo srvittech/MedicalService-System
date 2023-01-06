@@ -11,4 +11,7 @@ export class UserServiceService {
   addLogin(form:any){
     return this.httpClient.post("http://localhost:9091/addLogin",form)
   }
+  getLogin(id:any){
+    return this.httpClient.get("http://localhost:9091/addLogin/"+id)
+  }
 }
