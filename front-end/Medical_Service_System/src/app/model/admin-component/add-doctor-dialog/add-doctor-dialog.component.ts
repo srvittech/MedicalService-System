@@ -12,7 +12,7 @@ import { DoctorServiceService } from 'src/app/services/doctor-Service/doctor-ser
 export class AddDoctorDialogComponent {
   public signupForm !: FormGroup;
   submitted = false
-  constructor(private formBuilder: FormBuilder, private router: Router, 
+  constructor(private formBuilder: FormBuilder, private router: Router,
     private dialog: MatDialog, private doctorService: DoctorServiceService) { }
 
   ngOnInit(): void {
@@ -26,15 +26,15 @@ export class AddDoctorDialogComponent {
       yearsOfExperience: ['', Validators.required]
     })
   }
+
   roles: any = ["Eye", "ENT", "Heart"]
   signup() {
-    
+
     this.submitted = true
     if (!this.signupForm.invalid) {
-      this.doctorService.addDoctor(this.signupForm.value).subscribe(res=>{
+      this.doctorService.addDoctor(this.signupForm.value).subscribe(res => {
         console.log("Doctor Added");
       })
-      console.table(this.signupForm.value);
       alert("Success")
     }
 
