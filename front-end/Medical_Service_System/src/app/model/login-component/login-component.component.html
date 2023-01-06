@@ -21,11 +21,11 @@
         <br>
         <div class="mb-3" class="form-group">
           <label class="mb-3" for="userId">Employee User Id</label>
-          <input [ngClass]="{'is-invalid':submitted && registerForm.controls['userId'].errors}" type="text"
-            class="form-control " id="userId" name="userId" formControlName="userId" placeholder="User Id">
-            <div *ngIf="submitted && registerForm.controls['userId'].errors" class="text-danger">
-              <div *ngIf="submitted && registerForm.controls['userId'].errors['required']">
-                User ID is required
+          <input [ngClass]="{'is-invalid':submitted && registerForm.controls['userName'].errors}" type="text"
+            class="form-control " id="userId" name="userName" formControlName="userName" placeholder="userNamed">
+            <div *ngIf="submitted && registerForm.controls['userName'].errors" class="text-danger">
+              <div *ngIf="submitted && registerForm.controls['userName'].errors['required']">
+                User Name is required
               </div>
             </div>
         </div>

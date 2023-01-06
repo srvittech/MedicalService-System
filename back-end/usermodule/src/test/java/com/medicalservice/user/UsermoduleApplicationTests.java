@@ -30,11 +30,9 @@ class UsermoduleApplicationTests {
 	
 	@Test
 	public void getLoginTest() {
-		List<User> all = new ArrayList<>();
-		all.add(new User(1L,"userpassword","admin","admin123"));
-		all.add(new User(2L,"userpassword","kiosk","kiosk123"));
-		when(userRepository.findAll()).thenReturn(all);
-		assertEquals(all,userServiceImpl.getLogin());			
+		User all = new User(1L,"userpassword","admin","admin123");
+		when(userRepository.findById(1L)).thenReturn(Optional.of(all));
+		assertEquals(all,userServiceImpl.getLogin(1L));			
 	}
 
 	@Test
