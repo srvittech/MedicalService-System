@@ -6980,3 +6980,96 @@ Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (usi
 2023-01-06 15:13:25,910 [http-nio-9091-exec-4] INFO  c.m.u.s.UserServiceImpl                            -Getting All User From UserService..... 
 2023-01-06 15:16:46,281 [http-nio-9091-exec-6] INFO  c.m.u.s.UserServiceImpl                            -Enter into user Controller and getting the method getlogin 
 2023-01-06 15:16:46,332 [http-nio-9091-exec-6] INFO  c.m.u.s.UserServiceImpl                            -Getting All User From UserService..... 
+2023-01-06 15:28:30,017 [http-nio-9091-exec-8] INFO  c.m.u.s.UserServiceImpl                            -Enter into user Controller and getting the method getlogin 
+2023-01-06 15:28:31,704 [http-nio-9091-exec-8] INFO  c.m.u.s.UserServiceImpl                            -Getting All User From UserService..... 
+2023-01-06 15:32:42,579 [http-nio-9091-exec-10] INFO  c.m.u.s.UserServiceImpl                            -Enter into user Controller and getting the method getlogin 
+2023-01-06 15:32:42,699 [http-nio-9091-exec-10] INFO  c.m.u.s.UserServiceImpl                            -Getting All User From UserService..... 
+2023-01-06 15:33:18,861 [http-nio-9091-exec-1] INFO  c.m.u.s.UserServiceImpl                            -Enter into user Controller and getting the method getlogin 
+2023-01-06 15:33:18,889 [http-nio-9091-exec-1] INFO  c.m.u.s.UserServiceImpl                            -Getting All User From UserService..... 
+2023-01-06 15:33:55,812 [http-nio-9091-exec-4] INFO  c.m.u.s.UserServiceImpl                            -Enter into user Controller and getting the method getlogin 
+2023-01-06 15:33:55,813 [http-nio-9091-exec-4] INFO  c.m.u.s.UserServiceImpl                            -Getting All User From UserService..... 
+2023-01-06 15:36:03,125 [http-nio-9091-exec-6] INFO  c.m.u.s.UserServiceImpl                            -Enter into user Controller and getting the method getlogin 
+2023-01-06 15:36:03,146 [http-nio-9091-exec-6] INFO  c.m.u.s.UserServiceImpl                            -Getting All User From UserService..... 
+2023-01-06 15:37:20,477 [http-nio-9091-exec-8] INFO  c.m.u.s.UserServiceImpl                            -Enter into user Controller and getting the method getlogin 
+2023-01-06 15:37:20,478 [http-nio-9091-exec-8] INFO  c.m.u.s.UserServiceImpl                            -Getting All User From UserService..... 
+2023-01-06 15:43:18,567 [RMI TCP Connection(80)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin -Application shutdown requested. 
+2023-01-06 15:43:18,572 [RMI TCP Connection(79)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin -Application shutdown requested. 
+2023-01-06 15:43:18,570 [RMI TCP Connection(78)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin -Application shutdown requested. 
+2023-01-06 15:43:21,421 [RMI TCP Connection(78)-127.0.0.1] INFO  o.a.c.h.Http11NioProtocol                          -Pausing ProtocolHandler ["http-nio-9091"] 
+2023-01-06 15:43:21,444 [RMI TCP Connection(78)-127.0.0.1] INFO  o.a.c.c.StandardService                            -Stopping service [Tomcat] 
+2023-01-06 15:43:21,578 [RMI TCP Connection(78)-127.0.0.1] INFO  o.a.c.c.C.[.[.[/]                                  -Destroying Spring FrameworkServlet 'dispatcherServlet' 
+2023-01-06 15:43:22,227 [RMI TCP Connection(78)-127.0.0.1] INFO  o.a.c.h.Http11NioProtocol                          -Stopping ProtocolHandler ["http-nio-9091"] 
+2023-01-06 15:43:22,317 [RMI TCP Connection(78)-127.0.0.1] INFO  o.a.c.h.Http11NioProtocol                          -Destroying ProtocolHandler ["http-nio-9091"] 
+2023-01-06 15:43:22,437 [RMI TCP Connection(78)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     -Closing JPA EntityManagerFactory for persistence unit 'default' 
+2023-01-06 15:43:22,601 [RMI TCP Connection(78)-127.0.0.1] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown initiated... 
+2023-01-06 15:43:22,828 [RMI TCP Connection(78)-127.0.0.1] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown completed. 
+2023-01-06 15:44:56,247 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper        -Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.medicalservice.user.UsermoduleApplicationTests], using SpringBootContextLoader 
+2023-01-06 15:44:56,312 [main] INFO  o.s.t.c.s.AbstractContextLoader                    -Could not detect default resource locations for test class [com.medicalservice.user.UsermoduleApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}. 
+2023-01-06 15:44:56,315 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils       -Could not detect default configuration classes for test class [com.medicalservice.user.UsermoduleApplicationTests]: UsermoduleApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration. 
+2023-01-06 15:44:58,102 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper        -Found @SpringBootConfiguration com.medicalservice.user.UsermoduleApplication for test class com.medicalservice.user.UsermoduleApplicationTests 
+2023-01-06 15:44:59,589 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper        -Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener] 
+2023-01-06 15:44:59,744 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper        -Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6d6cb754, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6b7d1df8, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@3044e9c7, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@41d7b27f, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@49096b06, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4a183d02, org.springframework.test.context.transaction.TransactionalTestExecutionListener@5d05ef57, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@213deac2, org.springframework.test.context.event.EventPublishingTestExecutionListener@23eee4b8, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@28952dea, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5a9800f8, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@143d9a93, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@40226788, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@4159e81b, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@5b5caf08] 
+2023-01-06 15:45:04,814 [main] INFO  c.m.u.UsermoduleApplicationTests                   -Starting UsermoduleApplicationTests using Java 17.0.5 on DESKTOP-RT17JBD with PID 18560 (started by sourav kumar in E:\MedicalService-System\back-end\usermodule) 
+2023-01-06 15:45:05,023 [main] INFO  c.m.u.UsermoduleApplicationTests                   -No active profile set, falling back to 1 default profile: "default" 
+2023-01-06 15:45:17,383 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          -Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2023-01-06 15:45:18,069 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          -Finished Spring Data repository scanning in 475 ms. Found 1 JPA repository interfaces. 
+2023-01-06 15:45:25,559 [main] INFO  o.h.j.i.u.LogHelper                                -HHH000204: Processing PersistenceUnitInfo [name: default] 
+2023-01-06 15:45:26,375 [main] INFO  o.h.Version                                        -HHH000412: Hibernate ORM core version 5.6.14.Final 
+2023-01-06 15:45:28,357 [main] INFO  o.h.a.c.Version                                    -HCANN000001: Hibernate Commons Annotations {5.1.2.Final} 
+2023-01-06 15:45:29,844 [main] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Starting... 
+2023-01-06 15:45:33,048 [main] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Start completed. 
+2023-01-06 15:45:33,265 [main] INFO  o.h.d.Dialect                                      -HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect 
+2023-01-06 15:45:42,721 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator                 -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 
+2023-01-06 15:45:42,934 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     -Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2023-01-06 15:45:54,578 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2023-01-06 15:46:09,565 [main] INFO  c.m.u.UsermoduleApplicationTests                   -Started UsermoduleApplicationTests in 68.966 seconds (JVM running for 85.96) 
+2023-01-06 15:46:13,727 [main] INFO  c.m.u.s.UserServiceImpl                            -adding All User From UserService..... 
+2023-01-06 15:46:14,301 [main] INFO  c.m.u.s.UserServiceImpl                            -Getting All User From UserService..... 
+2023-01-06 15:46:14,492 [main] INFO  c.m.u.s.UserServiceImpl                            -updating password for User From UserService..... 
+2023-01-06 15:46:14,493 [main] INFO  c.m.u.s.UserServiceImpl                            -updating userName for User From UserService..... 
+2023-01-06 15:46:16,447 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     -Closing JPA EntityManagerFactory for persistence unit 'default' 
+2023-01-06 15:46:16,451 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown initiated... 
+2023-01-06 15:46:16,487 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown completed. 
+2023-01-06 15:55:04,091 [main] INFO  c.m.u.UsermoduleApplication                        -Starting UsermoduleApplication using Java 17.0.5 on DESKTOP-RT17JBD with PID 8164 (E:\MedicalService-System\back-end\usermodule\target\classes started by sourav kumar in E:\MedicalService-System\back-end\usermodule) 
+2023-01-06 15:55:04,138 [main] INFO  c.m.u.UsermoduleApplication                        -No active profile set, falling back to 1 default profile: "default" 
+2023-01-06 15:55:08,382 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          -Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2023-01-06 15:55:08,553 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          -Finished Spring Data repository scanning in 145 ms. Found 1 JPA repository interfaces. 
+2023-01-06 15:55:10,747 [main] INFO  o.s.b.w.e.t.TomcatWebServer                        -Tomcat initialized with port(s): 9091 (http) 
+2023-01-06 15:55:10,805 [main] INFO  o.a.c.h.Http11NioProtocol                          -Initializing ProtocolHandler ["http-nio-9091"] 
+2023-01-06 15:55:10,809 [main] INFO  o.a.c.c.StandardService                            -Starting service [Tomcat] 
+2023-01-06 15:55:10,813 [main] INFO  o.a.c.c.StandardEngine                             -Starting Servlet engine: [Apache Tomcat/9.0.70] 
+2023-01-06 15:55:11,284 [main] INFO  o.a.c.c.C.[.[.[/]                                  -Initializing Spring embedded WebApplicationContext 
+2023-01-06 15:55:11,286 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext     -Root WebApplicationContext: initialization completed in 6777 ms 
+2023-01-06 15:55:12,025 [main] INFO  o.h.j.i.u.LogHelper                                -HHH000204: Processing PersistenceUnitInfo [name: default] 
+2023-01-06 15:55:12,541 [main] INFO  o.h.Version                                        -HHH000412: Hibernate ORM core version 5.6.14.Final 
+2023-01-06 15:55:13,170 [main] INFO  o.h.a.c.Version                                    -HCANN000001: Hibernate Commons Annotations {5.1.2.Final} 
+2023-01-06 15:55:13,543 [main] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Starting... 
+2023-01-06 15:55:14,751 [main] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Start completed. 
+2023-01-06 15:55:14,807 [main] INFO  o.h.d.Dialect                                      -HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect 
+2023-01-06 15:55:17,409 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator                 -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 
+2023-01-06 15:55:17,448 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     -Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2023-01-06 15:55:19,367 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2023-01-06 15:55:21,297 [main] INFO  o.a.c.h.Http11NioProtocol                          -Starting ProtocolHandler ["http-nio-9091"] 
+2023-01-06 15:55:21,556 [main] INFO  o.s.b.w.e.t.TomcatWebServer                        -Tomcat started on port(s): 9091 (http) with context path '' 
+2023-01-06 15:55:21,853 [main] INFO  c.m.u.UsermoduleApplication                        -Started UsermoduleApplication in 18.9 seconds (JVM running for 22.451) 
+2023-01-06 15:56:14,156 [http-nio-9091-exec-1] INFO  o.a.c.c.C.[.[.[/]                                  -Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2023-01-06 15:56:14,158 [http-nio-9091-exec-1] INFO  o.s.w.s.DispatcherServlet                          -Initializing Servlet 'dispatcherServlet' 
+2023-01-06 15:56:14,168 [http-nio-9091-exec-1] INFO  o.s.w.s.DispatcherServlet                          -Completed initialization in 7 ms 
+2023-01-06 15:56:14,354 [http-nio-9091-exec-1] INFO  c.m.u.s.UserServiceImpl                            -Enter into user Controller and getting the method getlogin 
+2023-01-06 15:56:14,355 [http-nio-9091-exec-1] INFO  c.m.u.s.UserServiceImpl                            -Getting All User From UserService..... 
+2023-01-06 15:58:00,124 [http-nio-9091-exec-4] INFO  c.m.u.s.UserServiceImpl                            -Enter into user Controller and getting the method getlogin 
+2023-01-06 15:58:00,214 [http-nio-9091-exec-4] INFO  c.m.u.s.UserServiceImpl                            -Getting All User From UserService..... 
+2023-01-06 15:58:49,442 [http-nio-9091-exec-5] INFO  c.m.u.s.UserServiceImpl                            -Enter into user Controller and getting the method getlogin 
+2023-01-06 15:58:49,455 [http-nio-9091-exec-5] INFO  c.m.u.s.UserServiceImpl                            -Getting All User From UserService..... 
+2023-01-06 16:00:09,515 [http-nio-9091-exec-8] INFO  c.m.u.s.UserServiceImpl                            -Enter into user Controller and getting the method getlogin 
+2023-01-06 16:00:09,523 [http-nio-9091-exec-8] INFO  c.m.u.s.UserServiceImpl                            -Getting All User From UserService..... 
+2023-01-06 16:01:08,392 [http-nio-9091-exec-10] INFO  c.m.u.s.UserServiceImpl                            -Enter into user Controller and getting the method getlogin 
+2023-01-06 16:01:08,410 [http-nio-9091-exec-10] INFO  c.m.u.s.UserServiceImpl                            -Getting All User From UserService..... 
+2023-01-06 16:01:54,402 [http-nio-9091-exec-1] INFO  c.m.u.s.UserServiceImpl                            -Enter into user Controller and getting the method getlogin 
+2023-01-06 16:01:54,404 [http-nio-9091-exec-1] INFO  c.m.u.s.UserServiceImpl                            -Getting All User From UserService..... 
+2023-01-06 16:02:05,485 [http-nio-9091-exec-4] INFO  c.m.u.s.UserServiceImpl                            -Enter into user Controller and getting the method getlogin 
+2023-01-06 16:02:05,486 [http-nio-9091-exec-4] INFO  c.m.u.s.UserServiceImpl                            -Getting All User From UserService..... 
+2023-01-06 16:02:26,328 [http-nio-9091-exec-5] INFO  c.m.u.s.UserServiceImpl                            -Enter into user Controller and getting the method getlogin 
+2023-01-06 16:02:26,334 [http-nio-9091-exec-5] INFO  c.m.u.s.UserServiceImpl                            -Getting All User From UserService..... 
+2023-01-06 16:03:30,130 [http-nio-9091-exec-8] INFO  c.m.u.s.UserServiceImpl                            -Enter into user Controller and getting the method getlogin 
+2023-01-06 16:03:30,134 [http-nio-9091-exec-8] INFO  c.m.u.s.UserServiceImpl                            -Getting All User From UserService..... 

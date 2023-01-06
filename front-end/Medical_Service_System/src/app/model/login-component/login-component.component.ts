@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
+import { DoctorServiceService } from 'src/app/services/doctor-Service/doctor-service.service';
 import { UserServiceService } from 'src/app/services/user-Service/user-service.service';
 
 @Component({
@@ -13,7 +14,7 @@ export class LoginComponentComponent implements OnInit {
   registerForm!: FormGroup
   submitted = false;
   loginType: any = ""
-  constructor(public dialog: MatDialog, public router: Router, private formBuilder: FormBuilder, private userService: UserServiceService) {
+  constructor(public dialog: MatDialog, public router: Router, private formBuilder: FormBuilder, private userService: UserServiceService,private doctorService:DoctorServiceService) {
 
   }
   ngOnInit(): void {
@@ -41,12 +42,11 @@ export class LoginComponentComponent implements OnInit {
       this.user = res
       this.userService.user = this.user
       console.table(this.user);
-      if (this.user.id == this.registerForm.value.id && this.user.password == this.registerForm.value.password && this.registerForm.value.role.toLowerCase =="admin") {
+      
+      if (this.user.id == this.registerForm.value.id && this.user.password == this.registerForm.value.password && this.registerForm.value.role.toLowerCase() =="admin") {
         //this.openDialog()
-        console.log(this.registerForm.value.role );
-        console.log(this.user.role);
-
-        
+        console.log(this.registerForm.value.password );
+        console.log(this.user.password);
         this.router.navigate(['admin'])
       }
       else if (this.user.id == this.registerForm.value.id && this.user.password == this.registerForm.value.password && this.registerForm.value.role.toLowerCase() == "kiosk" ){
@@ -56,17 +56,21 @@ export class LoginComponentComponent implements OnInit {
         this.router.navigate(['kiosk'])
 
       }
-      else if (this.user.id == this.registerForm.value.id && this.user.password == this.registerForm.value.password && this.registerForm.value.role.toLowerCase() == "doctor") {
-        //this.openDialog()
-        console.log("doc");
-
-        this.router.navigate(['doctor'])
-      }
       else {
         // this.dialog.open(WrongDialogComponent);
       }
     })
     //this.registerForm.reset()
+  this.doctorService.findDoctorById(this.registerForm.value.id).subscribe(res=>{
+    this.user = res
+    if (this.user.id == this.registerForm.value.id && this.user.password == this.registerForm.value.password ){
+      //this.openDialog()
+      console.log("doc");
+      this.router.navigate(['doctor'])
+
+    }
+  })
+
   }
   openDialog() {
     // this.dialog.open(DialogComponent);
