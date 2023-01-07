@@ -3,6 +3,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { ActivatedRoute, Router } from '@angular/router';
 import { DoctorServiceService } from 'src/app/services/doctor-Service/doctor-service.service';
 import { EditDoctorComponent } from './edit-doctor/edit-doctor.component';
+import { FeedbackComponent } from './feedback/feedback.component';
 
 @Component({
   selector: 'app-doctor-component',
