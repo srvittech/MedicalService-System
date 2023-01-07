@@ -44,16 +44,3 @@ export class AddDoctorDialogComponent {
   }
 
 }
-// this.empService.postEmployee(this.employeesObject)
-//        .subscribe((values)=>
-//          {
-//             console.log(values);
-//             alert('Employee Details Saved')
-//              this.formValue.reset();
-//              let btn = document.getElementById('close');
-//              btn?.click();
-//              this.getEmployeeData();
-//             },
-//             error=>alert('data not saved')
-
-//             );

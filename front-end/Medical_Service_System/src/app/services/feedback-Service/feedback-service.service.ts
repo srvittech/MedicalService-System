@@ -13,7 +13,7 @@ export class FeedbackServiceService {
     return this.httpClient.post("http://localhost:9096/addFeedback/",form)
   }
   getAllFeedback(){
-    return this.httpClient.get("http://localhost:9096/getFeedback/")
+    return this.httpClient.get("http://localhost:9096/getFeedbacks")
   }
   updateFeedback(form:any){
     return this.httpClient.put("http://localhost:9096/updateFeedback/",form)
