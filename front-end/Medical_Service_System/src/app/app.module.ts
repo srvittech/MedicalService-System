@@ -28,6 +28,7 @@ import { AddDoctorDialogComponent } from './model/admin-component/add-doctor-dia
 import { EditDoctorComponent } from './model/doctor-component/edit-doctor/edit-doctor.component';
 import { AddKioskDialogComponent } from './model/admin-component/add-kiosk-dialog/add-kiosk-dialog.component';
 import { PatientFeedbackComponent } from './model/patient-component/patient-feedback/patient-feedback.component';
+import { ViewAppointmentsComponent } from './model/admin-component/view-appointments/view-appointments.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,8 @@ import { PatientFeedbackComponent } from './model/patient-component/patient-feed
     AddDoctorDialogComponent,
     EditDoctorComponent,
     AddKioskDialogComponent,
-    PatientFeedbackComponent
+    PatientFeedbackComponent,
+    ViewAppointmentsComponent
   ],
   imports: [
     BrowserModule,

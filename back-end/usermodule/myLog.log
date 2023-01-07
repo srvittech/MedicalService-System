@@ -1,3 +1,20 @@
+<<<<<<< HEAD
+2023-01-07 12:34:58,525 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper        -Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.medicalservice.user.UsermoduleApplicationTests], using SpringBootContextLoader 
+2023-01-07 12:34:59,093 [main] INFO  o.s.t.c.s.AbstractContextLoader                    -Could not detect default resource locations for test class [com.medicalservice.user.UsermoduleApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}. 
+2023-01-07 12:34:59,113 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils       -Could not detect default configuration classes for test class [com.medicalservice.user.UsermoduleApplicationTests]: UsermoduleApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration. 
+2023-01-07 12:35:00,598 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper        -Found @SpringBootConfiguration com.medicalservice.user.UsermoduleApplication for test class com.medicalservice.user.UsermoduleApplicationTests 
+2023-01-07 12:35:02,673 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper        -Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener] 
+2023-01-07 12:35:02,920 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper        -Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@41d7b27f, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@49096b06, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@4a183d02, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5d05ef57, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@213deac2, org.springframework.test.context.support.DirtiesContextTestExecutionListener@23eee4b8, org.springframework.test.context.transaction.TransactionalTestExecutionListener@28952dea, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5a9800f8, org.springframework.test.context.event.EventPublishingTestExecutionListener@143d9a93, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@40226788, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@4159e81b, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@5b5caf08, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@23cd4ff2, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@70807224, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@7e97551f] 
+2023-01-07 12:35:06,524 [main] INFO  c.m.u.UsermoduleApplicationTests                   -Starting UsermoduleApplicationTests using Java 17.0.5 on DESKTOP-RT17JBD with PID 9552 (started by sourav kumar in E:\MedicalService-System\back-end\usermodule) 
+2023-01-07 12:35:06,535 [main] INFO  c.m.u.UsermoduleApplicationTests                   -No active profile set, falling back to 1 default profile: "default" 
+2023-01-07 12:35:16,495 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          -Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2023-01-07 12:35:17,030 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          -Finished Spring Data repository scanning in 510 ms. Found 1 JPA repository interfaces. 
+2023-01-07 12:35:29,387 [main] INFO  o.h.j.i.u.LogHelper                                -HHH000204: Processing PersistenceUnitInfo [name: default] 
+2023-01-07 12:35:30,607 [main] INFO  o.h.Version                                        -HHH000412: Hibernate ORM core version 5.6.14.Final 
+2023-01-07 12:35:33,825 [main] INFO  o.h.a.c.Version                                    -HCANN000001: Hibernate Commons Annotations {5.1.2.Final} 
+2023-01-07 12:35:36,721 [main] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Starting... 
+2023-01-07 12:35:43,219 [main] ERROR c.z.h.p.HikariPool                                 -HikariPool-1 - Exception during pool initialization. 
+=======
 2023-01-02 11:46:56,230 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper        -Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.medicalservice.user.UsermoduleApplicationTests], using SpringBootContextLoader 
 2023-01-02 11:46:56,264 [main] INFO  o.s.t.c.s.AbstractContextLoader                    -Could not detect default resource locations for test class [com.medicalservice.user.UsermoduleApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}. 
 2023-01-02 11:46:56,265 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils       -Could not detect default configuration classes for test class [com.medicalservice.user.UsermoduleApplicationTests]: UsermoduleApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration. 
@@ -4000,6 +4017,7 @@ Identify and stop the process that's listening on port 9091 or configure this ap
 2023-01-06 14:28:54,783 [main] INFO  o.h.a.c.Version                                    -HCANN000001: Hibernate Commons Annotations {5.1.2.Final} 
 2023-01-06 14:28:55,369 [main] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Starting... 
 2023-01-06 14:28:57,802 [main] ERROR c.z.h.p.HikariPool                                 -HikariPool-1 - Exception during pool initialization. 
+>>>>>>> origin/komali
 java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129) ~[mysql-connector-j-8.0.31.jar:8.0.31]
 	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.0.31.jar:8.0.31]
@@ -4119,7 +4137,11 @@ java.sql.SQLException: Access denied for user 'root'@'localhost' (using password
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345) ~[surefire-booter-2.22.2.jar:2.22.2]
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126) ~[surefire-booter-2.22.2.jar:2.22.2]
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) ~[surefire-booter-2.22.2.jar:2.22.2]
+<<<<<<< HEAD
+2023-01-07 12:35:43,280 [main] WARN  o.h.e.j.e.i.JdbcEnvironmentInitiator               -HHH000342: Could not obtain connection to query metadata 
+=======
 2023-01-06 14:28:57,827 [main] WARN  o.h.e.j.e.i.JdbcEnvironmentInitiator               -HHH000342: Could not obtain connection to query metadata 
+>>>>>>> origin/komali
 java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129) ~[mysql-connector-j-8.0.31.jar:8.0.31]
 	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.0.31.jar:8.0.31]
@@ -4239,9 +4261,15 @@ java.sql.SQLException: Access denied for user 'root'@'localhost' (using password
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345) ~[surefire-booter-2.22.2.jar:2.22.2]
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126) ~[surefire-booter-2.22.2.jar:2.22.2]
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) ~[surefire-booter-2.22.2.jar:2.22.2]
+<<<<<<< HEAD
+2023-01-07 12:35:43,587 [main] INFO  o.h.d.Dialect                                      -HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect 
+2023-01-07 12:35:51,407 [main] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Starting... 
+2023-01-07 12:35:52,513 [main] ERROR c.z.h.p.HikariPool                                 -HikariPool-1 - Exception during pool initialization. 
+=======
 2023-01-06 14:28:57,924 [main] INFO  o.h.d.Dialect                                      -HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect 
 2023-01-06 14:29:00,703 [main] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Starting... 
 2023-01-06 14:29:01,799 [main] ERROR c.z.h.p.HikariPool                                 -HikariPool-1 - Exception during pool initialization. 
+>>>>>>> origin/komali
 java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129) ~[mysql-connector-j-8.0.31.jar:8.0.31]
 	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.0.31.jar:8.0.31]
@@ -4361,6 +4389,16 @@ java.sql.SQLException: Access denied for user 'root'@'localhost' (using password
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345) ~[surefire-booter-2.22.2.jar:2.22.2]
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126) ~[surefire-booter-2.22.2.jar:2.22.2]
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) ~[surefire-booter-2.22.2.jar:2.22.2]
+<<<<<<< HEAD
+2023-01-07 12:35:52,521 [main] WARN  o.h.e.j.s.SqlExceptionHelper                       -SQL Error: 1045, SQLState: 28000 
+2023-01-07 12:35:52,521 [main] ERROR o.h.e.j.s.SqlExceptionHelper                       -Access denied for user 'root'@'localhost' (using password: YES) 
+2023-01-07 12:35:52,534 [main] ERROR o.s.o.j.LocalContainerEntityManagerFactoryBean     -Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution 
+2023-01-07 12:35:52,537 [main] WARN  o.s.w.c.s.GenericWebApplicationContext             -Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution 
+2023-01-07 12:35:52,574 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener -
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. 
+2023-01-07 12:35:52,928 [main] ERROR o.s.b.SpringApplication                            -Application run failed 
+=======
 2023-01-06 14:29:01,804 [main] WARN  o.h.e.j.s.SqlExceptionHelper                       -SQL Error: 1045, SQLState: 28000 
 2023-01-06 14:29:01,804 [main] ERROR o.h.e.j.s.SqlExceptionHelper                       -Access denied for user 'root'@'localhost' (using password: YES) 
 2023-01-06 14:29:01,821 [main] ERROR o.s.o.j.LocalContainerEntityManagerFactoryBean     -Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution 
@@ -4369,6 +4407,7 @@ java.sql.SQLException: Access denied for user 'root'@'localhost' (using password
 
 Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. 
 2023-01-06 14:29:02,004 [main] ERROR o.s.b.SpringApplication                            -Application run failed 
+>>>>>>> origin/komali
 org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.3.24.jar:5.3.24]
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.24.jar:5.3.24]
@@ -4524,7 +4563,11 @@ Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (usi
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.24.jar:5.3.24]
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.24.jar:5.3.24]
 	... 82 more
+<<<<<<< HEAD
+2023-01-07 12:35:52,943 [main] ERROR o.s.t.c.TestContextManager                         -Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@41d7b27f] to prepare test instance [com.medicalservice.user.UsermoduleApplicationTests@151d216e] 
+=======
 2023-01-06 14:29:02,029 [main] ERROR o.s.t.c.TestContextManager                         -Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@41d7b27f] to prepare test instance [com.medicalservice.user.UsermoduleApplicationTests@1a73f3d1] 
+>>>>>>> origin/komali
 java.lang.IllegalStateException: Failed to load ApplicationContext
 	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:98) ~[spring-test-5.3.24.jar:5.3.24]
 	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124) ~[spring-test-5.3.24.jar:5.3.24]
@@ -4728,6 +4771,15 @@ Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (usi
 	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:141) ~[spring-test-5.3.24.jar:5.3.24]
 	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:90) ~[spring-test-5.3.24.jar:5.3.24]
 	... 67 more
+<<<<<<< HEAD
+2023-01-07 12:35:53,712 [main] INFO  c.m.u.UsermoduleApplicationTests                   -Starting UsermoduleApplicationTests using Java 17.0.5 on DESKTOP-RT17JBD with PID 9552 (started by sourav kumar in E:\MedicalService-System\back-end\usermodule) 
+2023-01-07 12:35:53,716 [main] INFO  c.m.u.UsermoduleApplicationTests                   -No active profile set, falling back to 1 default profile: "default" 
+2023-01-07 12:35:58,240 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          -Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2023-01-07 12:35:58,369 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          -Finished Spring Data repository scanning in 120 ms. Found 1 JPA repository interfaces. 
+2023-01-07 12:36:00,690 [main] INFO  o.h.j.i.u.LogHelper                                -HHH000204: Processing PersistenceUnitInfo [name: default] 
+2023-01-07 12:36:00,795 [main] INFO  c.z.h.HikariDataSource                             -HikariPool-2 - Starting... 
+2023-01-07 12:36:01,970 [main] ERROR c.z.h.p.HikariPool                                 -HikariPool-2 - Exception during pool initialization. 
+=======
 2023-01-06 14:29:02,576 [main] INFO  c.m.u.UsermoduleApplicationTests                   -Starting UsermoduleApplicationTests using Java 17.0.5 on DESKTOP-RT17JBD with PID 16200 (started by sourav kumar in E:\MedicalService-System\back-end\usermodule) 
 2023-01-06 14:29:02,582 [main] INFO  c.m.u.UsermoduleApplicationTests                   -No active profile set, falling back to 1 default profile: "default" 
 2023-01-06 14:29:04,136 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          -Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
@@ -4735,6 +4787,7 @@ Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (usi
 2023-01-06 14:29:04,593 [main] INFO  o.h.j.i.u.LogHelper                                -HHH000204: Processing PersistenceUnitInfo [name: default] 
 2023-01-06 14:29:04,604 [main] INFO  c.z.h.HikariDataSource                             -HikariPool-2 - Starting... 
 2023-01-06 14:29:05,682 [main] ERROR c.z.h.p.HikariPool                                 -HikariPool-2 - Exception during pool initialization. 
+>>>>>>> origin/komali
 java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129) ~[mysql-connector-j-8.0.31.jar:8.0.31]
 	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.0.31.jar:8.0.31]
@@ -4854,7 +4907,11 @@ java.sql.SQLException: Access denied for user 'root'@'localhost' (using password
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345) ~[surefire-booter-2.22.2.jar:2.22.2]
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126) ~[surefire-booter-2.22.2.jar:2.22.2]
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) ~[surefire-booter-2.22.2.jar:2.22.2]
+<<<<<<< HEAD
+2023-01-07 12:36:01,979 [main] WARN  o.h.e.j.e.i.JdbcEnvironmentInitiator               -HHH000342: Could not obtain connection to query metadata 
+=======
 2023-01-06 14:29:05,684 [main] WARN  o.h.e.j.e.i.JdbcEnvironmentInitiator               -HHH000342: Could not obtain connection to query metadata 
+>>>>>>> origin/komali
 java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129) ~[mysql-connector-j-8.0.31.jar:8.0.31]
 	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.0.31.jar:8.0.31]
@@ -4974,9 +5031,15 @@ java.sql.SQLException: Access denied for user 'root'@'localhost' (using password
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345) ~[surefire-booter-2.22.2.jar:2.22.2]
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126) ~[surefire-booter-2.22.2.jar:2.22.2]
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) ~[surefire-booter-2.22.2.jar:2.22.2]
+<<<<<<< HEAD
+2023-01-07 12:36:01,988 [main] INFO  o.h.d.Dialect                                      -HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect 
+2023-01-07 12:36:02,213 [main] INFO  c.z.h.HikariDataSource                             -HikariPool-2 - Starting... 
+2023-01-07 12:36:03,297 [main] ERROR c.z.h.p.HikariPool                                 -HikariPool-2 - Exception during pool initialization. 
+=======
 2023-01-06 14:29:05,687 [main] INFO  o.h.d.Dialect                                      -HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect 
 2023-01-06 14:29:05,788 [main] INFO  c.z.h.HikariDataSource                             -HikariPool-2 - Starting... 
 2023-01-06 14:29:06,856 [main] ERROR c.z.h.p.HikariPool                                 -HikariPool-2 - Exception during pool initialization. 
+>>>>>>> origin/komali
 java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129) ~[mysql-connector-j-8.0.31.jar:8.0.31]
 	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.0.31.jar:8.0.31]
@@ -5096,6 +5159,16 @@ java.sql.SQLException: Access denied for user 'root'@'localhost' (using password
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345) ~[surefire-booter-2.22.2.jar:2.22.2]
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126) ~[surefire-booter-2.22.2.jar:2.22.2]
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) ~[surefire-booter-2.22.2.jar:2.22.2]
+<<<<<<< HEAD
+2023-01-07 12:36:03,302 [main] WARN  o.h.e.j.s.SqlExceptionHelper                       -SQL Error: 1045, SQLState: 28000 
+2023-01-07 12:36:03,302 [main] ERROR o.h.e.j.s.SqlExceptionHelper                       -Access denied for user 'root'@'localhost' (using password: YES) 
+2023-01-07 12:36:03,303 [main] ERROR o.s.o.j.LocalContainerEntityManagerFactoryBean     -Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution 
+2023-01-07 12:36:03,305 [main] WARN  o.s.w.c.s.GenericWebApplicationContext             -Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution 
+2023-01-07 12:36:03,328 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener -
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. 
+2023-01-07 12:36:03,333 [main] ERROR o.s.b.SpringApplication                            -Application run failed 
+=======
 2023-01-06 14:29:06,862 [main] WARN  o.h.e.j.s.SqlExceptionHelper                       -SQL Error: 1045, SQLState: 28000 
 2023-01-06 14:29:06,863 [main] ERROR o.h.e.j.s.SqlExceptionHelper                       -Access denied for user 'root'@'localhost' (using password: YES) 
 2023-01-06 14:29:06,866 [main] ERROR o.s.o.j.LocalContainerEntityManagerFactoryBean     -Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution 
@@ -5104,6 +5177,7 @@ java.sql.SQLException: Access denied for user 'root'@'localhost' (using password
 
 Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. 
 2023-01-06 14:29:06,897 [main] ERROR o.s.b.SpringApplication                            -Application run failed 
+>>>>>>> origin/komali
 org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.3.24.jar:5.3.24]
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.24.jar:5.3.24]
@@ -5259,7 +5333,11 @@ Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (usi
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.24.jar:5.3.24]
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.24.jar:5.3.24]
 	... 82 more
+<<<<<<< HEAD
+2023-01-07 12:36:03,340 [main] ERROR o.s.t.c.TestContextManager                         -Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@41d7b27f] to prepare test instance [com.medicalservice.user.UsermoduleApplicationTests@78e34499] 
+=======
 2023-01-06 14:29:06,903 [main] ERROR o.s.t.c.TestContextManager                         -Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@41d7b27f] to prepare test instance [com.medicalservice.user.UsermoduleApplicationTests@4e93d23e] 
+>>>>>>> origin/komali
 java.lang.IllegalStateException: Failed to load ApplicationContext
 	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:98) ~[spring-test-5.3.24.jar:5.3.24]
 	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124) ~[spring-test-5.3.24.jar:5.3.24]
@@ -5463,6 +5541,15 @@ Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (usi
 	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:141) ~[spring-test-5.3.24.jar:5.3.24]
 	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:90) ~[spring-test-5.3.24.jar:5.3.24]
 	... 67 more
+<<<<<<< HEAD
+2023-01-07 12:36:04,215 [main] INFO  c.m.u.UsermoduleApplicationTests                   -Starting UsermoduleApplicationTests using Java 17.0.5 on DESKTOP-RT17JBD with PID 9552 (started by sourav kumar in E:\MedicalService-System\back-end\usermodule) 
+2023-01-07 12:36:04,224 [main] INFO  c.m.u.UsermoduleApplicationTests                   -No active profile set, falling back to 1 default profile: "default" 
+2023-01-07 12:36:08,410 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          -Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2023-01-07 12:36:08,554 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          -Finished Spring Data repository scanning in 142 ms. Found 1 JPA repository interfaces. 
+2023-01-07 12:36:10,842 [main] INFO  o.h.j.i.u.LogHelper                                -HHH000204: Processing PersistenceUnitInfo [name: default] 
+2023-01-07 12:36:10,984 [main] INFO  c.z.h.HikariDataSource                             -HikariPool-3 - Starting... 
+2023-01-07 12:36:12,196 [main] ERROR c.z.h.p.HikariPool                                 -HikariPool-3 - Exception during pool initialization. 
+=======
 2023-01-06 14:29:07,087 [main] INFO  c.m.u.UsermoduleApplicationTests                   -Starting UsermoduleApplicationTests using Java 17.0.5 on DESKTOP-RT17JBD with PID 16200 (started by sourav kumar in E:\MedicalService-System\back-end\usermodule) 
 2023-01-06 14:29:07,096 [main] INFO  c.m.u.UsermoduleApplicationTests                   -No active profile set, falling back to 1 default profile: "default" 
 2023-01-06 14:29:08,024 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          -Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
@@ -5470,6 +5557,7 @@ Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (usi
 2023-01-06 14:29:08,551 [main] INFO  o.h.j.i.u.LogHelper                                -HHH000204: Processing PersistenceUnitInfo [name: default] 
 2023-01-06 14:29:08,561 [main] INFO  c.z.h.HikariDataSource                             -HikariPool-3 - Starting... 
 2023-01-06 14:29:09,636 [main] ERROR c.z.h.p.HikariPool                                 -HikariPool-3 - Exception during pool initialization. 
+>>>>>>> origin/komali
 java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129) ~[mysql-connector-j-8.0.31.jar:8.0.31]
 	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.0.31.jar:8.0.31]
@@ -5589,7 +5677,11 @@ java.sql.SQLException: Access denied for user 'root'@'localhost' (using password
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345) ~[surefire-booter-2.22.2.jar:2.22.2]
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126) ~[surefire-booter-2.22.2.jar:2.22.2]
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) ~[surefire-booter-2.22.2.jar:2.22.2]
+<<<<<<< HEAD
+2023-01-07 12:36:12,200 [main] WARN  o.h.e.j.e.i.JdbcEnvironmentInitiator               -HHH000342: Could not obtain connection to query metadata 
+=======
 2023-01-06 14:29:09,649 [main] WARN  o.h.e.j.e.i.JdbcEnvironmentInitiator               -HHH000342: Could not obtain connection to query metadata 
+>>>>>>> origin/komali
 java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129) ~[mysql-connector-j-8.0.31.jar:8.0.31]
 	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.0.31.jar:8.0.31]
@@ -5709,9 +5801,15 @@ java.sql.SQLException: Access denied for user 'root'@'localhost' (using password
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345) ~[surefire-booter-2.22.2.jar:2.22.2]
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126) ~[surefire-booter-2.22.2.jar:2.22.2]
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) ~[surefire-booter-2.22.2.jar:2.22.2]
+<<<<<<< HEAD
+2023-01-07 12:36:12,203 [main] INFO  o.h.d.Dialect                                      -HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect 
+2023-01-07 12:36:12,502 [main] INFO  c.z.h.HikariDataSource                             -HikariPool-3 - Starting... 
+2023-01-07 12:36:13,608 [main] ERROR c.z.h.p.HikariPool                                 -HikariPool-3 - Exception during pool initialization. 
+=======
 2023-01-06 14:29:09,663 [main] INFO  o.h.d.Dialect                                      -HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect 
 2023-01-06 14:29:09,840 [main] INFO  c.z.h.HikariDataSource                             -HikariPool-3 - Starting... 
 2023-01-06 14:29:10,902 [main] ERROR c.z.h.p.HikariPool                                 -HikariPool-3 - Exception during pool initialization. 
+>>>>>>> origin/komali
 java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129) ~[mysql-connector-j-8.0.31.jar:8.0.31]
 	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.0.31.jar:8.0.31]
@@ -5831,6 +5929,16 @@ java.sql.SQLException: Access denied for user 'root'@'localhost' (using password
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345) ~[surefire-booter-2.22.2.jar:2.22.2]
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126) ~[surefire-booter-2.22.2.jar:2.22.2]
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) ~[surefire-booter-2.22.2.jar:2.22.2]
+<<<<<<< HEAD
+2023-01-07 12:36:13,615 [main] WARN  o.h.e.j.s.SqlExceptionHelper                       -SQL Error: 1045, SQLState: 28000 
+2023-01-07 12:36:13,615 [main] ERROR o.h.e.j.s.SqlExceptionHelper                       -Access denied for user 'root'@'localhost' (using password: YES) 
+2023-01-07 12:36:13,616 [main] ERROR o.s.o.j.LocalContainerEntityManagerFactoryBean     -Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution 
+2023-01-07 12:36:13,617 [main] WARN  o.s.w.c.s.GenericWebApplicationContext             -Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution 
+2023-01-07 12:36:13,624 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener -
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. 
+2023-01-07 12:36:13,629 [main] ERROR o.s.b.SpringApplication                            -Application run failed 
+=======
 2023-01-06 14:29:10,915 [main] WARN  o.h.e.j.s.SqlExceptionHelper                       -SQL Error: 1045, SQLState: 28000 
 2023-01-06 14:29:10,921 [main] ERROR o.h.e.j.s.SqlExceptionHelper                       -Access denied for user 'root'@'localhost' (using password: YES) 
 2023-01-06 14:29:10,933 [main] ERROR o.s.o.j.LocalContainerEntityManagerFactoryBean     -Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution 
@@ -5839,6 +5947,7 @@ java.sql.SQLException: Access denied for user 'root'@'localhost' (using password
 
 Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. 
 2023-01-06 14:29:11,181 [main] ERROR o.s.b.SpringApplication                            -Application run failed 
+>>>>>>> origin/komali
 org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.3.24.jar:5.3.24]
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.24.jar:5.3.24]
@@ -5994,7 +6103,11 @@ Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (usi
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.24.jar:5.3.24]
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.24.jar:5.3.24]
 	... 82 more
+<<<<<<< HEAD
+2023-01-07 12:36:13,633 [main] ERROR o.s.t.c.TestContextManager                         -Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@41d7b27f] to prepare test instance [com.medicalservice.user.UsermoduleApplicationTests@158b8d10] 
+=======
 2023-01-06 14:29:11,215 [main] ERROR o.s.t.c.TestContextManager                         -Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@41d7b27f] to prepare test instance [com.medicalservice.user.UsermoduleApplicationTests@4b407ac7] 
+>>>>>>> origin/komali
 java.lang.IllegalStateException: Failed to load ApplicationContext
 	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:98) ~[spring-test-5.3.24.jar:5.3.24]
 	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124) ~[spring-test-5.3.24.jar:5.3.24]
@@ -6198,6 +6311,15 @@ Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (usi
 	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:141) ~[spring-test-5.3.24.jar:5.3.24]
 	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:90) ~[spring-test-5.3.24.jar:5.3.24]
 	... 67 more
+<<<<<<< HEAD
+2023-01-07 12:36:13,899 [main] INFO  c.m.u.UsermoduleApplicationTests                   -Starting UsermoduleApplicationTests using Java 17.0.5 on DESKTOP-RT17JBD with PID 9552 (started by sourav kumar in E:\MedicalService-System\back-end\usermodule) 
+2023-01-07 12:36:13,902 [main] INFO  c.m.u.UsermoduleApplicationTests                   -No active profile set, falling back to 1 default profile: "default" 
+2023-01-07 12:36:17,610 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          -Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2023-01-07 12:36:17,638 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          -Finished Spring Data repository scanning in 25 ms. Found 1 JPA repository interfaces. 
+2023-01-07 12:36:20,773 [main] INFO  o.h.j.i.u.LogHelper                                -HHH000204: Processing PersistenceUnitInfo [name: default] 
+2023-01-07 12:36:20,927 [main] INFO  c.z.h.HikariDataSource                             -HikariPool-4 - Starting... 
+2023-01-07 12:36:22,103 [main] ERROR c.z.h.p.HikariPool                                 -HikariPool-4 - Exception during pool initialization. 
+=======
 2023-01-06 14:29:11,636 [main] INFO  c.m.u.UsermoduleApplicationTests                   -Starting UsermoduleApplicationTests using Java 17.0.5 on DESKTOP-RT17JBD with PID 16200 (started by sourav kumar in E:\MedicalService-System\back-end\usermodule) 
 2023-01-06 14:29:11,641 [main] INFO  c.m.u.UsermoduleApplicationTests                   -No active profile set, falling back to 1 default profile: "default" 
 2023-01-06 14:29:12,567 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          -Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
@@ -6205,6 +6327,7 @@ Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (usi
 2023-01-06 14:29:13,606 [main] INFO  o.h.j.i.u.LogHelper                                -HHH000204: Processing PersistenceUnitInfo [name: default] 
 2023-01-06 14:29:13,626 [main] INFO  c.z.h.HikariDataSource                             -HikariPool-4 - Starting... 
 2023-01-06 14:29:14,709 [main] ERROR c.z.h.p.HikariPool                                 -HikariPool-4 - Exception during pool initialization. 
+>>>>>>> origin/komali
 java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129) ~[mysql-connector-j-8.0.31.jar:8.0.31]
 	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.0.31.jar:8.0.31]
@@ -6324,7 +6447,11 @@ java.sql.SQLException: Access denied for user 'root'@'localhost' (using password
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345) ~[surefire-booter-2.22.2.jar:2.22.2]
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126) ~[surefire-booter-2.22.2.jar:2.22.2]
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) ~[surefire-booter-2.22.2.jar:2.22.2]
+<<<<<<< HEAD
+2023-01-07 12:36:22,145 [main] WARN  o.h.e.j.e.i.JdbcEnvironmentInitiator               -HHH000342: Could not obtain connection to query metadata 
+=======
 2023-01-06 14:29:14,723 [main] WARN  o.h.e.j.e.i.JdbcEnvironmentInitiator               -HHH000342: Could not obtain connection to query metadata 
+>>>>>>> origin/komali
 java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129) ~[mysql-connector-j-8.0.31.jar:8.0.31]
 	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.0.31.jar:8.0.31]
@@ -6444,9 +6571,15 @@ java.sql.SQLException: Access denied for user 'root'@'localhost' (using password
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345) ~[surefire-booter-2.22.2.jar:2.22.2]
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126) ~[surefire-booter-2.22.2.jar:2.22.2]
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) ~[surefire-booter-2.22.2.jar:2.22.2]
+<<<<<<< HEAD
+2023-01-07 12:36:22,203 [main] INFO  o.h.d.Dialect                                      -HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect 
+2023-01-07 12:36:22,732 [main] INFO  c.z.h.HikariDataSource                             -HikariPool-4 - Starting... 
+2023-01-07 12:36:23,854 [main] ERROR c.z.h.p.HikariPool                                 -HikariPool-4 - Exception during pool initialization. 
+=======
 2023-01-06 14:29:14,726 [main] INFO  o.h.d.Dialect                                      -HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect 
 2023-01-06 14:29:14,888 [main] INFO  c.z.h.HikariDataSource                             -HikariPool-4 - Starting... 
 2023-01-06 14:29:15,978 [main] ERROR c.z.h.p.HikariPool                                 -HikariPool-4 - Exception during pool initialization. 
+>>>>>>> origin/komali
 java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
 	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129) ~[mysql-connector-j-8.0.31.jar:8.0.31]
 	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.0.31.jar:8.0.31]
@@ -6566,6 +6699,16 @@ java.sql.SQLException: Access denied for user 'root'@'localhost' (using password
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345) ~[surefire-booter-2.22.2.jar:2.22.2]
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126) ~[surefire-booter-2.22.2.jar:2.22.2]
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418) ~[surefire-booter-2.22.2.jar:2.22.2]
+<<<<<<< HEAD
+2023-01-07 12:36:23,866 [main] WARN  o.h.e.j.s.SqlExceptionHelper                       -SQL Error: 1045, SQLState: 28000 
+2023-01-07 12:36:23,867 [main] ERROR o.h.e.j.s.SqlExceptionHelper                       -Access denied for user 'root'@'localhost' (using password: YES) 
+2023-01-07 12:36:23,874 [main] ERROR o.s.o.j.LocalContainerEntityManagerFactoryBean     -Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution 
+2023-01-07 12:36:23,877 [main] WARN  o.s.w.c.s.GenericWebApplicationContext             -Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution 
+2023-01-07 12:36:23,988 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener -
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. 
+2023-01-07 12:36:23,998 [main] ERROR o.s.b.SpringApplication                            -Application run failed 
+=======
 2023-01-06 14:29:15,981 [main] WARN  o.h.e.j.s.SqlExceptionHelper                       -SQL Error: 1045, SQLState: 28000 
 2023-01-06 14:29:15,982 [main] ERROR o.h.e.j.s.SqlExceptionHelper                       -Access denied for user 'root'@'localhost' (using password: YES) 
 2023-01-06 14:29:15,983 [main] ERROR o.s.o.j.LocalContainerEntityManagerFactoryBean     -Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution 
@@ -6574,6 +6717,7 @@ java.sql.SQLException: Access denied for user 'root'@'localhost' (using password
 
 Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. 
 2023-01-06 14:29:16,000 [main] ERROR o.s.b.SpringApplication                            -Application run failed 
+>>>>>>> origin/komali
 org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Unable to open JDBC Connection for DDL execution
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.3.24.jar:5.3.24]
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.24.jar:5.3.24]
@@ -6729,7 +6873,11 @@ Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (usi
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.24.jar:5.3.24]
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.24.jar:5.3.24]
 	... 82 more
+<<<<<<< HEAD
+2023-01-07 12:36:24,040 [main] ERROR o.s.t.c.TestContextManager                         -Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@41d7b27f] to prepare test instance [com.medicalservice.user.UsermoduleApplicationTests@1d1c5bb5] 
+=======
 2023-01-06 14:29:16,004 [main] ERROR o.s.t.c.TestContextManager                         -Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@41d7b27f] to prepare test instance [com.medicalservice.user.UsermoduleApplicationTests@4a723adf] 
+>>>>>>> origin/komali
 java.lang.IllegalStateException: Failed to load ApplicationContext
 	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:98) ~[spring-test-5.3.24.jar:5.3.24]
 	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124) ~[spring-test-5.3.24.jar:5.3.24]
@@ -6933,6 +7081,116 @@ Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (usi
 	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:141) ~[spring-test-5.3.24.jar:5.3.24]
 	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:90) ~[spring-test-5.3.24.jar:5.3.24]
 	... 67 more
+<<<<<<< HEAD
+2023-01-07 13:27:42,590 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper        -Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.medicalservice.user.UsermoduleApplicationTests], using SpringBootContextLoader 
+2023-01-07 13:27:42,708 [main] INFO  o.s.t.c.s.AbstractContextLoader                    -Could not detect default resource locations for test class [com.medicalservice.user.UsermoduleApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}. 
+2023-01-07 13:27:42,711 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils       -Could not detect default configuration classes for test class [com.medicalservice.user.UsermoduleApplicationTests]: UsermoduleApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration. 
+2023-01-07 13:27:43,477 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper        -Found @SpringBootConfiguration com.medicalservice.user.UsermoduleApplication for test class com.medicalservice.user.UsermoduleApplicationTests 
+2023-01-07 13:27:44,023 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper        -Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener] 
+2023-01-07 13:27:44,122 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper        -Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6d6cb754, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6b7d1df8, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@3044e9c7, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@41d7b27f, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@49096b06, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4a183d02, org.springframework.test.context.transaction.TransactionalTestExecutionListener@5d05ef57, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@213deac2, org.springframework.test.context.event.EventPublishingTestExecutionListener@23eee4b8, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@28952dea, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5a9800f8, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@143d9a93, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@40226788, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@4159e81b, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@5b5caf08] 
+2023-01-07 13:27:46,116 [main] INFO  c.m.u.UsermoduleApplicationTests                   -Starting UsermoduleApplicationTests using Java 17.0.5 on DESKTOP-RT17JBD with PID 20888 (started by sourav kumar in E:\MedicalService-System\back-end\usermodule) 
+2023-01-07 13:27:46,131 [main] INFO  c.m.u.UsermoduleApplicationTests                   -No active profile set, falling back to 1 default profile: "default" 
+2023-01-07 13:27:52,154 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          -Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2023-01-07 13:27:52,614 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          -Finished Spring Data repository scanning in 374 ms. Found 1 JPA repository interfaces. 
+2023-01-07 13:27:57,506 [main] INFO  o.h.j.i.u.LogHelper                                -HHH000204: Processing PersistenceUnitInfo [name: default] 
+2023-01-07 13:27:57,837 [main] INFO  o.h.Version                                        -HHH000412: Hibernate ORM core version 5.6.14.Final 
+2023-01-07 13:27:59,461 [main] INFO  o.h.a.c.Version                                    -HCANN000001: Hibernate Commons Annotations {5.1.2.Final} 
+2023-01-07 13:28:02,054 [main] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Starting... 
+2023-01-07 13:28:05,008 [main] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Start completed. 
+2023-01-07 13:28:05,097 [main] INFO  o.h.d.Dialect                                      -HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect 
+2023-01-07 13:28:10,935 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator                 -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 
+2023-01-07 13:28:10,969 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     -Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2023-01-07 13:28:24,231 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2023-01-07 13:28:43,541 [main] INFO  c.m.u.UsermoduleApplicationTests                   -Started UsermoduleApplicationTests in 59.027 seconds (JVM running for 68.866) 
+2023-01-07 13:28:49,321 [main] INFO  c.m.u.s.UserServiceImpl                            -adding All User From UserService..... 
+2023-01-07 13:28:49,864 [main] INFO  c.m.u.s.UserServiceImpl                            -Getting All User From UserService..... 
+2023-01-07 13:28:49,969 [main] INFO  c.m.u.s.UserServiceImpl                            -updating password for User From UserService..... 
+2023-01-07 13:28:49,970 [main] INFO  c.m.u.s.UserServiceImpl                            -updating userName for User From UserService..... 
+2023-01-07 13:28:52,628 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     -Closing JPA EntityManagerFactory for persistence unit 'default' 
+2023-01-07 13:28:52,634 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown initiated... 
+2023-01-07 13:28:53,469 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown completed. 
+2023-01-07 13:34:03,612 [main] INFO  c.m.u.UsermoduleApplication                        -Starting UsermoduleApplication using Java 17.0.5 on DESKTOP-RT17JBD with PID 11552 (E:\MedicalService-System\back-end\usermodule\target\classes started by sourav kumar in E:\MedicalService-System\back-end\usermodule) 
+2023-01-07 13:34:03,688 [main] INFO  c.m.u.UsermoduleApplication                        -No active profile set, falling back to 1 default profile: "default" 
+2023-01-07 13:34:08,637 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          -Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2023-01-07 13:34:08,800 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          -Finished Spring Data repository scanning in 134 ms. Found 1 JPA repository interfaces. 
+2023-01-07 13:34:11,262 [main] INFO  o.s.b.w.e.t.TomcatWebServer                        -Tomcat initialized with port(s): 9091 (http) 
+2023-01-07 13:34:11,322 [main] INFO  o.a.c.h.Http11NioProtocol                          -Initializing ProtocolHandler ["http-nio-9091"] 
+2023-01-07 13:34:11,328 [main] INFO  o.a.c.c.StandardService                            -Starting service [Tomcat] 
+2023-01-07 13:34:11,341 [main] INFO  o.a.c.c.StandardEngine                             -Starting Servlet engine: [Apache Tomcat/9.0.70] 
+2023-01-07 13:34:12,163 [main] INFO  o.a.c.c.C.[.[.[/]                                  -Initializing Spring embedded WebApplicationContext 
+2023-01-07 13:34:12,164 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext     -Root WebApplicationContext: initialization completed in 8319 ms 
+2023-01-07 13:34:12,771 [main] INFO  o.h.j.i.u.LogHelper                                -HHH000204: Processing PersistenceUnitInfo [name: default] 
+2023-01-07 13:34:13,051 [main] INFO  o.h.Version                                        -HHH000412: Hibernate ORM core version 5.6.14.Final 
+2023-01-07 13:34:14,051 [main] INFO  o.h.a.c.Version                                    -HCANN000001: Hibernate Commons Annotations {5.1.2.Final} 
+2023-01-07 13:34:14,435 [main] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Starting... 
+2023-01-07 13:34:16,243 [main] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Start completed. 
+2023-01-07 13:34:16,296 [main] INFO  o.h.d.Dialect                                      -HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect 
+2023-01-07 13:34:18,700 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator                 -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 
+2023-01-07 13:34:18,722 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     -Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2023-01-07 13:34:19,888 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2023-01-07 13:34:20,814 [main] INFO  o.a.c.h.Http11NioProtocol                          -Starting ProtocolHandler ["http-nio-9091"] 
+2023-01-07 13:34:20,873 [main] INFO  o.s.b.w.e.t.TomcatWebServer                        -Tomcat started on port(s): 9091 (http) with context path '' 
+2023-01-07 13:34:20,983 [main] INFO  c.m.u.UsermoduleApplication                        -Started UsermoduleApplication in 19.548 seconds (JVM running for 26.397) 
+2023-01-07 13:37:25,075 [http-nio-9091-exec-1] INFO  o.a.c.c.C.[.[.[/]                                  -Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2023-01-07 13:37:25,079 [http-nio-9091-exec-1] INFO  o.s.w.s.DispatcherServlet                          -Initializing Servlet 'dispatcherServlet' 
+2023-01-07 13:37:25,166 [http-nio-9091-exec-1] INFO  o.s.w.s.DispatcherServlet                          -Completed initialization in 87 ms 
+2023-01-07 13:37:25,504 [http-nio-9091-exec-1] INFO  c.m.u.s.UserServiceImpl                            -Enter into user Controller and getting the method getlogin 
+2023-01-07 13:37:25,505 [http-nio-9091-exec-1] INFO  c.m.u.s.UserServiceImpl                            -Getting All User From UserService..... 
+2023-01-07 13:37:44,682 [http-nio-9091-exec-4] INFO  c.m.u.s.UserServiceImpl                            -Enter into user Controller and getting the method getlogin 
+2023-01-07 13:37:44,684 [http-nio-9091-exec-4] INFO  c.m.u.s.UserServiceImpl                            -Getting All User From UserService..... 
+2023-01-07 14:47:31,882 [http-nio-9091-exec-4] INFO  c.m.u.s.UserServiceImpl                            -Enter into user Controller and getting the method getlogin 
+2023-01-07 14:47:31,952 [http-nio-9091-exec-4] INFO  c.m.u.s.UserServiceImpl                            -Getting All User From UserService..... 
+2023-01-07 14:47:58,802 [http-nio-9091-exec-3] INFO  c.m.u.s.UserServiceImpl                            -Enter into user Controller and getting the method getlogin 
+2023-01-07 14:47:58,804 [http-nio-9091-exec-3] INFO  c.m.u.s.UserServiceImpl                            -Getting All User From UserService..... 
+2023-01-07 14:52:40,445 [http-nio-9091-exec-7] INFO  c.m.u.s.UserServiceImpl                            -Enter into user Controller and getting the method getlogin 
+2023-01-07 14:52:40,473 [http-nio-9091-exec-7] INFO  c.m.u.s.UserServiceImpl                            -Getting All User From UserService..... 
+2023-01-07 14:52:50,825 [http-nio-9091-exec-9] INFO  c.m.u.s.UserServiceImpl                            -Enter into user Controller and getting the method getlogin 
+2023-01-07 14:52:50,826 [http-nio-9091-exec-9] INFO  c.m.u.s.UserServiceImpl                            -Getting All User From UserService..... 
+2023-01-07 14:53:53,183 [http-nio-9091-exec-1] INFO  c.m.u.s.UserServiceImpl                            -Enter into user Controller and getting the method getlogin 
+2023-01-07 14:53:53,190 [http-nio-9091-exec-1] INFO  c.m.u.s.UserServiceImpl                            -Getting All User From UserService..... 
+2023-01-07 15:00:29,508 [http-nio-9091-exec-4] INFO  c.m.u.s.UserServiceImpl                            -Enter into user Controller and getting the method getlogin 
+2023-01-07 15:00:29,548 [http-nio-9091-exec-4] INFO  c.m.u.s.UserServiceImpl                            -Getting All User From UserService..... 
+2023-01-07 15:01:35,854 [http-nio-9091-exec-3] INFO  c.m.u.s.UserServiceImpl                            -Enter into user Controller and getting the method getlogin 
+2023-01-07 15:01:35,858 [http-nio-9091-exec-3] INFO  c.m.u.s.UserServiceImpl                            -Getting All User From UserService..... 
+2023-01-07 15:01:40,187 [http-nio-9091-exec-7] INFO  c.m.u.s.UserServiceImpl                            -Enter into user Controller and getting the method getlogin 
+2023-01-07 15:01:40,188 [http-nio-9091-exec-7] INFO  c.m.u.s.UserServiceImpl                            -Getting All User From UserService..... 
+2023-01-07 15:02:09,084 [RMI TCP Connection(108)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin -Application shutdown requested. 
+2023-01-07 15:02:09,976 [RMI TCP Connection(108)-127.0.0.1] INFO  o.a.c.h.Http11NioProtocol                          -Pausing ProtocolHandler ["http-nio-9091"] 
+2023-01-07 15:02:09,979 [RMI TCP Connection(108)-127.0.0.1] INFO  o.a.c.c.StandardService                            -Stopping service [Tomcat] 
+2023-01-07 15:02:10,060 [RMI TCP Connection(108)-127.0.0.1] INFO  o.a.c.c.C.[.[.[/]                                  -Destroying Spring FrameworkServlet 'dispatcherServlet' 
+2023-01-07 15:02:10,665 [RMI TCP Connection(108)-127.0.0.1] INFO  o.a.c.h.Http11NioProtocol                          -Stopping ProtocolHandler ["http-nio-9091"] 
+2023-01-07 15:02:10,795 [RMI TCP Connection(108)-127.0.0.1] INFO  o.a.c.h.Http11NioProtocol                          -Destroying ProtocolHandler ["http-nio-9091"] 
+2023-01-07 15:02:10,883 [RMI TCP Connection(108)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     -Closing JPA EntityManagerFactory for persistence unit 'default' 
+2023-01-07 15:02:11,019 [RMI TCP Connection(108)-127.0.0.1] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown initiated... 
+2023-01-07 15:02:11,393 [RMI TCP Connection(108)-127.0.0.1] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown completed. 
+2023-01-07 15:08:26,549 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper        -Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.medicalservice.user.UsermoduleApplicationTests], using SpringBootContextLoader 
+2023-01-07 15:08:26,626 [main] INFO  o.s.t.c.s.AbstractContextLoader                    -Could not detect default resource locations for test class [com.medicalservice.user.UsermoduleApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}. 
+2023-01-07 15:08:26,629 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils       -Could not detect default configuration classes for test class [com.medicalservice.user.UsermoduleApplicationTests]: UsermoduleApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration. 
+2023-01-07 15:08:27,232 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper        -Found @SpringBootConfiguration com.medicalservice.user.UsermoduleApplication for test class com.medicalservice.user.UsermoduleApplicationTests 
+2023-01-07 15:08:27,599 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper        -Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener] 
+2023-01-07 15:08:27,703 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper        -Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@41d7b27f, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@49096b06, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@4a183d02, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5d05ef57, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@213deac2, org.springframework.test.context.support.DirtiesContextTestExecutionListener@23eee4b8, org.springframework.test.context.transaction.TransactionalTestExecutionListener@28952dea, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5a9800f8, org.springframework.test.context.event.EventPublishingTestExecutionListener@143d9a93, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@40226788, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@4159e81b, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@5b5caf08, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@23cd4ff2, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@70807224, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@7e97551f] 
+2023-01-07 15:08:29,183 [main] INFO  c.m.u.UsermoduleApplicationTests                   -Starting UsermoduleApplicationTests using Java 17.0.5 on DESKTOP-RT17JBD with PID 22392 (started by sourav kumar in E:\MedicalService-System\back-end\usermodule) 
+2023-01-07 15:08:29,197 [main] INFO  c.m.u.UsermoduleApplicationTests                   -No active profile set, falling back to 1 default profile: "default" 
+2023-01-07 15:08:33,140 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          -Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2023-01-07 15:08:33,361 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          -Finished Spring Data repository scanning in 186 ms. Found 1 JPA repository interfaces. 
+2023-01-07 15:08:36,740 [main] INFO  o.h.j.i.u.LogHelper                                -HHH000204: Processing PersistenceUnitInfo [name: default] 
+2023-01-07 15:08:37,082 [main] INFO  o.h.Version                                        -HHH000412: Hibernate ORM core version 5.6.14.Final 
+2023-01-07 15:08:37,789 [main] INFO  o.h.a.c.Version                                    -HCANN000001: Hibernate Commons Annotations {5.1.2.Final} 
+2023-01-07 15:08:38,510 [main] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Starting... 
+2023-01-07 15:08:40,505 [main] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Start completed. 
+2023-01-07 15:08:40,566 [main] INFO  o.h.d.Dialect                                      -HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect 
+2023-01-07 15:08:43,058 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator                 -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 
+2023-01-07 15:08:43,086 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     -Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2023-01-07 15:08:45,104 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2023-01-07 15:08:47,810 [main] INFO  c.m.u.UsermoduleApplicationTests                   -Started UsermoduleApplicationTests in 19.949 seconds (JVM running for 29.132) 
+2023-01-07 15:08:48,805 [main] INFO  c.m.u.s.UserServiceImpl                            -adding All User From UserService..... 
+2023-01-07 15:08:48,886 [main] INFO  c.m.u.s.UserServiceImpl                            -Getting All User From UserService..... 
+2023-01-07 15:08:48,898 [main] INFO  c.m.u.s.UserServiceImpl                            -updating password for User From UserService..... 
+2023-01-07 15:08:48,898 [main] INFO  c.m.u.s.UserServiceImpl                            -updating userName for User From UserService..... 
+2023-01-07 15:08:49,050 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     -Closing JPA EntityManagerFactory for persistence unit 'default' 
+2023-01-07 15:08:49,059 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown initiated... 
+2023-01-07 15:08:49,103 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown completed. 
+=======
 2023-01-06 14:30:23,507 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper        -Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.medicalservice.user.UsermoduleApplicationTests], using SpringBootContextLoader 
 2023-01-06 14:30:23,554 [main] INFO  o.s.t.c.s.AbstractContextLoader                    -Could not detect default resource locations for test class [com.medicalservice.user.UsermoduleApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}. 
 2023-01-06 14:30:23,556 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils       -Could not detect default configuration classes for test class [com.medicalservice.user.UsermoduleApplicationTests]: UsermoduleApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration. 
@@ -7277,6 +7535,7 @@ Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (usi
 2023-01-07 12:38:58,870 [RMI TCP Connection(99)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     -Closing JPA EntityManagerFactory for persistence unit 'default' 
 2023-01-07 12:38:58,874 [RMI TCP Connection(99)-127.0.0.1] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown initiated... 
 2023-01-07 12:38:58,885 [RMI TCP Connection(99)-127.0.0.1] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown completed. 
+<<<<<<< HEAD
 2023-01-07 12:48:40,090 [main] INFO  c.m.u.UsermoduleApplication                        -Starting UsermoduleApplication using Java 17.0.5 on DESKTOP-IO5RF1D with PID 21020 (C:\Users\Komali\Desktop\MedicalService-System\back-end\usermodule\target\classes started by Komali in C:\Users\Komali\Desktop\MedicalService-System\back-end\usermodule) 
 2023-01-07 12:48:40,119 [main] INFO  c.m.u.UsermoduleApplication                        -No active profile set, falling back to 1 default profile: "default" 
 2023-01-07 12:48:41,759 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          -Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
@@ -7324,3 +7583,33 @@ Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (usi
 2023-01-07 16:57:23,263 [RMI TCP Connection(255)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     -Closing JPA EntityManagerFactory for persistence unit 'default' 
 2023-01-07 16:57:23,278 [RMI TCP Connection(255)-127.0.0.1] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown initiated... 
 2023-01-07 16:57:23,298 [RMI TCP Connection(255)-127.0.0.1] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown completed. 
+=======
+>>>>>>> origin/komali
+2023-01-07 17:07:34,816 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper        -Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.medicalservice.user.UsermoduleApplicationTests], using SpringBootContextLoader 
+2023-01-07 17:07:34,941 [main] INFO  o.s.t.c.s.AbstractContextLoader                    -Could not detect default resource locations for test class [com.medicalservice.user.UsermoduleApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}. 
+2023-01-07 17:07:34,943 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils       -Could not detect default configuration classes for test class [com.medicalservice.user.UsermoduleApplicationTests]: UsermoduleApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration. 
+2023-01-07 17:07:36,151 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper        -Found @SpringBootConfiguration com.medicalservice.user.UsermoduleApplication for test class com.medicalservice.user.UsermoduleApplicationTests 
+2023-01-07 17:07:37,024 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper        -Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener] 
+2023-01-07 17:07:37,256 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper        -Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@41d7b27f, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@49096b06, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@4a183d02, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@5d05ef57, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@213deac2, org.springframework.test.context.support.DirtiesContextTestExecutionListener@23eee4b8, org.springframework.test.context.transaction.TransactionalTestExecutionListener@28952dea, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5a9800f8, org.springframework.test.context.event.EventPublishingTestExecutionListener@143d9a93, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@40226788, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@4159e81b, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@5b5caf08, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@23cd4ff2, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@70807224, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@7e97551f] 
+2023-01-07 17:07:40,949 [main] INFO  c.m.u.UsermoduleApplicationTests                   -Starting UsermoduleApplicationTests using Java 17.0.5 on DESKTOP-RT17JBD with PID 14580 (started by sourav kumar in E:\MedicalService-System\back-end\usermodule) 
+2023-01-07 17:07:40,996 [main] INFO  c.m.u.UsermoduleApplicationTests                   -No active profile set, falling back to 1 default profile: "default" 
+2023-01-07 17:07:51,671 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          -Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2023-01-07 17:07:52,066 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          -Finished Spring Data repository scanning in 314 ms. Found 1 JPA repository interfaces. 
+2023-01-07 17:07:58,619 [main] INFO  o.h.j.i.u.LogHelper                                -HHH000204: Processing PersistenceUnitInfo [name: default] 
+2023-01-07 17:07:59,374 [main] INFO  o.h.Version                                        -HHH000412: Hibernate ORM core version 5.6.14.Final 
+2023-01-07 17:08:01,298 [main] INFO  o.h.a.c.Version                                    -HCANN000001: Hibernate Commons Annotations {5.1.2.Final} 
+2023-01-07 17:08:04,615 [main] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Starting... 
+2023-01-07 17:08:10,021 [main] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Start completed. 
+2023-01-07 17:08:10,280 [main] INFO  o.h.d.Dialect                                      -HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect 
+2023-01-07 17:08:18,616 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator                 -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 
+2023-01-07 17:08:18,646 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     -Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2023-01-07 17:08:27,602 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2023-01-07 17:08:37,318 [main] INFO  c.m.u.UsermoduleApplicationTests                   -Started UsermoduleApplicationTests in 59.515 seconds (JVM running for 78.911) 
+2023-01-07 17:08:39,167 [main] INFO  c.m.u.s.UserServiceImpl                            -adding All User From UserService..... 
+2023-01-07 17:08:39,262 [main] INFO  c.m.u.s.UserServiceImpl                            -Getting All User From UserService..... 
+2023-01-07 17:08:39,276 [main] INFO  c.m.u.s.UserServiceImpl                            -updating password for User From UserService..... 
+2023-01-07 17:08:39,276 [main] INFO  c.m.u.s.UserServiceImpl                            -updating userName for User From UserService..... 
+2023-01-07 17:08:39,566 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     -Closing JPA EntityManagerFactory for persistence unit 'default' 
+2023-01-07 17:08:39,571 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown initiated... 
+2023-01-07 17:08:39,657 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown completed. 
+>>>>>>> origin/sourav
