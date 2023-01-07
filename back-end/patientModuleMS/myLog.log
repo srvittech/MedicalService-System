@@ -4770,3 +4770,40 @@ Action:
 
 Identify and stop the process that's listening on port 9098 or configure this application to listen on another port.
  
+2023-01-07 22:45:45,372 [main] INFO  c.m.p.PatientModuleMsApplication                   -Starting PatientModuleMsApplication using Java 17.0.5 on DESKTOP-IO5RF1D with PID 22100 (C:\Users\Komali\Desktop\MedicalService-System\back-end\patientModuleMS\target\classes started by Komali in C:\Users\Komali\Desktop\MedicalService-System\back-end\patientModuleMS) 
+2023-01-07 22:45:45,396 [main] INFO  c.m.p.PatientModuleMsApplication                   -No active profile set, falling back to 1 default profile: "default" 
+2023-01-07 22:45:47,834 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          -Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2023-01-07 22:45:47,974 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          -Finished Spring Data repository scanning in 110 ms. Found 1 JPA repository interfaces. 
+2023-01-07 22:45:49,573 [main] INFO  o.s.b.w.e.t.TomcatWebServer                        -Tomcat initialized with port(s): 9098 (http) 
+2023-01-07 22:45:49,620 [main] INFO  o.a.c.h.Http11NioProtocol                          -Initializing ProtocolHandler ["http-nio-9098"] 
+2023-01-07 22:45:49,622 [main] INFO  o.a.c.c.StandardService                            -Starting service [Tomcat] 
+2023-01-07 22:45:49,627 [main] INFO  o.a.c.c.StandardEngine                             -Starting Servlet engine: [Apache Tomcat/9.0.70] 
+2023-01-07 22:45:49,966 [main] INFO  o.a.c.c.C.[.[.[/]                                  -Initializing Spring embedded WebApplicationContext 
+2023-01-07 22:45:49,967 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext     -Root WebApplicationContext: initialization completed in 4450 ms 
+2023-01-07 22:45:50,481 [main] INFO  o.h.j.i.u.LogHelper                                -HHH000204: Processing PersistenceUnitInfo [name: default] 
+2023-01-07 22:45:50,696 [main] INFO  o.h.Version                                        -HHH000412: Hibernate ORM core version 5.6.14.Final 
+2023-01-07 22:45:51,232 [main] INFO  o.h.a.c.Version                                    -HCANN000001: Hibernate Commons Annotations {5.1.2.Final} 
+2023-01-07 22:45:51,547 [main] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Starting... 
+2023-01-07 22:45:52,406 [main] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Start completed. 
+2023-01-07 22:45:52,445 [main] INFO  o.h.d.Dialect                                      -HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect 
+2023-01-07 22:45:54,668 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator                 -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 
+2023-01-07 22:45:54,688 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     -Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2023-01-07 22:45:54,704 [main] INFO  c.m.p.s.PatientServiceImp                          -Inside the patient Controller  
+2023-01-07 22:45:56,242 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2023-01-07 22:45:57,443 [main] INFO  o.a.c.h.Http11NioProtocol                          -Starting ProtocolHandler ["http-nio-9098"] 
+2023-01-07 22:45:57,497 [main] INFO  o.s.b.w.e.t.TomcatWebServer                        -Tomcat started on port(s): 9098 (http) with context path '' 
+2023-01-07 22:45:58,144 [main] INFO  c.m.p.PatientModuleMsApplication                   -Started PatientModuleMsApplication in 13.661 seconds (JVM running for 16.386) 
+2023-01-07 22:50:19,166 [http-nio-9098-exec-1] INFO  o.a.c.c.C.[.[.[/]                                  -Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2023-01-07 22:50:19,167 [http-nio-9098-exec-1] INFO  o.s.w.s.DispatcherServlet                          -Initializing Servlet 'dispatcherServlet' 
+2023-01-07 22:50:19,174 [http-nio-9098-exec-1] INFO  o.s.w.s.DispatcherServlet                          -Completed initialization in 5 ms 
+2023-01-07 22:50:19,275 [http-nio-9098-exec-1] INFO  c.m.p.s.PatientServiceImp                          -Enter into patient Controller and getting the findPatientByEmail method  
+2023-01-07 22:50:19,276 [http-nio-9098-exec-1] INFO  c.m.p.s.PatientServiceImp                          -Getting Patient By Patient Email From PatientService..... 
+2023-01-08 00:20:59,284 [RMI TCP Connection(100)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin -Application shutdown requested. 
+2023-01-08 00:20:59,313 [RMI TCP Connection(100)-127.0.0.1] INFO  o.a.c.h.Http11NioProtocol                          -Pausing ProtocolHandler ["http-nio-9098"] 
+2023-01-08 00:20:59,314 [RMI TCP Connection(100)-127.0.0.1] INFO  o.a.c.c.StandardService                            -Stopping service [Tomcat] 
+2023-01-08 00:20:59,317 [RMI TCP Connection(100)-127.0.0.1] INFO  o.a.c.c.C.[.[.[/]                                  -Destroying Spring FrameworkServlet 'dispatcherServlet' 
+2023-01-08 00:20:59,324 [RMI TCP Connection(100)-127.0.0.1] INFO  o.a.c.h.Http11NioProtocol                          -Stopping ProtocolHandler ["http-nio-9098"] 
+2023-01-08 00:20:59,329 [RMI TCP Connection(100)-127.0.0.1] INFO  o.a.c.h.Http11NioProtocol                          -Destroying ProtocolHandler ["http-nio-9098"] 
+2023-01-08 00:20:59,344 [RMI TCP Connection(100)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     -Closing JPA EntityManagerFactory for persistence unit 'default' 
+2023-01-08 00:20:59,349 [RMI TCP Connection(100)-127.0.0.1] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown initiated... 
+2023-01-08 00:20:59,360 [RMI TCP Connection(100)-127.0.0.1] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown completed. 
