@@ -12,11 +12,19 @@ import { EditDoctorComponent } from './edit-doctor/edit-doctor.component';
 export class DoctorComponentComponent implements OnInit {
   user:any = {}
   ngOnInit(): void {
+    this.setUser()
+    console.log("hi from doc");
+    
   }
   constructor(private route: ActivatedRoute, private router: Router, private dialog: MatDialog,private doctorService:DoctorServiceService) { 
+   
+  }
+
+  setUser(){
     this.user = this.doctorService.user
   }
   showAppointments() {
+    this.ngOnInit()
     this.router.navigate(['appointment'], { relativeTo: this.route });
   }
   showPatientList() {

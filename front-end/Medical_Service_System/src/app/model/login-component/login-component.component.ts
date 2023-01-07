@@ -23,6 +23,7 @@ export class LoginComponentComponent implements OnInit {
       password: ['', [Validators.required, Validators.minLength(6)]],
       role: ['', Validators.required]
     })
+console.log("hi ng on init");
 
   }
   user: any = {
