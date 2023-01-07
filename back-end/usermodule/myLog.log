@@ -7247,3 +7247,25 @@ Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (usi
 2023-01-06 18:25:12,909 [RMI TCP Connection(106)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     -Closing JPA EntityManagerFactory for persistence unit 'default' 
 2023-01-06 18:25:12,920 [RMI TCP Connection(106)-127.0.0.1] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown initiated... 
 2023-01-06 18:25:12,933 [RMI TCP Connection(106)-127.0.0.1] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown completed. 
+2023-01-07 11:03:58,000 [main] INFO  c.m.u.UsermoduleApplication                        -Starting UsermoduleApplication using Java 17.0.5 on DESKTOP-IO5RF1D with PID 18480 (C:\Users\Komali\Desktop\MedicalService-System\back-end\usermodule\target\classes started by Komali in C:\Users\Komali\Desktop\MedicalService-System\back-end\usermodule) 
+2023-01-07 11:03:58,054 [main] INFO  c.m.u.UsermoduleApplication                        -No active profile set, falling back to 1 default profile: "default" 
+2023-01-07 11:03:59,997 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          -Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2023-01-07 11:04:00,138 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          -Finished Spring Data repository scanning in 110 ms. Found 1 JPA repository interfaces. 
+2023-01-07 11:04:01,509 [main] INFO  o.s.b.w.e.t.TomcatWebServer                        -Tomcat initialized with port(s): 9091 (http) 
+2023-01-07 11:04:01,538 [main] INFO  o.a.c.h.Http11NioProtocol                          -Initializing ProtocolHandler ["http-nio-9091"] 
+2023-01-07 11:04:01,540 [main] INFO  o.a.c.c.StandardService                            -Starting service [Tomcat] 
+2023-01-07 11:04:01,541 [main] INFO  o.a.c.c.StandardEngine                             -Starting Servlet engine: [Apache Tomcat/9.0.70] 
+2023-01-07 11:04:01,790 [main] INFO  o.a.c.c.C.[.[.[/]                                  -Initializing Spring embedded WebApplicationContext 
+2023-01-07 11:04:01,790 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext     -Root WebApplicationContext: initialization completed in 3603 ms 
+2023-01-07 11:04:02,182 [main] INFO  o.h.j.i.u.LogHelper                                -HHH000204: Processing PersistenceUnitInfo [name: default] 
+2023-01-07 11:04:02,340 [main] INFO  o.h.Version                                        -HHH000412: Hibernate ORM core version 5.6.14.Final 
+2023-01-07 11:04:02,751 [main] INFO  o.h.a.c.Version                                    -HCANN000001: Hibernate Commons Annotations {5.1.2.Final} 
+2023-01-07 11:04:03,033 [main] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Starting... 
+2023-01-07 11:04:03,758 [main] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Start completed. 
+2023-01-07 11:04:03,798 [main] INFO  o.h.d.Dialect                                      -HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect 
+2023-01-07 11:04:05,267 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator                 -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 
+2023-01-07 11:04:05,285 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     -Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2023-01-07 11:04:06,312 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2023-01-07 11:04:07,191 [main] INFO  o.a.c.h.Http11NioProtocol                          -Starting ProtocolHandler ["http-nio-9091"] 
+2023-01-07 11:04:07,235 [main] INFO  o.s.b.w.e.t.TomcatWebServer                        -Tomcat started on port(s): 9091 (http) with context path '' 
+2023-01-07 11:04:07,333 [main] INFO  c.m.u.UsermoduleApplication                        -Started UsermoduleApplication in 10.248 seconds (JVM running for 13.265) 
