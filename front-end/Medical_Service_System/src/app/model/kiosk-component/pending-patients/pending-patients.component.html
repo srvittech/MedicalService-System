@@ -1,0 +1,58 @@
+<br><br>
+<div class="container-fluid">
+    <div>
+        <div>
+            <form [formGroup]="registerForm" class="form" (ngSubmit)="submit()">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Patient Id</th>
+                        <th scope="col">DoctorId</th>
+                        <th scope="col">Disease</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">prescription</th>
+                        <th scope="col">Date Of Request</th>
+                        <th scope="col">Date Of Treatment</th>
+                        <th scope="col">Approve</th>
+                    </tr>
+                </thead>
+       
+                <tbody>
+                    <tr *ngFor="let trans of pendingTransactions">
+                        <th scope="row">{{trans.patientId}}</th>
+                        <td>
+                            <div class="mb-3" class="form-group">
+                              <select [ngClass]="{'is-invalid':submitted && registerForm.controls['role'].errors}" name="role" formControlName="role" id="logintype" class="form-control">
+                                <option class="form-control">Action Required</option>
+                                <option class="form-control" *ngFor="let role of roles">{{role}}</option>
+                              </select>
+                              <div *ngIf="submitted && registerForm.controls['role'].errors" class="text-danger">
+                                <div *ngIf="submitted && registerForm.controls['role'].errors['required']">
+                                  Action Required
+                                </div>
+                              </div>
+                            </div></td>
+                        <td>{{trans.disease}}</td>
+                        <td>
+                            <div class="mb-3" class="form-group">
+                              <select [ngClass]="{'is-invalid':submitted && registerForm.controls['role'].errors}" name="role" formControlName="role" id="logintype" class="form-control">
+                                <option class="form-control">Action Required</option>
+                                <option class="form-control" *ngFor="let role of roles">{{role}}</option>
+                              </select>
+                              <div *ngIf="submitted && registerForm.controls['role'].errors" class="text-danger">
+                                <div *ngIf="submitted && registerForm.controls['role'].errors['required']">
+                                  Action Required
+                                </div>
+                              </div>
+                            </div></td>
+                        <td>{{trans.prescription}}</td>
+                        <td>{{trans.dateOfRequest}}</td>
+                        <td>{{trans.dateOfTreatment}}</td>
+                        <td><button class="btn btn-primary">Approve</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+        </div>
+    </div>
+</div>

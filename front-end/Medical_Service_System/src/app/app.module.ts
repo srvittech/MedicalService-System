@@ -29,6 +29,13 @@ import { EditDoctorComponent } from './model/doctor-component/edit-doctor/edit-d
 import { AddKioskDialogComponent } from './model/admin-component/add-kiosk-dialog/add-kiosk-dialog.component';
 import { PatientFeedbackComponent } from './model/patient-component/patient-feedback/patient-feedback.component';
 import { ViewAppointmentsComponent } from './model/admin-component/view-appointments/view-appointments.component';
+import {DatePipe} from '@angular/common';
+import { FeedbackServiceService } from './services/feedback-Service/feedback-service.service';
+import { UserServiceService } from './services/user-Service/user-service.service';
+import { PatientServiceService } from './services/patient-Service/patient-service.service';
+import { DoctorServiceService } from './services/doctor-Service/doctor-service.service';
+import { TransactionServiceService } from './services/transaction-Service/transaction-service.service';
+import { PendingPatientsComponent } from './model/kiosk-component/pending-patients/pending-patients.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +58,8 @@ import { ViewAppointmentsComponent } from './model/admin-component/view-appointm
     EditDoctorComponent,
     AddKioskDialogComponent,
     PatientFeedbackComponent,
-    ViewAppointmentsComponent
+    ViewAppointmentsComponent,
+    PendingPatientsComponent
   ],
   imports: [
     BrowserModule,
@@ -67,7 +75,7 @@ import { ViewAppointmentsComponent } from './model/admin-component/view-appointm
     MatIconModule,
     FormsModule,
   ],
-  providers: [],
+  providers: [DatePipe,FeedbackServiceService,UserServiceService,PatientServiceService,DoctorServiceService,TransactionServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

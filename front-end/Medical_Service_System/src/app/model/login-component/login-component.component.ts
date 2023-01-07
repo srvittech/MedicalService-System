@@ -35,6 +35,7 @@ console.log("hi ng on init");
   roles: any = ["Admin", "Kiosk", "Doctor"]
 
   submit() {
+    
     this.submitted = true
     if (this.registerForm.invalid) {
       return
