@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ActivatedRoute, Router } from '@angular/router';
+import { DoctorServiceService } from 'src/app/services/doctor-Service/doctor-service.service';
 import { EditDoctorComponent } from './edit-doctor/edit-doctor.component';
 
 @Component({
@@ -9,9 +10,12 @@ import { EditDoctorComponent } from './edit-doctor/edit-doctor.component';
   styleUrls: ['./doctor-component.component.css']
 })
 export class DoctorComponentComponent implements OnInit {
+  user:any = {}
   ngOnInit(): void {
   }
-  constructor(private route: ActivatedRoute, private router: Router, private dialog: MatDialog) { }
+  constructor(private route: ActivatedRoute, private router: Router, private dialog: MatDialog,private doctorService:DoctorServiceService) { 
+    this.user = this.doctorService.user
+  }
   showAppointments() {
     this.router.navigate(['appointment'], { relativeTo: this.route });
   }
