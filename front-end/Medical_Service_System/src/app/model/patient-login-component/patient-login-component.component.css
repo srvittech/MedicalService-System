@@ -1,0 +1,22 @@
+#loginmaincontent {
+    height: 100vh;
+    width: 100%;
+    color: 	#001253;
+    font-size: large;
+    font-weight: 500;
+    border: 2px solid white;
+}
+#hr{
+    border: 1px solid #3E6D9C;
+    width: 100%;
+}
+#loginform{
+    /* background-color: red; */
+   display: flex;
+   margin-top: 10%;
+   justify-content: center;
+}
+#dropdownMenuButton1{
+    background-color: #3E6D9C;
+    width: 50%;
+}

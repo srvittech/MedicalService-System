@@ -1,0 +1,9 @@
+server:
+  port: 9092
+  
+spring:
+  data:
+    mongodb:
+      database: admin
+      port: 27017
+      host: localhost
