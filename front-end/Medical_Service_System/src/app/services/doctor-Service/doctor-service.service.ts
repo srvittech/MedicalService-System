@@ -5,7 +5,12 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class DoctorServiceService {
-
+  user: any = {
+    id: null,
+    password: null,
+    role: null,
+    userName: null
+  }
   constructor(private httpClient:HttpClient) { }
 
   addDoctor(form:any){
