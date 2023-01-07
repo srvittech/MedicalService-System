@@ -20,4 +20,7 @@ export class UserServiceService {
   getLogin(id:any){
     return this.httpClient.get("http://localhost:9091/getLogin/"+id)
   }
+  updateLogin(form:any){
+    return this.httpClient.put("http://localhost:9091/updateLogin",form)
+  }
 }
