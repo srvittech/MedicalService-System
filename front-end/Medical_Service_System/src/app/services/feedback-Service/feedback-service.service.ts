@@ -10,13 +10,13 @@ export class FeedbackServiceService {
   constructor(private httpClient:HttpClient) { }
  
   addFeedback(form:any){
-    return this.httpClient.post("http://localhost:9096/addFeedback/",form)
+    return this.httpClient.post("http://localhost:9096/addFeedback",form)
   }
   getAllFeedback(){
     return this.httpClient.get("http://localhost:9096/getFeedbacks")
   }
   updateFeedback(form:any){
-    return this.httpClient.put("http://localhost:9096/updateFeedback/",form)
+    return this.httpClient.put("http://localhost:9096/updateFeedback",form)
   }
   findFeedbackById(id:any){
     return this.httpClient.get("http://localhost:9096/findFeedback/"+id)
