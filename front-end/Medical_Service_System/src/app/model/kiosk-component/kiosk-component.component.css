@@ -6,6 +6,8 @@
 }
 #navbar{
     background-color:#EAFDFC;
+    margin: 0;
+    padding: 5px;
 }
 .market-update-block {
     padding: 2em 2em;
@@ -69,4 +71,7 @@
 
   .market-update-left {
     padding: 0px;
+  }
+  .container-fluid{
+    margin: 0;
   }
