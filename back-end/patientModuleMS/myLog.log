@@ -4770,6 +4770,7 @@ Action:
 
 Identify and stop the process that's listening on port 9098 or configure this application to listen on another port.
  
+<<<<<<< HEAD
 2023-01-07 22:45:45,372 [main] INFO  c.m.p.PatientModuleMsApplication                   -Starting PatientModuleMsApplication using Java 17.0.5 on DESKTOP-IO5RF1D with PID 22100 (C:\Users\Komali\Desktop\MedicalService-System\back-end\patientModuleMS\target\classes started by Komali in C:\Users\Komali\Desktop\MedicalService-System\back-end\patientModuleMS) 
 2023-01-07 22:45:45,396 [main] INFO  c.m.p.PatientModuleMsApplication                   -No active profile set, falling back to 1 default profile: "default" 
 2023-01-07 22:45:47,834 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          -Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
@@ -4807,3 +4808,297 @@ Identify and stop the process that's listening on port 9098 or configure this ap
 2023-01-08 00:20:59,344 [RMI TCP Connection(100)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     -Closing JPA EntityManagerFactory for persistence unit 'default' 
 2023-01-08 00:20:59,349 [RMI TCP Connection(100)-127.0.0.1] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown initiated... 
 2023-01-08 00:20:59,360 [RMI TCP Connection(100)-127.0.0.1] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown completed. 
+=======
+2023-01-07 17:45:12,662 [http-nio-9098-exec-2] INFO  c.m.p.s.PatientServiceImp                          -Enter into patient Controller and getting the updatePatientById method 
+2023-01-07 17:45:13,770 [http-nio-9098-exec-2] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet]                -Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessApiUsageException: The given id must not be null!; nested exception is java.lang.IllegalArgumentException: The given id must not be null!] with root cause 
+java.lang.IllegalArgumentException: The given id must not be null!
+	at org.springframework.util.Assert.notNull(Assert.java:201) ~[spring-core-5.3.24.jar:5.3.24]
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById(SimpleJpaRepository.java:322) ~[spring-data-jpa-2.7.6.jar:2.7.6]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:289) ~[spring-data-commons-2.7.6.jar:2.7.6]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137) ~[spring-data-commons-2.7.6.jar:2.7.6]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121) ~[spring-data-commons-2.7.6.jar:2.7.6]
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:530) ~[spring-data-commons-2.7.6.jar:2.7.6]
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:286) ~[spring-data-commons-2.7.6.jar:2.7.6]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:640) ~[spring-data-commons-2.7.6.jar:2.7.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.24.jar:5.3.24]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:164) ~[spring-data-commons-2.7.6.jar:2.7.6]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:139) ~[spring-data-commons-2.7.6.jar:2.7.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.24.jar:5.3.24]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:81) ~[spring-data-commons-2.7.6.jar:2.7.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.24.jar:5.3.24]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-5.3.24.jar:5.3.24]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388) ~[spring-tx-5.3.24.jar:5.3.24]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.24.jar:5.3.24]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.24.jar:5.3.24]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.24.jar:5.3.24]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.24.jar:5.3.24]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174) ~[spring-data-jpa-2.7.6.jar:2.7.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.24.jar:5.3.24]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-5.3.24.jar:5.3.24]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.24.jar:5.3.24]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215) ~[spring-aop-5.3.24.jar:5.3.24]
+	at jdk.proxy2.$Proxy122.findById(Unknown Source) ~[?:?]
+	at com.medicalservicesystem.patient.service.PatientServiceImp.updatePatient(PatientServiceImp.java:47) ~[classes/:?]
+	at com.medicalservicesystem.patient.controller.PatientController.updatePatient(PatientController.java:62) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:920) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:699) ~[tomcat-embed-core-9.0.70.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779) ~[tomcat-embed-core-9.0.70.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2023-01-07 17:45:41,351 [http-nio-9098-exec-1] INFO  c.m.p.s.PatientServiceImp                          -Enter into patient Controller and getting the updatePatientById method 
+2023-01-07 17:45:41,363 [http-nio-9098-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet]                -Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessApiUsageException: The given id must not be null!; nested exception is java.lang.IllegalArgumentException: The given id must not be null!] with root cause 
+java.lang.IllegalArgumentException: The given id must not be null!
+	at org.springframework.util.Assert.notNull(Assert.java:201) ~[spring-core-5.3.24.jar:5.3.24]
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findById(SimpleJpaRepository.java:322) ~[spring-data-jpa-2.7.6.jar:2.7.6]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:289) ~[spring-data-commons-2.7.6.jar:2.7.6]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137) ~[spring-data-commons-2.7.6.jar:2.7.6]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121) ~[spring-data-commons-2.7.6.jar:2.7.6]
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:530) ~[spring-data-commons-2.7.6.jar:2.7.6]
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:286) ~[spring-data-commons-2.7.6.jar:2.7.6]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:640) ~[spring-data-commons-2.7.6.jar:2.7.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.24.jar:5.3.24]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:164) ~[spring-data-commons-2.7.6.jar:2.7.6]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:139) ~[spring-data-commons-2.7.6.jar:2.7.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.24.jar:5.3.24]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:81) ~[spring-data-commons-2.7.6.jar:2.7.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.24.jar:5.3.24]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-5.3.24.jar:5.3.24]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388) ~[spring-tx-5.3.24.jar:5.3.24]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.24.jar:5.3.24]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.24.jar:5.3.24]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.24.jar:5.3.24]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.24.jar:5.3.24]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174) ~[spring-data-jpa-2.7.6.jar:2.7.6]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.24.jar:5.3.24]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-5.3.24.jar:5.3.24]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.24.jar:5.3.24]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215) ~[spring-aop-5.3.24.jar:5.3.24]
+	at jdk.proxy2.$Proxy122.findById(Unknown Source) ~[?:?]
+	at com.medicalservicesystem.patient.service.PatientServiceImp.updatePatient(PatientServiceImp.java:47) ~[classes/:?]
+	at com.medicalservicesystem.patient.controller.PatientController.updatePatient(PatientController.java:62) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:920) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:699) ~[tomcat-embed-core-9.0.70.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.24.jar:5.3.24]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779) ~[tomcat-embed-core-9.0.70.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.24.jar:5.3.24]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.70.jar:9.0.70]
+	at java.lang.Thread.run(Thread.java:833) ~[?:?]
+2023-01-07 17:45:49,353 [http-nio-9098-exec-3] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver        -Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported] 
+2023-01-07 17:50:33,766 [http-nio-9098-exec-8] INFO  c.m.p.s.PatientServiceImp                          -Enter into patient Controller and getting the updatePatientById method 
+2023-01-07 17:50:35,982 [http-nio-9098-exec-8] INFO  c.m.p.s.PatientServiceImp                          -Updating Patient Disease From PatientService..... 
+2023-01-07 17:52:27,738 [http-nio-9098-exec-5] INFO  c.m.p.s.PatientServiceImp                          -Enter into patient Controller and getting the findPatientByEmail method  
+2023-01-07 17:52:27,773 [http-nio-9098-exec-5] INFO  c.m.p.s.PatientServiceImp                          -Getting Patient By Patient Email From PatientService..... 
+2023-01-07 17:52:43,343 [http-nio-9098-exec-6] INFO  c.m.p.s.PatientServiceImp                          -Enter into patient Controller and getting the findPatientByEmail method  
+2023-01-07 17:52:43,345 [http-nio-9098-exec-6] INFO  c.m.p.s.PatientServiceImp                          -Getting Patient By Patient Email From PatientService..... 
+2023-01-07 17:54:09,591 [http-nio-9098-exec-1] INFO  c.m.p.s.PatientServiceImp                          -Enter into patient Controller and getting the findPatientByEmail method  
+2023-01-07 17:54:09,602 [http-nio-9098-exec-1] INFO  c.m.p.s.PatientServiceImp                          -Getting Patient By Patient Email From PatientService..... 
+2023-01-07 17:57:24,815 [http-nio-9098-exec-7] INFO  c.m.p.s.PatientServiceImp                          -Enter into patient Controller and getting the findPatientByEmail method  
+2023-01-07 17:57:24,854 [http-nio-9098-exec-7] INFO  c.m.p.s.PatientServiceImp                          -Getting Patient By Patient Email From PatientService..... 
+2023-01-07 17:57:56,927 [http-nio-9098-exec-8] INFO  c.m.p.s.PatientServiceImp                          -Enter into patient Controller and getting the updatePatientById method 
+2023-01-07 17:57:57,521 [http-nio-9098-exec-8] INFO  c.m.p.s.PatientServiceImp                          -Updating Patient Address From PatientService..... 
+2023-01-07 17:57:57,521 [http-nio-9098-exec-8] INFO  c.m.p.s.PatientServiceImp                          -Updating Patient Disease From PatientService..... 
+2023-01-07 17:57:57,522 [http-nio-9098-exec-8] INFO  c.m.p.s.PatientServiceImp                          -Updating Patient Age From PatientService..... 
+2023-01-07 17:57:57,522 [http-nio-9098-exec-8] INFO  c.m.p.s.PatientServiceImp                          -Updating Weight Age From PatientService..... 
+2023-01-07 17:58:30,039 [http-nio-9098-exec-5] INFO  c.m.p.s.PatientServiceImp                          -Enter into patient Controller and getting the updatePatientById method 
+2023-01-07 17:58:30,085 [http-nio-9098-exec-5] INFO  c.m.p.s.PatientServiceImp                          -Updating Patient Address From PatientService..... 
+2023-01-07 17:58:30,085 [http-nio-9098-exec-5] INFO  c.m.p.s.PatientServiceImp                          -Updating Patient Disease From PatientService..... 
+2023-01-07 17:58:30,085 [http-nio-9098-exec-5] INFO  c.m.p.s.PatientServiceImp                          -Updating Patient Age From PatientService..... 
+2023-01-07 17:58:30,086 [http-nio-9098-exec-5] INFO  c.m.p.s.PatientServiceImp                          -Updating Weight Age From PatientService..... 
+2023-01-07 17:58:41,599 [http-nio-9098-exec-6] INFO  c.m.p.s.PatientServiceImp                          -Enter into patient Controller and getting the updatePatientById method 
+2023-01-07 17:58:41,611 [http-nio-9098-exec-6] INFO  c.m.p.s.PatientServiceImp                          -Updating Patient Address From PatientService..... 
+2023-01-07 17:58:41,611 [http-nio-9098-exec-6] INFO  c.m.p.s.PatientServiceImp                          -Updating Patient Disease From PatientService..... 
+2023-01-07 17:58:41,612 [http-nio-9098-exec-6] INFO  c.m.p.s.PatientServiceImp                          -Updating Patient Age From PatientService..... 
+2023-01-07 17:58:41,613 [http-nio-9098-exec-6] INFO  c.m.p.s.PatientServiceImp                          -Updating Weight Age From PatientService..... 
+2023-01-07 17:58:43,437 [http-nio-9098-exec-2] INFO  c.m.p.s.PatientServiceImp                          -Enter into patient Controller and getting the updatePatientById method 
+2023-01-07 17:58:43,464 [http-nio-9098-exec-2] INFO  c.m.p.s.PatientServiceImp                          -Updating Patient Address From PatientService..... 
+2023-01-07 17:58:43,465 [http-nio-9098-exec-2] INFO  c.m.p.s.PatientServiceImp                          -Updating Patient Disease From PatientService..... 
+2023-01-07 17:58:43,467 [http-nio-9098-exec-2] INFO  c.m.p.s.PatientServiceImp                          -Updating Patient Age From PatientService..... 
+2023-01-07 17:58:43,469 [http-nio-9098-exec-2] INFO  c.m.p.s.PatientServiceImp                          -Updating Weight Age From PatientService..... 
+2023-01-07 18:05:13,253 [http-nio-9098-exec-10] INFO  c.m.p.s.PatientServiceImp                          -Enter into patient Controller and getting the findPatientByEmail method  
+2023-01-07 18:05:13,308 [http-nio-9098-exec-10] INFO  c.m.p.s.PatientServiceImp                          -Getting Patient By Patient Email From PatientService..... 
+2023-01-07 18:05:25,806 [http-nio-9098-exec-9] INFO  c.m.p.s.PatientServiceImp                          -Enter into patient Controller and getting the updatePatientById method 
+2023-01-07 18:05:25,897 [http-nio-9098-exec-9] INFO  c.m.p.s.PatientServiceImp                          -Updating Patient Address From PatientService..... 
+2023-01-07 18:05:25,901 [http-nio-9098-exec-9] INFO  c.m.p.s.PatientServiceImp                          -Updating Patient Disease From PatientService..... 
+2023-01-07 18:05:25,901 [http-nio-9098-exec-9] INFO  c.m.p.s.PatientServiceImp                          -Updating Patient Age From PatientService..... 
+2023-01-07 18:05:25,902 [http-nio-9098-exec-9] INFO  c.m.p.s.PatientServiceImp                          -Updating Weight Age From PatientService..... 
+2023-01-07 18:05:26,990 [http-nio-9098-exec-8] INFO  c.m.p.s.PatientServiceImp                          -Enter into patient Controller and getting the updatePatientById method 
+2023-01-07 18:05:27,015 [http-nio-9098-exec-8] INFO  c.m.p.s.PatientServiceImp                          -Updating Patient Address From PatientService..... 
+2023-01-07 18:05:27,016 [http-nio-9098-exec-8] INFO  c.m.p.s.PatientServiceImp                          -Updating Patient Disease From PatientService..... 
+2023-01-07 18:05:27,016 [http-nio-9098-exec-8] INFO  c.m.p.s.PatientServiceImp                          -Updating Patient Age From PatientService..... 
+2023-01-07 18:05:27,016 [http-nio-9098-exec-8] INFO  c.m.p.s.PatientServiceImp                          -Updating Weight Age From PatientService..... 
+2023-01-07 18:07:42,274 [http-nio-9098-exec-5] INFO  c.m.p.s.PatientServiceImp                          -Enter into patient Controller and getting the findPatientByEmail method  
+2023-01-07 18:07:42,348 [http-nio-9098-exec-5] INFO  c.m.p.s.PatientServiceImp                          -Getting Patient By Patient Email From PatientService..... 
+2023-01-07 18:07:49,872 [http-nio-9098-exec-6] INFO  c.m.p.s.PatientServiceImp                          -Enter into patient Controller and getting the updatePatientById method 
+2023-01-07 18:07:50,162 [http-nio-9098-exec-6] INFO  c.m.p.s.PatientServiceImp                          -Updating Patient Address From PatientService..... 
+2023-01-07 18:07:50,164 [http-nio-9098-exec-6] INFO  c.m.p.s.PatientServiceImp                          -Updating Patient Disease From PatientService..... 
+2023-01-07 18:07:50,164 [http-nio-9098-exec-6] INFO  c.m.p.s.PatientServiceImp                          -Updating Patient Age From PatientService..... 
+2023-01-07 18:07:50,165 [http-nio-9098-exec-6] INFO  c.m.p.s.PatientServiceImp                          -Updating Weight Age From PatientService..... 
+2023-01-07 18:07:51,175 [http-nio-9098-exec-2] INFO  c.m.p.s.PatientServiceImp                          -Enter into patient Controller and getting the updatePatientById method 
+2023-01-07 18:07:51,204 [http-nio-9098-exec-2] INFO  c.m.p.s.PatientServiceImp                          -Updating Patient Address From PatientService..... 
+2023-01-07 18:07:51,205 [http-nio-9098-exec-2] INFO  c.m.p.s.PatientServiceImp                          -Updating Patient Disease From PatientService..... 
+2023-01-07 18:07:51,205 [http-nio-9098-exec-2] INFO  c.m.p.s.PatientServiceImp                          -Updating Patient Age From PatientService..... 
+2023-01-07 18:07:51,205 [http-nio-9098-exec-2] INFO  c.m.p.s.PatientServiceImp                          -Updating Weight Age From PatientService..... 
+2023-01-07 18:08:45,259 [http-nio-9098-exec-10] INFO  c.m.p.s.PatientServiceImp                          -Enter into patient Controller and getting the findPatientByEmail method  
+2023-01-07 18:08:45,260 [http-nio-9098-exec-10] INFO  c.m.p.s.PatientServiceImp                          -Getting Patient By Patient Email From PatientService..... 
+2023-01-07 18:09:20,042 [http-nio-9098-exec-8] INFO  c.m.p.s.PatientServiceImp                          -Enter into patient Controller and getting the updatePatientById method 
+2023-01-07 18:09:20,057 [http-nio-9098-exec-8] INFO  c.m.p.s.PatientServiceImp                          -Updating Patient Address From PatientService..... 
+2023-01-07 18:09:20,057 [http-nio-9098-exec-8] INFO  c.m.p.s.PatientServiceImp                          -Updating Patient Disease From PatientService..... 
+2023-01-07 18:09:20,057 [http-nio-9098-exec-8] INFO  c.m.p.s.PatientServiceImp                          -Updating Patient Age From PatientService..... 
+2023-01-07 18:09:20,058 [http-nio-9098-exec-8] INFO  c.m.p.s.PatientServiceImp                          -Updating Weight Age From PatientService..... 
+2023-01-07 18:09:25,888 [http-nio-9098-exec-5] INFO  c.m.p.s.PatientServiceImp                          -Enter into patient Controller and getting the updatePatientById method 
+2023-01-07 18:09:25,914 [http-nio-9098-exec-5] INFO  c.m.p.s.PatientServiceImp                          -Updating Patient Address From PatientService..... 
+2023-01-07 18:09:25,915 [http-nio-9098-exec-5] INFO  c.m.p.s.PatientServiceImp                          -Updating Patient Disease From PatientService..... 
+2023-01-07 18:09:25,915 [http-nio-9098-exec-5] INFO  c.m.p.s.PatientServiceImp                          -Updating Patient Age From PatientService..... 
+2023-01-07 18:09:25,916 [http-nio-9098-exec-5] INFO  c.m.p.s.PatientServiceImp                          -Updating Weight Age From PatientService..... 
+2023-01-07 18:17:00,111 [http-nio-9098-exec-6] INFO  c.m.p.s.PatientServiceImp                          -Enter into patient Controller and getting the findPatientByEmail method  
+2023-01-07 18:17:00,122 [http-nio-9098-exec-6] INFO  c.m.p.s.PatientServiceImp                          -Getting Patient By Patient Email From PatientService..... 
+2023-01-07 18:17:14,400 [http-nio-9098-exec-1] INFO  c.m.p.s.PatientServiceImp                          -Enter into patient Controller and getting the updatePatientById method 
+2023-01-07 18:17:14,436 [http-nio-9098-exec-1] INFO  c.m.p.s.PatientServiceImp                          -Updating Patient Address From PatientService..... 
+2023-01-07 18:17:14,437 [http-nio-9098-exec-1] INFO  c.m.p.s.PatientServiceImp                          -Updating Patient Disease From PatientService..... 
+2023-01-07 18:17:14,437 [http-nio-9098-exec-1] INFO  c.m.p.s.PatientServiceImp                          -Updating Patient Age From PatientService..... 
+2023-01-07 18:17:14,437 [http-nio-9098-exec-1] INFO  c.m.p.s.PatientServiceImp                          -Updating Weight Age From PatientService..... 
+2023-01-07 18:17:32,150 [http-nio-9098-exec-7] INFO  c.m.p.s.PatientServiceImp                          -Enter into patient Controller and getting the updatePatientById method 
+2023-01-07 18:17:32,171 [http-nio-9098-exec-7] INFO  c.m.p.s.PatientServiceImp                          -Updating Patient Address From PatientService..... 
+2023-01-07 18:17:32,173 [http-nio-9098-exec-7] INFO  c.m.p.s.PatientServiceImp                          -Updating Patient Disease From PatientService..... 
+2023-01-07 18:17:32,173 [http-nio-9098-exec-7] INFO  c.m.p.s.PatientServiceImp                          -Updating Patient Age From PatientService..... 
+2023-01-07 18:17:32,174 [http-nio-9098-exec-7] INFO  c.m.p.s.PatientServiceImp                          -Updating Weight Age From PatientService..... 
+2023-01-07 18:18:54,191 [http-nio-9098-exec-8] INFO  c.m.p.s.PatientServiceImp                          -Enter into patient Controller and getting the findPatientByEmail method  
+2023-01-07 18:18:54,196 [http-nio-9098-exec-8] INFO  c.m.p.s.PatientServiceImp                          -Getting Patient By Patient Email From PatientService..... 
+2023-01-07 18:19:11,094 [http-nio-9098-exec-5] INFO  c.m.p.s.PatientServiceImp                          -Enter into patient Controller and getting the updatePatientById method 
+2023-01-07 18:19:11,145 [http-nio-9098-exec-5] INFO  c.m.p.s.PatientServiceImp                          -Updating Patient Address From PatientService..... 
+2023-01-07 18:19:11,145 [http-nio-9098-exec-5] INFO  c.m.p.s.PatientServiceImp                          -Updating Patient Disease From PatientService..... 
+2023-01-07 18:19:11,145 [http-nio-9098-exec-5] INFO  c.m.p.s.PatientServiceImp                          -Updating Patient Age From PatientService..... 
+2023-01-07 18:19:11,146 [http-nio-9098-exec-5] INFO  c.m.p.s.PatientServiceImp                          -Updating Weight Age From PatientService..... 
+2023-01-07 18:20:36,174 [http-nio-9098-exec-6] INFO  c.m.p.s.PatientServiceImp                          -Enter into patient Controller and getting the updatePatientById method 
+2023-01-07 18:20:36,198 [http-nio-9098-exec-6] INFO  c.m.p.s.PatientServiceImp                          -Updating Patient Address From PatientService..... 
+2023-01-07 18:20:36,199 [http-nio-9098-exec-6] INFO  c.m.p.s.PatientServiceImp                          -Updating Patient Disease From PatientService..... 
+2023-01-07 18:20:36,199 [http-nio-9098-exec-6] INFO  c.m.p.s.PatientServiceImp                          -Updating Patient Age From PatientService..... 
+2023-01-07 18:20:36,199 [http-nio-9098-exec-6] INFO  c.m.p.s.PatientServiceImp                          -Updating Weight Age From PatientService..... 
+2023-01-07 21:51:06,959 [http-nio-9098-exec-1] INFO  c.m.p.s.PatientServiceImp                          -Enter into patient Controller and getting the findPatientByEmail method  
+2023-01-07 21:51:07,407 [http-nio-9098-exec-1] INFO  c.m.p.s.PatientServiceImp                          -Getting Patient By Patient Email From PatientService..... 
+2023-01-07 21:52:52,798 [http-nio-9098-exec-9] INFO  c.m.p.s.PatientServiceImp                          -Enter into patient Controller and getting the method addpatient 
+2023-01-07 21:52:52,801 [http-nio-9098-exec-9] INFO  c.m.p.s.PatientServiceImp                          -Adding Patient From PatientService..... 
+2023-01-07 21:53:00,509 [http-nio-9098-exec-3] INFO  c.m.p.s.PatientServiceImp                          -Enter into patient Controller and getting the findPatientByEmail method  
+2023-01-07 21:53:00,511 [http-nio-9098-exec-3] INFO  c.m.p.s.PatientServiceImp                          -Getting Patient By Patient Email From PatientService..... 
+2023-01-07 21:53:19,677 [http-nio-9098-exec-6] INFO  c.m.p.s.PatientServiceImp                          -Enter into patient Controller and getting the updatePatientById method 
+2023-01-07 21:53:19,766 [http-nio-9098-exec-6] INFO  c.m.p.s.PatientServiceImp                          -Updating Patient Address From PatientService..... 
+2023-01-07 21:53:19,766 [http-nio-9098-exec-6] INFO  c.m.p.s.PatientServiceImp                          -Updating Patient Disease From PatientService..... 
+2023-01-07 21:53:19,766 [http-nio-9098-exec-6] INFO  c.m.p.s.PatientServiceImp                          -Updating Patient Age From PatientService..... 
+2023-01-07 21:53:19,768 [http-nio-9098-exec-6] INFO  c.m.p.s.PatientServiceImp                          -Updating Weight Age From PatientService..... 
+2023-01-07 22:02:05,349 [http-nio-9098-exec-1] INFO  c.m.p.s.PatientServiceImp                          -Enter into patient Controller and getting the findPatientByEmail method  
+2023-01-07 22:02:05,420 [http-nio-9098-exec-1] INFO  c.m.p.s.PatientServiceImp                          -Getting Patient By Patient Email From PatientService..... 
+2023-01-07 22:02:21,733 [http-nio-9098-exec-7] INFO  c.m.p.s.PatientServiceImp                          -Enter into patient Controller and getting the updatePatientById method 
+2023-01-07 22:02:21,961 [http-nio-9098-exec-7] INFO  c.m.p.s.PatientServiceImp                          -Updating Patient Address From PatientService..... 
+2023-01-07 22:02:21,962 [http-nio-9098-exec-7] INFO  c.m.p.s.PatientServiceImp                          -Updating Patient Disease From PatientService..... 
+2023-01-07 22:02:21,962 [http-nio-9098-exec-7] INFO  c.m.p.s.PatientServiceImp                          -Updating Patient Age From PatientService..... 
+2023-01-07 22:02:21,962 [http-nio-9098-exec-7] INFO  c.m.p.s.PatientServiceImp                          -Updating Weight Age From PatientService..... 
+2023-01-07 22:49:51,035 [http-nio-9098-exec-8] INFO  c.m.p.s.PatientServiceImp                          -Enter into patient Controller and getting the findPatientByEmail method  
+2023-01-07 22:49:51,103 [http-nio-9098-exec-8] INFO  c.m.p.s.PatientServiceImp                          -Getting Patient By Patient Email From PatientService..... 
+2023-01-07 22:50:02,078 [http-nio-9098-exec-5] INFO  c.m.p.s.PatientServiceImp                          -Enter into patient Controller and getting the findPatientByEmail method  
+2023-01-07 22:50:02,079 [http-nio-9098-exec-5] INFO  c.m.p.s.PatientServiceImp                          -Getting Patient By Patient Email From PatientService..... 
+2023-01-08 00:21:36,889 [RMI TCP Connection(527)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin -Application shutdown requested. 
+2023-01-08 00:21:38,149 [RMI TCP Connection(527)-127.0.0.1] INFO  o.a.c.h.Http11NioProtocol                          -Pausing ProtocolHandler ["http-nio-9098"] 
+2023-01-08 00:21:38,151 [RMI TCP Connection(527)-127.0.0.1] INFO  o.a.c.c.StandardService                            -Stopping service [Tomcat] 
+2023-01-08 00:21:38,237 [RMI TCP Connection(527)-127.0.0.1] INFO  o.a.c.c.C.[.[.[/]                                  -Destroying Spring FrameworkServlet 'dispatcherServlet' 
+2023-01-08 00:21:38,769 [RMI TCP Connection(527)-127.0.0.1] INFO  o.a.c.h.Http11NioProtocol                          -Stopping ProtocolHandler ["http-nio-9098"] 
+2023-01-08 00:21:38,848 [RMI TCP Connection(527)-127.0.0.1] INFO  o.a.c.h.Http11NioProtocol                          -Destroying ProtocolHandler ["http-nio-9098"] 
+2023-01-08 00:21:38,959 [RMI TCP Connection(527)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     -Closing JPA EntityManagerFactory for persistence unit 'default' 
+2023-01-08 00:21:39,124 [RMI TCP Connection(527)-127.0.0.1] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown initiated... 
+2023-01-08 00:21:39,351 [RMI TCP Connection(527)-127.0.0.1] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown completed. 
+>>>>>>> origin/sourav

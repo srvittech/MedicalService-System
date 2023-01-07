@@ -6,6 +6,10 @@ import { Injectable } from '@angular/core';
 })
 export class TransactionServiceService {
   constructor(private httpClient: HttpClient) { }
+
+  allTransactions:any= []
+  allPendingTransactions:any= []
+
   addTransaction(transaction: any) {
     return this.httpClient.post("http://localhost:7091/addTransaction", transaction)
   }
