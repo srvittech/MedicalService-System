@@ -63,6 +63,7 @@ export class LoginComponentComponent implements OnInit {
     //this.registerForm.reset()
   this.doctorService.findDoctorById(this.registerForm.value.id).subscribe(res=>{
     this.user = res
+    this.doctorService.user = this.user
     if (this.user.id == this.registerForm.value.id && this.user.password == this.registerForm.value.password ){
       //this.openDialog()
       console.log("doc");
