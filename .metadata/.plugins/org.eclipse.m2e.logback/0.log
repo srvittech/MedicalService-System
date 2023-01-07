@@ -4071,3 +4071,13 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact antlr:antlr:j
 2023-01-07 17:52:12,250 [Worker-5: Launching usermodule (6)] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\M Pavani\Desktop\sts-4.17.0.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\plexus-utils-3.3.1.jar
 2023-01-07 17:52:12,250 [Worker-5: Launching usermodule (6)] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\M Pavani\Desktop\sts-4.17.0.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\wagon-file-3.5.1.jar
 2023-01-07 17:52:12,251 [Worker-5: Launching usermodule (6)] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\M Pavani\Desktop\sts-4.17.0.RELEASE\plugins\org.eclipse.m2e.maven.runtime_3.8.604.20221130-2149\jars\wagon-provider-api-3.5.1.jar
+2023-01-07 17:52:12,253 [Worker-5: Launching usermodule (6)] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=com.google.guava_30.1.0.v20221112-0806 [22])
+2023-01-07 17:52:12,259 [Worker-5: Launching usermodule (6)] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\M Pavani\Desktop\sts-4.17.0.RELEASE\plugins\com.google.guava_30.1.0.v20221112-0806.jar
+2023-01-07 17:52:12,259 [Worker-5: Launching usermodule (6)] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=slf4j.api_1.7.36 [584])
+2023-01-07 17:52:12,260 [Worker-5: Launching usermodule (6)] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\M Pavani\Desktop\sts-4.17.0.RELEASE\plugins\slf4j.api_1.7.36.jar
+2023-01-07 17:52:12,260 [Worker-5: Launching usermodule (6)] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=javax.inject_1.0.0.v20220405-0441 [49])
+2023-01-07 17:52:12,262 [Worker-5: Launching usermodule (6)] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\M Pavani\Desktop\sts-4.17.0.RELEASE\plugins\javax.inject_1.0.0.v20220405-0441.jar
+2023-01-07 17:52:12,262 [Worker-5: Launching usermodule (6)] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=javax.annotation_1.3.5.v20221112-0806 [47])
+2023-01-07 17:52:12,264 [Worker-5: Launching usermodule (6)] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\M Pavani\Desktop\sts-4.17.0.RELEASE\plugins\javax.annotation_1.3.5.v20221112-0806.jar
+2023-01-07 17:52:12,270 [Worker-5: Launching usermodule (6)] INFO  o.e.m.i.launch.MavenLaunchDelegate - Run build in "C:\Users\M Pavani\Desktop\MedicalService-System\back-end\usermodule":
+2023-01-07 17:52:12,276 [Worker-5: Launching usermodule (6)] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -Dstyle.color=always clean install
