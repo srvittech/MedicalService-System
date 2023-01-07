@@ -1,7 +1,0 @@
-com\medicalservicesystem\patient\PatientModuleMsApplication.class
-com\medicalservicesystem\patient\config\PatientConfig.class
-com\medicalservicesystem\patient\controller\PatientController.class
-com\medicalservicesystem\patient\service\PatientServiceImp.class
-com\medicalservicesystem\patient\model\Patient.class
-com\medicalservicesystem\patient\repository\PatientRepository.class
-com\medicalservicesystem\patient\service\PatientService.class
