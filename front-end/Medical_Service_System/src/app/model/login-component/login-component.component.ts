@@ -42,10 +42,7 @@ export class LoginComponentComponent implements OnInit {
       this.user = res
       this.userService.user = this.user
       console.table(this.user);
-<<<<<<< HEAD
-=======
       
->>>>>>> origin/sourav
       if (this.user.id == this.registerForm.value.id && this.user.password == this.registerForm.value.password && this.registerForm.value.role.toLowerCase() =="admin") {
         //this.openDialog()
         console.log(this.registerForm.value.password );

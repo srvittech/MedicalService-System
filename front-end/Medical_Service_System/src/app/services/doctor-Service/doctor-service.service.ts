@@ -11,7 +11,20 @@ export class DoctorServiceService {
   addDoctor(form:any){
     return this.httpClient.post("http://localhost:9092/addDoctor",form)
   }
+  getDoctots(){
+    return this.httpClient.get("http://localhost:9092/getDoctors")
+  }
   findDoctorById(id:any){
     return this.httpClient.get("http://localhost:9092/findDoctorById/"+id)
   }
+  findBySpecialization(specialization:any){
+    return this.httpClient.get("http://localhost:9092/getSpecialization/"+specialization)
+  }
+  updateDoctor(form:any){
+    return this.httpClient.put("http://localhost:9092/updateDoctor/",form)
+  }
+  deleteDoctorById(id:any){
+    return this.httpClient.delete("http://localhost:9092/deleteDoctorById/"+id)
+  }
+ 
 }
