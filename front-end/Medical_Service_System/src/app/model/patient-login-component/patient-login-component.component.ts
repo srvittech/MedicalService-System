@@ -37,7 +37,7 @@ export class PatientLoginComponentComponent {
     this.submitted = true
     if (this.registerForm.invalid) { return }
 
-    this.patientService.getPatientByEmail(this.registerForm.value.email).subscribe(res => {
+    this.patientService.findPatientByEmail(this.registerForm.value.email).subscribe(res => {
       this.user = res
       this.patientService.patient = this.user
       console.table(this.user);

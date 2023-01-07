@@ -5,6 +5,7 @@ import java.util.List;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -15,6 +16,7 @@ import com.medicalServiceSystem.transaction.model.Transaction;
 import com.medicalServiceSystem.transaction.service.TransactionServiceImpl;
 
 @RestController
+@CrossOrigin("*")
 public class TransactionController {
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(TransactionController.class);
