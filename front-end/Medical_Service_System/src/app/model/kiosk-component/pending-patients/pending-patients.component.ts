@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { DoctorServiceService } from 'src/app/services/doctor-Service/doctor-service.service';
 import { TransactionServiceService } from 'src/app/services/transaction-Service/transaction-service.service';
 
 @Component({
@@ -10,17 +11,17 @@ import { TransactionServiceService } from 'src/app/services/transaction-Service/
 export class PendingPatientsComponent {
 
   pendingTransactions: any
-  flag: any
+  doctorsList:any=[]
 
-  roles:any=["Forward to Doctor"]
-
-  constructor(private transactionService: TransactionServiceService, private formBuilder: FormBuilder) {
+  constructor(private transactionService: TransactionServiceService, private formBuilder: FormBuilder,private doctorService:DoctorServiceService) {
     this.pendingTransactions = this.transactionService.allPendingTransactions
+    this.doctorsList = this.doctorService.listOfDoctors
   }
 
   registerForm!: FormGroup
   submitted = false;
   loginType: any = ""
+  doctorAssignedId:any=""
 
   ngOnInit(): void {
     this.registerForm = this.formBuilder.group({
@@ -29,7 +30,8 @@ export class PendingPatientsComponent {
       role: ['', Validators.required]
     })
   }
-  submit(){
+  submit(transId:any){
+    console.log(this.doctorAssignedId);
     
   }
 

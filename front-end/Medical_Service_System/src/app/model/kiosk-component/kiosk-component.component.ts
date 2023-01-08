@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { DoctorServiceService } from 'src/app/services/doctor-Service/doctor-service.service';
 import { TransactionServiceService } from 'src/app/services/transaction-Service/transaction-service.service';
 
 @Component({
@@ -11,11 +12,11 @@ import { TransactionServiceService } from 'src/app/services/transaction-Service/
 export class KioskComponentComponent implements OnInit {
   ngOnInit(): void {
   }
-  constructor(private route: ActivatedRoute, private router: Router, private transactionService: TransactionServiceService) {
-    // this.showAllAppointments()
-    // this.showPendingAppointments()
+  constructor(private route: ActivatedRoute, private router: Router, private transactionService: TransactionServiceService
+    ,private doctorService:DoctorServiceService) {
     this.fetchAllTransacationFromDatabase()
-    this.fetchPendingTransacationFromDatabase() 
+    this.fetchPendingTransacationFromDatabase()
+    this.fetchDoctorListFromDatabase()
 
   }
   fetchAllTransacationFromDatabase() {
@@ -26,6 +27,11 @@ export class KioskComponentComponent implements OnInit {
   fetchPendingTransacationFromDatabase() {
     this.transactionService.allTransactions = this.transactionService.getTransactionBasedOnStatus("pending").subscribe(res => {
       this.transactionService.allPendingTransactions = res
+    })
+  }
+  fetchDoctorListFromDatabase() {
+    this.doctorService.listOfDoctors = this.doctorService.getDoctors().subscribe(res => {
+      this.doctorService.listOfDoctors= res
     })
 
   }
@@ -45,3 +51,4 @@ export class KioskComponentComponent implements OnInit {
   }
 
 }
+
