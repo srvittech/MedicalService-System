@@ -10,11 +10,15 @@ import { DoctorServiceService } from 'src/app/services/doctor-Service/doctor-ser
   styleUrls: ['./edit-doctor.component.css']
 })
 export class EditDoctorComponent {
+ doctorDetails:any ={}
   public signupForm !: FormGroup;
   submitted = false
   constructor(private formBuilder: FormBuilder, private router: Router, 
-    private dialog: MatDialog, private doctorService: DoctorServiceService) { }
-
+    private dialog: MatDialog, private doctorService: DoctorServiceService) {
+      this.doctorDetails = this.doctorService.user
+      console.table(this.doctorDetails);
+      
+     }
   ngOnInit(): void {
 
     this.signupForm = this.formBuilder.group({

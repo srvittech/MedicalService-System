@@ -32,7 +32,12 @@ export class PendingPatientsComponent {
   }
   submit(transId:any){
     console.log(this.doctorAssignedId);
+    console.log(transId);
+    this.ngOnInit()
     
   }
+  selectedData(event: any) {
+    this.doctorAssignedId = event.target.value;
+   }
 
 }
