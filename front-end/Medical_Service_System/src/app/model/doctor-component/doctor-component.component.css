@@ -68,6 +68,10 @@
     text-align: center;
     border-radius: 49px;
     line-height: 1.7em;
+    -webkit-border-radius: 49px;
+    -moz-border-radius: 49px;
+    -o-border-radius: 49px;
+    line-height: 1.7em;
   }
   .market-update-right i.fa.fa-commenting {
     font-size: 3em;

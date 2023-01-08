@@ -1,32 +1,35 @@
 <br><br>
 <div class="container-fluid">
+  <div>
     <div>
-        <div>
 
-            <table class="table" >
-                <thead>
-                    <tr>
-                        <th scope="col">Patient Id</th>
-                        <th scope="col">DoctorId</th>
-                        <th scope="col">Disease</th>
-                        <th scope="col">Status</th>
-                        <th scope="col">prescription</th>
-                        <th scope="col">Date Of Request</th>
-                        <th scope="col">Date Of Treatment</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Patient Id</th>
+            <!-- <th scope="col">Patient Name</th> -->
+            <!-- <th scope="col">Age</th> -->
+            <!-- <th scope="col">Weight</th> -->
+            <th scope="col">Disease</th>
+            <th scope="col">prescription</th>
+            <th scope="col">Date Of Request</th>
+            <!-- <th scope="col">Date Of Treatment</th> -->
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr *ngFor="let trans of forwardedTransactions">
+            <!-- <form action=""> -->
+            <th scope="row">{{trans.patientId}}</th>
+            <td>{{trans.disease}}</td>
+            <td><button class="btn btn-primary">Give Prescription</button></td>
+            <!-- <td>{{trans.weight}}</td> -->
+            <td>{{trans.dateOfRequest}}</td>
+            <td><button class="btn btn-danger" (click)="submit(trans.transactionId)">Submit Prescription</button></td>
+            <!-- </form> -->
+          </tr>
+        </tbody>
+      </table>
     </div>
+  </div>
 </div>
