@@ -12,6 +12,7 @@ import { DoctorServiceService } from 'src/app/services/doctor-Service/doctor-ser
 export class EditDoctorComponent {
   public signupForm !: FormGroup;
   submitted = false
+  user:any=[]
   constructor(private formBuilder: FormBuilder, private router: Router, 
     private dialog: MatDialog, private doctorService: DoctorServiceService) { }
 
@@ -37,9 +38,19 @@ export class EditDoctorComponent {
       console.table(this.signupForm.value);
       alert("Success")
     }
-
+ 
   }
+ findDoctorById(){
+  this.doctorService.findDoctorById(this.signupForm.value.id).subscribe(res=>{
+    this.doctorService.user = res
+ })
+}
+updateDoctor(form:any){
+  
+}
   close() {
     this.dialog.closeAll()
   }
 }
+
+
