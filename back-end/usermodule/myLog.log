@@ -7535,6 +7535,55 @@ Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (usi
 2023-01-07 12:38:58,870 [RMI TCP Connection(99)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     -Closing JPA EntityManagerFactory for persistence unit 'default' 
 2023-01-07 12:38:58,874 [RMI TCP Connection(99)-127.0.0.1] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown initiated... 
 2023-01-07 12:38:58,885 [RMI TCP Connection(99)-127.0.0.1] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown completed. 
+<<<<<<< HEAD
+2023-01-07 12:48:40,090 [main] INFO  c.m.u.UsermoduleApplication                        -Starting UsermoduleApplication using Java 17.0.5 on DESKTOP-IO5RF1D with PID 21020 (C:\Users\Komali\Desktop\MedicalService-System\back-end\usermodule\target\classes started by Komali in C:\Users\Komali\Desktop\MedicalService-System\back-end\usermodule) 
+2023-01-07 12:48:40,119 [main] INFO  c.m.u.UsermoduleApplication                        -No active profile set, falling back to 1 default profile: "default" 
+2023-01-07 12:48:41,759 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          -Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2023-01-07 12:48:41,854 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          -Finished Spring Data repository scanning in 73 ms. Found 1 JPA repository interfaces. 
+2023-01-07 12:48:42,923 [main] INFO  o.s.b.w.e.t.TomcatWebServer                        -Tomcat initialized with port(s): 9091 (http) 
+2023-01-07 12:48:42,944 [main] INFO  o.a.c.h.Http11NioProtocol                          -Initializing ProtocolHandler ["http-nio-9091"] 
+2023-01-07 12:48:42,947 [main] INFO  o.a.c.c.StandardService                            -Starting service [Tomcat] 
+2023-01-07 12:48:42,949 [main] INFO  o.a.c.c.StandardEngine                             -Starting Servlet engine: [Apache Tomcat/9.0.70] 
+2023-01-07 12:48:43,174 [main] INFO  o.a.c.c.C.[.[.[/]                                  -Initializing Spring embedded WebApplicationContext 
+2023-01-07 12:48:43,174 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext     -Root WebApplicationContext: initialization completed in 2957 ms 
+2023-01-07 12:48:43,477 [main] INFO  o.h.j.i.u.LogHelper                                -HHH000204: Processing PersistenceUnitInfo [name: default] 
+2023-01-07 12:48:43,586 [main] INFO  o.h.Version                                        -HHH000412: Hibernate ORM core version 5.6.14.Final 
+2023-01-07 12:48:43,906 [main] INFO  o.h.a.c.Version                                    -HCANN000001: Hibernate Commons Annotations {5.1.2.Final} 
+2023-01-07 12:48:44,116 [main] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Starting... 
+2023-01-07 12:48:44,796 [main] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Start completed. 
+2023-01-07 12:48:44,827 [main] INFO  o.h.d.Dialect                                      -HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect 
+2023-01-07 12:48:46,077 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator                 -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 
+2023-01-07 12:48:46,096 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     -Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2023-01-07 12:48:47,088 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2023-01-07 12:48:47,874 [main] INFO  o.a.c.h.Http11NioProtocol                          -Starting ProtocolHandler ["http-nio-9091"] 
+2023-01-07 12:48:47,913 [main] INFO  o.s.b.w.e.t.TomcatWebServer                        -Tomcat started on port(s): 9091 (http) with context path '' 
+2023-01-07 12:48:48,004 [main] INFO  c.m.u.UsermoduleApplication                        -Started UsermoduleApplication in 8.65 seconds (JVM running for 10.917) 
+2023-01-07 12:50:44,760 [http-nio-9091-exec-1] INFO  o.a.c.c.C.[.[.[/]                                  -Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2023-01-07 12:50:44,761 [http-nio-9091-exec-1] INFO  o.s.w.s.DispatcherServlet                          -Initializing Servlet 'dispatcherServlet' 
+2023-01-07 12:50:44,774 [http-nio-9091-exec-1] INFO  o.s.w.s.DispatcherServlet                          -Completed initialization in 4 ms 
+2023-01-07 12:50:44,917 [http-nio-9091-exec-1] INFO  c.m.u.s.UserServiceImpl                            -Enter into user Controller and getting the method getlogin 
+2023-01-07 12:50:44,917 [http-nio-9091-exec-1] INFO  c.m.u.s.UserServiceImpl                            -Getting All User From UserService..... 
+2023-01-07 12:50:57,061 [http-nio-9091-exec-2] INFO  c.m.u.s.UserServiceImpl                            -Enter into user Controller and getting the method getlogin 
+2023-01-07 12:50:57,062 [http-nio-9091-exec-2] INFO  c.m.u.s.UserServiceImpl                            -Getting All User From UserService..... 
+2023-01-07 13:10:43,076 [http-nio-9091-exec-4] INFO  c.m.u.s.UserServiceImpl                            -Enter into user Controller and getting the method getlogin 
+2023-01-07 13:10:43,078 [http-nio-9091-exec-4] INFO  c.m.u.s.UserServiceImpl                            -Getting All User From UserService..... 
+2023-01-07 13:14:44,459 [http-nio-9091-exec-6] INFO  c.m.u.s.UserServiceImpl                            -Enter into user Controller and getting the method getlogin 
+2023-01-07 13:14:44,460 [http-nio-9091-exec-6] INFO  c.m.u.s.UserServiceImpl                            -Getting All User From UserService..... 
+2023-01-07 13:14:48,718 [http-nio-9091-exec-7] INFO  c.m.u.s.UserServiceImpl                            -Enter into user Controller and getting the method getlogin 
+2023-01-07 13:14:48,718 [http-nio-9091-exec-7] INFO  c.m.u.s.UserServiceImpl                            -Getting All User From UserService..... 
+2023-01-07 15:15:33,667 [http-nio-9091-exec-9] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver        -Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "user@gmail.com"] 
+2023-01-07 15:15:45,173 [http-nio-9091-exec-10] INFO  c.m.u.s.UserServiceImpl                            -Enter into user Controller and getting the method getlogin 
+2023-01-07 15:15:45,174 [http-nio-9091-exec-10] INFO  c.m.u.s.UserServiceImpl                            -Getting All User From UserService..... 
+2023-01-07 16:57:23,149 [RMI TCP Connection(255)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin -Application shutdown requested. 
+2023-01-07 16:57:23,213 [RMI TCP Connection(255)-127.0.0.1] INFO  o.a.c.h.Http11NioProtocol                          -Pausing ProtocolHandler ["http-nio-9091"] 
+2023-01-07 16:57:23,215 [RMI TCP Connection(255)-127.0.0.1] INFO  o.a.c.c.StandardService                            -Stopping service [Tomcat] 
+2023-01-07 16:57:23,219 [RMI TCP Connection(255)-127.0.0.1] INFO  o.a.c.c.C.[.[.[/]                                  -Destroying Spring FrameworkServlet 'dispatcherServlet' 
+2023-01-07 16:57:23,240 [RMI TCP Connection(255)-127.0.0.1] INFO  o.a.c.h.Http11NioProtocol                          -Stopping ProtocolHandler ["http-nio-9091"] 
+2023-01-07 16:57:23,246 [RMI TCP Connection(255)-127.0.0.1] INFO  o.a.c.h.Http11NioProtocol                          -Destroying ProtocolHandler ["http-nio-9091"] 
+2023-01-07 16:57:23,263 [RMI TCP Connection(255)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     -Closing JPA EntityManagerFactory for persistence unit 'default' 
+2023-01-07 16:57:23,278 [RMI TCP Connection(255)-127.0.0.1] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown initiated... 
+2023-01-07 16:57:23,298 [RMI TCP Connection(255)-127.0.0.1] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown completed. 
+=======
 >>>>>>> origin/komali
 2023-01-07 17:07:34,816 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper        -Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.medicalservice.user.UsermoduleApplicationTests], using SpringBootContextLoader 
 2023-01-07 17:07:34,941 [main] INFO  o.s.t.c.s.AbstractContextLoader                    -Could not detect default resource locations for test class [com.medicalservice.user.UsermoduleApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}. 
@@ -7563,6 +7612,49 @@ Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (usi
 2023-01-07 17:08:39,566 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     -Closing JPA EntityManagerFactory for persistence unit 'default' 
 2023-01-07 17:08:39,571 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown initiated... 
 2023-01-07 17:08:39,657 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown completed. 
+<<<<<<< HEAD
+>>>>>>> origin/sourav
+2023-01-07 22:35:54,170 [main] INFO  c.m.u.UsermoduleApplication                        -Starting UsermoduleApplication using Java 17.0.5 on DESKTOP-IO5RF1D with PID 21552 (C:\Users\Komali\Desktop\MedicalService-System\back-end\usermodule\target\classes started by Komali in C:\Users\Komali\Desktop\MedicalService-System\back-end\usermodule) 
+2023-01-07 22:35:54,200 [main] INFO  c.m.u.UsermoduleApplication                        -No active profile set, falling back to 1 default profile: "default" 
+2023-01-07 22:35:57,053 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          -Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2023-01-07 22:35:57,187 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          -Finished Spring Data repository scanning in 105 ms. Found 1 JPA repository interfaces. 
+2023-01-07 22:35:58,586 [main] INFO  o.s.b.w.e.t.TomcatWebServer                        -Tomcat initialized with port(s): 9091 (http) 
+2023-01-07 22:35:58,611 [main] INFO  o.a.c.h.Http11NioProtocol                          -Initializing ProtocolHandler ["http-nio-9091"] 
+2023-01-07 22:35:58,615 [main] INFO  o.a.c.c.StandardService                            -Starting service [Tomcat] 
+2023-01-07 22:35:58,617 [main] INFO  o.a.c.c.StandardEngine                             -Starting Servlet engine: [Apache Tomcat/9.0.70] 
+2023-01-07 22:35:58,936 [main] INFO  o.a.c.c.C.[.[.[/]                                  -Initializing Spring embedded WebApplicationContext 
+2023-01-07 22:35:58,936 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext     -Root WebApplicationContext: initialization completed in 4572 ms 
+2023-01-07 22:35:59,468 [main] INFO  o.h.j.i.u.LogHelper                                -HHH000204: Processing PersistenceUnitInfo [name: default] 
+2023-01-07 22:35:59,658 [main] INFO  o.h.Version                                        -HHH000412: Hibernate ORM core version 5.6.14.Final 
+2023-01-07 22:36:00,255 [main] INFO  o.h.a.c.Version                                    -HCANN000001: Hibernate Commons Annotations {5.1.2.Final} 
+2023-01-07 22:36:00,599 [main] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Starting... 
+2023-01-07 22:36:01,559 [main] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Start completed. 
+2023-01-07 22:36:01,611 [main] INFO  o.h.d.Dialect                                      -HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect 
+2023-01-07 22:36:03,914 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator                 -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 
+2023-01-07 22:36:03,939 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     -Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2023-01-07 22:36:05,339 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2023-01-07 22:36:06,459 [main] INFO  o.a.c.h.Http11NioProtocol                          -Starting ProtocolHandler ["http-nio-9091"] 
+2023-01-07 22:36:06,525 [main] INFO  o.s.b.w.e.t.TomcatWebServer                        -Tomcat started on port(s): 9091 (http) with context path '' 
+2023-01-07 22:36:06,650 [main] INFO  c.m.u.UsermoduleApplication                        -Started UsermoduleApplication in 13.664 seconds (JVM running for 17.95) 
+2023-01-07 22:49:44,917 [http-nio-9091-exec-1] INFO  o.a.c.c.C.[.[.[/]                                  -Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2023-01-07 22:49:44,917 [http-nio-9091-exec-1] INFO  o.s.w.s.DispatcherServlet                          -Initializing Servlet 'dispatcherServlet' 
+2023-01-07 22:49:44,925 [http-nio-9091-exec-1] INFO  o.s.w.s.DispatcherServlet                          -Completed initialization in 8 ms 
+2023-01-07 22:49:45,147 [http-nio-9091-exec-1] INFO  c.m.u.s.UserServiceImpl                            -Enter into user Controller and getting the method getlogin 
+2023-01-07 22:49:45,148 [http-nio-9091-exec-1] INFO  c.m.u.s.UserServiceImpl                            -Getting All User From UserService..... 
+2023-01-07 22:50:02,925 [http-nio-9091-exec-2] INFO  c.m.u.s.UserServiceImpl                            -Enter into user Controller and getting the method getlogin 
+2023-01-07 22:50:02,925 [http-nio-9091-exec-2] INFO  c.m.u.s.UserServiceImpl                            -Getting All User From UserService..... 
+2023-01-07 22:50:31,105 [http-nio-9091-exec-3] INFO  c.m.u.s.UserServiceImpl                            -Enter into user Controller and getting the method getlogin 
+2023-01-07 22:50:31,105 [http-nio-9091-exec-3] INFO  c.m.u.s.UserServiceImpl                            -Getting All User From UserService..... 
+2023-01-08 00:21:19,376 [RMI TCP Connection(114)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin -Application shutdown requested. 
+2023-01-08 00:21:19,406 [RMI TCP Connection(114)-127.0.0.1] INFO  o.a.c.h.Http11NioProtocol                          -Pausing ProtocolHandler ["http-nio-9091"] 
+2023-01-08 00:21:19,407 [RMI TCP Connection(114)-127.0.0.1] INFO  o.a.c.c.StandardService                            -Stopping service [Tomcat] 
+2023-01-08 00:21:19,409 [RMI TCP Connection(114)-127.0.0.1] INFO  o.a.c.c.C.[.[.[/]                                  -Destroying Spring FrameworkServlet 'dispatcherServlet' 
+2023-01-08 00:21:19,417 [RMI TCP Connection(114)-127.0.0.1] INFO  o.a.c.h.Http11NioProtocol                          -Stopping ProtocolHandler ["http-nio-9091"] 
+2023-01-08 00:21:19,421 [RMI TCP Connection(114)-127.0.0.1] INFO  o.a.c.h.Http11NioProtocol                          -Destroying ProtocolHandler ["http-nio-9091"] 
+2023-01-08 00:21:19,428 [RMI TCP Connection(114)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     -Closing JPA EntityManagerFactory for persistence unit 'default' 
+2023-01-08 00:21:19,432 [RMI TCP Connection(114)-127.0.0.1] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown initiated... 
+2023-01-08 00:21:19,443 [RMI TCP Connection(114)-127.0.0.1] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown completed. 
+=======
 2023-01-07 21:56:16,847 [main] INFO  c.m.u.UsermoduleApplication                        -Starting UsermoduleApplication using Java 17.0.5 on DESKTOP-RT17JBD with PID 15096 (E:\MedicalService-System\back-end\usermodule\target\classes started by sourav kumar in E:\MedicalService-System\back-end\usermodule) 
 2023-01-07 21:56:16,898 [main] INFO  c.m.u.UsermoduleApplication                        -No active profile set, falling back to 1 default profile: "default" 
 2023-01-07 21:56:18,856 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          -Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
@@ -7659,6 +7751,9 @@ Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (usi
 2023-01-08 00:21:46,864 [RMI TCP Connection(154)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     -Closing JPA EntityManagerFactory for persistence unit 'default' 
 2023-01-08 00:21:46,966 [RMI TCP Connection(154)-127.0.0.1] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown initiated... 
 2023-01-08 00:21:47,161 [RMI TCP Connection(154)-127.0.0.1] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown completed. 
+<<<<<<< HEAD
+>>>>>>> origin/sourav
+=======
 2023-01-08 09:50:02,857 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper        -Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.medicalservice.user.UsermoduleApplicationTests], using SpringBootContextLoader 
 2023-01-08 09:50:02,982 [main] INFO  o.s.t.c.s.AbstractContextLoader                    -Could not detect default resource locations for test class [com.medicalservice.user.UsermoduleApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}. 
 2023-01-08 09:50:02,985 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils       -Could not detect default configuration classes for test class [com.medicalservice.user.UsermoduleApplicationTests]: UsermoduleApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration. 
@@ -7686,6 +7781,87 @@ Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (usi
 2023-01-08 09:50:19,915 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     -Closing JPA EntityManagerFactory for persistence unit 'default' 
 2023-01-08 09:50:19,919 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown initiated... 
 2023-01-08 09:50:19,951 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown completed. 
+<<<<<<< HEAD
+>>>>>>> origin/sourav
+2023-01-08 12:56:20,167 [main] INFO  c.m.u.UsermoduleApplication                        -Starting UsermoduleApplication using Java 17.0.5 on DESKTOP-IO5RF1D with PID 12976 (C:\Users\Komali\Desktop\MedicalService-System\back-end\usermodule\target\classes started by Komali in C:\Users\Komali\Desktop\MedicalService-System\back-end\usermodule) 
+2023-01-08 12:56:20,188 [main] INFO  c.m.u.UsermoduleApplication                        -No active profile set, falling back to 1 default profile: "default" 
+2023-01-08 12:56:21,889 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          -Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2023-01-08 12:56:21,994 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          -Finished Spring Data repository scanning in 77 ms. Found 1 JPA repository interfaces. 
+2023-01-08 12:56:23,125 [main] INFO  o.s.b.w.e.t.TomcatWebServer                        -Tomcat initialized with port(s): 9091 (http) 
+2023-01-08 12:56:23,147 [main] INFO  o.a.c.h.Http11NioProtocol                          -Initializing ProtocolHandler ["http-nio-9091"] 
+2023-01-08 12:56:23,150 [main] INFO  o.a.c.c.StandardService                            -Starting service [Tomcat] 
+2023-01-08 12:56:23,156 [main] INFO  o.a.c.c.StandardEngine                             -Starting Servlet engine: [Apache Tomcat/9.0.70] 
+2023-01-08 12:56:23,418 [main] INFO  o.a.c.c.C.[.[.[/]                                  -Initializing Spring embedded WebApplicationContext 
+2023-01-08 12:56:23,421 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext     -Root WebApplicationContext: initialization completed in 3129 ms 
+2023-01-08 12:56:23,918 [main] INFO  o.h.j.i.u.LogHelper                                -HHH000204: Processing PersistenceUnitInfo [name: default] 
+2023-01-08 12:56:24,039 [main] INFO  o.h.Version                                        -HHH000412: Hibernate ORM core version 5.6.14.Final 
+2023-01-08 12:56:24,383 [main] INFO  o.h.a.c.Version                                    -HCANN000001: Hibernate Commons Annotations {5.1.2.Final} 
+2023-01-08 12:56:24,604 [main] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Starting... 
+2023-01-08 12:56:25,239 [main] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Start completed. 
+2023-01-08 12:56:25,274 [main] INFO  o.h.d.Dialect                                      -HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect 
+2023-01-08 12:56:26,689 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator                 -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 
+2023-01-08 12:56:26,713 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     -Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2023-01-08 12:56:27,914 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2023-01-08 12:56:28,865 [main] INFO  o.a.c.h.Http11NioProtocol                          -Starting ProtocolHandler ["http-nio-9091"] 
+2023-01-08 12:56:28,923 [main] INFO  o.s.b.w.e.t.TomcatWebServer                        -Tomcat started on port(s): 9091 (http) with context path '' 
+2023-01-08 12:56:29,054 [main] INFO  c.m.u.UsermoduleApplication                        -Started UsermoduleApplication in 9.618 seconds (JVM running for 11.915) 
+2023-01-08 12:57:24,414 [http-nio-9091-exec-1] INFO  o.a.c.c.C.[.[.[/]                                  -Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2023-01-08 12:57:24,419 [http-nio-9091-exec-1] INFO  o.s.w.s.DispatcherServlet                          -Initializing Servlet 'dispatcherServlet' 
+2023-01-08 12:57:24,426 [http-nio-9091-exec-1] INFO  o.s.w.s.DispatcherServlet                          -Completed initialization in 6 ms 
+2023-01-08 12:57:24,579 [http-nio-9091-exec-1] INFO  c.m.u.s.UserServiceImpl                            -Enter into user Controller and getting the method getlogin 
+2023-01-08 12:57:24,579 [http-nio-9091-exec-1] INFO  c.m.u.s.UserServiceImpl                            -Getting All User From UserService..... 
+2023-01-08 12:57:37,130 [http-nio-9091-exec-2] INFO  c.m.u.s.UserServiceImpl                            -Enter into user Controller and getting the method getlogin 
+2023-01-08 12:57:37,131 [http-nio-9091-exec-2] INFO  c.m.u.s.UserServiceImpl                            -Getting All User From UserService..... 
+2023-01-08 12:57:50,823 [http-nio-9091-exec-3] INFO  c.m.u.s.UserServiceImpl                            -Enter into user Controller and getting the method getlogin 
+2023-01-08 12:57:50,824 [http-nio-9091-exec-3] INFO  c.m.u.s.UserServiceImpl                            -Getting All User From UserService..... 
+2023-01-08 12:58:42,068 [http-nio-9091-exec-4] INFO  c.m.u.s.UserServiceImpl                            -Enter into user Controller and getting the method getlogin 
+2023-01-08 12:58:42,069 [http-nio-9091-exec-4] INFO  c.m.u.s.UserServiceImpl                            -Getting All User From UserService..... 
+2023-01-08 12:59:22,310 [http-nio-9091-exec-5] INFO  c.m.u.s.UserServiceImpl                            -Enter into user Controller and getting the method getlogin 
+2023-01-08 12:59:22,310 [http-nio-9091-exec-5] INFO  c.m.u.s.UserServiceImpl                            -Getting All User From UserService..... 
+2023-01-08 13:00:02,335 [http-nio-9091-exec-7] INFO  c.m.u.s.UserServiceImpl                            -Enter into user Controller and getting the method getlogin 
+2023-01-08 13:00:02,336 [http-nio-9091-exec-7] INFO  c.m.u.s.UserServiceImpl                            -Getting All User From UserService..... 
+2023-01-08 13:10:51,572 [http-nio-9091-exec-9] INFO  c.m.u.s.UserServiceImpl                            -Enter into user Controller and getting the method getlogin 
+2023-01-08 13:10:51,572 [http-nio-9091-exec-9] INFO  c.m.u.s.UserServiceImpl                            -Getting All User From UserService..... 
+2023-01-08 13:11:01,658 [http-nio-9091-exec-8] INFO  c.m.u.s.UserServiceImpl                            -Enter into user Controller and getting the method getlogin 
+2023-01-08 13:11:01,658 [http-nio-9091-exec-8] INFO  c.m.u.s.UserServiceImpl                            -Getting All User From UserService..... 
+2023-01-08 13:11:11,264 [http-nio-9091-exec-10] INFO  c.m.u.s.UserServiceImpl                            -Enter into user Controller and getting the method getlogin 
+2023-01-08 13:11:11,265 [http-nio-9091-exec-10] INFO  c.m.u.s.UserServiceImpl                            -Getting All User From UserService..... 
+2023-01-08 13:11:20,943 [http-nio-9091-exec-1] INFO  c.m.u.s.UserServiceImpl                            -Enter into user Controller and getting the method getlogin 
+2023-01-08 13:11:20,943 [http-nio-9091-exec-1] INFO  c.m.u.s.UserServiceImpl                            -Getting All User From UserService..... 
+2023-01-08 13:11:58,363 [http-nio-9091-exec-2] INFO  c.m.u.s.UserServiceImpl                            -Enter into user Controller and getting the method getlogin 
+2023-01-08 13:11:58,365 [http-nio-9091-exec-2] INFO  c.m.u.s.UserServiceImpl                            -Getting All User From UserService..... 
+2023-01-08 13:12:09,692 [http-nio-9091-exec-3] INFO  c.m.u.s.UserServiceImpl                            -Enter into user Controller and getting the method getlogin 
+2023-01-08 13:12:09,696 [http-nio-9091-exec-3] INFO  c.m.u.s.UserServiceImpl                            -Getting All User From UserService..... 
+2023-01-08 13:12:19,478 [http-nio-9091-exec-4] INFO  c.m.u.s.UserServiceImpl                            -Enter into user Controller and getting the method getlogin 
+2023-01-08 13:12:19,479 [http-nio-9091-exec-4] INFO  c.m.u.s.UserServiceImpl                            -Getting All User From UserService..... 
+2023-01-08 13:12:26,583 [http-nio-9091-exec-5] INFO  c.m.u.s.UserServiceImpl                            -Enter into user Controller and getting the method getlogin 
+2023-01-08 13:12:26,583 [http-nio-9091-exec-5] INFO  c.m.u.s.UserServiceImpl                            -Getting All User From UserService..... 
+2023-01-08 13:12:32,883 [http-nio-9091-exec-7] INFO  c.m.u.s.UserServiceImpl                            -Enter into user Controller and getting the method getlogin 
+2023-01-08 13:12:32,884 [http-nio-9091-exec-7] INFO  c.m.u.s.UserServiceImpl                            -Getting All User From UserService..... 
+2023-01-08 13:12:39,639 [http-nio-9091-exec-6] INFO  c.m.u.s.UserServiceImpl                            -Enter into user Controller and getting the method getlogin 
+2023-01-08 13:12:39,639 [http-nio-9091-exec-6] INFO  c.m.u.s.UserServiceImpl                            -Getting All User From UserService..... 
+2023-01-08 13:12:48,799 [http-nio-9091-exec-9] INFO  c.m.u.s.UserServiceImpl                            -Enter into user Controller and getting the method getlogin 
+2023-01-08 13:12:48,799 [http-nio-9091-exec-9] INFO  c.m.u.s.UserServiceImpl                            -Getting All User From UserService..... 
+2023-01-08 13:13:13,989 [http-nio-9091-exec-8] INFO  c.m.u.s.UserServiceImpl                            -Enter into user Controller and getting the method getlogin 
+2023-01-08 13:13:13,990 [http-nio-9091-exec-8] INFO  c.m.u.s.UserServiceImpl                            -Getting All User From UserService..... 
+2023-01-08 13:35:15,509 [http-nio-9091-exec-1] INFO  c.m.u.s.UserServiceImpl                            -Enter into user Controller and getting the method getlogin 
+2023-01-08 13:35:15,510 [http-nio-9091-exec-1] INFO  c.m.u.s.UserServiceImpl                            -Getting All User From UserService..... 
+2023-01-08 13:37:22,619 [http-nio-9091-exec-3] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver        -Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "komalisuresh@gmail.com"] 
+2023-01-08 13:37:34,456 [http-nio-9091-exec-4] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver        -Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "komalisuresh@gmail.com"] 
+2023-01-08 13:38:00,662 [http-nio-9091-exec-5] INFO  c.m.u.s.UserServiceImpl                            -Enter into user Controller and getting the method getlogin 
+2023-01-08 13:38:00,662 [http-nio-9091-exec-5] INFO  c.m.u.s.UserServiceImpl                            -Getting All User From UserService..... 
+2023-01-08 13:41:01,490 [http-nio-9091-exec-6] INFO  c.m.u.s.UserServiceImpl                            -Enter into user Controller and getting the method getlogin 
+2023-01-08 13:41:01,490 [http-nio-9091-exec-6] INFO  c.m.u.s.UserServiceImpl                            -Getting All User From UserService..... 
+2023-01-08 14:01:12,241 [RMI TCP Connection(73)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin -Application shutdown requested. 
+2023-01-08 14:01:12,276 [RMI TCP Connection(73)-127.0.0.1] INFO  o.a.c.h.Http11NioProtocol                          -Pausing ProtocolHandler ["http-nio-9091"] 
+2023-01-08 14:01:12,277 [RMI TCP Connection(73)-127.0.0.1] INFO  o.a.c.c.StandardService                            -Stopping service [Tomcat] 
+2023-01-08 14:01:12,282 [RMI TCP Connection(73)-127.0.0.1] INFO  o.a.c.c.C.[.[.[/]                                  -Destroying Spring FrameworkServlet 'dispatcherServlet' 
+2023-01-08 14:01:12,289 [RMI TCP Connection(73)-127.0.0.1] INFO  o.a.c.h.Http11NioProtocol                          -Stopping ProtocolHandler ["http-nio-9091"] 
+2023-01-08 14:01:12,295 [RMI TCP Connection(73)-127.0.0.1] INFO  o.a.c.h.Http11NioProtocol                          -Destroying ProtocolHandler ["http-nio-9091"] 
+2023-01-08 14:01:12,309 [RMI TCP Connection(73)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     -Closing JPA EntityManagerFactory for persistence unit 'default' 
+2023-01-08 14:01:12,317 [RMI TCP Connection(73)-127.0.0.1] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown initiated... 
+2023-01-08 14:01:12,337 [RMI TCP Connection(73)-127.0.0.1] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown completed. 
+=======
 2023-01-08 09:52:24,146 [main] INFO  c.m.u.UsermoduleApplication                        -Starting UsermoduleApplication using Java 17.0.5 on DESKTOP-RT17JBD with PID 16960 (E:\MedicalService-System\back-end\usermodule\target\classes started by sourav kumar in E:\MedicalService-System\back-end\usermodule) 
 2023-01-08 09:52:24,261 [main] INFO  c.m.u.UsermoduleApplication                        -No active profile set, falling back to 1 default profile: "default" 
 2023-01-08 09:52:25,872 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          -Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
@@ -7766,6 +7942,7 @@ Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (usi
 2023-01-08 11:41:22,645 [http-nio-9091-exec-1] INFO  c.m.u.s.UserServiceImpl                            -Getting All User From UserService..... 
 2023-01-08 11:44:11,474 [http-nio-9091-exec-4] INFO  c.m.u.s.UserServiceImpl                            -Enter into user Controller and getting the method getlogin 
 2023-01-08 11:44:11,525 [http-nio-9091-exec-4] INFO  c.m.u.s.UserServiceImpl                            -Getting All User From UserService..... 
+<<<<<<< HEAD
 2023-01-08 13:47:00,441 [http-nio-9091-exec-6] INFO  c.m.u.s.UserServiceImpl                            -Enter into user Controller and getting the method getlogin 
 2023-01-08 13:47:00,612 [http-nio-9091-exec-6] INFO  c.m.u.s.UserServiceImpl                            -Getting All User From UserService..... 
 2023-01-08 13:48:52,006 [http-nio-9091-exec-8] INFO  c.m.u.s.UserServiceImpl                            -Enter into user Controller and getting the method getlogin 
@@ -7829,3 +8006,68 @@ Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (usi
 2023-01-08 19:41:02,918 [RMI TCP Connection(606)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     -Closing JPA EntityManagerFactory for persistence unit 'default' 
 2023-01-08 19:41:03,087 [RMI TCP Connection(606)-127.0.0.1] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown initiated... 
 2023-01-08 19:41:03,367 [RMI TCP Connection(606)-127.0.0.1] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown completed. 
+=======
+>>>>>>> origin/sourav
+2023-01-08 14:31:21,326 [main] INFO  c.m.u.UsermoduleApplication                        -Starting UsermoduleApplication using Java 17.0.5 on DESKTOP-IO5RF1D with PID 12520 (C:\Users\Komali\Desktop\MedicalService-System\back-end\usermodule\target\classes started by Komali in C:\Users\Komali\Desktop\MedicalService-System\back-end\usermodule) 
+2023-01-08 14:31:21,356 [main] INFO  c.m.u.UsermoduleApplication                        -No active profile set, falling back to 1 default profile: "default" 
+2023-01-08 14:31:22,850 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          -Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2023-01-08 14:31:22,940 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          -Finished Spring Data repository scanning in 71 ms. Found 1 JPA repository interfaces. 
+2023-01-08 14:31:24,024 [main] INFO  o.s.b.w.e.t.TomcatWebServer                        -Tomcat initialized with port(s): 9091 (http) 
+2023-01-08 14:31:24,046 [main] INFO  o.a.c.h.Http11NioProtocol                          -Initializing ProtocolHandler ["http-nio-9091"] 
+2023-01-08 14:31:24,048 [main] INFO  o.a.c.c.StandardService                            -Starting service [Tomcat] 
+2023-01-08 14:31:24,049 [main] INFO  o.a.c.c.StandardEngine                             -Starting Servlet engine: [Apache Tomcat/9.0.70] 
+2023-01-08 14:31:24,260 [main] INFO  o.a.c.c.C.[.[.[/]                                  -Initializing Spring embedded WebApplicationContext 
+2023-01-08 14:31:24,260 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext     -Root WebApplicationContext: initialization completed in 2819 ms 
+2023-01-08 14:31:24,541 [main] INFO  o.h.j.i.u.LogHelper                                -HHH000204: Processing PersistenceUnitInfo [name: default] 
+2023-01-08 14:31:24,638 [main] INFO  o.h.Version                                        -HHH000412: Hibernate ORM core version 5.6.14.Final 
+2023-01-08 14:31:24,939 [main] INFO  o.h.a.c.Version                                    -HCANN000001: Hibernate Commons Annotations {5.1.2.Final} 
+2023-01-08 14:31:25,134 [main] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Starting... 
+2023-01-08 14:31:25,743 [main] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Start completed. 
+2023-01-08 14:31:25,773 [main] INFO  o.h.d.Dialect                                      -HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect 
+2023-01-08 14:31:26,914 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator                 -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 
+2023-01-08 14:31:26,932 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     -Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2023-01-08 14:31:27,778 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2023-01-08 14:31:28,438 [main] INFO  o.a.c.h.Http11NioProtocol                          -Starting ProtocolHandler ["http-nio-9091"] 
+2023-01-08 14:31:28,474 [main] INFO  o.s.b.w.e.t.TomcatWebServer                        -Tomcat started on port(s): 9091 (http) with context path '' 
+2023-01-08 14:31:28,545 [main] INFO  c.m.u.UsermoduleApplication                        -Started UsermoduleApplication in 8.088 seconds (JVM running for 10.242) 
+2023-01-08 14:32:34,797 [http-nio-9091-exec-1] INFO  o.a.c.c.C.[.[.[/]                                  -Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2023-01-08 14:32:34,798 [http-nio-9091-exec-1] INFO  o.s.w.s.DispatcherServlet                          -Initializing Servlet 'dispatcherServlet' 
+2023-01-08 14:32:34,803 [http-nio-9091-exec-1] INFO  o.s.w.s.DispatcherServlet                          -Completed initialization in 4 ms 
+2023-01-08 14:32:34,935 [http-nio-9091-exec-1] INFO  c.m.u.s.UserServiceImpl                            -Enter into user Controller and getting the method getlogin 
+2023-01-08 14:32:34,935 [http-nio-9091-exec-1] INFO  c.m.u.s.UserServiceImpl                            -Getting All User From UserService..... 
+2023-01-08 14:33:53,238 [http-nio-9091-exec-3] INFO  c.m.u.s.UserServiceImpl                            -Enter into user Controller and getting the method getlogin 
+2023-01-08 14:33:53,238 [http-nio-9091-exec-3] INFO  c.m.u.s.UserServiceImpl                            -Getting All User From UserService..... 
+2023-01-08 14:34:37,483 [http-nio-9091-exec-4] INFO  c.m.u.s.UserServiceImpl                            -Enter into user Controller and getting the method getlogin 
+2023-01-08 14:34:37,487 [http-nio-9091-exec-4] INFO  c.m.u.s.UserServiceImpl                            -Getting All User From UserService..... 
+2023-01-08 14:44:41,440 [http-nio-9091-exec-6] INFO  c.m.u.s.UserServiceImpl                            -Enter into user Controller and getting the method getlogin 
+2023-01-08 14:44:41,446 [http-nio-9091-exec-6] INFO  c.m.u.s.UserServiceImpl                            -Getting All User From UserService..... 
+2023-01-08 15:08:56,985 [http-nio-9091-exec-8] INFO  c.m.u.s.UserServiceImpl                            -Enter into user Controller and getting the method getlogin 
+2023-01-08 15:08:56,987 [http-nio-9091-exec-8] INFO  c.m.u.s.UserServiceImpl                            -Getting All User From UserService..... 
+2023-01-08 15:15:11,851 [http-nio-9091-exec-10] INFO  c.m.u.s.UserServiceImpl                            -Enter into user Controller and getting the method getlogin 
+2023-01-08 15:15:11,854 [http-nio-9091-exec-10] INFO  c.m.u.s.UserServiceImpl                            -Getting All User From UserService..... 
+2023-01-08 16:27:38,760 [http-nio-9091-exec-2] INFO  c.m.u.s.UserServiceImpl                            -Enter into user Controller and getting the method getlogin 
+2023-01-08 16:27:38,762 [http-nio-9091-exec-2] INFO  c.m.u.s.UserServiceImpl                            -Getting All User From UserService..... 
+2023-01-08 16:46:18,213 [http-nio-9091-exec-4] INFO  c.m.u.s.UserServiceImpl                            -Enter into user Controller and getting the method getlogin 
+2023-01-08 16:46:18,215 [http-nio-9091-exec-4] INFO  c.m.u.s.UserServiceImpl                            -Getting All User From UserService..... 
+2023-01-08 16:54:26,444 [http-nio-9091-exec-6] INFO  c.m.u.s.UserServiceImpl                            -Enter into user Controller and getting the method getlogin 
+2023-01-08 16:54:26,445 [http-nio-9091-exec-6] INFO  c.m.u.s.UserServiceImpl                            -Getting All User From UserService..... 
+2023-01-08 17:25:28,145 [http-nio-9091-exec-8] INFO  c.m.u.s.UserServiceImpl                            -Enter into user Controller and getting the method getlogin 
+2023-01-08 17:25:28,151 [http-nio-9091-exec-8] INFO  c.m.u.s.UserServiceImpl                            -Getting All User From UserService..... 
+2023-01-08 17:25:59,099 [http-nio-9091-exec-9] INFO  c.m.u.s.UserServiceImpl                            -Enter into user Controller and getting the method getlogin 
+2023-01-08 17:25:59,099 [http-nio-9091-exec-9] INFO  c.m.u.s.UserServiceImpl                            -Getting All User From UserService..... 
+2023-01-08 17:28:39,969 [http-nio-9091-exec-1] INFO  c.m.u.s.UserServiceImpl                            -Enter into user Controller and getting the method getlogin 
+2023-01-08 17:28:39,969 [http-nio-9091-exec-1] INFO  c.m.u.s.UserServiceImpl                            -Getting All User From UserService..... 
+2023-01-08 17:28:59,376 [http-nio-9091-exec-2] INFO  c.m.u.s.UserServiceImpl                            -Enter into user Controller and getting the method getlogin 
+2023-01-08 17:28:59,378 [http-nio-9091-exec-2] INFO  c.m.u.s.UserServiceImpl                            -Getting All User From UserService..... 
+2023-01-08 17:34:29,582 [http-nio-9091-exec-4] INFO  c.m.u.s.UserServiceImpl                            -Enter into user Controller and getting the method getlogin 
+2023-01-08 17:34:29,583 [http-nio-9091-exec-4] INFO  c.m.u.s.UserServiceImpl                            -Getting All User From UserService..... 
+2023-01-08 19:25:05,776 [RMI TCP Connection(302)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin -Application shutdown requested. 
+2023-01-08 19:25:05,836 [RMI TCP Connection(302)-127.0.0.1] INFO  o.a.c.h.Http11NioProtocol                          -Pausing ProtocolHandler ["http-nio-9091"] 
+2023-01-08 19:25:05,840 [RMI TCP Connection(302)-127.0.0.1] INFO  o.a.c.c.StandardService                            -Stopping service [Tomcat] 
+2023-01-08 19:25:05,845 [RMI TCP Connection(302)-127.0.0.1] INFO  o.a.c.c.C.[.[.[/]                                  -Destroying Spring FrameworkServlet 'dispatcherServlet' 
+2023-01-08 19:25:05,864 [RMI TCP Connection(302)-127.0.0.1] INFO  o.a.c.h.Http11NioProtocol                          -Stopping ProtocolHandler ["http-nio-9091"] 
+2023-01-08 19:25:05,870 [RMI TCP Connection(302)-127.0.0.1] INFO  o.a.c.h.Http11NioProtocol                          -Destroying ProtocolHandler ["http-nio-9091"] 
+2023-01-08 19:25:05,895 [RMI TCP Connection(302)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     -Closing JPA EntityManagerFactory for persistence unit 'default' 
+2023-01-08 19:25:05,904 [RMI TCP Connection(302)-127.0.0.1] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown initiated... 
+2023-01-08 19:25:05,917 [RMI TCP Connection(302)-127.0.0.1] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown completed. 
+>>>>>>> origin/komali

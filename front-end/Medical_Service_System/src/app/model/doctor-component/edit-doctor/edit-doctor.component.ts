@@ -13,6 +13,7 @@ export class EditDoctorComponent {
  doctorDetails:any ={}
   public signupForm !: FormGroup;
   submitted = false
+  user:any=[]
   constructor(private formBuilder: FormBuilder, private router: Router, 
     private dialog: MatDialog, private doctorService: DoctorServiceService) {
       this.doctorDetails = this.doctorService.user
@@ -40,10 +41,25 @@ export class EditDoctorComponent {
       })
       console.table(this.signupForm.value);
       alert("Success")
+      // this.doctorService.updateDoctor(this.signupForm.value).subscribe(res=>{
+      //   console.table(res)
+      // })
     }
-
+ 
   }
+ findDoctorById(){
+  this.doctorService.findDoctorById(this.signupForm.value.id).subscribe(res=>{
+    this.doctorService.user = res
+ })
+}
+// update(){
+//   this.doctorService.updateDoctor(this.signupForm.value).subscribe(res=>{
+//     console.table(res)
+//   })
+//}
   close() {
     this.dialog.closeAll()
   }
 }
+
+
