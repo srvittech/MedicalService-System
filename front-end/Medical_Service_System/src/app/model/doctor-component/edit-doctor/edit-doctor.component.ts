@@ -41,6 +41,9 @@ export class EditDoctorComponent {
       })
       console.table(this.signupForm.value);
       alert("Success")
+      // this.doctorService.updateDoctor(this.signupForm.value).subscribe(res=>{
+      //   console.table(res)
+      // })
     }
  
   }
@@ -49,9 +52,11 @@ export class EditDoctorComponent {
     this.doctorService.user = res
  })
 }
-updateDoctor(form:any){
-  
-}
+// update(){
+//   this.doctorService.updateDoctor(this.signupForm.value).subscribe(res=>{
+//     console.table(res)
+//   })
+//}
   close() {
     this.dialog.closeAll()
   }

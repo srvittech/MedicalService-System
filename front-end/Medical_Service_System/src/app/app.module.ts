@@ -36,6 +36,12 @@ import { PatientServiceService } from './services/patient-Service/patient-servic
 import { DoctorServiceService } from './services/doctor-Service/doctor-service.service';
 import { TransactionServiceService } from './services/transaction-Service/transaction-service.service';
 import { PendingPatientsComponent } from './model/kiosk-component/pending-patients/pending-patients.component';
+import { BookAppointmentComponent } from './model/patient-component/book-appointment/book-appointment.component';
+import { ViewAppointmentStatusComponent } from './model/patient-component/view-appointment-status/view-appointment-status.component';
+import { EditPatientComponent } from './model/patient-component/edit-patient/edit-patient.component';
+import { ViewFeedbackComponent } from './model/admin-component/view-feedback/view-feedback.component';
+import { ViewPatientsComponent } from './model/admin-component/view-patients/view-patients.component';
+import { ViewDoctorsComponent } from './model/admin-component/view-doctors/view-doctors.component';
 
 @NgModule({
   declarations: [
@@ -59,7 +65,13 @@ import { PendingPatientsComponent } from './model/kiosk-component/pending-patien
     AddKioskDialogComponent,
     PatientFeedbackComponent,
     ViewAppointmentsComponent,
-    PendingPatientsComponent
+    PendingPatientsComponent,
+    BookAppointmentComponent,
+    ViewAppointmentStatusComponent,
+    EditPatientComponent,
+    ViewFeedbackComponent,
+    ViewPatientsComponent,
+    ViewDoctorsComponent
   ],
   imports: [
     BrowserModule,
