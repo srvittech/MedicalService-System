@@ -66,6 +66,8 @@ console.log("hi ng on init");
   this.doctorService.findDoctorById(this.registerForm.value.id).subscribe(res=>{
     this.user = res
     this.doctorService.user = this.user
+    console.table(this.doctorService.user);
+    
     if (this.user.id == this.registerForm.value.id && this.user.password == this.registerForm.value.password ){
       //this.openDialog()
       console.log("doc");
