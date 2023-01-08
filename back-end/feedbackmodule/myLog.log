@@ -12077,3 +12077,17 @@ Caused by: java.sql.SQLSyntaxErrorException: Unknown database 'feedback'
 2023-01-08 09:51:29,245 [restartedMain] INFO  o.a.c.h.Http11NioProtocol                          -Starting ProtocolHandler ["http-nio-9096"] 
 2023-01-08 09:51:29,286 [restartedMain] INFO  o.s.b.w.e.t.TomcatWebServer                        -Tomcat started on port(s): 9096 (http) with context path '' 
 2023-01-08 09:51:29,634 [restartedMain] INFO  c.m.f.FeedbackmoduleApplication                    -Started FeedbackmoduleApplication in 8.647 seconds (JVM running for 10.819) 
+2023-01-08 19:28:38,701 [http-nio-9096-exec-1] INFO  o.a.c.c.C.[.[.[/]                                  -Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2023-01-08 19:28:38,767 [http-nio-9096-exec-1] INFO  o.s.w.s.DispatcherServlet                          -Initializing Servlet 'dispatcherServlet' 
+2023-01-08 19:28:39,190 [http-nio-9096-exec-1] INFO  o.s.w.s.DispatcherServlet                          -Completed initialization in 423 ms 
+2023-01-08 19:28:40,114 [http-nio-9096-exec-1] INFO  c.m.f.c.FeedbackController                         -Entering Method getAllFeedbacks in FeedbackController 
+2023-01-08 19:28:40,115 [http-nio-9096-exec-1] INFO  c.m.f.s.FeedbackServiceImp                         -Getting All Feedbacks From FeedbackService..... 
+2023-01-08 19:40:44,391 [RMI TCP Connection(606)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin -Application shutdown requested. 
+2023-01-08 19:40:45,888 [RMI TCP Connection(606)-127.0.0.1] INFO  o.a.c.h.Http11NioProtocol                          -Pausing ProtocolHandler ["http-nio-9096"] 
+2023-01-08 19:40:45,895 [RMI TCP Connection(606)-127.0.0.1] INFO  o.a.c.c.StandardService                            -Stopping service [Tomcat] 
+2023-01-08 19:40:45,992 [RMI TCP Connection(606)-127.0.0.1] INFO  o.a.c.c.C.[.[.[/]                                  -Destroying Spring FrameworkServlet 'dispatcherServlet' 
+2023-01-08 19:40:46,340 [RMI TCP Connection(606)-127.0.0.1] INFO  o.a.c.h.Http11NioProtocol                          -Stopping ProtocolHandler ["http-nio-9096"] 
+2023-01-08 19:40:46,421 [RMI TCP Connection(606)-127.0.0.1] INFO  o.a.c.h.Http11NioProtocol                          -Destroying ProtocolHandler ["http-nio-9096"] 
+2023-01-08 19:40:46,563 [RMI TCP Connection(606)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     -Closing JPA EntityManagerFactory for persistence unit 'default' 
+2023-01-08 19:40:46,854 [RMI TCP Connection(606)-127.0.0.1] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown initiated... 
+2023-01-08 19:40:47,233 [RMI TCP Connection(606)-127.0.0.1] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown completed. 
