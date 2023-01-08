@@ -26,3 +26,18 @@ h2{
 #right-content{
 margin-bottom: 28px;
 }
+.footer{
+    background-color: #EAFDFC;
+    
+}
+.btn{
+    border:solid black;
+    border-width: 1px;
+    border-radius: 8px;
+}
+.lower-footer{
+    color:#001253; 
+    font-weight: bold; 
+    background-color: #91D8E4;
+
+}
