@@ -16,13 +16,14 @@ public class Transaction {
 	private String patientAddress;
 	private String disease;
 	private int patientweight;
-	private Long doctorId;
-	private String doctorName;
+	private Long doctorId = null;
+	private String doctorName = "null";
+	private String doctorSpecialization="null";
 	private String status = "pending";
 	private String prescription = "null";
-	private String dateOfRequest;
-	private String dateOfTreatment;
-
+	private String dateOfRequest ="null";
+	private String feedback = "null";
+	private String dateOfTreatment = "null";
 	public Transaction() {
 		super();
 
@@ -40,10 +41,11 @@ public class Transaction {
 		this.dateOfRequest = dateOfRequest;
 		this.dateOfTreatment = dateOfTreatment;
 	}
-	
+
+
 	public Transaction(Long transactionId, Long patientId, String patientName, int patientAge, String patientAddress,
-			String disease, int patientweight, Long doctorId, String doctorName, String status, String prescription,
-			String dateOfRequest, String dateOfTreatment) {
+			String disease, int patientweight, Long doctorId, String doctorName, String doctorSpecialization,
+			String status, String prescription, String dateOfRequest, String feedback, String dateOfTreatment) {
 		super();
 		this.transactionId = transactionId;
 		this.patientId = patientId;
@@ -54,10 +56,28 @@ public class Transaction {
 		this.patientweight = patientweight;
 		this.doctorId = doctorId;
 		this.doctorName = doctorName;
+		this.doctorSpecialization = doctorSpecialization;
 		this.status = status;
 		this.prescription = prescription;
 		this.dateOfRequest = dateOfRequest;
+		this.feedback = feedback;
 		this.dateOfTreatment = dateOfTreatment;
+	}
+
+	public String getFeedback() {
+		return feedback;
+	}
+
+	public void setFeedback(String feedback) {
+		this.feedback = feedback;
+	}
+
+	public String getDoctorSpecialization() {
+		return doctorSpecialization;
+	}
+
+	public void setDoctorSpecialization(String doctorSpecialization) {
+		this.doctorSpecialization = doctorSpecialization;
 	}
 
 	public Long getTransactionId() {
@@ -123,7 +143,7 @@ public class Transaction {
 	public void setDateOfTreatment(String dateOfTreatment) {
 		this.dateOfTreatment = dateOfTreatment;
 	}
-	
+
 	public String getPatientName() {
 		return patientName;
 	}

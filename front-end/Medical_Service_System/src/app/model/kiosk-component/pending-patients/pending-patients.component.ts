@@ -16,9 +16,11 @@ export class PendingPatientsComponent implements OnInit {
   registerForm!: FormGroup
   submitted = false;
   loginType: any = ""
-  doctorAssignedId: any = ""
+  doctorAssigned: any = ""
   updatedTransactionFormByKiosk: any = {}
   flag:boolean = true
+  doctorNameGen:any =""
+  doctorSpecializationGen:any = ""
   constructor(private transactionService: TransactionServiceService, private formBuilder: FormBuilder, private doctorService: DoctorServiceService) {
 
   }
@@ -41,14 +43,17 @@ export class PendingPatientsComponent implements OnInit {
     //upto here -------------------------------------------------------------
   }
 
-
-
   submit(transId: any) {
     this.fetchDoctorIdFromDoctorAssigned()
+    this.fetchDoctorNameFromDoctorAssigned() 
+    this.fetchDoctorSpecializationFromDoctorAssigned()
     this.updatedTransactionFormByKiosk['transactionId'] = transId
-    this.updatedTransactionFormByKiosk['doctorId'] = this.doctorIdGen
-    this.updatedTransactionFormByKiosk['doctorName'] = this.doctorIdGen
+    this.updatedTransactionFormByKiosk['doctorName'] = this.doctorNameGen.trim()
+    this.updatedTransactionFormByKiosk['doctorSpecialization'] = this.doctorSpecializationGen.trim()
+    this.updatedTransactionFormByKiosk['doctorId'] = this.doctorIdGen.trim()
     this.updatedTransactionFormByKiosk['status'] = "Forwarded to Doctor"
+    console.table(this.updatedTransactionFormByKiosk);
+    
     this.transactionService.updateTransaction(this.updatedTransactionFormByKiosk).subscribe(res => {
     })
   }
@@ -69,13 +74,22 @@ export class PendingPatientsComponent implements OnInit {
 
 
   fetchDoctorIdFromDoctorAssigned() {
-    this.doctorIdGen = this.doctorAssignedId.split(' ')[3]
+    this.doctorIdGen = this.doctorAssigned.split('||')[1]
+  
+  }
+
+  fetchDoctorNameFromDoctorAssigned() {
+    this.doctorNameGen =  this.doctorAssigned.split('||')[2]
+    
+  }
+  fetchDoctorSpecializationFromDoctorAssigned() {
+    this.doctorSpecializationGen = this.doctorAssigned.split('||')[3]
   }
 
   selectedData(event: any) {
-    console.log(this.doctorAssignedId);
+   
     this.flag = false
-    this.doctorAssignedId = event.target.value;
+    this.doctorAssigned = event.target.value;
   }
 
 }
