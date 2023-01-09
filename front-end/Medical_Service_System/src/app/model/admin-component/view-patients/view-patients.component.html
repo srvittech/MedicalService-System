@@ -7,23 +7,26 @@
                 <thead>
                     <tr>
                         <th scope="col">Patient Id</th>
-                        <th scope="col">DoctorId</th>
+                        <th scope="col">Patient Name</th>
+                        <th scope="col">Age</th>
+                        <th scope="col">Address</th>
                         <th scope="col">Disease</th>
-                        <th scope="col">Status</th>
-                        <th scope="col">prescription</th>
-                        <th scope="col">Date Of Request</th>
-                        <th scope="col">Date Of Treatment</th>
+                        <th scope="col">Weight</th>
+                        <th scope="col">Mobile</th>
+                        <th scope="col">Email</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
+                    <tr  *ngFor="let a of user">
+                        <!--<th scope="row">1</th>-->
+                        <td>{{a.id}}</td>
+                        <td>{{a.name}}</td>
+                        <td>{{a.age}}</td>
+                        <td>{{a.address}}</td>
+                        <td>{{a.disease}}</td>
+                        <td>{{a.weight}}</td>
+                        <td>{{a.mobile}}</td>
+                        <td>{{a.email}}</td>
                     </tr>
                 </tbody>
             </table>
