@@ -16744,3 +16744,44 @@ Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (usi
 	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:90) ~[spring-test-5.3.24.jar:5.3.24]
 	... 67 more
 >>>>>>> origin/sourav
+2023-01-09 10:36:15,433 [restartedMain] INFO  c.m.f.FeedbackmoduleApplication                    -Starting FeedbackmoduleApplication using Java 17.0.5 on DESKTOP-IO5RF1D with PID 19404 (C:\Users\Komali\Desktop\MedicalService-System\back-end\feedbackmodule\target\classes started by Komali in C:\Users\Komali\Desktop\MedicalService-System\back-end\feedbackmodule) 
+2023-01-09 10:36:15,474 [restartedMain] INFO  c.m.f.FeedbackmoduleApplication                    -No active profile set, falling back to 1 default profile: "default" 
+2023-01-09 10:36:15,596 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor    -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+2023-01-09 10:36:15,597 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor    -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+2023-01-09 10:36:17,797 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          -Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2023-01-09 10:36:17,923 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          -Finished Spring Data repository scanning in 105 ms. Found 1 JPA repository interfaces. 
+2023-01-09 10:36:19,263 [restartedMain] INFO  o.s.b.w.e.t.TomcatWebServer                        -Tomcat initialized with port(s): 9096 (http) 
+2023-01-09 10:36:19,283 [restartedMain] INFO  o.a.c.h.Http11NioProtocol                          -Initializing ProtocolHandler ["http-nio-9096"] 
+2023-01-09 10:36:19,284 [restartedMain] INFO  o.a.c.c.StandardService                            -Starting service [Tomcat] 
+2023-01-09 10:36:19,286 [restartedMain] INFO  o.a.c.c.StandardEngine                             -Starting Servlet engine: [Apache Tomcat/9.0.70] 
+2023-01-09 10:36:19,485 [restartedMain] INFO  o.a.c.c.C.[.[.[/]                                  -Initializing Spring embedded WebApplicationContext 
+2023-01-09 10:36:19,486 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext     -Root WebApplicationContext: initialization completed in 3885 ms 
+2023-01-09 10:36:19,789 [restartedMain] INFO  o.h.j.i.u.LogHelper                                -HHH000204: Processing PersistenceUnitInfo [name: default] 
+2023-01-09 10:36:19,914 [restartedMain] INFO  o.h.Version                                        -HHH000412: Hibernate ORM core version 5.6.14.Final 
+2023-01-09 10:36:20,260 [restartedMain] INFO  o.h.a.c.Version                                    -HCANN000001: Hibernate Commons Annotations {5.1.2.Final} 
+2023-01-09 10:36:20,492 [restartedMain] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Starting... 
+2023-01-09 10:36:21,123 [restartedMain] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Start completed. 
+2023-01-09 10:36:21,154 [restartedMain] INFO  o.h.d.Dialect                                      -HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect 
+2023-01-09 10:36:22,623 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator                 -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 
+2023-01-09 10:36:22,645 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     -Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2023-01-09 10:36:23,632 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2023-01-09 10:36:24,117 [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer                 -Unable to start LiveReload server 
+2023-01-09 10:36:24,445 [restartedMain] INFO  o.a.c.h.Http11NioProtocol                          -Starting ProtocolHandler ["http-nio-9096"] 
+2023-01-09 10:36:24,485 [restartedMain] INFO  o.s.b.w.e.t.TomcatWebServer                        -Tomcat started on port(s): 9096 (http) with context path '' 
+2023-01-09 10:36:24,882 [restartedMain] INFO  c.m.f.FeedbackmoduleApplication                    -Started FeedbackmoduleApplication in 10.232 seconds (JVM running for 12.521) 
+2023-01-09 10:44:17,003 [http-nio-9096-exec-1] INFO  o.a.c.c.C.[.[.[/]                                  -Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2023-01-09 10:44:17,003 [http-nio-9096-exec-1] INFO  o.s.w.s.DispatcherServlet                          -Initializing Servlet 'dispatcherServlet' 
+2023-01-09 10:44:17,008 [http-nio-9096-exec-1] INFO  o.s.w.s.DispatcherServlet                          -Completed initialization in 4 ms 
+2023-01-09 10:44:17,076 [http-nio-9096-exec-1] INFO  c.m.f.c.FeedbackController                         -Entering Method getAllFeedbacks in FeedbackController 
+2023-01-09 10:44:17,076 [http-nio-9096-exec-1] INFO  c.m.f.s.FeedbackServiceImp                         -Getting All Feedbacks From FeedbackService..... 
+2023-01-09 11:28:28,979 [http-nio-9096-exec-3] INFO  c.m.f.c.FeedbackController                         -Entering Method getAllFeedbacks in FeedbackController 
+2023-01-09 11:28:28,980 [http-nio-9096-exec-3] INFO  c.m.f.s.FeedbackServiceImp                         -Getting All Feedbacks From FeedbackService..... 
+2023-01-09 14:05:31,664 [RMI TCP Connection(218)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin -Application shutdown requested. 
+2023-01-09 14:05:31,752 [RMI TCP Connection(218)-127.0.0.1] INFO  o.a.c.h.Http11NioProtocol                          -Pausing ProtocolHandler ["http-nio-9096"] 
+2023-01-09 14:05:31,754 [RMI TCP Connection(218)-127.0.0.1] INFO  o.a.c.c.StandardService                            -Stopping service [Tomcat] 
+2023-01-09 14:05:31,763 [RMI TCP Connection(218)-127.0.0.1] INFO  o.a.c.c.C.[.[.[/]                                  -Destroying Spring FrameworkServlet 'dispatcherServlet' 
+2023-01-09 14:05:31,784 [RMI TCP Connection(218)-127.0.0.1] INFO  o.a.c.h.Http11NioProtocol                          -Stopping ProtocolHandler ["http-nio-9096"] 
+2023-01-09 14:05:31,794 [RMI TCP Connection(218)-127.0.0.1] INFO  o.a.c.h.Http11NioProtocol                          -Destroying ProtocolHandler ["http-nio-9096"] 
+2023-01-09 14:05:31,810 [RMI TCP Connection(218)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     -Closing JPA EntityManagerFactory for persistence unit 'default' 
+2023-01-09 14:05:31,833 [RMI TCP Connection(218)-127.0.0.1] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown initiated... 
+2023-01-09 14:05:31,851 [RMI TCP Connection(218)-127.0.0.1] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown completed. 
