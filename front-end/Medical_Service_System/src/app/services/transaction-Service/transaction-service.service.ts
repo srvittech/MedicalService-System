@@ -10,6 +10,7 @@ export class TransactionServiceService {
 
   allTransactions:any= []
   allPendingTransactions:any= []
+  myCurrentTransactionId:any
 
   // add this in your service ----------------------------------------------
 

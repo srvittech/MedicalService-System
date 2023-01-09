@@ -18,7 +18,7 @@ public class Transaction {
 	private int patientweight;
 	private Long doctorId;
 	private String status = "pending";
-	private String prescription;
+	private String prescription = "null";
 	private String dateOfRequest;
 	private String dateOfTreatment;
 

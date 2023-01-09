@@ -2,7 +2,6 @@
 <div class="container-fluid">
   <div>
     <div>
-
       <table class="table">
         <thead>
           <tr>
@@ -11,22 +10,22 @@
             <th scope="col">Age</th>
             <th scope="col">Weight</th>
             <th scope="col">Disease</th>
-            <th scope="col">Prescription Needed</th>
             <th scope="col">Date Of Request</th>
+            <th scope="col">Prescription Needed</th>
           </tr>
         </thead>
-      
+
         <tbody>
           <tr *ngFor="let trans of forwardedTransactions">
             <!-- <form action=""> -->
-            <th scope="row">{{trans.patientId}}</th>
-            <td>{{trans.patientName}}</td>
-            <td>{{trans.patientAge}}</td>
-            <td>{{trans.patientweight}}</td>
-            <td>{{trans.disease}}</td>
-            <td><button class="btn btn-primary" (click)="givePrescription()">Give Prescription</button></td>
-            <td>{{trans.dateOfRequest}}</td>
-            <td><button class="btn btn-danger" (click)="submit(trans.transactionId)">Submit Prescription</button></td>
+            <th *ngIf="trans.prescription == 'null'" scope="row">{{trans.patientId}}</th>
+            <td *ngIf="trans.prescription == 'null'">{{trans.patientName}}</td>
+            <td *ngIf="trans.prescription == 'null'" >{{trans.patientAge}}</td>
+            <td *ngIf="trans.prescription == 'null'">{{trans.patientweight}}</td>
+            <td *ngIf="trans.prescription == 'null'">{{trans.disease}}</td>
+            <td *ngIf="trans.prescription == 'null'">{{trans.dateOfRequest}}</td>
+            <td *ngIf="trans.prescription == 'null'"><button class="btn btn-primary"
+                (click)="givePrescription(trans.transactionId)">Give Prescription</button></td>
             <!-- </form> -->
           </tr>
         </tbody>
