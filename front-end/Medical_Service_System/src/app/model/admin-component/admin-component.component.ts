@@ -27,6 +27,7 @@ export class AdminComponentComponent {
   openAddKioskDialog(){
     this.dialog.open(AddKioskDialogComponent)
   }
+  
   openAppointments(){
     this.router.navigate(['appointments'], { relativeTo: this.route });
   }

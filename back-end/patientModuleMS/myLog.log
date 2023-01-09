@@ -5719,6 +5719,83 @@ java.lang.IllegalArgumentException: The given id must not be null!
 2023-01-08 19:25:04,449 [RMI TCP Connection(303)-127.0.0.1] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown initiated... 
 2023-01-08 19:25:04,468 [RMI TCP Connection(303)-127.0.0.1] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown completed. 
 >>>>>>> origin/komali
+<<<<<<< HEAD
+2023-01-09 09:25:59,589 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper        -Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.medicalservicesystem.patient.PatientModuleMsApplicationTests], using SpringBootContextLoader 
+2023-01-09 09:25:59,643 [main] INFO  o.s.t.c.s.AbstractContextLoader                    -Could not detect default resource locations for test class [com.medicalservicesystem.patient.PatientModuleMsApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}. 
+2023-01-09 09:25:59,645 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils       -Could not detect default configuration classes for test class [com.medicalservicesystem.patient.PatientModuleMsApplicationTests]: PatientModuleMsApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration. 
+2023-01-09 09:26:00,204 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper        -Found @SpringBootConfiguration com.medicalservicesystem.patient.PatientModuleMsApplication for test class com.medicalservicesystem.patient.PatientModuleMsApplicationTests 
+2023-01-09 09:26:00,632 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper        -Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener] 
+2023-01-09 09:26:00,708 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper        -Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@41a6d121, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4f449e8f, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@411291e5, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@6e28bb87, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@19f040ba, org.springframework.test.context.support.DirtiesContextTestExecutionListener@72ab05ed, org.springframework.test.context.transaction.TransactionalTestExecutionListener@27e32fe4, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@c3c4c1c, org.springframework.test.context.event.EventPublishingTestExecutionListener@17d238b1, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@3d7cc3cb, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@35e478f, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@6d6cb754, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@6b7d1df8, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@3044e9c7, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@41d7b27f] 
+2023-01-09 09:26:02,753 [main] INFO  c.m.p.PatientModuleMsApplicationTests              -Starting PatientModuleMsApplicationTests using Java 17.0.5 on DESKTOP-IO5RF1D with PID 23300 (started by Komali in C:\Users\Komali\Desktop\MedicalService-System\back-end\patientModuleMS) 
+2023-01-09 09:26:02,765 [main] INFO  c.m.p.PatientModuleMsApplicationTests              -No active profile set, falling back to 1 default profile: "default" 
+2023-01-09 09:26:08,542 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          -Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2023-01-09 09:26:08,765 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          -Finished Spring Data repository scanning in 184 ms. Found 1 JPA repository interfaces. 
+2023-01-09 09:26:13,017 [main] INFO  o.h.j.i.u.LogHelper                                -HHH000204: Processing PersistenceUnitInfo [name: default] 
+2023-01-09 09:26:13,950 [main] INFO  o.h.Version                                        -HHH000412: Hibernate ORM core version 5.6.14.Final 
+2023-01-09 09:26:15,389 [main] INFO  o.h.a.c.Version                                    -HCANN000001: Hibernate Commons Annotations {5.1.2.Final} 
+2023-01-09 09:26:16,543 [main] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Starting... 
+2023-01-09 09:26:18,741 [main] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Start completed. 
+2023-01-09 09:26:18,831 [main] INFO  o.h.d.Dialect                                      -HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect 
+2023-01-09 09:26:22,729 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator                 -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 
+2023-01-09 09:26:22,766 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     -Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2023-01-09 09:26:22,863 [main] INFO  c.m.p.s.PatientServiceImp                          -Inside the patient Controller  
+2023-01-09 09:26:29,090 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2023-01-09 09:26:38,143 [main] INFO  c.m.p.PatientModuleMsApplicationTests              -Started PatientModuleMsApplicationTests in 37.24 seconds (JVM running for 43.645) 
+2023-01-09 09:26:39,556 [main] INFO  c.m.p.s.PatientServiceImp                          -Updating Patient Password From PatientService..... 
+2023-01-09 09:26:39,557 [main] INFO  c.m.p.s.PatientServiceImp                          -Updating Patient Address From PatientService..... 
+2023-01-09 09:26:39,558 [main] INFO  c.m.p.s.PatientServiceImp                          -Updating Patient Disease From PatientService..... 
+2023-01-09 09:26:39,562 [main] INFO  c.m.p.s.PatientServiceImp                          -Updating Patient Age From PatientService..... 
+2023-01-09 09:26:39,564 [main] INFO  c.m.p.s.PatientServiceImp                          -Updating Weight Age From PatientService..... 
+2023-01-09 09:26:39,566 [main] INFO  c.m.p.s.PatientServiceImp                          -Getting Patient By Patient Id From PatientService..... 
+2023-01-09 09:26:39,658 [main] INFO  c.m.p.s.PatientServiceImp                          -Getting All Patients From PatientService..... 
+2023-01-09 09:26:39,693 [main] INFO  c.m.p.s.PatientServiceImp                          -Getting Patient By Patient Id From PatientService..... 
+2023-01-09 09:26:39,777 [main] INFO  c.m.p.s.PatientServiceImp                          -Adding Patient From PatientService..... 
+2023-01-09 09:26:39,813 [main] INFO  c.m.p.s.PatientServiceImp                          -Getting Patient By Patient Id From PatientService..... 
+2023-01-09 09:26:40,094 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     -Closing JPA EntityManagerFactory for persistence unit 'default' 
+2023-01-09 09:26:40,108 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown initiated... 
+2023-01-09 09:26:40,260 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown completed. 
+2023-01-09 09:30:07,312 [main] INFO  c.m.p.PatientModuleMsApplication                   -Starting PatientModuleMsApplication using Java 17.0.5 on DESKTOP-IO5RF1D with PID 3148 (C:\Users\Komali\Desktop\MedicalService-System\back-end\patientModuleMS\target\classes started by Komali in C:\Users\Komali\Desktop\MedicalService-System\back-end\patientModuleMS) 
+2023-01-09 09:30:07,347 [main] INFO  c.m.p.PatientModuleMsApplication                   -No active profile set, falling back to 1 default profile: "default" 
+2023-01-09 09:30:09,304 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          -Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2023-01-09 09:30:09,435 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          -Finished Spring Data repository scanning in 94 ms. Found 1 JPA repository interfaces. 
+2023-01-09 09:30:10,658 [main] INFO  o.s.b.w.e.t.TomcatWebServer                        -Tomcat initialized with port(s): 9098 (http) 
+2023-01-09 09:30:10,681 [main] INFO  o.a.c.h.Http11NioProtocol                          -Initializing ProtocolHandler ["http-nio-9098"] 
+2023-01-09 09:30:10,685 [main] INFO  o.a.c.c.StandardService                            -Starting service [Tomcat] 
+2023-01-09 09:30:10,687 [main] INFO  o.a.c.c.StandardEngine                             -Starting Servlet engine: [Apache Tomcat/9.0.70] 
+2023-01-09 09:30:10,942 [main] INFO  o.a.c.c.C.[.[.[/]                                  -Initializing Spring embedded WebApplicationContext 
+2023-01-09 09:30:10,943 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext     -Root WebApplicationContext: initialization completed in 3482 ms 
+2023-01-09 09:30:11,364 [main] INFO  o.h.j.i.u.LogHelper                                -HHH000204: Processing PersistenceUnitInfo [name: default] 
+2023-01-09 09:30:11,559 [main] INFO  o.h.Version                                        -HHH000412: Hibernate ORM core version 5.6.14.Final 
+2023-01-09 09:30:12,095 [main] INFO  o.h.a.c.Version                                    -HCANN000001: Hibernate Commons Annotations {5.1.2.Final} 
+2023-01-09 09:30:12,430 [main] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Starting... 
+2023-01-09 09:30:13,304 [main] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Start completed. 
+2023-01-09 09:30:13,351 [main] INFO  o.h.d.Dialect                                      -HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect 
+2023-01-09 09:30:14,977 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator                 -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 
+2023-01-09 09:30:15,004 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     -Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2023-01-09 09:30:15,029 [main] INFO  c.m.p.s.PatientServiceImp                          -Inside the patient Controller  
+2023-01-09 09:30:16,382 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2023-01-09 09:30:17,236 [main] INFO  o.a.c.h.Http11NioProtocol                          -Starting ProtocolHandler ["http-nio-9098"] 
+2023-01-09 09:30:17,280 [main] INFO  o.s.b.w.e.t.TomcatWebServer                        -Tomcat started on port(s): 9098 (http) with context path '' 
+2023-01-09 09:30:17,853 [main] INFO  c.m.p.PatientModuleMsApplication                   -Started PatientModuleMsApplication in 11.38 seconds (JVM running for 13.916) 
+2023-01-09 09:55:46,548 [http-nio-9098-exec-1] INFO  o.a.c.c.C.[.[.[/]                                  -Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2023-01-09 09:55:46,555 [http-nio-9098-exec-1] INFO  o.s.w.s.DispatcherServlet                          -Initializing Servlet 'dispatcherServlet' 
+2023-01-09 09:55:46,565 [http-nio-9098-exec-1] INFO  o.s.w.s.DispatcherServlet                          -Completed initialization in 10 ms 
+2023-01-09 09:55:46,674 [http-nio-9098-exec-1] INFO  c.m.p.s.PatientServiceImp                          -Enter into patient Controller and getting the findPatientByEmail method  
+2023-01-09 09:55:46,676 [http-nio-9098-exec-1] INFO  c.m.p.s.PatientServiceImp                          -Getting Patient By Patient Email From PatientService..... 
+2023-01-09 10:26:37,424 [http-nio-9098-exec-3] INFO  c.m.p.s.PatientServiceImp                          -Enter into patient Controller and getting the method getpatients 
+2023-01-09 10:26:37,424 [http-nio-9098-exec-3] INFO  c.m.p.s.PatientServiceImp                          -Getting All Patients From PatientService..... 
+2023-01-09 10:27:56,756 [http-nio-9098-exec-5] INFO  c.m.p.s.PatientServiceImp                          -Enter into patient Controller and getting the method getpatients 
+2023-01-09 10:27:56,757 [http-nio-9098-exec-5] INFO  c.m.p.s.PatientServiceImp                          -Getting All Patients From PatientService..... 
+2023-01-09 10:29:06,445 [RMI TCP Connection(66)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin -Application shutdown requested. 
+2023-01-09 10:29:06,485 [RMI TCP Connection(66)-127.0.0.1] INFO  o.a.c.h.Http11NioProtocol                          -Pausing ProtocolHandler ["http-nio-9098"] 
+2023-01-09 10:29:06,486 [RMI TCP Connection(66)-127.0.0.1] INFO  o.a.c.c.StandardService                            -Stopping service [Tomcat] 
+2023-01-09 10:29:06,490 [RMI TCP Connection(66)-127.0.0.1] INFO  o.a.c.c.C.[.[.[/]                                  -Destroying Spring FrameworkServlet 'dispatcherServlet' 
+2023-01-09 10:29:06,500 [RMI TCP Connection(66)-127.0.0.1] INFO  o.a.c.h.Http11NioProtocol                          -Stopping ProtocolHandler ["http-nio-9098"] 
+2023-01-09 10:29:06,507 [RMI TCP Connection(66)-127.0.0.1] INFO  o.a.c.h.Http11NioProtocol                          -Destroying ProtocolHandler ["http-nio-9098"] 
+2023-01-09 10:29:06,517 [RMI TCP Connection(66)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     -Closing JPA EntityManagerFactory for persistence unit 'default' 
+2023-01-09 10:29:06,526 [RMI TCP Connection(66)-127.0.0.1] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown initiated... 
+2023-01-09 10:29:06,546 [RMI TCP Connection(66)-127.0.0.1] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown completed. 
+=======
 2023-01-09 09:49:32,265 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper        -Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.medicalservicesystem.patient.PatientModuleMsApplicationTests], using SpringBootContextLoader 
 2023-01-09 09:49:32,408 [main] INFO  o.s.t.c.s.AbstractContextLoader                    -Could not detect default resource locations for test class [com.medicalservicesystem.patient.PatientModuleMsApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}. 
 2023-01-09 09:49:32,414 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils       -Could not detect default configuration classes for test class [com.medicalservicesystem.patient.PatientModuleMsApplicationTests]: PatientModuleMsApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration. 
@@ -10171,6 +10248,7 @@ Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (usi
 2023-01-09 09:56:30,550 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     -Closing JPA EntityManagerFactory for persistence unit 'default' 
 2023-01-09 09:56:30,556 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown initiated... 
 2023-01-09 09:56:31,719 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown completed. 
+<<<<<<< HEAD
 2023-01-09 09:59:28,924 [main] INFO  c.m.p.PatientModuleMsApplication                   -Starting PatientModuleMsApplication using Java 17.0.5 on DESKTOP-RT17JBD with PID 13876 (E:\MedicalService-System\back-end\patientModuleMS\target\classes started by sourav kumar in E:\MedicalService-System\back-end\patientModuleMS) 
 2023-01-09 09:59:29,048 [main] INFO  c.m.p.PatientModuleMsApplication                   -No active profile set, falling back to 1 default profile: "default" 
 2023-01-09 09:59:31,403 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          -Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
@@ -10330,3 +10408,6 @@ java.lang.IllegalArgumentException: The given id must not be null!
 2023-01-09 11:59:50,093 [RMI TCP Connection(127)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     -Closing JPA EntityManagerFactory for persistence unit 'default' 
 2023-01-09 11:59:50,241 [RMI TCP Connection(127)-127.0.0.1] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown initiated... 
 2023-01-09 11:59:50,346 [RMI TCP Connection(127)-127.0.0.1] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown completed. 
+=======
+>>>>>>> origin/sourav
+>>>>>>> origin/komali

@@ -7,6 +7,8 @@
         <thead>
           <tr>
             <th scope="col">Patient Id</th>
+            <th scope="col">Patient Name</th>
+            
             <th scope="col">Assign Doctor</th>
             <th scope="col">Disease</th>
             <th scope="col">Date Of Request</th>
@@ -18,6 +20,8 @@
           <tr *ngFor="let trans of pendingTransactions">
             <!-- <form action=""> -->
             <th scope="row">{{trans.patientId}}</th>
+            <th scope="row">{{trans.patientName}}</th>
+
             <td>
               <div class="mb-3" class="form-group">
                 <select name="doctorId" (change)="selectedData($event)" class="form-control">
