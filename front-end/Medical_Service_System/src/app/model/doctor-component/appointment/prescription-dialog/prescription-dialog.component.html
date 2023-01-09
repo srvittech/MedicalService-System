@@ -1,0 +1,11 @@
+<form [formGroup]="feedbackForm" (ngSubmit)="submit()" style="padding:10px;height:100%;width:100%">
+    <div>
+        <div class="form-group">
+            <label for="comment"><h2>Prescription</h2> </label>
+            <textarea [ngClass]="{'is-invalid':submitted && feedbackForm.controls['description'].errors}"
+                formControlName="description" class="form-control" rows="10" cols="100" id="comment"></textarea>
+        </div>
+        <br>
+    <button type="submit" class="btn btn-primary mb-4">Give Prescription</button>
+    </div>
+</form>

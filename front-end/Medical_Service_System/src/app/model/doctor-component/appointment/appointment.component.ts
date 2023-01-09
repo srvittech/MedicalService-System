@@ -1,7 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { MatDialog } from '@angular/material/dialog';
+import { ActivatedRoute, Router } from '@angular/router';
 import { DoctorServiceService } from 'src/app/services/doctor-Service/doctor-service.service';
 import { TransactionServiceService } from 'src/app/services/transaction-Service/transaction-service.service';
+import { AddKioskDialogComponent } from '../../admin-component/add-kiosk-dialog/add-kiosk-dialog.component';
+import { PrescriptionDialogComponent } from './prescription-dialog/prescription-dialog.component';
 
 @Component({
   selector: 'app-appointment',
@@ -13,7 +17,7 @@ export class AppointmentComponent implements OnInit {
   forwardedTransactions: any
   myDoctorId: any = ""
   updatedTransactionFormByDoctor: any = {}
-  constructor(private transactionService: TransactionServiceService, private formBuilder: FormBuilder, private doctorService: DoctorServiceService) {
+  constructor(private dialog:MatDialog,private route: ActivatedRoute, private router: Router,private transactionService: TransactionServiceService, private formBuilder: FormBuilder, private doctorService: DoctorServiceService) {
     this.myDoctorId = this.doctorService.user.id
   }
 
@@ -53,8 +57,7 @@ export class AppointmentComponent implements OnInit {
   }
 
   // upto here --------------------------------------------------------------------
-
-
-
-
+  givePrescription(){
+    this.dialog.open(PrescriptionDialogComponent)
+  }
 }

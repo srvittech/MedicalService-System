@@ -24,7 +24,7 @@
             <td>{{trans.patientAge}}</td>
             <td>{{trans.patientweight}}</td>
             <td>{{trans.disease}}</td>
-            <td><button class="btn btn-primary">Give Prescription</button></td>
+            <td><button class="btn btn-primary" (click)="givePrescription()">Give Prescription</button></td>
             <td>{{trans.dateOfRequest}}</td>
             <td><button class="btn btn-danger" (click)="submit(trans.transactionId)">Submit Prescription</button></td>
             <!-- </form> -->
