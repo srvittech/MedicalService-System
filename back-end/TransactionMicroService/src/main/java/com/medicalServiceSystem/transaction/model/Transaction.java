@@ -17,6 +17,7 @@ public class Transaction {
 	private String disease;
 	private int patientweight;
 	private Long doctorId;
+	private String doctorName;
 	private String status = "pending";
 	private String prescription = "null";
 	private String dateOfRequest;
@@ -40,11 +41,9 @@ public class Transaction {
 		this.dateOfTreatment = dateOfTreatment;
 	}
 	
-	
-
 	public Transaction(Long transactionId, Long patientId, String patientName, int patientAge, String patientAddress,
-			String disease, int patientweight, Long doctorId, String status, String prescription, String dateOfRequest,
-			String dateOfTreatment) {
+			String disease, int patientweight, Long doctorId, String doctorName, String status, String prescription,
+			String dateOfRequest, String dateOfTreatment) {
 		super();
 		this.transactionId = transactionId;
 		this.patientId = patientId;
@@ -54,6 +53,7 @@ public class Transaction {
 		this.disease = disease;
 		this.patientweight = patientweight;
 		this.doctorId = doctorId;
+		this.doctorName = doctorName;
 		this.status = status;
 		this.prescription = prescription;
 		this.dateOfRequest = dateOfRequest;
@@ -124,8 +124,6 @@ public class Transaction {
 		this.dateOfTreatment = dateOfTreatment;
 	}
 	
-	
-
 	public String getPatientName() {
 		return patientName;
 	}
@@ -156,6 +154,14 @@ public class Transaction {
 
 	public void setPatientweight(int patientweight) {
 		this.patientweight = patientweight;
+	}
+
+	public String getDoctorName() {
+		return doctorName;
+	}
+
+	public void setDoctorName(String doctorName) {
+		this.doctorName = doctorName;
 	}
 
 	@Override

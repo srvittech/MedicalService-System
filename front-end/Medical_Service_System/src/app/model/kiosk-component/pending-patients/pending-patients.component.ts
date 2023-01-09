@@ -47,6 +47,7 @@ export class PendingPatientsComponent implements OnInit {
     this.fetchDoctorIdFromDoctorAssigned()
     this.updatedTransactionFormByKiosk['transactionId'] = transId
     this.updatedTransactionFormByKiosk['doctorId'] = this.doctorIdGen
+    this.updatedTransactionFormByKiosk['doctorName'] = this.doctorIdGen
     this.updatedTransactionFormByKiosk['status'] = "Forwarded to Doctor"
     this.transactionService.updateTransaction(this.updatedTransactionFormByKiosk).subscribe(res => {
     })
@@ -72,8 +73,8 @@ export class PendingPatientsComponent implements OnInit {
   }
 
   selectedData(event: any) {
-    console.log(this.flag);
-      this.flag = false
+    console.log(this.doctorAssignedId);
+    this.flag = false
     this.doctorAssignedId = event.target.value;
   }
 
