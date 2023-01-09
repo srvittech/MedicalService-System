@@ -1,13 +1,17 @@
 <br>
-<div class="container">
-    <div class="row">
-        <div class="panel panel-primary" style="margin-left:10%;background-color: rgb(169, 207, 249);">
-            <div class="col-md-12">
+
+<div class="container-fluid">
+    <form>
+    <form [formGroup]="feedbackForm" (ngSubmit)="submit()">
+        <div class="panel panel-primary"  class="row" style="margin-left:50%;margin-top:5%; ">
+            <div class="col-md-8">
                 <div class="form-group">
                     <label for="comment">Feedback: </label>
-                    <textarea class="form-control" rows="5" id="comment"></textarea>
-                  </div>
+                    <textarea [ngClass]="{'is-invalid':submitted && feedbackForm.controls['description'].errors}" formControlName="description" class="form-control" rows="5" id="comment"></textarea>
+                </div>
             </div>
+            <br>
+            <button  type="submit" class="btn btn-primary mb-4">Add Feedback</button>
         </div>
-    </div>
-    
+    </form>
+</form>

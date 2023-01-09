@@ -1,6 +1,7 @@
 import { ThisReceiver } from '@angular/compiler';
 import { Component } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
+import { ActivatedRoute,Router } from '@angular/router';
 import { UserServiceService } from 'src/app/services/user-Service/user-service.service';
 import { AddDoctorDialogComponent } from './add-doctor-dialog/add-doctor-dialog.component';
 import { AddKioskDialogComponent } from './add-kiosk-dialog/add-kiosk-dialog.component';
@@ -11,7 +12,7 @@ import { AddKioskDialogComponent } from './add-kiosk-dialog/add-kiosk-dialog.com
   styleUrls: ['./admin-component.component.css']
 })
 export class AdminComponentComponent {
-  constructor(private dialog: MatDialog,private userService:UserServiceService) {
+  constructor(private router:Router,private dialog: MatDialog,private userService:UserServiceService,private route:ActivatedRoute) {
    this.user = this.userService.user
   }
   user: any = {
@@ -25,5 +26,17 @@ export class AdminComponentComponent {
   }
   openAddKioskDialog(){
     this.dialog.open(AddKioskDialogComponent)
+  }
+  openAppointments(){
+    this.router.navigate(['appointments'], { relativeTo: this.route });
+  }
+  openFeedbacks(){
+    this.router.navigate(['feedbacks'], { relativeTo: this.route });
+  }
+  openDoctors(){
+    this.router.navigate(['doctors'], { relativeTo: this.route });
+  }
+  openPatients(){
+    this.router.navigate(['patients'], { relativeTo: this.route });
   }
 }

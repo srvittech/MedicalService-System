@@ -11,12 +11,14 @@ export class DoctorServiceService {
     role: null,
     userName: null
   }
+
+  listOfDoctors:any = []
   constructor(private httpClient:HttpClient) { }
 
   addDoctor(form:any){
     return this.httpClient.post("http://localhost:9092/addDoctor",form)
   }
-  getDoctots(){
+  getDoctors(){
     return this.httpClient.get("http://localhost:9092/getDoctors")
   }
   findDoctorById(id:any){

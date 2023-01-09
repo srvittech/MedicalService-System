@@ -4,8 +4,8 @@
     <form>
       <form [formGroup]="signupForm" (ngSubmit)="signup()">
         <div class="mb-3" class="form-group">
-          <label for="exampleInputPassword1" class="form-label">Name</label>
-          <input [ngClass]="{'is-invalid':submitted && signupForm.controls['doctorName'].errors}" ControlName="doctorName" type="text" class="form-control" id="exampleInputPassword1">
+          <label for="exampleInputPassword1"  class="form-label">Name</label>
+          <input [(ngModel)]="doctorDetails.doctorName" [ngClass]="{'is-invalid':submitted && signupForm.controls['doctorName'].errors}" formControlName="doctorName" type="text" class="form-control" id="exampleInputPassword1">
           <div *ngIf="submitted && signupForm.controls['doctorName'].errors" class="text-danger">
             <div *ngIf="submitted && signupForm.controls['doctorName'].errors['required']">
                Doctor Name is required
@@ -26,7 +26,7 @@
         </div>
         <div class="mb-3">
           <label for="exampleInputPassword1" class="form-label">Mobile Number</label>
-          <input [ngClass]="{'is-invalid':submitted && signupForm.controls['mobile'].errors}" formControlName="mobile" type="number" class="form-control" id="exampleInputPassword1">
+          <input [(ngModel)]="doctorDetails.mobile" [ngClass]="{'is-invalid':submitted && signupForm.controls['mobile'].errors}" formControlName="mobile" type="number" class="form-control" id="exampleInputPassword1">
           <div *ngIf="submitted && signupForm.controls['mobile'].errors" class="text-danger">
             <div *ngIf="submitted && signupForm.controls['mobile'].errors['required']">
               Mobile Number  is required
@@ -38,7 +38,7 @@
         </div>
         <div class="mb-3">
           <label for="exampleInputPassword1" class="form-label">Years Of Experience</label>
-          <input [ngClass]="{'is-invalid':submitted && signupForm.controls['mobile'].errors}" formControlName="yearsOfExperience" type="number" class="form-control" id="exampleInputPassword1">
+          <input [(ngModel)]="doctorDetails.yearsOfExperience" [ngClass]="{'is-invalid':submitted && signupForm.controls['mobile'].errors}" formControlName="yearsOfExperience" type="number" class="form-control" id="exampleInputPassword1">
           <div *ngIf="submitted && signupForm.controls['yearsOfExperience'].errors" class="text-danger">
             <div *ngIf="submitted && signupForm.controls['yearsOfExperience'].errors['required']">
               Years Of Experience is required
@@ -49,7 +49,7 @@
   
         <div class="mb-3">
           <label for="exampleInputEmail1" class="form-label">Email address</label>
-          <input [ngClass]="{'is-invalid':submitted && signupForm.controls['email'].errors}"  formControlName="email" type="email" class="form-control" id="exampleInputEmail1"
+          <input [(ngModel)]="doctorDetails.email" [ngClass]="{'is-invalid':submitted && signupForm.controls['email'].errors}"  formControlName="email" type="email" class="form-control" id="exampleInputEmail1"
             aria-describedby="emailHelp">
             <div *ngIf="submitted && signupForm.controls['email'].errors" class="text-danger">
               <div *ngIf="submitted && signupForm.controls['email'].errors['required']">
@@ -63,7 +63,7 @@
         </div>
         <div class="mb-3">
           <label for="exampleInputPassword1" class="form-label">Password</label>
-          <input [ngClass]="{'is-invalid':submitted && signupForm.controls['password'].errors}" formControlName="password" type="password" class="form-control" id="exampleInputPassword1">
+          <input [(ngModel)]="doctorDetails.password" [ngClass]="{'is-invalid':submitted && signupForm.controls['password'].errors}" formControlName="password" type="password" class="form-control" id="exampleInputPassword1">
           <div *ngIf="submitted && signupForm.controls['password'].errors" class="text-danger">
             <div *ngIf="submitted && signupForm.controls['password'].errors['required']">
               Password is required
@@ -74,7 +74,7 @@
           </div>
         </div>
   
-        <button type="submit" class="btn btn-primary mb-3">Add Doctor</button>
+        <button type="submit" class="btn btn-primary mb-3">Update Doctor</button>
       </form>
     </form>
   
