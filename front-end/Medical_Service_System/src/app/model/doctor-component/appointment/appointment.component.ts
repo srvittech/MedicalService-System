@@ -4,7 +4,6 @@ import { MatDialog } from '@angular/material/dialog';
 import { ActivatedRoute, Router } from '@angular/router';
 import { DoctorServiceService } from 'src/app/services/doctor-Service/doctor-service.service';
 import { TransactionServiceService } from 'src/app/services/transaction-Service/transaction-service.service';
-import { AddKioskDialogComponent } from '../../admin-component/add-kiosk-dialog/add-kiosk-dialog.component';
 import { PrescriptionDialogComponent } from './prescription-dialog/prescription-dialog.component';
 
 @Component({

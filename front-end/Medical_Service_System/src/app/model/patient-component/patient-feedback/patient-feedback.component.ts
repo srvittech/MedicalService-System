@@ -1,5 +1,6 @@
 import { Component,OnInit } from '@angular/core';
 import { FormGroup, Validators ,FormBuilder} from '@angular/forms';
+import { MatDialog } from '@angular/material/dialog';
 import { FeedbackServiceService } from 'src/app/services/feedback-Service/feedback-service.service';
 
 @Component({
@@ -10,7 +11,7 @@ import { FeedbackServiceService } from 'src/app/services/feedback-Service/feedba
 export class PatientFeedbackComponent implements OnInit {
   public feedbackForm !: FormGroup;
   submitted =false
-  constructor(private feedbackService:FeedbackServiceService,private formBuilder: FormBuilder){}
+  constructor(private dialog:MatDialog,private feedbackService:FeedbackServiceService,private formBuilder: FormBuilder){}
   ngOnInit(): void {
     this.feedbackForm = this.formBuilder.group({
     description: ['', Validators.required]
@@ -25,5 +26,8 @@ submit(){
     })
     alert("Feedback Added Successfully")
   }
+}
+close(){
+  this.dialog.closeAll()
 }
 }

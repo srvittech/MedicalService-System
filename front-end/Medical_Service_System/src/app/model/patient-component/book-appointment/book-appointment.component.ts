@@ -25,6 +25,7 @@ export class BookAppointmentComponent {
   registerForm!: FormGroup
   submitted = false;
   loginType: any = ""
+  
   constructor(private patientService: PatientServiceService, private route: ActivatedRoute, public dialog: MatDialog,
     public router: Router, private formBuilder: FormBuilder, private transactionService: TransactionServiceService, private datePipe: DatePipe) {
     this.user = this.patientService.patient
@@ -70,7 +71,8 @@ export class BookAppointmentComponent {
     })
 
     alert("Success")
+    this.router.navigate(['/patient'])
   }
 
-
+ 
 }

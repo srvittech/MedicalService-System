@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import { PatientServiceService } from 'src/app/services/patient-Service/patient-service.service';
 import { TransactionServiceService } from 'src/app/services/transaction-Service/transaction-service.service';
+import { PatientFeedbackComponent } from '../patient-feedback/patient-feedback.component';
 
 @Component({
   selector: 'app-view-appointment-status',
@@ -10,7 +12,7 @@ import { TransactionServiceService } from 'src/app/services/transaction-Service/
 export class ViewAppointmentStatusComponent implements OnInit {
   myTransactions: any = []
   patientId:any = ""
-  constructor(private transactionService: TransactionServiceService,private patientService:PatientServiceService) {
+  constructor(private dialog:MatDialog,private transactionService: TransactionServiceService,private patientService:PatientServiceService) {
 
   }
   ngOnInit(): void {
@@ -26,6 +28,9 @@ export class ViewAppointmentStatusComponent implements OnInit {
  
   getPatientId(){
    this.patientId=this.patientService.patient.id   
+  }
+  giveFeedback(){
+    this.dialog.open(PatientFeedbackComponent)
   }
 
 

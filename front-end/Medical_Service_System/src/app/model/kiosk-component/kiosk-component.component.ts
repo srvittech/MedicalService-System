@@ -43,11 +43,11 @@ export class KioskComponentComponent implements OnInit {
     this.router.navigate(['pendingApp'], { relativeTo: this.route });
     this.ngOnInit()
   }
-  showPatientList() {
-    this.router.navigate(['doctoravail'], { relativeTo: this.route });
-  }
   showFeedback() {
     this.router.navigate(['feedback'], { relativeTo: this.route });
+  }
+  logout(){
+    this.router.navigate(['/about']);
   }
 
 }

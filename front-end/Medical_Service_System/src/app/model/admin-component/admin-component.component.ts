@@ -40,4 +40,7 @@ export class AdminComponentComponent {
   openPatients(){
     this.router.navigate(['patients'], { relativeTo: this.route });
   }
+  logout(){
+    this.router.navigate(['/about']);
+  }
 }
