@@ -54,8 +54,11 @@ export class BookAppointmentComponent {
     }
     this.generateDate()
     console.log(this.registerForm.value);
-
     this.patientTransaction["patientId"] = this.registerForm.value.id
+    this.patientTransaction["patientName"] = this.user.name
+    this.patientTransaction["patientAge"] = this.registerForm.value.age
+    this.patientTransaction["patientAddress"] = this.registerForm.value.address
+    this.patientTransaction["patientweight"] = this.registerForm.value.weight
     this.patientTransaction["disease"] = this.registerForm.value.disease
     this.patientTransaction["dateOfRequest"] = this.myDate
     this.transactionService.addTransaction(this.patientTransaction).subscribe(res=>{
