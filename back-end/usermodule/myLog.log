@@ -11667,3 +11667,121 @@ Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (usi
 2023-01-09 18:42:38,288 [RMI TCP Connection(142)-127.0.0.1] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown initiated... 
 2023-01-09 18:42:38,534 [RMI TCP Connection(142)-127.0.0.1] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown completed. 
 >>>>>>> origin/sourav
+2023-01-09 20:18:26,951 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper        -Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.medicalservice.user.UsermoduleApplicationTests], using SpringBootContextLoader 
+2023-01-09 20:18:26,997 [main] INFO  o.s.t.c.s.AbstractContextLoader                    -Could not detect default resource locations for test class [com.medicalservice.user.UsermoduleApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}. 
+2023-01-09 20:18:27,000 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils       -Could not detect default configuration classes for test class [com.medicalservice.user.UsermoduleApplicationTests]: UsermoduleApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration. 
+2023-01-09 20:18:27,452 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper        -Found @SpringBootConfiguration com.medicalservice.user.UsermoduleApplication for test class com.medicalservice.user.UsermoduleApplicationTests 
+2023-01-09 20:18:27,785 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper        -Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener] 
+2023-01-09 20:18:27,840 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper        -Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6ad6fa53, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@55ea2d70, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@5e742e4, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@175acfb2, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@4a03bb68, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4e868ef5, org.springframework.test.context.transaction.TransactionalTestExecutionListener@71c905a3, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@30af7377, org.springframework.test.context.event.EventPublishingTestExecutionListener@67a056f1, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1dab9dd6, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@247667dd, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@6f099cef, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@afb5821, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@4bff2185, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@5c20ffa8] 
+2023-01-09 20:18:29,237 [main] INFO  c.m.u.UsermoduleApplicationTests                   -Starting UsermoduleApplicationTests using Java 17.0.5 on DESKTOP-IO5RF1D with PID 10664 (started by Komali in C:\Users\Komali\Desktop\MedicalService-System\back-end\usermodule) 
+2023-01-09 20:18:29,248 [main] INFO  c.m.u.UsermoduleApplicationTests                   -No active profile set, falling back to 1 default profile: "default" 
+2023-01-09 20:18:32,506 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          -Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2023-01-09 20:18:33,171 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          -Finished Spring Data repository scanning in 633 ms. Found 1 JPA repository interfaces. 
+2023-01-09 20:18:34,167 [main] INFO  o.s.c.c.s.GenericScope                             -BeanFactory id=a5fed8fe-9c41-3ab3-ac13-83995572fd1d 
+2023-01-09 20:18:35,748 [main] INFO  o.h.j.i.u.LogHelper                                -HHH000204: Processing PersistenceUnitInfo [name: default] 
+2023-01-09 20:18:36,010 [main] INFO  o.h.Version                                        -HHH000412: Hibernate ORM core version 5.6.14.Final 
+2023-01-09 20:18:36,671 [main] INFO  o.h.a.c.Version                                    -HCANN000001: Hibernate Commons Annotations {5.1.2.Final} 
+2023-01-09 20:18:37,207 [main] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Starting... 
+2023-01-09 20:18:38,548 [main] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Start completed. 
+2023-01-09 20:18:38,599 [main] INFO  o.h.d.Dialect                                      -HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect 
+2023-01-09 20:18:40,788 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator                 -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 
+2023-01-09 20:18:40,819 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     -Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2023-01-09 20:18:43,761 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2023-01-09 20:18:48,262 [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration -Eureka HTTP Client uses RestTemplate. 
+2023-01-09 20:18:49,102 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger -Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath. 
+2023-01-09 20:18:49,331 [main] INFO  o.s.c.n.e.InstanceInfoFactory                      -Setting initial instance status as: STARTING 
+2023-01-09 20:18:49,649 [main] INFO  c.n.d.DiscoveryClient                              -Initializing Eureka in region us-east-1 
+2023-01-09 20:18:49,670 [main] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-09 20:18:49,832 [main] INFO  c.n.d.DiscoveryClient                              -Disable delta property : false 
+2023-01-09 20:18:49,833 [main] INFO  c.n.d.DiscoveryClient                              -Single vip registry refresh property : null 
+2023-01-09 20:18:49,834 [main] INFO  c.n.d.DiscoveryClient                              -Force full registry fetch : false 
+2023-01-09 20:18:49,835 [main] INFO  c.n.d.DiscoveryClient                              -Application is null : false 
+2023-01-09 20:18:49,839 [main] INFO  c.n.d.DiscoveryClient                              -Registered Applications size is zero : true 
+2023-01-09 20:18:49,840 [main] INFO  c.n.d.DiscoveryClient                              -Application version is -1: true 
+2023-01-09 20:18:49,841 [main] INFO  c.n.d.DiscoveryClient                              -Getting all instance registry info from the eureka server 
+2023-01-09 20:18:50,858 [main] INFO  c.n.d.DiscoveryClient                              -The response status is 200 
+2023-01-09 20:18:50,868 [main] INFO  c.n.d.DiscoveryClient                              -Starting heartbeat executor: renew interval is: 30 
+2023-01-09 20:18:50,885 [main] INFO  c.n.d.InstanceInfoReplicator                       -InstanceInfoReplicator onDemand update allowed rate per min is 4 
+2023-01-09 20:18:50,910 [main] INFO  c.n.d.DiscoveryClient                              -Discovery Client initialized at timestamp 1673275730908 with initial instances count: 4 
+2023-01-09 20:18:50,932 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry                  -Registering application USER-SERVICE with eureka with status UP 
+2023-01-09 20:18:50,936 [main] INFO  c.n.d.DiscoveryClient                              -Saw local status change event StatusChangeEvent [timestamp=1673275730936, current=UP, previous=STARTING] 
+2023-01-09 20:18:50,942 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.n.d.DiscoveryClient                              -DiscoveryClient_USER-SERVICE/host.docker.internal:USER-SERVICE:9091: registering service... 
+2023-01-09 20:18:51,156 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.n.d.DiscoveryClient                              -DiscoveryClient_USER-SERVICE/host.docker.internal:USER-SERVICE:9091 - registration status: 204 
+2023-01-09 20:18:51,188 [main] INFO  c.m.u.UsermoduleApplicationTests                   -Started UsermoduleApplicationTests in 23.234 seconds (JVM running for 27.8) 
+2023-01-09 20:18:52,810 [main] INFO  c.m.u.s.UserServiceImpl                            -adding All User From UserService..... 
+2023-01-09 20:18:52,883 [main] INFO  c.m.u.s.UserServiceImpl                            -Getting All User From UserService..... 
+2023-01-09 20:18:52,921 [main] INFO  c.m.u.s.UserServiceImpl                            -updating password for User From UserService..... 
+2023-01-09 20:18:52,926 [main] INFO  c.m.u.s.UserServiceImpl                            -updating userName for User From UserService..... 
+2023-01-09 20:18:53,177 [SpringApplicationShutdownHook] INFO  o.s.c.n.e.s.EurekaServiceRegistry                  -Unregistering application USER-SERVICE with eureka with status DOWN 
+2023-01-09 20:18:53,178 [SpringApplicationShutdownHook] INFO  c.n.d.DiscoveryClient                              -Saw local status change event StatusChangeEvent [timestamp=1673275733177, current=DOWN, previous=UP] 
+2023-01-09 20:18:53,178 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.n.d.DiscoveryClient                              -DiscoveryClient_USER-SERVICE/host.docker.internal:USER-SERVICE:9091: registering service... 
+2023-01-09 20:18:53,187 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.n.d.DiscoveryClient                              -DiscoveryClient_USER-SERVICE/host.docker.internal:USER-SERVICE:9091 - registration status: 204 
+2023-01-09 20:18:53,203 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     -Closing JPA EntityManagerFactory for persistence unit 'default' 
+2023-01-09 20:18:53,206 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown initiated... 
+2023-01-09 20:18:53,250 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown completed. 
+2023-01-09 20:18:53,252 [SpringApplicationShutdownHook] INFO  c.n.d.DiscoveryClient                              -Shutting down DiscoveryClient ... 
+2023-01-09 20:18:56,258 [SpringApplicationShutdownHook] INFO  c.n.d.DiscoveryClient                              -Unregistering ... 
+2023-01-09 20:18:56,267 [SpringApplicationShutdownHook] INFO  c.n.d.DiscoveryClient                              -DiscoveryClient_USER-SERVICE/host.docker.internal:USER-SERVICE:9091 - deregister  status: 200 
+2023-01-09 20:18:56,283 [SpringApplicationShutdownHook] INFO  c.n.d.DiscoveryClient                              -Completed shut down of DiscoveryClient 
+2023-01-09 20:19:17,149 [main] INFO  c.m.u.UsermoduleApplication                        -Starting UsermoduleApplication using Java 17.0.5 on DESKTOP-IO5RF1D with PID 21564 (C:\Users\Komali\Desktop\MedicalService-System\back-end\usermodule\target\classes started by Komali in C:\Users\Komali\Desktop\MedicalService-System\back-end\usermodule) 
+2023-01-09 20:19:17,169 [main] INFO  c.m.u.UsermoduleApplication                        -No active profile set, falling back to 1 default profile: "default" 
+2023-01-09 20:19:19,011 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          -Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2023-01-09 20:19:19,388 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          -Finished Spring Data repository scanning in 358 ms. Found 1 JPA repository interfaces. 
+2023-01-09 20:19:20,098 [main] INFO  o.s.c.c.s.GenericScope                             -BeanFactory id=fe95cdd5-e2b6-3f49-a07d-e5f96ca45dee 
+2023-01-09 20:19:20,991 [main] INFO  o.s.b.w.e.t.TomcatWebServer                        -Tomcat initialized with port(s): 9091 (http) 
+2023-01-09 20:19:21,019 [main] INFO  o.a.c.h.Http11NioProtocol                          -Initializing ProtocolHandler ["http-nio-9091"] 
+2023-01-09 20:19:21,031 [main] INFO  o.a.c.c.StandardService                            -Starting service [Tomcat] 
+2023-01-09 20:19:21,042 [main] INFO  o.a.c.c.StandardEngine                             -Starting Servlet engine: [Apache Tomcat/9.0.70] 
+2023-01-09 20:19:21,411 [main] INFO  o.a.c.c.C.[.[.[/]                                  -Initializing Spring embedded WebApplicationContext 
+2023-01-09 20:19:21,411 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext     -Root WebApplicationContext: initialization completed in 4136 ms 
+2023-01-09 20:19:21,824 [main] INFO  o.h.j.i.u.LogHelper                                -HHH000204: Processing PersistenceUnitInfo [name: default] 
+2023-01-09 20:19:22,199 [main] INFO  o.h.Version                                        -HHH000412: Hibernate ORM core version 5.6.14.Final 
+2023-01-09 20:19:22,608 [main] INFO  o.h.a.c.Version                                    -HCANN000001: Hibernate Commons Annotations {5.1.2.Final} 
+2023-01-09 20:19:22,887 [main] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Starting... 
+2023-01-09 20:19:23,629 [main] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Start completed. 
+2023-01-09 20:19:23,664 [main] INFO  o.h.d.Dialect                                      -HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect 
+2023-01-09 20:19:25,353 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator                 -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 
+2023-01-09 20:19:25,377 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     -Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2023-01-09 20:19:27,033 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2023-01-09 20:19:29,222 [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration -Eureka HTTP Client uses RestTemplate. 
+2023-01-09 20:19:29,639 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger -Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath. 
+2023-01-09 20:19:29,863 [main] INFO  o.s.c.n.e.InstanceInfoFactory                      -Setting initial instance status as: STARTING 
+2023-01-09 20:19:30,105 [main] INFO  c.n.d.DiscoveryClient                              -Initializing Eureka in region us-east-1 
+2023-01-09 20:19:30,119 [main] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-09 20:19:30,187 [main] INFO  c.n.d.DiscoveryClient                              -Disable delta property : false 
+2023-01-09 20:19:30,188 [main] INFO  c.n.d.DiscoveryClient                              -Single vip registry refresh property : null 
+2023-01-09 20:19:30,189 [main] INFO  c.n.d.DiscoveryClient                              -Force full registry fetch : false 
+2023-01-09 20:19:30,190 [main] INFO  c.n.d.DiscoveryClient                              -Application is null : false 
+2023-01-09 20:19:30,190 [main] INFO  c.n.d.DiscoveryClient                              -Registered Applications size is zero : true 
+2023-01-09 20:19:30,190 [main] INFO  c.n.d.DiscoveryClient                              -Application version is -1: true 
+2023-01-09 20:19:30,191 [main] INFO  c.n.d.DiscoveryClient                              -Getting all instance registry info from the eureka server 
+2023-01-09 20:19:31,109 [main] INFO  c.n.d.DiscoveryClient                              -The response status is 200 
+2023-01-09 20:19:31,117 [main] INFO  c.n.d.DiscoveryClient                              -Starting heartbeat executor: renew interval is: 30 
+2023-01-09 20:19:31,123 [main] INFO  c.n.d.InstanceInfoReplicator                       -InstanceInfoReplicator onDemand update allowed rate per min is 4 
+2023-01-09 20:19:31,135 [main] INFO  c.n.d.DiscoveryClient                              -Discovery Client initialized at timestamp 1673275771131 with initial instances count: 4 
+2023-01-09 20:19:31,139 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry                  -Registering application USER-SERVICE with eureka with status UP 
+2023-01-09 20:19:31,141 [main] INFO  c.n.d.DiscoveryClient                              -Saw local status change event StatusChangeEvent [timestamp=1673275771141, current=UP, previous=STARTING] 
+2023-01-09 20:19:31,146 [main] INFO  o.a.c.h.Http11NioProtocol                          -Starting ProtocolHandler ["http-nio-9091"] 
+2023-01-09 20:19:31,146 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.n.d.DiscoveryClient                              -DiscoveryClient_USER-SERVICE/host.docker.internal:USER-SERVICE:9091: registering service... 
+2023-01-09 20:19:31,234 [main] INFO  o.s.b.w.e.t.TomcatWebServer                        -Tomcat started on port(s): 9091 (http) with context path '' 
+2023-01-09 20:19:31,236 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration          -Updating port to 9091 
+2023-01-09 20:19:31,317 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.n.d.DiscoveryClient                              -DiscoveryClient_USER-SERVICE/host.docker.internal:USER-SERVICE:9091 - registration status: 204 
+2023-01-09 20:19:31,636 [main] INFO  c.m.u.UsermoduleApplication                        -Started UsermoduleApplication in 15.564 seconds (JVM running for 17.897) 
+2023-01-09 20:24:30,206 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-09 20:29:30,215 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-09 20:34:05,328 [RMI TCP Connection(23)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin -Application shutdown requested. 
+2023-01-09 20:34:05,330 [RMI TCP Connection(23)-127.0.0.1] INFO  o.s.c.n.e.s.EurekaServiceRegistry                  -Unregistering application USER-SERVICE with eureka with status DOWN 
+2023-01-09 20:34:05,330 [RMI TCP Connection(23)-127.0.0.1] INFO  c.n.d.DiscoveryClient                              -Saw local status change event StatusChangeEvent [timestamp=1673276645330, current=DOWN, previous=UP] 
+2023-01-09 20:34:05,331 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.n.d.DiscoveryClient                              -DiscoveryClient_USER-SERVICE/host.docker.internal:USER-SERVICE:9091: registering service... 
+2023-01-09 20:34:05,350 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.n.d.DiscoveryClient                              -DiscoveryClient_USER-SERVICE/host.docker.internal:USER-SERVICE:9091 - registration status: 204 
+2023-01-09 20:34:05,365 [RMI TCP Connection(23)-127.0.0.1] INFO  o.a.c.h.Http11NioProtocol                          -Pausing ProtocolHandler ["http-nio-9091"] 
+2023-01-09 20:34:05,366 [RMI TCP Connection(23)-127.0.0.1] INFO  o.a.c.c.StandardService                            -Stopping service [Tomcat] 
+2023-01-09 20:34:05,377 [RMI TCP Connection(23)-127.0.0.1] INFO  o.a.c.h.Http11NioProtocol                          -Stopping ProtocolHandler ["http-nio-9091"] 
+2023-01-09 20:34:05,380 [RMI TCP Connection(23)-127.0.0.1] INFO  o.a.c.h.Http11NioProtocol                          -Destroying ProtocolHandler ["http-nio-9091"] 
+2023-01-09 20:34:05,398 [RMI TCP Connection(23)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     -Closing JPA EntityManagerFactory for persistence unit 'default' 
+2023-01-09 20:34:05,400 [RMI TCP Connection(23)-127.0.0.1] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown initiated... 
+2023-01-09 20:34:05,422 [RMI TCP Connection(23)-127.0.0.1] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown completed. 
+2023-01-09 20:34:05,423 [RMI TCP Connection(23)-127.0.0.1] INFO  c.n.d.DiscoveryClient                              -Shutting down DiscoveryClient ... 
+2023-01-09 20:34:08,439 [RMI TCP Connection(23)-127.0.0.1] INFO  c.n.d.DiscoveryClient                              -Unregistering ... 
+2023-01-09 20:34:08,448 [RMI TCP Connection(23)-127.0.0.1] INFO  c.n.d.DiscoveryClient                              -DiscoveryClient_USER-SERVICE/host.docker.internal:USER-SERVICE:9091 - deregister  status: 200 
+2023-01-09 20:34:08,459 [RMI TCP Connection(23)-127.0.0.1] INFO  c.n.d.DiscoveryClient                              -Completed shut down of DiscoveryClient 
