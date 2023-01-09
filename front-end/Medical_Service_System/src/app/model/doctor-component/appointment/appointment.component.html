@@ -7,23 +7,24 @@
         <thead>
           <tr>
             <th scope="col">Patient Id</th>
-            <!-- <th scope="col">Patient Name</th> -->
-            <!-- <th scope="col">Age</th> -->
-            <!-- <th scope="col">Weight</th> -->
+            <th scope="col">Patient Name</th>
+            <th scope="col">Age</th>
+            <th scope="col">Weight</th>
             <th scope="col">Disease</th>
-            <th scope="col">prescription</th>
+            <th scope="col">Prescription Needed</th>
             <th scope="col">Date Of Request</th>
-            <!-- <th scope="col">Date Of Treatment</th> -->
           </tr>
         </thead>
-
+      
         <tbody>
           <tr *ngFor="let trans of forwardedTransactions">
             <!-- <form action=""> -->
             <th scope="row">{{trans.patientId}}</th>
+            <td>{{trans.patientName}}</td>
+            <td>{{trans.patientAge}}</td>
+            <td>{{trans.patientweight}}</td>
             <td>{{trans.disease}}</td>
             <td><button class="btn btn-primary">Give Prescription</button></td>
-            <!-- <td>{{trans.weight}}</td> -->
             <td>{{trans.dateOfRequest}}</td>
             <td><button class="btn btn-danger" (click)="submit(trans.transactionId)">Submit Prescription</button></td>
             <!-- </form> -->
