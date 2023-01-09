@@ -1,6 +1,7 @@
 import { DatePipe } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { MatDialog } from '@angular/material/dialog';
 import { FeedbackServiceService } from 'src/app/services/feedback-Service/feedback-service.service';
 import { TransactionServiceService } from 'src/app/services/transaction-Service/transaction-service.service';
 
@@ -28,10 +29,11 @@ export class PrescriptionDialogComponent {
   myDate: any = ""
 
 
-  constructor(private formBuilder: FormBuilder, private transactionService: TransactionServiceService, private datePipe: DatePipe) { }
+  constructor(private dialog:MatDialog,private formBuilder: FormBuilder, private transactionService: TransactionServiceService, private datePipe: DatePipe) { }
   ngOnInit(): void {
     this.prescriptionForm = this.formBuilder.group({
       transactionId: [this.transactionService.myCurrentTransactionId],
+      status:['Doctor given prescription'],
       prescription: ['', Validators.required],
       dateOfTreatment: [this.generateDate()]
     })
@@ -47,6 +49,7 @@ export class PrescriptionDialogComponent {
       console.table(this.prescriptionForm.value);
 
       alert("Prescription Added Successfully")
+      this.dialog.closeAll()
     }
   }
 
@@ -59,6 +62,9 @@ export class PrescriptionDialogComponent {
     this.transactionService.updateTransaction(this.prescriptionForm.value).subscribe(res => {
 
     })
+  }
+  close() {
+    this.dialog.closeAll()
   }
 
 }

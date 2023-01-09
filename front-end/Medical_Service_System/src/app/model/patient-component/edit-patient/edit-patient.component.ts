@@ -40,6 +40,7 @@ export class EditPatientComponent {
       })
       console.table(this.signupForm.value);
       alert("Success")
+      this.dialog.closeAll()
       // this.doctorService.updateDoctor(this.signupForm.value).subscribe(res=>{
       //   console.table(res)
       // })
@@ -49,6 +50,9 @@ export class EditPatientComponent {
       this.patientService.findPatientById(this.signupForm.value.id).subscribe(res=>{
         this.patientService.patient = res
      })
+  }
+  close(){
+    this.dialog.closeAll()
   }
 }
 

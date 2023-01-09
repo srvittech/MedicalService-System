@@ -36,6 +36,7 @@ export class AddDoctorDialogComponent {
         console.log("Doctor Added");
       })
       alert("Success")
+    this.dialog.closeAll()
     }
 
   }

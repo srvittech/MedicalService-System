@@ -16744,6 +16744,49 @@ Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (usi
 	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:90) ~[spring-test-5.3.24.jar:5.3.24]
 	... 67 more
 >>>>>>> origin/sourav
+<<<<<<< HEAD
+2023-01-09 10:36:15,433 [restartedMain] INFO  c.m.f.FeedbackmoduleApplication                    -Starting FeedbackmoduleApplication using Java 17.0.5 on DESKTOP-IO5RF1D with PID 19404 (C:\Users\Komali\Desktop\MedicalService-System\back-end\feedbackmodule\target\classes started by Komali in C:\Users\Komali\Desktop\MedicalService-System\back-end\feedbackmodule) 
+2023-01-09 10:36:15,474 [restartedMain] INFO  c.m.f.FeedbackmoduleApplication                    -No active profile set, falling back to 1 default profile: "default" 
+2023-01-09 10:36:15,596 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor    -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+2023-01-09 10:36:15,597 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor    -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+2023-01-09 10:36:17,797 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          -Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2023-01-09 10:36:17,923 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          -Finished Spring Data repository scanning in 105 ms. Found 1 JPA repository interfaces. 
+2023-01-09 10:36:19,263 [restartedMain] INFO  o.s.b.w.e.t.TomcatWebServer                        -Tomcat initialized with port(s): 9096 (http) 
+2023-01-09 10:36:19,283 [restartedMain] INFO  o.a.c.h.Http11NioProtocol                          -Initializing ProtocolHandler ["http-nio-9096"] 
+2023-01-09 10:36:19,284 [restartedMain] INFO  o.a.c.c.StandardService                            -Starting service [Tomcat] 
+2023-01-09 10:36:19,286 [restartedMain] INFO  o.a.c.c.StandardEngine                             -Starting Servlet engine: [Apache Tomcat/9.0.70] 
+2023-01-09 10:36:19,485 [restartedMain] INFO  o.a.c.c.C.[.[.[/]                                  -Initializing Spring embedded WebApplicationContext 
+2023-01-09 10:36:19,486 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext     -Root WebApplicationContext: initialization completed in 3885 ms 
+2023-01-09 10:36:19,789 [restartedMain] INFO  o.h.j.i.u.LogHelper                                -HHH000204: Processing PersistenceUnitInfo [name: default] 
+2023-01-09 10:36:19,914 [restartedMain] INFO  o.h.Version                                        -HHH000412: Hibernate ORM core version 5.6.14.Final 
+2023-01-09 10:36:20,260 [restartedMain] INFO  o.h.a.c.Version                                    -HCANN000001: Hibernate Commons Annotations {5.1.2.Final} 
+2023-01-09 10:36:20,492 [restartedMain] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Starting... 
+2023-01-09 10:36:21,123 [restartedMain] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Start completed. 
+2023-01-09 10:36:21,154 [restartedMain] INFO  o.h.d.Dialect                                      -HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect 
+2023-01-09 10:36:22,623 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator                 -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 
+2023-01-09 10:36:22,645 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     -Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2023-01-09 10:36:23,632 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2023-01-09 10:36:24,117 [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer                 -Unable to start LiveReload server 
+2023-01-09 10:36:24,445 [restartedMain] INFO  o.a.c.h.Http11NioProtocol                          -Starting ProtocolHandler ["http-nio-9096"] 
+2023-01-09 10:36:24,485 [restartedMain] INFO  o.s.b.w.e.t.TomcatWebServer                        -Tomcat started on port(s): 9096 (http) with context path '' 
+2023-01-09 10:36:24,882 [restartedMain] INFO  c.m.f.FeedbackmoduleApplication                    -Started FeedbackmoduleApplication in 10.232 seconds (JVM running for 12.521) 
+2023-01-09 10:44:17,003 [http-nio-9096-exec-1] INFO  o.a.c.c.C.[.[.[/]                                  -Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2023-01-09 10:44:17,003 [http-nio-9096-exec-1] INFO  o.s.w.s.DispatcherServlet                          -Initializing Servlet 'dispatcherServlet' 
+2023-01-09 10:44:17,008 [http-nio-9096-exec-1] INFO  o.s.w.s.DispatcherServlet                          -Completed initialization in 4 ms 
+2023-01-09 10:44:17,076 [http-nio-9096-exec-1] INFO  c.m.f.c.FeedbackController                         -Entering Method getAllFeedbacks in FeedbackController 
+2023-01-09 10:44:17,076 [http-nio-9096-exec-1] INFO  c.m.f.s.FeedbackServiceImp                         -Getting All Feedbacks From FeedbackService..... 
+2023-01-09 11:28:28,979 [http-nio-9096-exec-3] INFO  c.m.f.c.FeedbackController                         -Entering Method getAllFeedbacks in FeedbackController 
+2023-01-09 11:28:28,980 [http-nio-9096-exec-3] INFO  c.m.f.s.FeedbackServiceImp                         -Getting All Feedbacks From FeedbackService..... 
+2023-01-09 14:05:31,664 [RMI TCP Connection(218)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin -Application shutdown requested. 
+2023-01-09 14:05:31,752 [RMI TCP Connection(218)-127.0.0.1] INFO  o.a.c.h.Http11NioProtocol                          -Pausing ProtocolHandler ["http-nio-9096"] 
+2023-01-09 14:05:31,754 [RMI TCP Connection(218)-127.0.0.1] INFO  o.a.c.c.StandardService                            -Stopping service [Tomcat] 
+2023-01-09 14:05:31,763 [RMI TCP Connection(218)-127.0.0.1] INFO  o.a.c.c.C.[.[.[/]                                  -Destroying Spring FrameworkServlet 'dispatcherServlet' 
+2023-01-09 14:05:31,784 [RMI TCP Connection(218)-127.0.0.1] INFO  o.a.c.h.Http11NioProtocol                          -Stopping ProtocolHandler ["http-nio-9096"] 
+2023-01-09 14:05:31,794 [RMI TCP Connection(218)-127.0.0.1] INFO  o.a.c.h.Http11NioProtocol                          -Destroying ProtocolHandler ["http-nio-9096"] 
+2023-01-09 14:05:31,810 [RMI TCP Connection(218)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     -Closing JPA EntityManagerFactory for persistence unit 'default' 
+2023-01-09 14:05:31,833 [RMI TCP Connection(218)-127.0.0.1] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown initiated... 
+2023-01-09 14:05:31,851 [RMI TCP Connection(218)-127.0.0.1] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown completed. 
+=======
 2023-01-09 12:11:51,789 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper        -Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.medicalservice.feedback.FeedbackmoduleApplicationTests], using SpringBootContextLoader 
 2023-01-09 12:11:51,927 [main] INFO  o.s.t.c.s.AbstractContextLoader                    -Could not detect default resource locations for test class [com.medicalservice.feedback.FeedbackmoduleApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}. 
 2023-01-09 12:11:51,930 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils       -Could not detect default configuration classes for test class [com.medicalservice.feedback.FeedbackmoduleApplicationTests]: FeedbackmoduleApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration. 
@@ -16806,6 +16849,7 @@ Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (usi
 2023-01-09 12:37:00,086 [http-nio-9096-exec-1] INFO  c.m.f.s.FeedbackServiceImp                         -Getting All Feedbacks From FeedbackService..... 
 2023-01-09 12:45:21,201 [http-nio-9096-exec-3] INFO  c.m.f.c.FeedbackController                         -Entering Method getAllFeedbacks in FeedbackController 
 2023-01-09 12:45:21,484 [http-nio-9096-exec-3] INFO  c.m.f.s.FeedbackServiceImp                         -Getting All Feedbacks From FeedbackService..... 
+<<<<<<< HEAD
 2023-01-09 16:07:55,137 [RMI TCP Connection(241)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin -Application shutdown requested. 
 2023-01-09 16:07:56,194 [RMI TCP Connection(241)-127.0.0.1] INFO  o.a.c.h.Http11NioProtocol                          -Pausing ProtocolHandler ["http-nio-9096"] 
 2023-01-09 16:07:56,199 [RMI TCP Connection(241)-127.0.0.1] INFO  o.a.c.c.StandardService                            -Stopping service [Tomcat] 
@@ -16815,3 +16859,36 @@ Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (usi
 2023-01-09 16:07:56,757 [RMI TCP Connection(241)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     -Closing JPA EntityManagerFactory for persistence unit 'default' 
 2023-01-09 16:07:56,979 [RMI TCP Connection(241)-127.0.0.1] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown initiated... 
 2023-01-09 16:07:57,264 [RMI TCP Connection(241)-127.0.0.1] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown completed. 
+=======
+>>>>>>> origin/sourav
+2023-01-09 14:12:49,320 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper        -Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.medicalservice.feedback.FeedbackmoduleApplicationTests], using SpringBootContextLoader 
+2023-01-09 14:12:49,354 [main] INFO  o.s.t.c.s.AbstractContextLoader                    -Could not detect default resource locations for test class [com.medicalservice.feedback.FeedbackmoduleApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}. 
+2023-01-09 14:12:49,358 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils       -Could not detect default configuration classes for test class [com.medicalservice.feedback.FeedbackmoduleApplicationTests]: FeedbackmoduleApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration. 
+2023-01-09 14:12:49,676 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper        -Found @SpringBootConfiguration com.medicalservice.feedback.FeedbackmoduleApplication for test class com.medicalservice.feedback.FeedbackmoduleApplicationTests 
+2023-01-09 14:12:50,011 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper        -Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener] 
+2023-01-09 14:12:50,047 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper        -Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@28952dea, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5a9800f8, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@143d9a93, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@40226788, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@4159e81b, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5b5caf08, org.springframework.test.context.transaction.TransactionalTestExecutionListener@23cd4ff2, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@70807224, org.springframework.test.context.event.EventPublishingTestExecutionListener@7e97551f, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@400d912a, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@9f6e406, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@7a94b64e, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@3e6f3bae, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@12477988, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@2caf6912] 
+2023-01-09 14:12:50,986 [main] INFO  c.m.f.FeedbackmoduleApplicationTests               -Starting FeedbackmoduleApplicationTests using Java 17.0.5 on DESKTOP-IO5RF1D with PID 19736 (started by Komali in C:\Users\Komali\Desktop\MedicalService-System\back-end\feedbackmodule) 
+2023-01-09 14:12:51,003 [main] INFO  c.m.f.FeedbackmoduleApplicationTests               -No active profile set, falling back to 1 default profile: "default" 
+2023-01-09 14:12:54,033 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          -Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2023-01-09 14:12:54,184 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          -Finished Spring Data repository scanning in 123 ms. Found 1 JPA repository interfaces. 
+2023-01-09 14:12:56,114 [main] INFO  o.h.j.i.u.LogHelper                                -HHH000204: Processing PersistenceUnitInfo [name: default] 
+2023-01-09 14:12:56,319 [main] INFO  o.h.Version                                        -HHH000412: Hibernate ORM core version 5.6.14.Final 
+2023-01-09 14:12:57,048 [main] INFO  o.h.a.c.Version                                    -HCANN000001: Hibernate Commons Annotations {5.1.2.Final} 
+2023-01-09 14:12:57,559 [main] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Starting... 
+2023-01-09 14:12:58,672 [main] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Start completed. 
+2023-01-09 14:12:58,733 [main] INFO  o.h.d.Dialect                                      -HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect 
+2023-01-09 14:13:01,164 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator                 -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 
+2023-01-09 14:13:01,194 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     -Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2023-01-09 14:13:04,012 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2023-01-09 14:13:08,126 [main] INFO  c.m.f.FeedbackmoduleApplicationTests               -Started FeedbackmoduleApplicationTests in 17.961 seconds (JVM running for 22.081) 
+2023-01-09 14:13:09,174 [main] INFO  c.m.f.s.FeedbackServiceImp                         -Getting All Feedbacks From FeedbackService..... 
+2023-01-09 14:13:09,276 [main] INFO  c.m.f.s.FeedbackServiceImp                         -Adding Feedbacks From FeedbackService..... 
+2023-01-09 14:13:09,306 [main] INFO  c.m.f.s.FeedbackServiceImp                         -Getting All Transactions By Feedback Id From FeedbackService..... 
+2023-01-09 14:13:09,393 [main] INFO  c.m.f.s.FeedbackServiceImp                         -Updating Patient Name From FeedbackService..... 
+2023-01-09 14:13:09,398 [main] INFO  c.m.f.s.FeedbackServiceImp                         -Updating Description From FeedbackService..... 
+2023-01-09 14:13:09,400 [main] INFO  c.m.f.s.FeedbackServiceImp                         -Updating Solution From FeedbackService..... 
+2023-01-09 14:13:09,403 [main] INFO  c.m.f.s.FeedbackServiceImp                         -Getting All Transactions By Feedback Id From FeedbackService..... 
+2023-01-09 14:13:09,634 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     -Closing JPA EntityManagerFactory for persistence unit 'default' 
+2023-01-09 14:13:09,655 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown initiated... 
+2023-01-09 14:13:09,704 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown completed. 
+>>>>>>> origin/komali

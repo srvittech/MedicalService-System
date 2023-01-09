@@ -33,6 +33,7 @@ export class AddKioskDialogComponent {
       })
       console.table(this.signupForm.value);
       alert("Success")
+    this.dialog.closeAll()
     }
 
   }
