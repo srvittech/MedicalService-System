@@ -2,11 +2,13 @@
 <div class="container-fluid">
   <div>
     <div>
-
+      <h1 style="text-align: center;">Pending Appointments</h1>
       <table class="table">
         <thead>
           <tr>
             <th scope="col">Patient Id</th>
+            <th scope="col">Patient Name</th>
+            
             <th scope="col">Assign Doctor</th>
             <th scope="col">Disease</th>
             <th scope="col">Date Of Request</th>
@@ -18,20 +20,22 @@
           <tr *ngFor="let trans of pendingTransactions">
             <!-- <form action=""> -->
             <th scope="row">{{trans.patientId}}</th>
+            <th scope="row">{{trans.patientName}}</th>
+
             <td>
               <div class="mb-3" class="form-group">
                 <select name="doctorId" (change)="selectedData($event)" class="form-control">
                   <option class="form-control">Assign Doctor</option>
                   <option class="form-control" *ngFor="let doctor of doctorsList">Doctor Id
-                    : {{doctor.id}} &nbsp;||&nbsp;{{doctor.
-                    doctorName|titlecase}}&nbsp;||&nbsp;{{doctor.
-                    specialization|titlecase}}&nbsp;Specialist</option>
+                    || {{doctor.id}} &nbsp; || &nbsp; {{doctor.
+                    doctorName|titlecase}} &nbsp; || &nbsp; {{doctor.
+                    specialization|titlecase}} &nbsp; Specialist</option>
                 </select>
               </div>
             </td>
             <td>{{trans.disease}}</td>
             <td>{{trans.dateOfRequest}}</td>
-            <td><button class="btn btn-primary" (click)="submit(trans.transactionId)">Forward To Doctor</button></td>
+            <td><button class="btn btn-primary" [disabled]="flag" (click)="submit(trans.transactionId)">Forward To Doctor</button></td>
             <!-- </form> -->
           </tr>
         </tbody>

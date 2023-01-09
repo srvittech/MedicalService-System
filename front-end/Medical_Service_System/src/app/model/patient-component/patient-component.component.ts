@@ -90,5 +90,8 @@ export class PatientComponentComponent {
    openEdit() {
      this.dialog.open(EditPatientComponent)
   }
+  logout(){
+    this.router.navigate(['/about']);
+  }
 
 }

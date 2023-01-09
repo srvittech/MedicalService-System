@@ -41,6 +41,7 @@ export class EditDoctorComponent {
       })
       console.table(this.signupForm.value);
       alert("Success")
+    this.dialog.closeAll()
       // this.doctorService.updateDoctor(this.signupForm.value).subscribe(res=>{
       //   console.table(res)
       // })
