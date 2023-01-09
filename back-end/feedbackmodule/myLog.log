@@ -16849,6 +16849,17 @@ Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (usi
 2023-01-09 12:37:00,086 [http-nio-9096-exec-1] INFO  c.m.f.s.FeedbackServiceImp                         -Getting All Feedbacks From FeedbackService..... 
 2023-01-09 12:45:21,201 [http-nio-9096-exec-3] INFO  c.m.f.c.FeedbackController                         -Entering Method getAllFeedbacks in FeedbackController 
 2023-01-09 12:45:21,484 [http-nio-9096-exec-3] INFO  c.m.f.s.FeedbackServiceImp                         -Getting All Feedbacks From FeedbackService..... 
+<<<<<<< HEAD
+2023-01-09 16:07:55,137 [RMI TCP Connection(241)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin -Application shutdown requested. 
+2023-01-09 16:07:56,194 [RMI TCP Connection(241)-127.0.0.1] INFO  o.a.c.h.Http11NioProtocol                          -Pausing ProtocolHandler ["http-nio-9096"] 
+2023-01-09 16:07:56,199 [RMI TCP Connection(241)-127.0.0.1] INFO  o.a.c.c.StandardService                            -Stopping service [Tomcat] 
+2023-01-09 16:07:56,292 [RMI TCP Connection(241)-127.0.0.1] INFO  o.a.c.c.C.[.[.[/]                                  -Destroying Spring FrameworkServlet 'dispatcherServlet' 
+2023-01-09 16:07:56,613 [RMI TCP Connection(241)-127.0.0.1] INFO  o.a.c.h.Http11NioProtocol                          -Stopping ProtocolHandler ["http-nio-9096"] 
+2023-01-09 16:07:56,666 [RMI TCP Connection(241)-127.0.0.1] INFO  o.a.c.h.Http11NioProtocol                          -Destroying ProtocolHandler ["http-nio-9096"] 
+2023-01-09 16:07:56,757 [RMI TCP Connection(241)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     -Closing JPA EntityManagerFactory for persistence unit 'default' 
+2023-01-09 16:07:56,979 [RMI TCP Connection(241)-127.0.0.1] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown initiated... 
+2023-01-09 16:07:57,264 [RMI TCP Connection(241)-127.0.0.1] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown completed. 
+=======
 >>>>>>> origin/sourav
 2023-01-09 14:12:49,320 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper        -Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.medicalservice.feedback.FeedbackmoduleApplicationTests], using SpringBootContextLoader 
 2023-01-09 14:12:49,354 [main] INFO  o.s.t.c.s.AbstractContextLoader                    -Could not detect default resource locations for test class [com.medicalservice.feedback.FeedbackmoduleApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}. 
@@ -16880,6 +16891,7 @@ Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (usi
 2023-01-09 14:13:09,634 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     -Closing JPA EntityManagerFactory for persistence unit 'default' 
 2023-01-09 14:13:09,655 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown initiated... 
 2023-01-09 14:13:09,704 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown completed. 
+<<<<<<< HEAD
 2023-01-09 14:13:27,081 [restartedMain] INFO  c.m.f.FeedbackmoduleApplication                    -Starting FeedbackmoduleApplication using Java 17.0.5 on DESKTOP-IO5RF1D with PID 10400 (C:\Users\Komali\Desktop\MedicalService-System\back-end\feedbackmodule\target\classes started by Komali in C:\Users\Komali\Desktop\MedicalService-System\back-end\feedbackmodule) 
 2023-01-09 14:13:27,116 [restartedMain] INFO  c.m.f.FeedbackmoduleApplication                    -No active profile set, falling back to 1 default profile: "default" 
 2023-01-09 14:13:27,219 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor    -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
@@ -16933,3 +16945,6 @@ Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (usi
 2023-01-09 17:13:14,606 [RMI TCP Connection(188)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     -Closing JPA EntityManagerFactory for persistence unit 'default' 
 2023-01-09 17:13:14,687 [RMI TCP Connection(188)-127.0.0.1] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown initiated... 
 2023-01-09 17:13:14,726 [RMI TCP Connection(188)-127.0.0.1] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown completed. 
+=======
+>>>>>>> origin/komali
+>>>>>>> origin/sourav

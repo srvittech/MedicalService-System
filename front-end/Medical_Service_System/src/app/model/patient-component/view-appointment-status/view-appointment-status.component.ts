@@ -29,7 +29,8 @@ export class ViewAppointmentStatusComponent implements OnInit {
   getPatientId(){
    this.patientId=this.patientService.patient.id   
   }
-  giveFeedback(){
+  giveFeedback(transId:any){
+    this.transactionService.myCurrentTransactionId = transId
     this.dialog.open(PatientFeedbackComponent)
   }
 

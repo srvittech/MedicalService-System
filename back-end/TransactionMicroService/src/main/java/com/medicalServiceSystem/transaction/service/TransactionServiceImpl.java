@@ -103,6 +103,19 @@ public class TransactionServiceImpl implements TransactionService {
 			LOGGER.info("Updating Prescription From TransactionService.....");
 			transactionToUpdate.setPrescription(transaction.getPrescription());
 		}
+		if (transaction.getDoctorName() != null) {
+			LOGGER.info("Updating DoctorName From TransactionService.....");
+			transactionToUpdate.setDoctorName(transaction.getDoctorName());
+		}
+
+		if (transaction.getDoctorSpecialization() != null) {
+			LOGGER.info("Updating DoctorSpecialization From TransactionService.....");
+			transactionToUpdate.setDoctorSpecialization(transaction.getDoctorSpecialization());
+		}
+		if (transaction.getFeedback() != null) {
+			LOGGER.info("Updating Feedback From TransactionService.....");
+			transactionToUpdate.setFeedback(transaction.getFeedback());
+		}
 		LOGGER.info("Saving Update From TransactionService.....");
 		return transactionRepo.save(transactionToUpdate);
 	}

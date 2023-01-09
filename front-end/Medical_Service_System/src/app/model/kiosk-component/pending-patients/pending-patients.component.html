@@ -27,9 +27,9 @@
                 <select name="doctorId" (change)="selectedData($event)" class="form-control">
                   <option class="form-control">Assign Doctor</option>
                   <option class="form-control" *ngFor="let doctor of doctorsList">Doctor Id
-                    : {{doctor.id}} &nbsp;||&nbsp;{{doctor.
-                    doctorName|titlecase}}&nbsp;||&nbsp;{{doctor.
-                    specialization|titlecase}}&nbsp;Specialist</option>
+                    || {{doctor.id}} &nbsp; || &nbsp; {{doctor.
+                    doctorName|titlecase}} &nbsp; || &nbsp; {{doctor.
+                    specialization|titlecase}} &nbsp; Specialist</option>
                 </select>
               </div>
             </td>
