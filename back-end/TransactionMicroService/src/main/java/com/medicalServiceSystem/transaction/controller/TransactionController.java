@@ -11,12 +11,14 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import com.medicalServiceSystem.transaction.model.Transaction;
 import com.medicalServiceSystem.transaction.service.TransactionServiceImpl;
 
 @RestController
 @CrossOrigin("*")
+@RequestMapping("/transaction")
 public class TransactionController {
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(TransactionController.class);

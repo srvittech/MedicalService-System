@@ -1,0 +1,36 @@
+server:
+  port: 8989
+spring:
+  cloud:
+    gateway:
+      routes:
+      - id: doctor-service
+        uri: lb://DOCTOR-SERVICE
+        predicates:
+        - Path=/doctor/**
+      - id: feedback-service
+        uri: lb://FEEDBACK-SERVICE
+        predicates:
+        - Path=/feedback/**
+      - id: patient-service
+        uri: lb://PATIENT-SERVICE
+        predicates:
+        - Path=/patient/**
+      - id: transaction-service
+        uri: lb://TRANSACTION-SERVICE
+        predicates:
+        - Path=/transaction/**
+      - id: user-service
+        uri: lb://USER-SERVICE
+        predicates:
+        - Path=/user/**
+  main:
+    web-application-type: reactive
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone : http://localhost:8761/eureka
+  instance:
+    hostname: localhost       

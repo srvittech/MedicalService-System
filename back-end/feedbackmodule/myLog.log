@@ -16880,3 +16880,56 @@ Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (usi
 2023-01-09 14:13:09,634 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     -Closing JPA EntityManagerFactory for persistence unit 'default' 
 2023-01-09 14:13:09,655 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown initiated... 
 2023-01-09 14:13:09,704 [SpringApplicationShutdownHook] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown completed. 
+2023-01-09 14:13:27,081 [restartedMain] INFO  c.m.f.FeedbackmoduleApplication                    -Starting FeedbackmoduleApplication using Java 17.0.5 on DESKTOP-IO5RF1D with PID 10400 (C:\Users\Komali\Desktop\MedicalService-System\back-end\feedbackmodule\target\classes started by Komali in C:\Users\Komali\Desktop\MedicalService-System\back-end\feedbackmodule) 
+2023-01-09 14:13:27,116 [restartedMain] INFO  c.m.f.FeedbackmoduleApplication                    -No active profile set, falling back to 1 default profile: "default" 
+2023-01-09 14:13:27,219 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor    -Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+2023-01-09 14:13:27,220 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor    -For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+2023-01-09 14:13:28,979 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          -Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2023-01-09 14:13:29,079 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          -Finished Spring Data repository scanning in 82 ms. Found 1 JPA repository interfaces. 
+2023-01-09 14:13:30,317 [restartedMain] INFO  o.s.b.w.e.t.TomcatWebServer                        -Tomcat initialized with port(s): 9096 (http) 
+2023-01-09 14:13:30,335 [restartedMain] INFO  o.a.c.h.Http11NioProtocol                          -Initializing ProtocolHandler ["http-nio-9096"] 
+2023-01-09 14:13:30,337 [restartedMain] INFO  o.a.c.c.StandardService                            -Starting service [Tomcat] 
+2023-01-09 14:13:30,339 [restartedMain] INFO  o.a.c.c.StandardEngine                             -Starting Servlet engine: [Apache Tomcat/9.0.70] 
+2023-01-09 14:13:30,518 [restartedMain] INFO  o.a.c.c.C.[.[.[/]                                  -Initializing Spring embedded WebApplicationContext 
+2023-01-09 14:13:30,519 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext     -Root WebApplicationContext: initialization completed in 3297 ms 
+2023-01-09 14:13:30,790 [restartedMain] INFO  o.h.j.i.u.LogHelper                                -HHH000204: Processing PersistenceUnitInfo [name: default] 
+2023-01-09 14:13:30,897 [restartedMain] INFO  o.h.Version                                        -HHH000412: Hibernate ORM core version 5.6.14.Final 
+2023-01-09 14:13:31,214 [restartedMain] INFO  o.h.a.c.Version                                    -HCANN000001: Hibernate Commons Annotations {5.1.2.Final} 
+2023-01-09 14:13:31,423 [restartedMain] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Starting... 
+2023-01-09 14:13:31,971 [restartedMain] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Start completed. 
+2023-01-09 14:13:32,005 [restartedMain] INFO  o.h.d.Dialect                                      -HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect 
+2023-01-09 14:13:33,252 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator                 -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 
+2023-01-09 14:13:33,270 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     -Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2023-01-09 14:13:34,160 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2023-01-09 14:13:34,616 [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer                 -Unable to start LiveReload server 
+2023-01-09 14:13:34,897 [restartedMain] INFO  o.a.c.h.Http11NioProtocol                          -Starting ProtocolHandler ["http-nio-9096"] 
+2023-01-09 14:13:34,936 [restartedMain] INFO  o.s.b.w.e.t.TomcatWebServer                        -Tomcat started on port(s): 9096 (http) with context path '' 
+2023-01-09 14:13:35,300 [restartedMain] INFO  c.m.f.FeedbackmoduleApplication                    -Started FeedbackmoduleApplication in 8.954 seconds (JVM running for 11.763) 
+2023-01-09 14:22:17,066 [http-nio-9096-exec-1] INFO  o.a.c.c.C.[.[.[/]                                  -Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2023-01-09 14:22:17,068 [http-nio-9096-exec-1] INFO  o.s.w.s.DispatcherServlet                          -Initializing Servlet 'dispatcherServlet' 
+2023-01-09 14:22:17,072 [http-nio-9096-exec-1] INFO  o.s.w.s.DispatcherServlet                          -Completed initialization in 4 ms 
+2023-01-09 14:22:17,148 [http-nio-9096-exec-1] INFO  c.m.f.c.FeedbackController                         -Entering Method getAllFeedbacks in FeedbackController 
+2023-01-09 14:22:17,149 [http-nio-9096-exec-1] INFO  c.m.f.s.FeedbackServiceImp                         -Getting All Feedbacks From FeedbackService..... 
+2023-01-09 14:33:02,642 [http-nio-9096-exec-3] INFO  c.m.f.c.FeedbackController                         -Entering Method getAllFeedbacks in FeedbackController 
+2023-01-09 14:33:02,643 [http-nio-9096-exec-3] INFO  c.m.f.s.FeedbackServiceImp                         -Getting All Feedbacks From FeedbackService..... 
+2023-01-09 14:50:37,725 [http-nio-9096-exec-5] INFO  c.m.f.c.FeedbackController                         -Entering Method getAllFeedbacks in FeedbackController 
+2023-01-09 14:50:37,726 [http-nio-9096-exec-5] INFO  c.m.f.s.FeedbackServiceImp                         -Getting All Feedbacks From FeedbackService..... 
+2023-01-09 15:05:50,362 [http-nio-9096-exec-7] INFO  c.m.f.c.FeedbackController                         -Entering Method getAllFeedbacks in FeedbackController 
+2023-01-09 15:05:50,363 [http-nio-9096-exec-7] INFO  c.m.f.s.FeedbackServiceImp                         -Getting All Feedbacks From FeedbackService..... 
+2023-01-09 15:08:44,693 [http-nio-9096-exec-9] INFO  c.m.f.c.FeedbackController                         -Entering Method getAllFeedbacks in FeedbackController 
+2023-01-09 15:08:44,693 [http-nio-9096-exec-9] INFO  c.m.f.s.FeedbackServiceImp                         -Getting All Feedbacks From FeedbackService..... 
+2023-01-09 15:22:21,323 [http-nio-9096-exec-1] INFO  c.m.f.c.FeedbackController                         -Entering Method getAllFeedbacks in FeedbackController 
+2023-01-09 15:22:21,325 [http-nio-9096-exec-1] INFO  c.m.f.s.FeedbackServiceImp                         -Getting All Feedbacks From FeedbackService..... 
+2023-01-09 15:43:48,796 [http-nio-9096-exec-3] INFO  c.m.f.c.FeedbackController                         -Entering Method getAllFeedbacks in FeedbackController 
+2023-01-09 15:43:48,798 [http-nio-9096-exec-3] INFO  c.m.f.s.FeedbackServiceImp                         -Getting All Feedbacks From FeedbackService..... 
+2023-01-09 15:59:03,948 [http-nio-9096-exec-5] INFO  c.m.f.c.FeedbackController                         -Entering Method getAllFeedbacks in FeedbackController 
+2023-01-09 15:59:03,948 [http-nio-9096-exec-5] INFO  c.m.f.s.FeedbackServiceImp                         -Getting All Feedbacks From FeedbackService..... 
+2023-01-09 17:13:13,796 [RMI TCP Connection(188)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin -Application shutdown requested. 
+2023-01-09 17:13:14,244 [RMI TCP Connection(188)-127.0.0.1] INFO  o.a.c.h.Http11NioProtocol                          -Pausing ProtocolHandler ["http-nio-9096"] 
+2023-01-09 17:13:14,245 [RMI TCP Connection(188)-127.0.0.1] INFO  o.a.c.c.StandardService                            -Stopping service [Tomcat] 
+2023-01-09 17:13:14,253 [RMI TCP Connection(188)-127.0.0.1] INFO  o.a.c.c.C.[.[.[/]                                  -Destroying Spring FrameworkServlet 'dispatcherServlet' 
+2023-01-09 17:13:14,540 [RMI TCP Connection(188)-127.0.0.1] INFO  o.a.c.h.Http11NioProtocol                          -Stopping ProtocolHandler ["http-nio-9096"] 
+2023-01-09 17:13:14,587 [RMI TCP Connection(188)-127.0.0.1] INFO  o.a.c.h.Http11NioProtocol                          -Destroying ProtocolHandler ["http-nio-9096"] 
+2023-01-09 17:13:14,606 [RMI TCP Connection(188)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     -Closing JPA EntityManagerFactory for persistence unit 'default' 
+2023-01-09 17:13:14,687 [RMI TCP Connection(188)-127.0.0.1] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown initiated... 
+2023-01-09 17:13:14,726 [RMI TCP Connection(188)-127.0.0.1] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown completed. 
