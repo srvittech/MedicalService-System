@@ -11323,3 +11323,12 @@ Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (usi
 2023-01-09 13:57:22,193 [http-nio-9091-exec-3] INFO  c.m.u.s.UserServiceImpl                            -Getting All User From UserService..... 
 2023-01-09 14:01:36,298 [http-nio-9091-exec-5] INFO  c.m.u.s.UserServiceImpl                            -Enter into user Controller and getting the method getlogin 
 2023-01-09 14:01:36,351 [http-nio-9091-exec-5] INFO  c.m.u.s.UserServiceImpl                            -Getting All User From UserService..... 
+2023-01-09 16:08:25,724 [RMI TCP Connection(244)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin -Application shutdown requested. 
+2023-01-09 16:08:26,930 [RMI TCP Connection(244)-127.0.0.1] INFO  o.a.c.h.Http11NioProtocol                          -Pausing ProtocolHandler ["http-nio-9091"] 
+2023-01-09 16:08:26,935 [RMI TCP Connection(244)-127.0.0.1] INFO  o.a.c.c.StandardService                            -Stopping service [Tomcat] 
+2023-01-09 16:08:27,081 [RMI TCP Connection(244)-127.0.0.1] INFO  o.a.c.c.C.[.[.[/]                                  -Destroying Spring FrameworkServlet 'dispatcherServlet' 
+2023-01-09 16:08:27,549 [RMI TCP Connection(244)-127.0.0.1] INFO  o.a.c.h.Http11NioProtocol                          -Stopping ProtocolHandler ["http-nio-9091"] 
+2023-01-09 16:08:27,606 [RMI TCP Connection(244)-127.0.0.1] INFO  o.a.c.h.Http11NioProtocol                          -Destroying ProtocolHandler ["http-nio-9091"] 
+2023-01-09 16:08:27,698 [RMI TCP Connection(244)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     -Closing JPA EntityManagerFactory for persistence unit 'default' 
+2023-01-09 16:08:27,848 [RMI TCP Connection(244)-127.0.0.1] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown initiated... 
+2023-01-09 16:08:28,057 [RMI TCP Connection(244)-127.0.0.1] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown completed. 

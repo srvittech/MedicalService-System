@@ -10591,3 +10591,14 @@ javax.persistence.NonUniqueResultException: query did not return a unique result
 2023-01-09 13:44:40,778 [http-nio-9098-exec-6] INFO  c.m.p.s.PatientServiceImp                          -Updating Weight Age From PatientService..... 
 2023-01-09 14:02:15,703 [http-nio-9098-exec-8] INFO  c.m.p.s.PatientServiceImp                          -Enter into patient Controller and getting the findPatientByEmail method  
 2023-01-09 14:02:15,858 [http-nio-9098-exec-8] INFO  c.m.p.s.PatientServiceImp                          -Getting Patient By Patient Email From PatientService..... 
+2023-01-09 15:52:43,412 [http-nio-9098-exec-10] INFO  c.m.p.s.PatientServiceImp                          -Enter into patient Controller and getting the findPatientByEmail method  
+2023-01-09 15:52:43,503 [http-nio-9098-exec-10] INFO  c.m.p.s.PatientServiceImp                          -Getting Patient By Patient Email From PatientService..... 
+2023-01-09 16:08:18,504 [RMI TCP Connection(256)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin -Application shutdown requested. 
+2023-01-09 16:08:22,970 [RMI TCP Connection(256)-127.0.0.1] INFO  o.a.c.h.Http11NioProtocol                          -Pausing ProtocolHandler ["http-nio-9098"] 
+2023-01-09 16:08:22,975 [RMI TCP Connection(256)-127.0.0.1] INFO  o.a.c.c.StandardService                            -Stopping service [Tomcat] 
+2023-01-09 16:08:23,072 [RMI TCP Connection(256)-127.0.0.1] INFO  o.a.c.c.C.[.[.[/]                                  -Destroying Spring FrameworkServlet 'dispatcherServlet' 
+2023-01-09 16:08:23,747 [RMI TCP Connection(256)-127.0.0.1] INFO  o.a.c.h.Http11NioProtocol                          -Stopping ProtocolHandler ["http-nio-9098"] 
+2023-01-09 16:08:23,849 [RMI TCP Connection(256)-127.0.0.1] INFO  o.a.c.h.Http11NioProtocol                          -Destroying ProtocolHandler ["http-nio-9098"] 
+2023-01-09 16:08:24,012 [RMI TCP Connection(256)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     -Closing JPA EntityManagerFactory for persistence unit 'default' 
+2023-01-09 16:08:24,165 [RMI TCP Connection(256)-127.0.0.1] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown initiated... 
+2023-01-09 16:08:24,536 [RMI TCP Connection(256)-127.0.0.1] INFO  c.z.h.HikariDataSource                             -HikariPool-1 - Shutdown completed. 

@@ -7958,3 +7958,11 @@ java.lang.IllegalArgumentException: The given id must not be null!
 2023-01-09 14:02:17,699 [http-nio-7091-exec-1] INFO  c.m.t.s.TransactionServiceImpl                     -Getting Transactions By Patient Id From TransactionService..... 
 2023-01-09 15:52:47,701 [http-nio-7091-exec-5] INFO  c.m.t.c.TransactionController                      -Entering Method getTransactionByPatientId in TransactionController 
 2023-01-09 15:52:47,763 [http-nio-7091-exec-5] INFO  c.m.t.s.TransactionServiceImpl                     -Getting Transactions By Patient Id From TransactionService..... 
+2023-01-09 15:58:13,746 [http-nio-7091-exec-7] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver        -Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "null"] 
+2023-01-09 16:00:46,045 [http-nio-7091-exec-8] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver        -Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "null"] 
+2023-01-09 16:07:49,461 [RMI TCP Connection(179)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin -Application shutdown requested. 
+2023-01-09 16:07:50,658 [RMI TCP Connection(179)-127.0.0.1] INFO  o.a.c.h.Http11NioProtocol                          -Pausing ProtocolHandler ["http-nio-7091"] 
+2023-01-09 16:07:50,660 [RMI TCP Connection(179)-127.0.0.1] INFO  o.a.c.c.StandardService                            -Stopping service [Tomcat] 
+2023-01-09 16:07:50,744 [RMI TCP Connection(179)-127.0.0.1] INFO  o.a.c.c.C.[.[.[/]                                  -Destroying Spring FrameworkServlet 'dispatcherServlet' 
+2023-01-09 16:07:51,553 [RMI TCP Connection(179)-127.0.0.1] INFO  o.a.c.h.Http11NioProtocol                          -Stopping ProtocolHandler ["http-nio-7091"] 
+2023-01-09 16:07:51,642 [RMI TCP Connection(179)-127.0.0.1] INFO  o.a.c.h.Http11NioProtocol                          -Destroying ProtocolHandler ["http-nio-7091"] 
