@@ -42,6 +42,7 @@ import { EditPatientComponent } from './model/patient-component/edit-patient/edi
 import { ViewFeedbackComponent } from './model/admin-component/view-feedback/view-feedback.component';
 import { ViewPatientsComponent } from './model/admin-component/view-patients/view-patients.component';
 import { ViewDoctorsComponent } from './model/admin-component/view-doctors/view-doctors.component';
+import { PrescriptionDialogComponent } from './model/doctor-component/appointment/prescription-dialog/prescription-dialog.component';
 
 @NgModule({
   declarations: [
@@ -71,7 +72,8 @@ import { ViewDoctorsComponent } from './model/admin-component/view-doctors/view-
     EditPatientComponent,
     ViewFeedbackComponent,
     ViewPatientsComponent,
-    ViewDoctorsComponent
+    ViewDoctorsComponent,
+    PrescriptionDialogComponent
   ],
   imports: [
     BrowserModule,

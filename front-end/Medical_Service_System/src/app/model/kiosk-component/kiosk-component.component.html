@@ -7,7 +7,7 @@
                 <button class="btn btn-outline-success my-2 my-sm-0 ml-auto" type="submit" id="logout">Change
                     Password</button>
                 &nbsp;
-                <button class="btn btn-outline-success my-2 my-sm-0 ml-auto" type="submit" id="logout">Logout</button>
+                <button (click)="logout()" class="btn btn-outline-success my-2 my-sm-0 ml-auto" type="submit" id="logout">Logout</button>
             </div>
         </nav>
     </div>
@@ -31,16 +31,6 @@
                 </div>
                 <div class="col-md-4 market-update-right">
                     <i class="fa fa-calendar"> </i>
-                </div>
-            </div>
-        </div>
-        <div (click)="showPatientList()" class="col-md-4 market-update-gd">
-            <div class="market-update-block clr-block-2">
-                <div class="col-md-8 market-update-left">
-                    <h4>Assign Doctor to Patient</h4>
-                </div>
-                <div class="col-md-4 market-update-right">
-                    <i class="fa fa-user-o"></i>
                 </div>
             </div>
         </div>

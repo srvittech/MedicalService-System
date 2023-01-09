@@ -27,6 +27,7 @@ export class AdminComponentComponent {
   openAddKioskDialog(){
     this.dialog.open(AddKioskDialogComponent)
   }
+  
   openAppointments(){
     this.router.navigate(['appointments'], { relativeTo: this.route });
   }
@@ -38,5 +39,8 @@ export class AdminComponentComponent {
   }
   openPatients(){
     this.router.navigate(['patients'], { relativeTo: this.route });
+  }
+  logout(){
+    this.router.navigate(['/about']);
   }
 }

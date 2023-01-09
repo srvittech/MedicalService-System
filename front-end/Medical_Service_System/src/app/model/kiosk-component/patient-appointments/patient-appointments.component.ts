@@ -10,10 +10,19 @@ export class PatientAppointmentsComponent implements OnInit {
  allTransactionsResult: any
 
   constructor(private transactionService: TransactionServiceService) {
-    this.allTransactionsResult = this.transactionService.allTransactions
+    
 
   }
   ngOnInit(): void {
-    
+    this.transactionService.refresh.subscribe((res) => {
+      this.fetchData()
+    })
+    this.fetchData()
+  }
+
+  fetchData(){
+    this.transactionService.getAllTransaction().subscribe(res=>{
+      this.allTransactionsResult = res
+    })
   }
 }

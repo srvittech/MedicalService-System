@@ -37,4 +37,7 @@ export class DoctorComponentComponent implements OnInit {
   openEdit() {
     this.dialog.open(EditDoctorComponent)
   }
+  logout(){
+    this.router.navigate(['/about']);
+  }
 }

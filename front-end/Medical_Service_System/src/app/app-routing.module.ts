@@ -20,6 +20,7 @@ import { ViewAppointmentsComponent } from './model/admin-component/view-appointm
 import { ViewPatientsComponent } from './model/admin-component/view-patients/view-patients.component';
 import { ViewDoctorsComponent } from './model/admin-component/view-doctors/view-doctors.component';
 import { ViewFeedbackComponent } from './model/admin-component/view-feedback/view-feedback.component';
+import { PrescriptionDialogComponent } from './model/doctor-component/appointment/prescription-dialog/prescription-dialog.component';
 
 const routes: Routes = [
   { path: "", redirectTo: "/about", pathMatch: "full" },
@@ -29,8 +30,7 @@ const routes: Routes = [
     { path: 'appointments', component: ViewAppointmentsComponent },
     { path: 'feedbacks', component: ViewFeedbackComponent },
     { path: 'doctors', component: ViewDoctorsComponent },
-    { path: 'patients', component: ViewPatientsComponent },
-  ]
+    { path: 'patients', component: ViewPatientsComponent }]
 },
   {
     path: "doctor",
