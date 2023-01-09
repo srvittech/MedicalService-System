@@ -18,6 +18,7 @@ export class PendingPatientsComponent implements OnInit {
   loginType: any = ""
   doctorAssignedId: any = ""
   updatedTransactionFormByKiosk: any = {}
+  flag:boolean = true
   constructor(private transactionService: TransactionServiceService, private formBuilder: FormBuilder, private doctorService: DoctorServiceService) {
 
   }
@@ -71,6 +72,8 @@ export class PendingPatientsComponent implements OnInit {
   }
 
   selectedData(event: any) {
+    console.log(this.flag);
+      this.flag = false
     this.doctorAssignedId = event.target.value;
   }
 
