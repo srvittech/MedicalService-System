@@ -2,15 +2,16 @@
 <div class="container-fluid">
   <div>
     <div>
-
-      <table class="table">
+      <h1 style="text-align: center;">Pending Appointments</h1>
+      <table class="table table-hover table-bordered">
         <thead>
           <tr>
             <th scope="col">Patient Id</th>
             <th scope="col">Patient Name</th>
-            
+
             <th scope="col">Assign Doctor</th>
             <th scope="col">Disease</th>
+            <th scope="col">Expected Date Of Appointment</th>
             <th scope="col">Date Of Request</th>
             <th scope="col">Approve</th>
           </tr>
@@ -34,8 +35,10 @@
               </div>
             </td>
             <td>{{trans.disease}}</td>
+            <th><input type="date" (change)="selectedDate($event)"></th>
             <td>{{trans.dateOfRequest}}</td>
-            <td><button class="btn btn-primary" [disabled]="flag" (click)="submit(trans.transactionId)">Forward To Doctor</button></td>
+            <td><button class="btn btn-primary" [disabled]="flag || flag1" (click)="submit(trans.transactionId)">Forward To
+                Doctor</button></td>
             <!-- </form> -->
           </tr>
         </tbody>

@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ActivatedRoute,Router } from '@angular/router';
 import { UserServiceService } from 'src/app/services/user-Service/user-service.service';
+import { PopUpComponent } from '../pop-up/pop-up.component';
 import { AddDoctorDialogComponent } from './add-doctor-dialog/add-doctor-dialog.component';
 import { AddKioskDialogComponent } from './add-kiosk-dialog/add-kiosk-dialog.component';
 
@@ -14,6 +15,15 @@ import { AddKioskDialogComponent } from './add-kiosk-dialog/add-kiosk-dialog.com
 export class AdminComponentComponent {
   constructor(private router:Router,private dialog: MatDialog,private userService:UserServiceService,private route:ActivatedRoute) {
    this.user = this.userService.user
+  }
+  openDialog(): void {
+    const dialogRef = this.dialog.open(PopUpComponent, {
+      data: {m1:"SuccesFully LoggedOut"},
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      
+    })
   }
   user: any = {
     id: null,
@@ -42,5 +52,6 @@ export class AdminComponentComponent {
   }
   logout(){
     this.router.navigate(['/about']);
+    this.openDialog()
   }
 }

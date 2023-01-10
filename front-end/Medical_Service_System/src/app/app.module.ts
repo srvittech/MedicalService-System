@@ -44,6 +44,8 @@ import { ViewDoctorsComponent } from './model/admin-component/view-doctors/view-
 import { PrescriptionDialogComponent } from './model/doctor-component/appointment/prescription-dialog/prescription-dialog.component';
 import { PopUpComponent } from './model/pop-up/pop-up.component';
 import { PopUpService } from './services/dialog/pop-up.service';
+import { SidebarComponent } from './model/sidebar/sidebar.component';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 @NgModule({
   declarations: [
@@ -74,7 +76,8 @@ import { PopUpService } from './services/dialog/pop-up.service';
     ViewPatientsComponent,
     ViewDoctorsComponent,
     PrescriptionDialogComponent,
-    PopUpComponent
+    PopUpComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,
@@ -89,6 +92,7 @@ import { PopUpService } from './services/dialog/pop-up.service';
     MatButtonModule,
     MatIconModule,
     FormsModule,
+    NgxPaginationModule
   ],
   providers: [DatePipe,FeedbackServiceService,UserServiceService,PatientServiceService,DoctorServiceService,TransactionServiceService,PopUpService],
   bootstrap: [AppComponent]

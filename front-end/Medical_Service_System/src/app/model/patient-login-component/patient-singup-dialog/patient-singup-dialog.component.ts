@@ -12,6 +12,9 @@ import { PopUpComponent } from '../../pop-up/pop-up.component';
   styleUrls: ['./patient-singup-dialog.component.css']
 })
 export class PatientSingupDialogComponent {
+  m1:any = ""
+  m2:any = ""
+  flag:boolean = false
   public signupForm !: FormGroup;
   submitted = false
   constructor(private formBuilder: FormBuilder,
@@ -27,30 +30,47 @@ export class PatientSingupDialogComponent {
     })
 
   }
+  openDialog(): void {
+    const dialogRef = this.dialog.open(PopUpComponent, {
+      data: {m1:this.m1,m2:this.m2},
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      
+    })
+  }
   signup() {
     this.submitted = true
     if (!this.signupForm.invalid) {
 
       this.patientService.addPatient(this.signupForm.value).subscribe(res => {
         console.table(this.signupForm.value);
-        this.popUpService.m1 = "Succesfully SignedUp"
-        this.popUpService.m2 = "Thanks"
+        this.flag = true
         this.signupForm.reset()
         this.close()
-        this.dialog.open(PopUpComponent)
       })
     }
-    else {
-      this.popUpService.m1 = "Something Went Wrong"
-      this.popUpService.m2 = "Try Again"
-      // this.close()
-      this.dialog.open(PopUpComponent)
-    }
+
+    setTimeout(()=>{    
+      if (this.flag) {
+        this.m1 = "SingedUp Succesfull"
+        this.m2 = "Thanks"
+        
+      }
+      else{
+        this.m1 = "Something Went Wrong"
+        this.m2 = "Try Again"
+        
+      }                       // <<<---using ()=> syntax
+      this.openDialog()
+    }, 2000);
 
   }
+
+
   close() {
     this.dialog.closeAll()
   }
-
+  
 
 }

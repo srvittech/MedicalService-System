@@ -1,0 +1,3 @@
+showPatientList() {
+    this.router.navigate(['patientlist'], { relativeTo: this.route });
+  }

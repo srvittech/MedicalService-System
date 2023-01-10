@@ -1,0 +1,89 @@
+     setTimeout(() => {
+        if (this.flag) {
+          this.m1 = "Your Profile Is Updated"
+          this.m2 = "Thanks"
+          this.dialog.closeAll()
+          console.log("true");
+
+        }
+        else {
+          this.m1 = "Something Went Wrong"
+          this.m2 = "Try Again"
+          console.log("false");
+
+        }                       // <<<---using ()=> syntax
+        this.openDialog()
+      }, 2000);
+
+
+
+
+resusable dialog 
+
+
+inside compoent -----------------------------------------------------------------------
+
+
+  m1:any = ""
+  m2:any = ""
+flag:boolean = false
+
+  openDialog(): void {
+    const dialogRef = this.dialog.open(PopUpComponent, {
+      data: {m1:this.m1,m2:this.m2},
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      
+    })
+  }
+
+---------------------------------------------------
+
+inside resuable dialog -------------------------------------------------------------------------
+
+
+<div id="pop">
+    <h1 mat-dialog-title>{{data.m1}}</h1>
+    <div  mat-dialog-content>{{data.m2}}</div>
+    <div mat-dialog-actions>
+        <button class="btn btn-primary" style="background-color: black; color: white;" mat-button mat-dialog-close>Close</button>
+    </div>
+</div>
+
+
+ts----------------------------------------
+
+
+import { Component, Inject, OnInit } from '@angular/core';
+import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { PopUpService } from 'src/app/services/dialog/pop-up.service';
+
+@Component({
+  selector: 'app-pop-up',
+  templateUrl: './pop-up.component.html',
+  styleUrls: ['./pop-up.component.css']
+})
+export class PopUpComponent {
+
+  constructor( public dialogRef: MatDialogRef<PopUpComponent>,
+    @Inject(MAT_DIALOG_DATA) public data:any,private popupService:PopUpService){
+  }
+ 
+
+
+
+}
+
+----------------------------------------logout------------------------------------------
+  openDialog(): void {
+    const dialogRef = this.dialog.open(PopUpComponent, {
+      data: {m1:"SuccesFully LoggedOut"},
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      
+    })
+  }
+
+

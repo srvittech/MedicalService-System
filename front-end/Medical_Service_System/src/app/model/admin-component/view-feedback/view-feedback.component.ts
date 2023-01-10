@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FeedbackServiceService } from 'src/app/services/feedback-Service/feedback-service.service';
+import { TransactionServiceService } from 'src/app/services/transaction-Service/transaction-service.service';
 
 @Component({
   selector: 'app-view-feedback',
@@ -7,9 +8,12 @@ import { FeedbackServiceService } from 'src/app/services/feedback-Service/feedba
   styleUrls: ['./view-feedback.component.css']
 })
 export class ViewFeedbackComponent {
-  constructor(private feedbackService:FeedbackServiceService){}
+  constructor(private transactionService:TransactionServiceService){}
   ngOnInit(): void {
     this.getAllFeedback()
+    this.transactionService.refresh.subscribe((res)=>{
+      this.getAllFeedback()
+    })
   }
   
   user: any = {
@@ -20,7 +24,7 @@ export class ViewFeedbackComponent {
     solution:null
   }
   getAllFeedback(){
-    this.feedbackService.getAllFeedback().subscribe(res=>{
+    this.transactionService.getAllTransaction().subscribe(res=>{
       this.user=res
       console.log(res)
     })

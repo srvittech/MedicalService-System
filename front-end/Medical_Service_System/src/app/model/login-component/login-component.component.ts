@@ -87,7 +87,7 @@ export class LoginComponentComponent implements OnInit {
       this.doctorService.user = this.user
       console.table(this.doctorService.user);
 
-      if (this.user.id == this.registerForm.value.id && this.user.password == this.registerForm.value.password && this.registerForm.value.role.toLowerCase() != "kiosk" && this.registerForm.value.role.toLowerCase() != "admin") {
+      if (this.user.id == this.registerForm.value.id && this.user.password == this.registerForm.value.password && this.registerForm.value.role.toLowerCase() == "doctor") {
         //this.openDialog()
         console.log("doc");
         this.flag = true
@@ -111,7 +111,7 @@ export class LoginComponentComponent implements OnInit {
         
       }                       // <<<---using ()=> syntax
       this.openDialog()
-    }, 1000);
+    }, 3000);
  
 
   }

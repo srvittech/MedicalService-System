@@ -9,6 +9,9 @@ import { DoctorServiceService } from 'src/app/services/doctor-Service/doctor-ser
 export class ViewDoctorsComponent {
   constructor(private doctorService:DoctorServiceService){}
   ngOnInit(): void {
+    this.doctorService.refresh.subscribe((res)=>{
+      this.getDoctors()
+    })
     this.getDoctors()
   }
   

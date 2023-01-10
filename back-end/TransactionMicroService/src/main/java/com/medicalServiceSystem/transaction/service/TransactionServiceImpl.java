@@ -42,6 +42,7 @@ public class TransactionServiceImpl implements TransactionService {
 		return transactionRepo.save(transaction);
 	}
 
+
 	@Override
 	public List<Transaction> getAllTransaction() {
 		LOGGER.info("Getting All Transactions From TransactionService.....");
@@ -115,6 +116,10 @@ public class TransactionServiceImpl implements TransactionService {
 		if (transaction.getFeedback() != null) {
 			LOGGER.info("Updating Feedback From TransactionService.....");
 			transactionToUpdate.setFeedback(transaction.getFeedback());
+		}
+		if (transaction.getDateOfExpectedApointment() != null) {
+			LOGGER.info("Updating Feedback From TransactionService.....");
+			transactionToUpdate.setDateOfExpectedApointment(transaction.getDateOfExpectedApointment());
 		}
 		LOGGER.info("Saving Update From TransactionService.....");
 		return transactionRepo.save(transactionToUpdate);

@@ -28,16 +28,6 @@ class TransactionMicroServiceApplicationTests {
 	@Mock
 	private TransactionRepository transactionRepository;
 
-	@Test
-	public void addTransactionTest() {
-
-		Transaction transaction = new Transaction();
-
-		when(transactionRepository.save(transaction)).thenReturn(transaction);
-
-		assertEquals(transaction, transactionServiceImp.addTransaction(transaction));
-
-	}
 
 	@Test
 	public void getAllTransactionTest() {

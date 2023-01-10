@@ -16,14 +16,15 @@ public class Transaction {
 	private String patientAddress;
 	private String disease;
 	private int patientweight;
-	private Long doctorId = null;
-	private String doctorName = "null";
-	private String doctorSpecialization="null";
+	private Long doctorId;
+	private String doctorName;
+	private String doctorSpecialization;
 	private String status = "pending";
-	private String prescription = "null";
-	private String dateOfRequest ="null";
-	private String feedback = "null";
-	private String dateOfTreatment = "null";
+	private String prescription="null";
+	private String dateOfRequest;
+	private String dateOfExpectedApointment;
+	private String feedback;
+	private String dateOfTreatment;
 	public Transaction() {
 		super();
 
@@ -43,25 +44,14 @@ public class Transaction {
 	}
 
 
-	public Transaction(Long transactionId, Long patientId, String patientName, int patientAge, String patientAddress,
-			String disease, int patientweight, Long doctorId, String doctorName, String doctorSpecialization,
-			String status, String prescription, String dateOfRequest, String feedback, String dateOfTreatment) {
-		super();
-		this.transactionId = transactionId;
-		this.patientId = patientId;
-		this.patientName = patientName;
-		this.patientAge = patientAge;
-		this.patientAddress = patientAddress;
-		this.disease = disease;
-		this.patientweight = patientweight;
-		this.doctorId = doctorId;
-		this.doctorName = doctorName;
-		this.doctorSpecialization = doctorSpecialization;
-		this.status = status;
-		this.prescription = prescription;
-		this.dateOfRequest = dateOfRequest;
-		this.feedback = feedback;
-		this.dateOfTreatment = dateOfTreatment;
+
+
+	public String getDateOfExpectedApointment() {
+		return dateOfExpectedApointment;
+	}
+
+	public void setDateOfExpectedApointment(String dateOfExpectedApointment) {
+		this.dateOfExpectedApointment = dateOfExpectedApointment;
 	}
 
 	public String getFeedback() {

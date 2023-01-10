@@ -33,9 +33,4 @@ export class ViewAppointmentStatusComponent implements OnInit {
     this.transactionService.myCurrentTransactionId = transId
     this.dialog.open(PatientFeedbackComponent)
   }
-
-
-
-
-
 }

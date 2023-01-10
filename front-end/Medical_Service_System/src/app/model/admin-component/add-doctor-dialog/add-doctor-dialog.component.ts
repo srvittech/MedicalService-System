@@ -35,7 +35,6 @@ export class AddDoctorDialogComponent {
       this.doctorService.addDoctor(this.signupForm.value).subscribe(res => {
         console.log("Doctor Added");
       })
-      alert("Success")
     this.dialog.closeAll()
     }
 
