@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Subject, tap } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -12,26 +13,38 @@ export class DoctorServiceService {
     userName: null
   }
 
-  listOfDoctors:any = []
-  constructor(private httpClient:HttpClient) { }
+  listOfDoctors: any = []
+  constructor(private httpClient: HttpClient) { }
 
-  addDoctor(form:any){
-    return this.httpClient.post("http://localhost:9092/addDoctor",form)
+  private refreshTransactions = new Subject<void>();
+
+  get refresh(){
+   return this.refreshTransactions
   }
-  getDoctors(){
+
+  addDoctor(form: any) {
+    return this.httpClient.post("http://localhost:9092/addDoctor", form).pipe(tap(() => {
+      this.refresh.next();
+    })
+    )
+  }
+  getDoctors() {
     return this.httpClient.get("http://localhost:9092/getDoctors")
   }
-  findDoctorById(id:any){
-    return this.httpClient.get("http://localhost:9092/findDoctorById/"+id)
+  findDoctorById(id: any) {
+    return this.httpClient.get("http://localhost:9092/findDoctorById/" + id)
   }
-  findBySpecialization(specialization:any){
-    return this.httpClient.get("http://localhost:9092/getSpecialization/"+specialization)
+  findBySpecialization(specialization: any) {
+    return this.httpClient.get("http://localhost:9092/getSpecialization/" + specialization)
   }
-  updateDoctor(form:any){
-    return this.httpClient.put("http://localhost:9092/updateDoctor/",form)
+  updateDoctor(form: any) {
+    return this.httpClient.put("http://localhost:9092/updateDoctor/", form).pipe(tap(() => {
+      this.refresh.next();
+    })
+    )
   }
-  deleteDoctorById(id:any){
-    return this.httpClient.delete("http://localhost:9092/deleteDoctorById/"+id)
+  deleteDoctorById(id: any) {
+    return this.httpClient.delete("http://localhost:9092/deleteDoctorById/" + id)
   }
- 
+
 }

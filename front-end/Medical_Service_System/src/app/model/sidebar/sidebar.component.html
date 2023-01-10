@@ -1,0 +1,41 @@
+<div class="container-fluid" style="margin: 0;padding: 0;">
+  <div class="row flex-nowrap" style="margin: 0;padding: 0;">
+    <div class="col-auto col-md-3.1 col-xl-2.1 px-sm-2 px-0 " style="margin: 0;padding: 0;" id="sidebar">
+
+      <div class=" d-flex flex-column align-items-center  align-items-sm-start  min-vh-100">
+        <div class="brand d-flex flex-column align-items-center align-items-sm-start">
+          <a routerLink="/about" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto  text-decoration-none">
+            <span class="fs-5 d-none d-sm-inline"> <img src="assets/img/brand.jpg" alt="none" width="190px"></span>
+          </a>
+
+        </div>
+        <div id="sidebar-content">
+          <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+
+            <div id="sidebar-content-1">
+              <li>
+                <a (click)="openLogin()" id="links" routerLinkActive="active">
+                  <i class="fs-3 fa fa-user" aria-hidden="true"></i><span id="core-content-sidebar"
+                    class="ms-1 d-none d-sm-inline">Employee Login</span> </a>
+              </li>
+            </div>
+            <div id="sidebar-content-1">
+              <li>
+                <a (click)="openLoginPatient()" id="links" routerLinkActive="active">
+                  <i class="fs-3 fa fa-user-plus" aria-hidden="true"></i>
+                  <span id="core-content-sidebar" class="ms-1 d-none d-sm-inline"> Patient Login</span> </a>
+              </li>
+            </div>
+          </ul>
+        </div>
+        <hr>
+      </div>
+    </div>
+    <div class="col py-3" style="padding: 0;margin: 0;">
+      <div *ngIf="flag">
+      <app-login-component></app-login-component>
+    </div>
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

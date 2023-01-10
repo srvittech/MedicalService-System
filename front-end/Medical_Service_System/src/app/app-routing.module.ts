@@ -20,18 +20,29 @@ import { ViewAppointmentsComponent } from './model/admin-component/view-appointm
 import { ViewPatientsComponent } from './model/admin-component/view-patients/view-patients.component';
 import { ViewDoctorsComponent } from './model/admin-component/view-doctors/view-doctors.component';
 import { ViewFeedbackComponent } from './model/admin-component/view-feedback/view-feedback.component';
-import { PrescriptionDialogComponent } from './model/doctor-component/appointment/prescription-dialog/prescription-dialog.component';
+import { SidebarComponent } from './model/sidebar/sidebar.component';
 
 const routes: Routes = [
   { path: "", redirectTo: "/about", pathMatch: "full" },
   { path: "about", component: AboutComponentComponent },
-  { path: "admin", component: AdminComponentComponent ,
-  children: [
-    { path: 'appointments', component: ViewAppointmentsComponent },
-    { path: 'feedbacks', component: ViewFeedbackComponent },
-    { path: 'doctors', component: ViewDoctorsComponent },
-    { path: 'patients', component: ViewPatientsComponent }]
-},
+
+  {
+    path: "sidebar", component: SidebarComponent, children: [
+      { path: "login", component: LoginComponentComponent }, 
+      {
+        path: "loginpatient", component: PatientLoginComponentComponent
+      }
+    ]
+  },
+
+  {
+    path: "admin", component: AdminComponentComponent,
+    children: [
+      { path: 'appointments', component: ViewAppointmentsComponent },
+      { path: 'feedbacks', component: ViewFeedbackComponent },
+      { path: 'doctors', component: ViewDoctorsComponent },
+      { path: 'patients', component: ViewPatientsComponent }]
+  },
   {
     path: "doctor",
     component: DoctorComponentComponent,
@@ -68,7 +79,8 @@ const routes: Routes = [
   },
   { path: "login", component: LoginComponentComponent },
   { path: "login1", component: LoginComponentComponent },
-  { path: "login2", component: LoginComponentComponent }
+  { path: "login2", component: LoginComponentComponent },
+
 
 ];
 

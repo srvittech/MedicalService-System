@@ -3,7 +3,6 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 import { DoctorServiceService } from 'src/app/services/doctor-Service/doctor-service.service';
-import { PopUpComponent } from '../../pop-up/pop-up.component';
 
 @Component({
   selector: 'app-add-doctor-dialog',
@@ -11,12 +10,6 @@ import { PopUpComponent } from '../../pop-up/pop-up.component';
   styleUrls: ['./add-doctor-dialog.component.css']
 })
 export class AddDoctorDialogComponent {
-  
-  m1:any = ""
-  m2:any = ""
-flag:boolean = false
-  roles: any = ["Eye", "ENT", "Heart"]
-
   public signupForm !: FormGroup;
   submitted = false
   constructor(private formBuilder: FormBuilder, private router: Router,
@@ -34,45 +27,16 @@ flag:boolean = false
     })
   }
 
-
-  openDialog(): void {
-    const dialogRef = this.dialog.open(PopUpComponent, {
-      data: {m1:this.m1,m2:this.m2},
-    });
-
-    dialogRef.afterClosed().subscribe(result => {
-      
-    })
-  }
-
-
+  roles: any = ["Eye", "ENT", "Heart"]
   signup() {
 
     this.submitted = true
     if (!this.signupForm.invalid) {
       this.doctorService.addDoctor(this.signupForm.value).subscribe(res => {
         console.log("Doctor Added");
-        this.flag = true
       })
-      alert("Success")
     this.dialog.closeAll()
     }
-
-    setTimeout(()=>{    
-      if (this.flag) {
-        this.m1 = "Doctor Added Succesfully"
-        this.m2 = "Thanks"
-        console.log("true");
-        
-      }
-      else{
-        this.m1 = "Something Went Wrong"
-        this.m2 = "Try Again"
-        console.log("false");
-        
-      }                       // <<<---using ()=> syntax
-      this.openDialog()
-    }, 2000);
 
   }
   close() {

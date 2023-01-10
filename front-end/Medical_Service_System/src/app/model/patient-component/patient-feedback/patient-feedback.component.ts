@@ -26,7 +26,7 @@ export class PatientFeedbackComponent implements OnInit {
   }
   openDialogLogout(): void {
     const dialogRef = this.dialog.open(PopUpComponent, {
-      data: {m1:"SuccesFully LoggedOut"},
+      data: {m1:"Successfully LoggedOut"},
     });
 
     dialogRef.afterClosed().subscribe(result => {
@@ -60,7 +60,7 @@ export class PatientFeedbackComponent implements OnInit {
     setTimeout(() => {
       if (this.flag) {
         this.m1 = "Feedback Added Successfully"
-        this.m2 = "Thanks"
+        this.m2 = "Thanks For Your Valuable Time"
         this.dialog.closeAll()
         console.log("true");
 

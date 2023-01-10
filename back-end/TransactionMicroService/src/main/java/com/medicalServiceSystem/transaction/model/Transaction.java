@@ -20,8 +20,9 @@ public class Transaction {
 	private String doctorName;
 	private String doctorSpecialization;
 	private String status = "pending";
-	private String prescription;
+	private String prescription="null";
 	private String dateOfRequest;
+	private String dateOfExpectedApointment;
 	private String feedback;
 	private String dateOfTreatment;
 	public Transaction() {
