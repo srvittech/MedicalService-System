@@ -1,13 +1,19 @@
-    if (this.flag) {
-      this.m1 = "Logged In Succesfull"
-      this.m2 = "Thanks"
-    }
-    else{
-      this.m1 = "Wrong UserId / Password Combination"
-      this.m2 = "Try Again"
-    }
+     setTimeout(() => {
+        if (this.flag) {
+          this.m1 = "Your Profile Is Updated"
+          this.m2 = "Thanks"
+          this.dialog.closeAll()
+          console.log("true");
 
-    this.openDialog()
+        }
+        else {
+          this.m1 = "Something Went Wrong"
+          this.m2 = "Try Again"
+          console.log("false");
+
+        }                       // <<<---using ()=> syntax
+        this.openDialog()
+      }, 2000);
 
 
 
@@ -16,6 +22,12 @@ resusable dialog
 
 
 inside compoent -----------------------------------------------------------------------
+
+
+  m1:any = ""
+  m2:any = ""
+flag:boolean = false
+
   openDialog(): void {
     const dialogRef = this.dialog.open(PopUpComponent, {
       data: {m1:this.m1,m2:this.m2},
@@ -62,5 +74,16 @@ export class PopUpComponent {
 
 
 }
+
+----------------------------------------logout------------------------------------------
+  openDialog(): void {
+    const dialogRef = this.dialog.open(PopUpComponent, {
+      data: {m1:"SuccesFully LoggedOut"},
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      
+    })
+  }
 
 
