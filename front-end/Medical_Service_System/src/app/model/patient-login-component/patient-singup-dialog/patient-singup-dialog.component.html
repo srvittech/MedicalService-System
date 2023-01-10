@@ -8,7 +8,8 @@
     <form [formGroup]="signupForm" (ngSubmit)="signup()">
       <div class="mb-3" class="form-group">
         <label for="exampleInputPassword1" class="form-label">Name</label>
-        <input [ngClass]="{'is-invalid':submitted && signupForm.controls['name'].errors}" formControlName="name" type="text" class="form-control" id="exampleInputPassword1">
+        <input [ngClass]="{'is-invalid':submitted && signupForm.controls['name'].errors}" formControlName="name"
+          type="text" class="form-control" id="exampleInputPassword1">
         <div *ngIf="submitted && signupForm.controls['name'].errors" class="text-danger">
           <div *ngIf="submitted && signupForm.controls['name'].errors['required']">
             Name is required
@@ -17,10 +18,11 @@
       </div>
       <div class="mb-3">
         <label for="exampleInputPassword1" class="form-label">Mobile Number</label>
-        <input [ngClass]="{'is-invalid':submitted && signupForm.controls['mobile'].errors}" formControlName="mobile" type="number" class="form-control" id="exampleInputPassword1">
+        <input [ngClass]="{'is-invalid':submitted && signupForm.controls['mobile'].errors}" formControlName="mobile"
+          type="number" class="form-control" id="exampleInputPassword1">
         <div *ngIf="submitted && signupForm.controls['mobile'].errors" class="text-danger">
           <div *ngIf="submitted && signupForm.controls['mobile'].errors['required']">
-            Mobile Number  is required
+            Mobile Number is required
           </div>
           <div *ngIf="submitted && signupForm.controls['mobile'].errors['pattern']">
             Mobile Number should be have 10 digits
@@ -30,21 +32,22 @@
 
       <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">Email address</label>
-        <input [ngClass]="{'is-invalid':submitted && signupForm.controls['email'].errors}" formControlName="email" type="email" class="form-control" id="exampleInputEmail1"
-          aria-describedby="emailHelp">
-          <div *ngIf="submitted && signupForm.controls['email'].errors" class="text-danger">
-            <div *ngIf="submitted && signupForm.controls['email'].errors['required']">
-              Email Address is required
-            </div>
-            <div *ngIf="submitted && signupForm.controls['email'].errors['email']">
-              Email Address is not Valid
-            </div>
+        <input [ngClass]="{'is-invalid':submitted && signupForm.controls['email'].errors}" formControlName="email"
+          type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div *ngIf="submitted && signupForm.controls['email'].errors" class="text-danger">
+          <div *ngIf="submitted && signupForm.controls['email'].errors['required']">
+            Email Address is required
           </div>
+          <div *ngIf="submitted && signupForm.controls['email'].errors['email']">
+            Email Address is not Valid
+          </div>
+        </div>
         <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
       </div>
       <div class="mb-3">
         <label for="exampleInputPassword1" class="form-label">Password</label>
-        <input [ngClass]="{'is-invalid':submitted && signupForm.controls['password'].errors}" formControlName="password" type="password" class="form-control" id="exampleInputPassword1">
+        <input [ngClass]="{'is-invalid':submitted && signupForm.controls['password'].errors}" formControlName="password"
+          type="password" class="form-control" id="exampleInputPassword1">
         <div *ngIf="submitted && signupForm.controls['password'].errors" class="text-danger">
           <div *ngIf="submitted && signupForm.controls['password'].errors['required']">
             Password is required
@@ -58,6 +61,6 @@
       <button type="submit" class="btn btn-primary mb-3">Signup</button>
     </form>
   </form>
-  <a style=" margin-top: 10px;"(click)="close()">Already Registered ? Click here Login!!</a>
+  <a style=" margin-top: 10px;" (click)="close()">Already Registered ? Click here Login!!</a>
 
 </div>

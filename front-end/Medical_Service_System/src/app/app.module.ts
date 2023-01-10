@@ -13,7 +13,6 @@ import { AboutComponentComponent } from './model/about-component/about-component
 import { AppointmentComponent } from './model/doctor-component/appointment/appointment.component';
 import { PatientListComponent } from './model/doctor-component/patient-list/patient-list.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { LoginDialogComponent } from './model/login-component/login-dialog/login-dialog.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { HttpClientModule } from '@angular/common/http';
@@ -43,6 +42,8 @@ import { ViewFeedbackComponent } from './model/admin-component/view-feedback/vie
 import { ViewPatientsComponent } from './model/admin-component/view-patients/view-patients.component';
 import { ViewDoctorsComponent } from './model/admin-component/view-doctors/view-doctors.component';
 import { PrescriptionDialogComponent } from './model/doctor-component/appointment/prescription-dialog/prescription-dialog.component';
+import { PopUpComponent } from './model/pop-up/pop-up.component';
+import { PopUpService } from './services/dialog/pop-up.service';
 
 @NgModule({
   declarations: [
@@ -55,7 +56,6 @@ import { PrescriptionDialogComponent } from './model/doctor-component/appointmen
     AboutComponentComponent,
     AppointmentComponent,
     PatientListComponent,
-    LoginDialogComponent,
     PatientLoginComponentComponent,
     PatientSingupDialogComponent,
     FeedbackComponent,
@@ -73,7 +73,8 @@ import { PrescriptionDialogComponent } from './model/doctor-component/appointmen
     ViewFeedbackComponent,
     ViewPatientsComponent,
     ViewDoctorsComponent,
-    PrescriptionDialogComponent
+    PrescriptionDialogComponent,
+    PopUpComponent
   ],
   imports: [
     BrowserModule,
@@ -89,7 +90,7 @@ import { PrescriptionDialogComponent } from './model/doctor-component/appointmen
     MatIconModule,
     FormsModule,
   ],
-  providers: [DatePipe,FeedbackServiceService,UserServiceService,PatientServiceService,DoctorServiceService,TransactionServiceService],
+  providers: [DatePipe,FeedbackServiceService,UserServiceService,PatientServiceService,DoctorServiceService,TransactionServiceService,PopUpService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
