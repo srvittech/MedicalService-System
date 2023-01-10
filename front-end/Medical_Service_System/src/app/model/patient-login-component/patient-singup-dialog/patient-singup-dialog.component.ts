@@ -2,7 +2,9 @@ import { Component } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
+import { PopUpService } from 'src/app/services/dialog/pop-up.service';
 import { PatientServiceService } from 'src/app/services/patient-Service/patient-service.service';
+import { PopUpComponent } from '../../pop-up/pop-up.component';
 
 @Component({
   selector: 'app-patient-singup-dialog',
@@ -14,7 +16,7 @@ export class PatientSingupDialogComponent {
   submitted = false
   constructor(private formBuilder: FormBuilder,
 
-    private dialog: MatDialog, private patientService: PatientServiceService) { }
+    private dialog: MatDialog, private patientService: PatientServiceService, private popUpService: PopUpService) { }
 
   ngOnInit(): void {
     this.signupForm = this.formBuilder.group({
@@ -31,10 +33,18 @@ export class PatientSingupDialogComponent {
 
       this.patientService.addPatient(this.signupForm.value).subscribe(res => {
         console.table(this.signupForm.value);
-        console.log("Patient Added");
-
-
+        this.popUpService.m1 = "Succesfully SignedUp"
+        this.popUpService.m2 = "Thanks"
+        this.signupForm.reset()
+        this.close()
+        this.dialog.open(PopUpComponent)
       })
+    }
+    else {
+      this.popUpService.m1 = "Something Went Wrong"
+      this.popUpService.m2 = "Try Again"
+      // this.close()
+      this.dialog.open(PopUpComponent)
     }
 
   }
