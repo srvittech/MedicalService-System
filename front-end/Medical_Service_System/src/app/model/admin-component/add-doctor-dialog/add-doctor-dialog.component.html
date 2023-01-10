@@ -1,7 +1,6 @@
 <div class="fluid-container" id="outer-dialog-layer">
     <h1>Add new Doctor</h1>
     <hr>
-    <form>
       <form [formGroup]="signupForm" (ngSubmit)="signup()">
         <div class="mb-3" class="form-group">
           <label for="exampleInputPassword1" class="form-label">Name</label>
@@ -75,9 +74,9 @@
         </div>
   
         <button type="submit" class="btn btn-primary mb-3">Add Doctor</button>
+      <button type="submit" class="btn btn-success mb-3" (click)="close()">Cancel</button>
         
       </form>
-      <button type="submit" class="btn btn-success mb-3" (click)="close()">Cancel</button>
-    </form>
+
   
   </div>
