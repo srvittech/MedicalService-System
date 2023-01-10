@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ActivatedRoute, Router } from '@angular/router';
 import { DoctorServiceService } from 'src/app/services/doctor-Service/doctor-service.service';
+import { PopUpComponent } from '../pop-up/pop-up.component';
 import { EditDoctorComponent } from './edit-doctor/edit-doctor.component';
 import { FeedbackComponent } from './feedback/feedback.component';
 
@@ -16,6 +17,16 @@ export class DoctorComponentComponent implements OnInit {
     this.setUser()
     console.log("hi from doc");
     
+  }
+
+  openDialog(): void {
+    const dialogRef = this.dialog.open(PopUpComponent, {
+      data: {m1:"SuccesFully LoggedOut"},
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      
+    })
   }
   constructor(private route: ActivatedRoute, private router: Router, private dialog: MatDialog,private doctorService:DoctorServiceService) { 
    
@@ -38,6 +49,7 @@ export class DoctorComponentComponent implements OnInit {
     this.dialog.open(EditDoctorComponent)
   }
   logout(){
+    this.openDialog()
     this.router.navigate(['/about']);
   }
 }

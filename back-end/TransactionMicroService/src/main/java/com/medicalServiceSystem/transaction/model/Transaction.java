@@ -16,14 +16,14 @@ public class Transaction {
 	private String patientAddress;
 	private String disease;
 	private int patientweight;
-	private Long doctorId = null;
-	private String doctorName = "null";
-	private String doctorSpecialization="null";
+	private Long doctorId;
+	private String doctorName;
+	private String doctorSpecialization;
 	private String status = "pending";
-	private String prescription = "null";
-	private String dateOfRequest ="null";
-	private String feedback = "null";
-	private String dateOfTreatment = "null";
+	private String prescription;
+	private String dateOfRequest;
+	private String feedback;
+	private String dateOfTreatment;
 	public Transaction() {
 		super();
 

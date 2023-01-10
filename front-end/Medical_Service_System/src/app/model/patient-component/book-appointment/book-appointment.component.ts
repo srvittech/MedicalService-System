@@ -5,6 +5,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { ActivatedRoute, Router } from '@angular/router';
 import { PatientServiceService } from 'src/app/services/patient-Service/patient-service.service';
 import { TransactionServiceService } from 'src/app/services/transaction-Service/transaction-service.service';
+import { PopUpComponent } from '../../pop-up/pop-up.component';
 
 @Component({
   selector: 'app-book-appointment',
@@ -41,6 +42,20 @@ export class BookAppointmentComponent {
       weight: ['', Validators.required]
     })
   }
+  m1:any = ""
+  m2:any = ""
+flag:boolean = false
+
+  openDialog(): void {
+    const dialogRef = this.dialog.open(PopUpComponent, {
+      data: {m1:this.m1,m2:this.m2},
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      
+    })
+  }
+
   myDate: any = ""
   generateDate() {
     this.myDate = this.datePipe.transform(new Date(), 'yyyy-MM-dd');
@@ -68,9 +83,26 @@ export class BookAppointmentComponent {
     })
     this.patientService.updatePatient(this.registerForm.value).subscribe(res => {
       console.table(res);
+      this.flag = true
     })
 
-    alert("Success")
+    setTimeout(() => {
+      if (this.flag) {
+        this.m1 = "Your Appointment Will Be Shortly Fixed With A Doctor"
+        this.m2 = "Thanks"
+        this.dialog.closeAll()
+        console.log("true");
+
+      }
+      else {
+        this.m1 = "Something Went Wrong"
+        this.m2 = "Try Again"
+        console.log("false");
+
+      }                       // <<<---using ()=> syntax
+      this.openDialog()
+    }, 2000);
+
     this.router.navigate(['/patient'])
   }
 
