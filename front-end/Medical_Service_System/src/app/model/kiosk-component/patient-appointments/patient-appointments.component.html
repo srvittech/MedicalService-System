@@ -7,7 +7,11 @@
                 <thead>
                     <tr>
                         <th scope="col">Patient Id</th>
+                        <th scope="col">Patient Name</th>
+
                         <th scope="col">DoctorId</th>
+                        <th scope="col">Doctor Name</th>
+                        
                         <th scope="col">Disease</th>
                         <th scope="col">Status</th>
                         <th scope="col">prescription</th>
@@ -18,7 +22,11 @@
                 <tbody>
                     <tr *ngFor="let trans of allTransactionsResult">
                         <th scope="row">{{trans.patientId}}</th>
+                        <td>{{trans.patientName}}</td>
+
                         <td>{{trans.doctorId}}</td>
+                        <td>{{trans.doctorName}}</td>
+
                         <td>{{trans.disease}}</td>
                         <td>{{trans.status}}</td>
                         <td>{{trans.prescription}}</td>

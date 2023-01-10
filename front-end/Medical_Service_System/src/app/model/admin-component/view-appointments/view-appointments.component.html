@@ -7,23 +7,43 @@
                 <thead>
                     <tr>
                         <th scope="col">Patient Id</th>
-                        <th scope="col">DoctorId</th>
-                        <th scope="col">Disease</th>
+                        <th scope="col">Patient Name</th>
+                        <th scope="col">Patient Age</th>
+                        <th scope="col">Patient Address</th>
+                        <th scope="col">Patient Disease</th>
+                        <th scope="col">Patient Weight</th>
+
+                        <th scope="col">Doctor Id</th>
+                        <th scope="col">Doctor Name</th>
+                        <th scope="col">Doctor Specialization</th>
+
                         <th scope="col">Status</th>
                         <th scope="col">prescription</th>
                         <th scope="col">Date Of Request</th>
                         <th scope="col">Date Of Treatment</th>
+                        <th scope="col">Feedback Given</th>
+
                     </tr>
                 </thead>
                 <tbody>
                     <tr *ngFor="let trans of allTransactionsResult">
                         <th scope="row">{{trans.patientId}}</th>
-                        <td>{{trans.doctorId}}</td>
+                        <td>{{trans.patientName}}</td>
+                        <td>{{trans.patientAge}}</td>
+                        <td>{{trans.patientAddress}}</td>
                         <td>{{trans.disease}}</td>
+                        <td>{{trans.patientweight}}</td>
+
+                        <td>{{trans.doctorId}}</td>
+                        <td>{{trans.doctorName}}</td>
+                        <td>{{trans.doctorSpecialization}}</td>
+                        
+                        
                         <td>{{trans.status}}</td>
                         <td>{{trans.prescription}}</td>
                         <td>{{trans.dateOfRequest}}</td>
                         <td>{{trans.dateOfTreatment}}</td>
+                        <td>{{trans.feedback}}</td>
                     </tr>
                 </tbody>
          
@@ -31,3 +51,19 @@
         </div>
     </div>
 </div>
+
+<!-- private Long transactionId;
+	private Long patientId;
+	private String patientName;
+	private int patientAge;
+	private String patientAddress;
+	private String disease;
+	private int patientweight;
+	private Long doctorId = null;
+	private String doctorName = "null";
+	private String doctorSpecialization="null";
+	private String status = "pending";
+	private String prescription = "null";
+	private String dateOfRequest ="null";
+	private String feedback = "null";
+	private String dateOfTreatment = "null"; -->
