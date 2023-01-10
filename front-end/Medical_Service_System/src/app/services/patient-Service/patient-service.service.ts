@@ -18,25 +18,25 @@ export class PatientServiceService {
     weight:null
   }
   getPatient():Observable<object>{
-    return this.httpClient.get("http://localhost:9098/getpatient")
+    return this.httpClient.get("http://localhost:8989/patient/getpatient")
   }
 
   addPatient(patient:any):Observable<object>{
-    return this.httpClient.post("http://localhost:9098/addpatient",patient)
+    return this.httpClient.post("http://localhost:8989/patient/addpatient",patient)
   }
 
   findPatientById(id:any):Observable<object>{
-    return this.httpClient.get("http://localhost:9098/findPatientById/"+id)
+    return this.httpClient.get("http://localhost:8989/patient/findPatientById/"+id)
   }
   findPatientByEmail(email:any):Observable<object>{
-    return this.httpClient.get("http://localhost:9098/findPatientByEmail/"+email)
+    return this.httpClient.get("http://localhost:8989/patient/findPatientByEmail/"+email)
   }
 
   updatePatient(patient:any):Observable<object>{
-    return this.httpClient.put("http://localhost:9098/updatePatient",patient)
+    return this.httpClient.put("http://localhost:8989/patient/updatePatient",patient)
   }
 
   DeleteById(id:any):Observable<object>{
-    return this.httpClient.get("http://localhost:9098/deletePatientById/"+id)
+    return this.httpClient.get("http://localhost:8989/patient/deletePatientById/"+id)
   }
 }

@@ -38,22 +38,22 @@ export class TransactionServiceService {
     )
   }
   getAllTransaction() {
-    return this.httpClient.get("http://localhost:7091/getAllTransaction")
+    return this.httpClient.get("http://localhost:8989/transaction/getAllTransaction")
   }
   getTransactionBasedOnStatus(status: any) {
-    return this.httpClient.get("http://localhost:7091/getTransactionBasedOnStatus/"+status)
+    return this.httpClient.get("http://localhost:8989/transaction/getTransactionBasedOnStatus/"+status)
   }
   getTransactionByDoctorId(doctorId: any) {
-    return this.httpClient.get("http://localhost:7091/getTransactionByDoctorId/"+doctorId)
+    return this.httpClient.get("http://localhost:8989/transaction/getTransactionByDoctorId/"+doctorId)
   }
   getTransactionByPatientId(patientId: any) {
-    return this.httpClient.get("http://localhost:7091/getTransactionByPatientId/"+patientId)
+    return this.httpClient.get("http://localhost:8989/transaction/getTransactionByPatientId/"+patientId)
   }
   getTransactionByTransactionId(transactionId: any) {
-    return this.httpClient.get("http://localhost:7091/getTransactionByTransactionId/"+transactionId)
+    return this.httpClient.get("http://localhost:8989/transaction/getTransactionByTransactionId/"+transactionId)
   }
   updateTransaction(transaction: any) {
-    return this.httpClient.put("http://localhost:7091/updateTransaction",transaction).pipe(tap(()=>{
+    return this.httpClient.put("http://localhost:8989/transaction/updateTransaction",transaction).pipe(tap(()=>{
       this.refresh.next();
     }))
   }

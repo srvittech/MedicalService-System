@@ -15,12 +15,12 @@ export class UserServiceService {
   }
 
   addLogin(form:any){
-    return this.httpClient.post("http://localhost:9091/addLogin",form)
+    return this.httpClient.post("http://localhost:8989/user/addLogin",form)
   }
   getLogin(id:any){
-    return this.httpClient.get("http://localhost:9091/getLogin/"+id)
+    return this.httpClient.get("http://localhost:8989/user/getLogin/"+id)
   }
   updateLogin(form:any){
-    return this.httpClient.put("http://localhost:9091/updateLogin",form)
+    return this.httpClient.put("http://localhost:8989/user/updateLogin",form)
   }
 }

@@ -16,22 +16,22 @@ export class DoctorServiceService {
   constructor(private httpClient:HttpClient) { }
 
   addDoctor(form:any){
-    return this.httpClient.post("http://localhost:9092/addDoctor",form)
+    return this.httpClient.post("http://localhost:8989/doctor/addDoctor",form)
   }
   getDoctors(){
-    return this.httpClient.get("http://localhost:9092/getDoctors")
+    return this.httpClient.get("http://localhost:8989/doctor/getDoctors")
   }
   findDoctorById(id:any){
-    return this.httpClient.get("http://localhost:9092/findDoctorById/"+id)
+    return this.httpClient.get("http://localhost:8989/doctor/findDoctorById/"+id)
   }
   findBySpecialization(specialization:any){
-    return this.httpClient.get("http://localhost:9092/getSpecialization/"+specialization)
+    return this.httpClient.get("http://localhost:8989/doctor/getSpecialization/"+specialization)
   }
   updateDoctor(form:any){
-    return this.httpClient.put("http://localhost:9092/updateDoctor/",form)
+    return this.httpClient.put("http://localhost:8989/doctor/updateDoctor/",form)
   }
   deleteDoctorById(id:any){
-    return this.httpClient.delete("http://localhost:9092/deleteDoctorById/"+id)
+    return this.httpClient.delete("http://localhost:8989/doctor/deleteDoctorById/"+id)
   }
  
 }

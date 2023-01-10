@@ -11374,3 +11374,405 @@ java.lang.IllegalArgumentException: The given id must not be null!
 2023-01-10 01:12:13,136 [RMI TCP Connection(57)-127.0.0.1] INFO  o.a.c.h.Http11NioProtocol                          -Stopping ProtocolHandler ["http-nio-7091"] 
 2023-01-10 01:12:13,167 [RMI TCP Connection(57)-127.0.0.1] INFO  o.a.c.h.Http11NioProtocol                          -Destroying ProtocolHandler ["http-nio-7091"] 
 >>>>>>> origin/sourav
+2023-01-10 10:34:21,230 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper        -Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.medicalServiceSystem.transaction.TransactionMicroServiceApplicationTests], using SpringBootContextLoader 
+2023-01-10 10:34:21,261 [main] INFO  o.s.t.c.s.AbstractContextLoader                    -Could not detect default resource locations for test class [com.medicalServiceSystem.transaction.TransactionMicroServiceApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}. 
+2023-01-10 10:34:21,269 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils       -Could not detect default configuration classes for test class [com.medicalServiceSystem.transaction.TransactionMicroServiceApplicationTests]: TransactionMicroServiceApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration. 
+2023-01-10 10:34:21,739 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper        -Found @SpringBootConfiguration com.medicalServiceSystem.transaction.TransactionMicroServiceApplication for test class com.medicalServiceSystem.transaction.TransactionMicroServiceApplicationTests 
+2023-01-10 10:34:22,058 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper        -Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener] 
+2023-01-10 10:34:22,113 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper        -Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@588ffeb, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@7c28c1, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@baf1bb3, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@67ec8477, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@25d958c6, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4482469c, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3703bf3c, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@34cf5a97, org.springframework.test.context.event.EventPublishingTestExecutionListener@5b3f3ba0, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@ddf20fd, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@278f8425, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@695a69a1, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@4b1abd11, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@3f36b447, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@6443b128] 
+2023-01-10 10:34:23,596 [main] INFO  c.m.t.TransactionMicroServiceApplicationTests      -Starting TransactionMicroServiceApplicationTests using Java 17.0.5 on DESKTOP-IO5RF1D with PID 15444 (started by Komali in C:\Users\Komali\Desktop\MedicalService-System\back-end\TransactionMicroService) 
+2023-01-10 10:34:23,611 [main] INFO  c.m.t.TransactionMicroServiceApplicationTests      -No active profile set, falling back to 1 default profile: "default" 
+2023-01-10 10:34:26,906 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          -Bootstrapping Spring Data MongoDB repositories in DEFAULT mode. 
+2023-01-10 10:34:27,491 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          -Finished Spring Data repository scanning in 568 ms. Found 1 MongoDB repository interfaces. 
+2023-01-10 10:34:28,329 [main] INFO  o.s.c.c.s.GenericScope                             -BeanFactory id=520c5393-2a38-3631-87ff-c9d770481f79 
+2023-01-10 10:34:29,810 [main] INFO  o.m.d.client                                       -MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Eclipse Adoptium/17.0.5+8"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@7e1d8d41]}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null} 
+2023-01-10 10:34:29,940 [cluster-ClusterId{value='63bcf1dd2f5187573651a93c', description='null'}-localhost:27017] INFO  o.m.d.connection                                   -Opened connection [connectionId{localValue:2, serverValue:659}] to localhost:27017 
+2023-01-10 10:34:29,943 [cluster-ClusterId{value='63bcf1dd2f5187573651a93c', description='null'}-localhost:27017] INFO  o.m.d.cluster                                      -Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=137067400} 
+2023-01-10 10:34:29,990 [cluster-rtt-ClusterId{value='63bcf1dd2f5187573651a93c', description='null'}-localhost:27017] INFO  o.m.d.connection                                   -Opened connection [connectionId{localValue:1, serverValue:660}] to localhost:27017 
+2023-01-10 10:34:30,410 [main] WARN  o.s.d.c.CustomConversions                          -Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type; You might want to check your annotation setup at the converter implementation 
+2023-01-10 10:34:31,054 [main] WARN  o.s.d.c.CustomConversions                          -Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type; You might want to check your annotation setup at the converter implementation 
+2023-01-10 10:34:36,579 [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration -Eureka HTTP Client uses RestTemplate. 
+2023-01-10 10:34:37,258 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger -Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath. 
+2023-01-10 10:34:37,512 [main] INFO  o.s.c.n.e.InstanceInfoFactory                      -Setting initial instance status as: STARTING 
+2023-01-10 10:34:37,699 [main] INFO  c.n.d.DiscoveryClient                              -Initializing Eureka in region us-east-1 
+2023-01-10 10:34:37,725 [main] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 10:34:37,904 [main] INFO  c.n.d.DiscoveryClient                              -Disable delta property : false 
+2023-01-10 10:34:37,904 [main] INFO  c.n.d.DiscoveryClient                              -Single vip registry refresh property : null 
+2023-01-10 10:34:37,906 [main] INFO  c.n.d.DiscoveryClient                              -Force full registry fetch : false 
+2023-01-10 10:34:37,912 [main] INFO  c.n.d.DiscoveryClient                              -Application is null : false 
+2023-01-10 10:34:37,914 [main] INFO  c.n.d.DiscoveryClient                              -Registered Applications size is zero : true 
+2023-01-10 10:34:37,917 [main] INFO  c.n.d.DiscoveryClient                              -Application version is -1: true 
+2023-01-10 10:34:37,918 [main] INFO  c.n.d.DiscoveryClient                              -Getting all instance registry info from the eureka server 
+2023-01-10 10:34:39,397 [main] INFO  c.n.d.DiscoveryClient                              -The response status is 200 
+2023-01-10 10:34:39,413 [main] INFO  c.n.d.DiscoveryClient                              -Starting heartbeat executor: renew interval is: 30 
+2023-01-10 10:34:39,430 [main] INFO  c.n.d.InstanceInfoReplicator                       -InstanceInfoReplicator onDemand update allowed rate per min is 4 
+2023-01-10 10:34:39,452 [main] INFO  c.n.d.DiscoveryClient                              -Discovery Client initialized at timestamp 1673327079450 with initial instances count: 3 
+2023-01-10 10:34:39,467 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry                  -Registering application TRANSACTION-SERVICE with eureka with status UP 
+2023-01-10 10:34:39,469 [main] INFO  c.n.d.DiscoveryClient                              -Saw local status change event StatusChangeEvent [timestamp=1673327079469, current=UP, previous=STARTING] 
+2023-01-10 10:34:39,478 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.n.d.DiscoveryClient                              -DiscoveryClient_TRANSACTION-SERVICE/host.docker.internal:TRANSACTION-SERVICE:7091: registering service... 
+2023-01-10 10:34:39,674 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.n.d.DiscoveryClient                              -DiscoveryClient_TRANSACTION-SERVICE/host.docker.internal:TRANSACTION-SERVICE:7091 - registration status: 204 
+2023-01-10 10:34:40,897 [main] INFO  c.m.t.TransactionMicroServiceApplicationTests      -Started TransactionMicroServiceApplicationTests in 18.649 seconds (JVM running for 23.171) 
+2023-01-10 10:34:43,587 [main] INFO  c.m.t.s.TransactionServiceImpl                     -Updating Doctor Id From TransactionService..... 
+2023-01-10 10:34:43,588 [main] INFO  c.m.t.s.TransactionServiceImpl                     -Updating Patient Id From TransactionService..... 
+2023-01-10 10:34:43,589 [main] INFO  c.m.t.s.TransactionServiceImpl                     -Updating Disease From TransactionService..... 
+2023-01-10 10:34:43,591 [main] INFO  c.m.t.s.TransactionServiceImpl                     -Updating Status From TransactionService..... 
+2023-01-10 10:34:43,593 [main] INFO  c.m.t.s.TransactionServiceImpl                     -Updating DateOfRequest From TransactionService..... 
+2023-01-10 10:34:43,593 [main] INFO  c.m.t.s.TransactionServiceImpl                     -Updating DateOfTreatment From TransactionService..... 
+2023-01-10 10:34:43,595 [main] INFO  c.m.t.s.TransactionServiceImpl                     -Updating Prescription From TransactionService..... 
+2023-01-10 10:34:43,597 [main] INFO  c.m.t.s.TransactionServiceImpl                     -Updating DoctorName From TransactionService..... 
+2023-01-10 10:34:43,599 [main] INFO  c.m.t.s.TransactionServiceImpl                     -Updating DoctorSpecialization From TransactionService..... 
+2023-01-10 10:34:43,599 [main] INFO  c.m.t.s.TransactionServiceImpl                     -Updating Feedback From TransactionService..... 
+2023-01-10 10:34:43,600 [main] INFO  c.m.t.s.TransactionServiceImpl                     -Saving Update From TransactionService..... 
+2023-01-10 10:34:43,604 [main] INFO  c.m.t.s.TransactionServiceImpl                     -Getting Transaction By Transaction Id From TransactionService..... 
+2023-01-10 10:34:43,678 [main] INFO  c.m.t.s.TransactionServiceImpl                     -Getting Transactions By Patient Id From TransactionService..... 
+2023-01-10 10:34:43,698 [main] INFO  c.m.t.s.TransactionServiceImpl                     -Getting All Transactions By Doctor Id From TransactionService..... 
+2023-01-10 10:34:43,720 [main] INFO  c.m.t.s.TransactionServiceImpl                     -Getting All Transactions From TransactionService..... 
+2023-01-10 10:34:43,744 [main] INFO  c.m.t.s.TransactionServiceImpl                     -Getting Transaction By Transaction Id From TransactionService..... 
+2023-01-10 10:34:43,779 [main] INFO  c.m.t.s.TransactionServiceImpl                     -Getting All Transactions By Status From TransactionService..... 
+2023-01-10 10:34:43,800 [main] INFO  c.m.t.s.TransactionServiceImpl                     -Adding Transactions From TransactionService..... 
+2023-01-10 10:34:44,152 [SpringApplicationShutdownHook] INFO  o.s.c.n.e.s.EurekaServiceRegistry                  -Unregistering application TRANSACTION-SERVICE with eureka with status DOWN 
+2023-01-10 10:34:44,153 [SpringApplicationShutdownHook] INFO  c.n.d.DiscoveryClient                              -Saw local status change event StatusChangeEvent [timestamp=1673327084153, current=DOWN, previous=UP] 
+2023-01-10 10:34:44,156 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.n.d.DiscoveryClient                              -DiscoveryClient_TRANSACTION-SERVICE/host.docker.internal:TRANSACTION-SERVICE:7091: registering service... 
+2023-01-10 10:34:44,174 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.n.d.DiscoveryClient                              -DiscoveryClient_TRANSACTION-SERVICE/host.docker.internal:TRANSACTION-SERVICE:7091 - registration status: 204 
+2023-01-10 10:34:44,189 [SpringApplicationShutdownHook] INFO  c.n.d.DiscoveryClient                              -Shutting down DiscoveryClient ... 
+2023-01-10 10:34:47,195 [SpringApplicationShutdownHook] INFO  c.n.d.DiscoveryClient                              -Unregistering ... 
+2023-01-10 10:34:47,208 [SpringApplicationShutdownHook] INFO  c.n.d.DiscoveryClient                              -DiscoveryClient_TRANSACTION-SERVICE/host.docker.internal:TRANSACTION-SERVICE:7091 - deregister  status: 200 
+2023-01-10 10:34:47,226 [SpringApplicationShutdownHook] INFO  c.n.d.DiscoveryClient                              -Completed shut down of DiscoveryClient 
+2023-01-10 10:35:24,629 [main] INFO  c.m.t.TransactionMicroServiceApplication           -Starting TransactionMicroServiceApplication using Java 17.0.5 on DESKTOP-IO5RF1D with PID 5704 (C:\Users\Komali\Desktop\MedicalService-System\back-end\TransactionMicroService\target\classes started by Komali in C:\Users\Komali\Desktop\MedicalService-System\back-end\TransactionMicroService) 
+2023-01-10 10:35:24,647 [main] INFO  c.m.t.TransactionMicroServiceApplication           -No active profile set, falling back to 1 default profile: "default" 
+2023-01-10 10:35:26,300 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          -Bootstrapping Spring Data MongoDB repositories in DEFAULT mode. 
+2023-01-10 10:35:26,614 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          -Finished Spring Data repository scanning in 301 ms. Found 1 MongoDB repository interfaces. 
+2023-01-10 10:35:27,131 [main] INFO  o.s.c.c.s.GenericScope                             -BeanFactory id=65cadf00-1b0c-3d9a-a340-2479410f41cf 
+2023-01-10 10:35:27,750 [main] INFO  o.s.b.w.e.t.TomcatWebServer                        -Tomcat initialized with port(s): 7091 (http) 
+2023-01-10 10:35:27,770 [main] INFO  o.a.c.h.Http11NioProtocol                          -Initializing ProtocolHandler ["http-nio-7091"] 
+2023-01-10 10:35:27,771 [main] INFO  o.a.c.c.StandardService                            -Starting service [Tomcat] 
+2023-01-10 10:35:27,774 [main] INFO  o.a.c.c.StandardEngine                             -Starting Servlet engine: [Apache Tomcat/9.0.69] 
+2023-01-10 10:35:28,106 [main] INFO  o.a.c.c.C.[.[.[/]                                  -Initializing Spring embedded WebApplicationContext 
+2023-01-10 10:35:28,107 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext     -Root WebApplicationContext: initialization completed in 3368 ms 
+2023-01-10 10:35:28,527 [main] INFO  o.m.d.client                                       -MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Eclipse Adoptium/17.0.5+8"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@7e4ac598]}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null} 
+2023-01-10 10:35:28,550 [cluster-ClusterId{value='63bcf2182170d8463ab34e70', description='null'}-localhost:27017] INFO  o.m.d.connection                                   -Opened connection [connectionId{localValue:1, serverValue:662}] to localhost:27017 
+2023-01-10 10:35:28,550 [cluster-rtt-ClusterId{value='63bcf2182170d8463ab34e70', description='null'}-localhost:27017] INFO  o.m.d.connection                                   -Opened connection [connectionId{localValue:2, serverValue:661}] to localhost:27017 
+2023-01-10 10:35:28,552 [cluster-ClusterId{value='63bcf2182170d8463ab34e70', description='null'}-localhost:27017] INFO  o.m.d.cluster                                      -Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=17, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=51973700} 
+2023-01-10 10:35:28,719 [main] WARN  o.s.d.c.CustomConversions                          -Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type; You might want to check your annotation setup at the converter implementation 
+2023-01-10 10:35:29,027 [main] WARN  o.s.d.c.CustomConversions                          -Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type; You might want to check your annotation setup at the converter implementation 
+2023-01-10 10:35:30,724 [main] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration -Eureka HTTP Client uses RestTemplate. 
+2023-01-10 10:35:31,054 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger -Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath. 
+2023-01-10 10:35:31,210 [main] INFO  o.s.c.n.e.InstanceInfoFactory                      -Setting initial instance status as: STARTING 
+2023-01-10 10:35:31,304 [main] INFO  c.n.d.DiscoveryClient                              -Initializing Eureka in region us-east-1 
+2023-01-10 10:35:31,315 [main] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 10:35:31,364 [main] INFO  c.n.d.DiscoveryClient                              -Disable delta property : false 
+2023-01-10 10:35:31,364 [main] INFO  c.n.d.DiscoveryClient                              -Single vip registry refresh property : null 
+2023-01-10 10:35:31,364 [main] INFO  c.n.d.DiscoveryClient                              -Force full registry fetch : false 
+2023-01-10 10:35:31,366 [main] INFO  c.n.d.DiscoveryClient                              -Application is null : false 
+2023-01-10 10:35:31,366 [main] INFO  c.n.d.DiscoveryClient                              -Registered Applications size is zero : true 
+2023-01-10 10:35:31,367 [main] INFO  c.n.d.DiscoveryClient                              -Application version is -1: true 
+2023-01-10 10:35:31,367 [main] INFO  c.n.d.DiscoveryClient                              -Getting all instance registry info from the eureka server 
+2023-01-10 10:35:32,059 [main] INFO  c.n.d.DiscoveryClient                              -The response status is 200 
+2023-01-10 10:35:32,066 [main] INFO  c.n.d.DiscoveryClient                              -Starting heartbeat executor: renew interval is: 30 
+2023-01-10 10:35:32,073 [main] INFO  c.n.d.InstanceInfoReplicator                       -InstanceInfoReplicator onDemand update allowed rate per min is 4 
+2023-01-10 10:35:32,085 [main] INFO  c.n.d.DiscoveryClient                              -Discovery Client initialized at timestamp 1673327132083 with initial instances count: 3 
+2023-01-10 10:35:32,088 [main] INFO  o.s.c.n.e.s.EurekaServiceRegistry                  -Registering application TRANSACTION-SERVICE with eureka with status UP 
+2023-01-10 10:35:32,090 [main] INFO  c.n.d.DiscoveryClient                              -Saw local status change event StatusChangeEvent [timestamp=1673327132090, current=UP, previous=STARTING] 
+2023-01-10 10:35:32,096 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.n.d.DiscoveryClient                              -DiscoveryClient_TRANSACTION-SERVICE/host.docker.internal:TRANSACTION-SERVICE:7091: registering service... 
+2023-01-10 10:35:32,097 [main] INFO  o.a.c.h.Http11NioProtocol                          -Starting ProtocolHandler ["http-nio-7091"] 
+2023-01-10 10:35:32,154 [main] INFO  o.s.b.w.e.t.TomcatWebServer                        -Tomcat started on port(s): 7091 (http) with context path '' 
+2023-01-10 10:35:32,156 [main] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration          -Updating port to 7091 
+2023-01-10 10:35:32,198 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.n.d.DiscoveryClient                              -DiscoveryClient_TRANSACTION-SERVICE/host.docker.internal:TRANSACTION-SERVICE:7091 - registration status: 204 
+2023-01-10 10:35:33,013 [main] INFO  c.m.t.TransactionMicroServiceApplication           -Started TransactionMicroServiceApplication in 9.635 seconds (JVM running for 11.813) 
+2023-01-10 10:40:31,379 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 10:45:31,386 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 10:50:31,419 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 10:55:31,421 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 11:00:31,425 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 11:05:31,430 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 11:10:31,446 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 11:15:31,461 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 11:20:31,470 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 11:25:31,486 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 11:30:31,495 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 11:34:21,994 [http-nio-7091-exec-1] INFO  o.a.c.c.C.[.[.[/]                                  -Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2023-01-10 11:34:21,995 [http-nio-7091-exec-1] INFO  o.s.w.s.DispatcherServlet                          -Initializing Servlet 'dispatcherServlet' 
+2023-01-10 11:34:22,021 [http-nio-7091-exec-1] INFO  o.s.w.s.DispatcherServlet                          -Completed initialization in 26 ms 
+2023-01-10 11:34:22,114 [http-nio-7091-exec-1] INFO  c.m.t.c.TransactionController                      -Entering Method getTransactionByDoctorId in TransactionController 
+2023-01-10 11:34:22,114 [http-nio-7091-exec-1] INFO  c.m.t.s.TransactionServiceImpl                     -Getting All Transactions By Doctor Id From TransactionService..... 
+2023-01-10 11:34:22,382 [http-nio-7091-exec-1] INFO  o.m.d.connection                                   -Opened connection [connectionId{localValue:3, serverValue:678}] to localhost:27017 
+2023-01-10 11:34:26,838 [http-nio-7091-exec-2] INFO  c.m.t.c.TransactionController                      -Entering Method getTransactionByDoctorId in TransactionController 
+2023-01-10 11:34:26,839 [http-nio-7091-exec-2] INFO  c.m.t.s.TransactionServiceImpl                     -Getting All Transactions By Doctor Id From TransactionService..... 
+2023-01-10 11:34:27,841 [http-nio-7091-exec-3] INFO  c.m.t.c.TransactionController                      -Entering Method getTransactionByDoctorId in TransactionController 
+2023-01-10 11:34:27,841 [http-nio-7091-exec-3] INFO  c.m.t.s.TransactionServiceImpl                     -Getting All Transactions By Doctor Id From TransactionService..... 
+2023-01-10 11:35:00,755 [http-nio-7091-exec-5] INFO  c.m.t.c.TransactionController                      -Entering Method getAllTransaction in TransactionController 
+2023-01-10 11:35:00,756 [http-nio-7091-exec-5] INFO  c.m.t.s.TransactionServiceImpl                     -Getting All Transactions From TransactionService..... 
+2023-01-10 11:35:00,769 [http-nio-7091-exec-4] INFO  c.m.t.c.TransactionController                      -Entering Method getTransactionBasedOnStatus in TransactionController 
+2023-01-10 11:35:00,770 [http-nio-7091-exec-4] INFO  c.m.t.s.TransactionServiceImpl                     -Getting All Transactions By Status From TransactionService..... 
+2023-01-10 11:35:00,825 [http-nio-7091-exec-4] INFO  o.m.d.connection                                   -Opened connection [connectionId{localValue:4, serverValue:679}] to localhost:27017 
+2023-01-10 11:35:04,072 [http-nio-7091-exec-6] INFO  c.m.t.c.TransactionController                      -Entering Method getAllTransaction in TransactionController 
+2023-01-10 11:35:04,073 [http-nio-7091-exec-6] INFO  c.m.t.s.TransactionServiceImpl                     -Getting All Transactions From TransactionService..... 
+2023-01-10 11:35:04,077 [http-nio-7091-exec-7] INFO  c.m.t.c.TransactionController                      -Entering Method getTransactionBasedOnStatus in TransactionController 
+2023-01-10 11:35:04,077 [http-nio-7091-exec-7] INFO  c.m.t.s.TransactionServiceImpl                     -Getting All Transactions By Status From TransactionService..... 
+2023-01-10 11:35:04,149 [http-nio-7091-exec-9] INFO  c.m.t.c.TransactionController                      -Entering Method getTransactionBasedOnStatus in TransactionController 
+2023-01-10 11:35:04,149 [http-nio-7091-exec-9] INFO  c.m.t.s.TransactionServiceImpl                     -Getting All Transactions By Status From TransactionService..... 
+2023-01-10 11:35:31,511 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 11:35:56,864 [http-nio-7091-exec-10] INFO  c.m.t.c.TransactionController                      -Entering Method getTransactionByPatientId in TransactionController 
+2023-01-10 11:35:56,864 [http-nio-7091-exec-10] INFO  c.m.t.s.TransactionServiceImpl                     -Getting Transactions By Patient Id From TransactionService..... 
+2023-01-10 11:36:20,206 [http-nio-7091-exec-2] INFO  c.m.t.c.TransactionController                      -Entering Method getTransactionBasedOnStatus in TransactionController 
+2023-01-10 11:36:20,207 [http-nio-7091-exec-2] INFO  c.m.t.s.TransactionServiceImpl                     -Getting All Transactions By Status From TransactionService..... 
+2023-01-10 11:36:20,225 [http-nio-7091-exec-2] INFO  c.m.t.c.TransactionController                      -Entering Method getAllTransaction in TransactionController 
+2023-01-10 11:36:20,225 [http-nio-7091-exec-2] INFO  c.m.t.s.TransactionServiceImpl                     -Getting All Transactions From TransactionService..... 
+2023-01-10 11:36:22,952 [http-nio-7091-exec-4] INFO  c.m.t.c.TransactionController                      -Entering Method getAllTransaction in TransactionController 
+2023-01-10 11:36:22,952 [http-nio-7091-exec-4] INFO  c.m.t.s.TransactionServiceImpl                     -Getting All Transactions From TransactionService..... 
+2023-01-10 11:36:22,956 [http-nio-7091-exec-5] INFO  c.m.t.c.TransactionController                      -Entering Method getTransactionBasedOnStatus in TransactionController 
+2023-01-10 11:36:22,957 [http-nio-7091-exec-5] INFO  c.m.t.s.TransactionServiceImpl                     -Getting All Transactions By Status From TransactionService..... 
+2023-01-10 11:36:23,008 [http-nio-7091-exec-6] INFO  c.m.t.c.TransactionController                      -Entering Method getTransactionBasedOnStatus in TransactionController 
+2023-01-10 11:36:23,008 [http-nio-7091-exec-6] INFO  c.m.t.s.TransactionServiceImpl                     -Getting All Transactions By Status From TransactionService..... 
+2023-01-10 11:38:26,116 [http-nio-7091-exec-10] INFO  c.m.t.c.TransactionController                      -Entering Method updateTransaction in TransactionController 
+2023-01-10 11:38:26,125 [http-nio-7091-exec-10] INFO  c.m.t.s.TransactionServiceImpl                     -Updating Doctor Id From TransactionService..... 
+2023-01-10 11:38:26,126 [http-nio-7091-exec-10] INFO  c.m.t.s.TransactionServiceImpl                     -Updating Status From TransactionService..... 
+2023-01-10 11:38:26,126 [http-nio-7091-exec-10] INFO  c.m.t.s.TransactionServiceImpl                     -Updating DateOfRequest From TransactionService..... 
+2023-01-10 11:38:26,127 [http-nio-7091-exec-10] INFO  c.m.t.s.TransactionServiceImpl                     -Updating DateOfTreatment From TransactionService..... 
+2023-01-10 11:38:26,127 [http-nio-7091-exec-10] INFO  c.m.t.s.TransactionServiceImpl                     -Updating Prescription From TransactionService..... 
+2023-01-10 11:38:26,127 [http-nio-7091-exec-10] INFO  c.m.t.s.TransactionServiceImpl                     -Updating DoctorName From TransactionService..... 
+2023-01-10 11:38:26,128 [http-nio-7091-exec-10] INFO  c.m.t.s.TransactionServiceImpl                     -Updating DoctorSpecialization From TransactionService..... 
+2023-01-10 11:38:26,128 [http-nio-7091-exec-10] INFO  c.m.t.s.TransactionServiceImpl                     -Updating Feedback From TransactionService..... 
+2023-01-10 11:38:26,128 [http-nio-7091-exec-10] INFO  c.m.t.s.TransactionServiceImpl                     -Saving Update From TransactionService..... 
+2023-01-10 11:38:26,220 [http-nio-7091-exec-1] INFO  c.m.t.c.TransactionController                      -Entering Method getTransactionByDoctorId in TransactionController 
+2023-01-10 11:38:26,220 [http-nio-7091-exec-1] INFO  c.m.t.s.TransactionServiceImpl                     -Getting All Transactions By Doctor Id From TransactionService..... 
+2023-01-10 11:38:26,227 [http-nio-7091-exec-3] INFO  c.m.t.c.TransactionController                      -Entering Method getTransactionBasedOnStatus in TransactionController 
+2023-01-10 11:38:26,227 [http-nio-7091-exec-3] INFO  c.m.t.s.TransactionServiceImpl                     -Getting All Transactions By Status From TransactionService..... 
+2023-01-10 11:38:26,293 [http-nio-7091-exec-2] INFO  c.m.t.c.TransactionController                      -Entering Method getTransactionByDoctorId in TransactionController 
+2023-01-10 11:38:26,294 [http-nio-7091-exec-2] INFO  c.m.t.s.TransactionServiceImpl                     -Getting All Transactions By Doctor Id From TransactionService..... 
+2023-01-10 11:38:26,329 [http-nio-7091-exec-4] INFO  c.m.t.c.TransactionController                      -Entering Method getTransactionBasedOnStatus in TransactionController 
+2023-01-10 11:38:26,330 [http-nio-7091-exec-4] INFO  c.m.t.s.TransactionServiceImpl                     -Getting All Transactions By Status From TransactionService..... 
+2023-01-10 11:38:26,360 [http-nio-7091-exec-5] INFO  c.m.t.c.TransactionController                      -Entering Method getTransactionByDoctorId in TransactionController 
+2023-01-10 11:38:26,361 [http-nio-7091-exec-5] INFO  c.m.t.s.TransactionServiceImpl                     -Getting All Transactions By Doctor Id From TransactionService..... 
+2023-01-10 11:38:27,797 [http-nio-7091-exec-6] INFO  c.m.t.c.TransactionController                      -Entering Method getAllTransaction in TransactionController 
+2023-01-10 11:38:27,798 [http-nio-7091-exec-6] INFO  c.m.t.s.TransactionServiceImpl                     -Getting All Transactions From TransactionService..... 
+2023-01-10 11:38:37,780 [http-nio-7091-exec-7] INFO  c.m.t.c.TransactionController                      -Entering Method getTransactionBasedOnStatus in TransactionController 
+2023-01-10 11:38:37,781 [http-nio-7091-exec-7] INFO  c.m.t.s.TransactionServiceImpl                     -Getting All Transactions By Status From TransactionService..... 
+2023-01-10 11:38:45,810 [http-nio-7091-exec-9] INFO  c.m.t.c.TransactionController                      -Entering Method updateTransaction in TransactionController 
+2023-01-10 11:38:45,813 [http-nio-7091-exec-9] INFO  c.m.t.s.TransactionServiceImpl                     -Updating Doctor Id From TransactionService..... 
+2023-01-10 11:38:45,814 [http-nio-7091-exec-9] INFO  c.m.t.s.TransactionServiceImpl                     -Updating Status From TransactionService..... 
+2023-01-10 11:38:45,814 [http-nio-7091-exec-9] INFO  c.m.t.s.TransactionServiceImpl                     -Updating DateOfRequest From TransactionService..... 
+2023-01-10 11:38:45,814 [http-nio-7091-exec-9] INFO  c.m.t.s.TransactionServiceImpl                     -Updating DateOfTreatment From TransactionService..... 
+2023-01-10 11:38:45,814 [http-nio-7091-exec-9] INFO  c.m.t.s.TransactionServiceImpl                     -Updating Prescription From TransactionService..... 
+2023-01-10 11:38:45,814 [http-nio-7091-exec-9] INFO  c.m.t.s.TransactionServiceImpl                     -Updating DoctorName From TransactionService..... 
+2023-01-10 11:38:45,814 [http-nio-7091-exec-9] INFO  c.m.t.s.TransactionServiceImpl                     -Updating DoctorSpecialization From TransactionService..... 
+2023-01-10 11:38:45,814 [http-nio-7091-exec-9] INFO  c.m.t.s.TransactionServiceImpl                     -Updating Feedback From TransactionService..... 
+2023-01-10 11:38:45,815 [http-nio-7091-exec-9] INFO  c.m.t.s.TransactionServiceImpl                     -Saving Update From TransactionService..... 
+2023-01-10 11:38:45,836 [http-nio-7091-exec-8] INFO  c.m.t.c.TransactionController                      -Entering Method getTransactionByDoctorId in TransactionController 
+2023-01-10 11:38:45,837 [http-nio-7091-exec-8] INFO  c.m.t.s.TransactionServiceImpl                     -Getting All Transactions By Doctor Id From TransactionService..... 
+2023-01-10 11:38:45,842 [http-nio-7091-exec-10] INFO  c.m.t.c.TransactionController                      -Entering Method getTransactionBasedOnStatus in TransactionController 
+2023-01-10 11:38:45,845 [http-nio-7091-exec-10] INFO  c.m.t.s.TransactionServiceImpl                     -Getting All Transactions By Status From TransactionService..... 
+2023-01-10 11:38:45,875 [http-nio-7091-exec-1] INFO  c.m.t.c.TransactionController                      -Entering Method getTransactionByDoctorId in TransactionController 
+2023-01-10 11:38:45,875 [http-nio-7091-exec-1] INFO  c.m.t.s.TransactionServiceImpl                     -Getting All Transactions By Doctor Id From TransactionService..... 
+2023-01-10 11:38:45,877 [http-nio-7091-exec-3] INFO  c.m.t.c.TransactionController                      -Entering Method getAllTransaction in TransactionController 
+2023-01-10 11:38:45,878 [http-nio-7091-exec-3] INFO  c.m.t.s.TransactionServiceImpl                     -Getting All Transactions From TransactionService..... 
+2023-01-10 11:38:45,933 [http-nio-7091-exec-2] INFO  c.m.t.c.TransactionController                      -Entering Method getTransactionBasedOnStatus in TransactionController 
+2023-01-10 11:38:45,934 [http-nio-7091-exec-2] INFO  c.m.t.s.TransactionServiceImpl                     -Getting All Transactions By Status From TransactionService..... 
+2023-01-10 11:38:45,983 [http-nio-7091-exec-4] INFO  c.m.t.c.TransactionController                      -Entering Method getTransactionBasedOnStatus in TransactionController 
+2023-01-10 11:38:45,984 [http-nio-7091-exec-4] INFO  c.m.t.s.TransactionServiceImpl                     -Getting All Transactions By Status From TransactionService..... 
+2023-01-10 11:38:46,031 [http-nio-7091-exec-5] INFO  c.m.t.c.TransactionController                      -Entering Method getTransactionByDoctorId in TransactionController 
+2023-01-10 11:38:46,031 [http-nio-7091-exec-5] INFO  c.m.t.s.TransactionServiceImpl                     -Getting All Transactions By Doctor Id From TransactionService..... 
+2023-01-10 11:38:47,917 [http-nio-7091-exec-6] INFO  c.m.t.c.TransactionController                      -Entering Method getAllTransaction in TransactionController 
+2023-01-10 11:38:47,917 [http-nio-7091-exec-6] INFO  c.m.t.s.TransactionServiceImpl                     -Getting All Transactions From TransactionService..... 
+2023-01-10 11:39:03,212 [http-nio-7091-exec-7] INFO  c.m.t.c.TransactionController                      -Entering Method getTransactionBasedOnStatus in TransactionController 
+2023-01-10 11:39:03,212 [http-nio-7091-exec-7] INFO  c.m.t.s.TransactionServiceImpl                     -Getting All Transactions By Status From TransactionService..... 
+2023-01-10 11:39:04,022 [http-nio-7091-exec-9] INFO  c.m.t.c.TransactionController                      -Entering Method getAllTransaction in TransactionController 
+2023-01-10 11:39:04,023 [http-nio-7091-exec-9] INFO  c.m.t.s.TransactionServiceImpl                     -Getting All Transactions From TransactionService..... 
+2023-01-10 11:39:06,500 [http-nio-7091-exec-8] INFO  c.m.t.c.TransactionController                      -Entering Method getTransactionBasedOnStatus in TransactionController 
+2023-01-10 11:39:06,500 [http-nio-7091-exec-8] INFO  c.m.t.s.TransactionServiceImpl                     -Getting All Transactions By Status From TransactionService..... 
+2023-01-10 11:39:15,734 [http-nio-7091-exec-10] INFO  c.m.t.c.TransactionController                      -Entering Method getAllTransaction in TransactionController 
+2023-01-10 11:39:15,735 [http-nio-7091-exec-10] INFO  c.m.t.s.TransactionServiceImpl                     -Getting All Transactions From TransactionService..... 
+2023-01-10 11:40:31,514 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 11:45:31,526 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 11:50:31,531 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 11:55:31,533 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 12:00:31,534 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 12:05:31,542 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 12:10:31,560 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 12:13:52,028 [http-nio-7091-exec-1] INFO  c.m.t.c.TransactionController                      -Entering Method getTransactionByDoctorId in TransactionController 
+2023-01-10 12:13:52,029 [http-nio-7091-exec-1] INFO  c.m.t.s.TransactionServiceImpl                     -Getting All Transactions By Doctor Id From TransactionService..... 
+2023-01-10 12:14:37,638 [http-nio-7091-exec-4] INFO  c.m.t.c.TransactionController                      -Entering Method updateTransaction in TransactionController 
+2023-01-10 12:14:37,643 [http-nio-7091-exec-4] INFO  c.m.t.s.TransactionServiceImpl                     -Updating Status From TransactionService..... 
+2023-01-10 12:14:37,644 [http-nio-7091-exec-4] INFO  c.m.t.s.TransactionServiceImpl                     -Updating DateOfRequest From TransactionService..... 
+2023-01-10 12:14:37,645 [http-nio-7091-exec-4] INFO  c.m.t.s.TransactionServiceImpl                     -Updating DateOfTreatment From TransactionService..... 
+2023-01-10 12:14:37,645 [http-nio-7091-exec-4] INFO  c.m.t.s.TransactionServiceImpl                     -Updating Prescription From TransactionService..... 
+2023-01-10 12:14:37,645 [http-nio-7091-exec-4] INFO  c.m.t.s.TransactionServiceImpl                     -Updating DoctorName From TransactionService..... 
+2023-01-10 12:14:37,645 [http-nio-7091-exec-4] INFO  c.m.t.s.TransactionServiceImpl                     -Updating DoctorSpecialization From TransactionService..... 
+2023-01-10 12:14:37,646 [http-nio-7091-exec-4] INFO  c.m.t.s.TransactionServiceImpl                     -Updating Feedback From TransactionService..... 
+2023-01-10 12:14:37,648 [http-nio-7091-exec-4] INFO  c.m.t.s.TransactionServiceImpl                     -Saving Update From TransactionService..... 
+2023-01-10 12:14:39,172 [http-nio-7091-exec-5] INFO  c.m.t.c.TransactionController                      -Entering Method getTransactionByDoctorId in TransactionController 
+2023-01-10 12:14:39,173 [http-nio-7091-exec-5] INFO  c.m.t.s.TransactionServiceImpl                     -Getting All Transactions By Doctor Id From TransactionService..... 
+2023-01-10 12:14:39,191 [http-nio-7091-exec-5] INFO  c.m.t.c.TransactionController                      -Entering Method getTransactionBasedOnStatus in TransactionController 
+2023-01-10 12:14:39,191 [http-nio-7091-exec-5] INFO  c.m.t.s.TransactionServiceImpl                     -Getting All Transactions By Status From TransactionService..... 
+2023-01-10 12:14:39,235 [http-nio-7091-exec-7] INFO  c.m.t.c.TransactionController                      -Entering Method getAllTransaction in TransactionController 
+2023-01-10 12:14:39,236 [http-nio-7091-exec-7] INFO  c.m.t.s.TransactionServiceImpl                     -Getting All Transactions From TransactionService..... 
+2023-01-10 12:14:39,268 [http-nio-7091-exec-9] INFO  c.m.t.c.TransactionController                      -Entering Method getTransactionByDoctorId in TransactionController 
+2023-01-10 12:14:39,268 [http-nio-7091-exec-9] INFO  c.m.t.s.TransactionServiceImpl                     -Getting All Transactions By Doctor Id From TransactionService..... 
+2023-01-10 12:14:39,337 [http-nio-7091-exec-8] INFO  c.m.t.c.TransactionController                      -Entering Method getTransactionBasedOnStatus in TransactionController 
+2023-01-10 12:14:39,337 [http-nio-7091-exec-8] INFO  c.m.t.s.TransactionServiceImpl                     -Getting All Transactions By Status From TransactionService..... 
+2023-01-10 12:14:39,353 [http-nio-7091-exec-10] INFO  c.m.t.c.TransactionController                      -Entering Method getAllTransaction in TransactionController 
+2023-01-10 12:14:39,353 [http-nio-7091-exec-10] INFO  c.m.t.s.TransactionServiceImpl                     -Getting All Transactions From TransactionService..... 
+2023-01-10 12:14:39,407 [http-nio-7091-exec-3] INFO  c.m.t.c.TransactionController                      -Entering Method getTransactionByDoctorId in TransactionController 
+2023-01-10 12:14:39,407 [http-nio-7091-exec-3] INFO  c.m.t.s.TransactionServiceImpl                     -Getting All Transactions By Doctor Id From TransactionService..... 
+2023-01-10 12:14:39,433 [http-nio-7091-exec-2] INFO  c.m.t.c.TransactionController                      -Entering Method getAllTransaction in TransactionController 
+2023-01-10 12:14:39,433 [http-nio-7091-exec-2] INFO  c.m.t.s.TransactionServiceImpl                     -Getting All Transactions From TransactionService..... 
+2023-01-10 12:14:39,440 [http-nio-7091-exec-1] INFO  c.m.t.c.TransactionController                      -Entering Method getTransactionBasedOnStatus in TransactionController 
+2023-01-10 12:14:39,440 [http-nio-7091-exec-1] INFO  c.m.t.s.TransactionServiceImpl                     -Getting All Transactions By Status From TransactionService..... 
+2023-01-10 12:14:39,480 [http-nio-7091-exec-4] INFO  c.m.t.c.TransactionController                      -Entering Method getAllTransaction in TransactionController 
+2023-01-10 12:14:39,480 [http-nio-7091-exec-4] INFO  c.m.t.s.TransactionServiceImpl                     -Getting All Transactions From TransactionService..... 
+2023-01-10 12:14:39,484 [http-nio-7091-exec-6] INFO  c.m.t.c.TransactionController                      -Entering Method getTransactionByDoctorId in TransactionController 
+2023-01-10 12:14:39,484 [http-nio-7091-exec-6] INFO  c.m.t.s.TransactionServiceImpl                     -Getting All Transactions By Doctor Id From TransactionService..... 
+2023-01-10 12:14:39,502 [http-nio-7091-exec-4] INFO  c.m.t.c.TransactionController                      -Entering Method getTransactionBasedOnStatus in TransactionController 
+2023-01-10 12:14:39,502 [http-nio-7091-exec-4] INFO  c.m.t.s.TransactionServiceImpl                     -Getting All Transactions By Status From TransactionService..... 
+2023-01-10 12:14:39,540 [http-nio-7091-exec-5] INFO  c.m.t.c.TransactionController                      -Entering Method getTransactionBasedOnStatus in TransactionController 
+2023-01-10 12:14:39,540 [http-nio-7091-exec-5] INFO  c.m.t.s.TransactionServiceImpl                     -Getting All Transactions By Status From TransactionService..... 
+2023-01-10 12:14:40,703 [http-nio-7091-exec-9] INFO  c.m.t.c.TransactionController                      -Entering Method getTransactionByDoctorId in TransactionController 
+2023-01-10 12:14:40,703 [http-nio-7091-exec-9] INFO  c.m.t.s.TransactionServiceImpl                     -Getting All Transactions By Doctor Id From TransactionService..... 
+2023-01-10 12:15:31,569 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 12:20:31,582 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 12:25:31,619 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 12:30:31,633 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 12:35:31,635 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 12:40:31,647 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 12:45:31,662 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 12:50:31,678 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 12:55:31,681 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 13:00:31,694 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 13:05:31,710 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 13:10:31,730 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 13:15:31,732 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 14:03:25,372 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 14:08:25,391 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 14:13:25,400 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 14:18:25,407 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 14:23:25,412 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 14:28:25,420 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 14:33:25,431 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 14:38:25,438 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 14:43:25,449 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 14:48:25,462 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 14:53:25,472 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 14:58:25,482 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 15:03:25,485 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 15:08:25,501 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 15:13:25,504 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 15:18:25,521 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 15:23:25,529 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 15:28:25,538 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 15:33:25,550 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 15:38:25,565 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 15:43:25,579 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 15:48:25,595 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 15:53:25,605 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 15:58:25,612 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 16:03:25,618 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 16:08:25,626 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 16:13:25,631 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 16:18:25,653 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 16:23:25,669 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 16:28:25,681 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 16:33:25,709 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 16:38:25,734 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 16:43:25,747 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 16:48:25,760 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 16:53:25,767 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 16:58:25,784 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 17:03:25,798 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 17:08:25,816 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 17:13:25,824 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 17:18:25,827 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 17:23:25,830 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 17:28:25,847 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 17:33:25,886 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 17:38:25,889 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 17:43:25,897 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 17:48:25,907 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 17:53:25,909 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 17:58:25,930 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 18:03:25,935 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 18:08:25,939 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 18:13:25,956 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 18:18:25,968 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 18:23:25,997 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 18:28:26,000 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 18:33:26,014 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 18:38:26,015 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 18:43:26,021 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 18:48:26,035 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 18:53:26,045 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 18:58:26,059 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 19:03:26,074 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 19:08:26,087 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 19:13:26,096 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 19:18:26,101 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 19:23:26,112 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 19:28:26,124 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 19:33:28,649 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 21:47:37,055 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 21:52:37,062 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 21:57:37,077 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 22:02:37,081 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 22:07:37,088 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 22:12:37,103 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 22:17:37,113 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 22:22:37,124 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 22:27:37,136 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 22:32:37,150 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 22:37:37,167 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 22:42:37,169 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 22:47:37,189 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 22:52:37,196 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 22:57:37,207 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 23:02:37,219 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 23:07:37,227 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 23:12:37,227 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 23:17:37,240 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 23:22:37,254 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 23:27:37,260 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 23:32:37,275 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 23:37:37,291 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 23:42:37,310 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 23:47:37,311 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 23:52:37,347 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-10 23:57:37,362 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-11 00:02:37,383 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-11 00:07:37,406 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-11 00:12:37,417 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-11 00:17:37,430 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-11 00:22:37,446 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-11 00:27:37,462 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-11 00:32:37,470 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-11 00:37:37,482 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-11 00:42:37,495 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-11 00:47:37,505 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-11 00:52:37,519 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-11 00:57:37,532 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-11 01:02:37,538 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-11 01:07:37,546 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-11 01:12:37,561 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-11 01:17:37,572 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-11 01:22:37,578 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-11 01:27:37,590 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-11 01:32:37,598 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-11 01:37:37,600 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-11 01:42:37,613 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-11 01:47:37,628 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-11 01:52:37,634 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-11 01:57:37,643 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-11 02:02:37,660 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-11 02:07:37,662 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-11 02:12:37,677 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.a.ConfigClusterResolver                  -Resolving eureka endpoints via configuration 
+2023-01-11 02:15:34,659 [RMI TCP Connection(778)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin -Application shutdown requested. 
+2023-01-11 02:15:34,686 [RMI TCP Connection(778)-127.0.0.1] INFO  o.s.c.n.e.s.EurekaServiceRegistry                  -Unregistering application TRANSACTION-SERVICE with eureka with status DOWN 
+2023-01-11 02:15:34,687 [RMI TCP Connection(778)-127.0.0.1] INFO  c.n.d.DiscoveryClient                              -Saw local status change event StatusChangeEvent [timestamp=1673383534687, current=DOWN, previous=UP] 
+2023-01-11 02:15:34,689 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.n.d.DiscoveryClient                              -DiscoveryClient_TRANSACTION-SERVICE/host.docker.internal:TRANSACTION-SERVICE:7091: registering service... 
+2023-01-11 02:15:34,716 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.n.d.DiscoveryClient                              -DiscoveryClient_TRANSACTION-SERVICE/host.docker.internal:TRANSACTION-SERVICE:7091 - registration status: 204 
+2023-01-11 02:15:34,790 [RMI TCP Connection(778)-127.0.0.1] INFO  o.a.c.h.Http11NioProtocol                          -Pausing ProtocolHandler ["http-nio-7091"] 
+2023-01-11 02:15:34,791 [RMI TCP Connection(778)-127.0.0.1] INFO  o.a.c.c.StandardService                            -Stopping service [Tomcat] 
+2023-01-11 02:15:34,803 [RMI TCP Connection(778)-127.0.0.1] INFO  o.a.c.c.C.[.[.[/]                                  -Destroying Spring FrameworkServlet 'dispatcherServlet' 
+2023-01-11 02:15:34,850 [RMI TCP Connection(778)-127.0.0.1] INFO  o.a.c.h.Http11NioProtocol                          -Stopping ProtocolHandler ["http-nio-7091"] 
+2023-01-11 02:15:34,859 [RMI TCP Connection(778)-127.0.0.1] INFO  o.a.c.h.Http11NioProtocol                          -Destroying ProtocolHandler ["http-nio-7091"] 
+2023-01-11 02:15:34,908 [RMI TCP Connection(778)-127.0.0.1] INFO  c.n.d.DiscoveryClient                              -Shutting down DiscoveryClient ... 
+2023-01-11 02:15:37,929 [RMI TCP Connection(778)-127.0.0.1] INFO  c.n.d.DiscoveryClient                              -Unregistering ... 
+2023-01-11 02:15:37,937 [RMI TCP Connection(778)-127.0.0.1] INFO  c.n.d.DiscoveryClient                              -DiscoveryClient_TRANSACTION-SERVICE/host.docker.internal:TRANSACTION-SERVICE:7091 - deregister  status: 200 
+2023-01-11 02:15:37,961 [RMI TCP Connection(778)-127.0.0.1] INFO  c.n.d.DiscoveryClient                              -Completed shut down of DiscoveryClient 
