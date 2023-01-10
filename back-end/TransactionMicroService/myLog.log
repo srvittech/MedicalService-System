@@ -11031,3 +11031,9 @@ java.lang.IllegalArgumentException: The given id must not be null!
 2023-01-10 12:24:48,168 [http-nio-7091-exec-1] INFO  c.m.t.s.TransactionServiceImpl                     -Getting All Transactions From TransactionService..... 
 2023-01-10 12:24:48,335 [http-nio-7091-exec-8] INFO  c.m.t.c.TransactionController                      -Entering Method getTransactionBasedOnStatus in TransactionController 
 2023-01-10 12:24:48,336 [http-nio-7091-exec-8] INFO  c.m.t.s.TransactionServiceImpl                     -Getting All Transactions By Status From TransactionService..... 
+2023-01-10 12:29:40,062 [RMI TCP Connection(37)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin -Application shutdown requested. 
+2023-01-10 12:29:40,643 [RMI TCP Connection(37)-127.0.0.1] INFO  o.a.c.h.Http11NioProtocol                          -Pausing ProtocolHandler ["http-nio-7091"] 
+2023-01-10 12:29:40,647 [RMI TCP Connection(37)-127.0.0.1] INFO  o.a.c.c.StandardService                            -Stopping service [Tomcat] 
+2023-01-10 12:29:40,700 [RMI TCP Connection(37)-127.0.0.1] INFO  o.a.c.c.C.[.[.[/]                                  -Destroying Spring FrameworkServlet 'dispatcherServlet' 
+2023-01-10 12:29:42,284 [RMI TCP Connection(37)-127.0.0.1] INFO  o.a.c.h.Http11NioProtocol                          -Stopping ProtocolHandler ["http-nio-7091"] 
+2023-01-10 12:29:42,343 [RMI TCP Connection(37)-127.0.0.1] INFO  o.a.c.h.Http11NioProtocol                          -Destroying ProtocolHandler ["http-nio-7091"] 
