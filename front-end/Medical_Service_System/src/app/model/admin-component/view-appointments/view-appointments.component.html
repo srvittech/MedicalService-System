@@ -2,8 +2,8 @@
 <div class="container-fluid">
     <div>
         <div>
-            <h1 style="text-align: center;">Appointments</h1>
-            <table class="table table-hover" >
+            <h1 style="text-align: center;">All Appointments</h1>
+            <table class="table">
                 <thead>
                     <tr>
                         <th scope="col">Patient Id</th>
@@ -16,16 +16,17 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
+                    <tr *ngFor="let trans of allTransactionsResult">
+                        <th scope="row">{{trans.patientId}}</th>
+                        <td>{{trans.doctorId}}</td>
+                        <td>{{trans.disease}}</td>
+                        <td>{{trans.status}}</td>
+                        <td>{{trans.prescription}}</td>
+                        <td>{{trans.dateOfRequest}}</td>
+                        <td>{{trans.dateOfTreatment}}</td>
                     </tr>
                 </tbody>
+         
             </table>
         </div>
     </div>
