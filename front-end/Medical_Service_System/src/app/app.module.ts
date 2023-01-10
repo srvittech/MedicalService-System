@@ -45,6 +45,7 @@ import { PrescriptionDialogComponent } from './model/doctor-component/appointmen
 import { PopUpComponent } from './model/pop-up/pop-up.component';
 import { PopUpService } from './services/dialog/pop-up.service';
 import { SidebarComponent } from './model/sidebar/sidebar.component';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 @NgModule({
   declarations: [
@@ -91,6 +92,7 @@ import { SidebarComponent } from './model/sidebar/sidebar.component';
     MatButtonModule,
     MatIconModule,
     FormsModule,
+    NgxPaginationModule
   ],
   providers: [DatePipe,FeedbackServiceService,UserServiceService,PatientServiceService,DoctorServiceService,TransactionServiceService,PopUpService],
   bootstrap: [AppComponent]

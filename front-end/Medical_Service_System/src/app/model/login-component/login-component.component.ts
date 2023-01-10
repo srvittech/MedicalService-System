@@ -111,7 +111,7 @@ export class LoginComponentComponent implements OnInit {
         
       }                       // <<<---using ()=> syntax
       this.openDialog()
-    }, 2000);
+    }, 3000);
  
 
   }

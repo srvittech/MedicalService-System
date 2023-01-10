@@ -24,6 +24,7 @@ export class EditDoctorComponent {
   ngOnInit(): void {
 
     this.signupForm = this.formBuilder.group({
+      id:[this.doctorService.user.id],
       doctorName: ['', Validators.required],
       specialization: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
@@ -50,8 +51,7 @@ export class EditDoctorComponent {
 
     this.submitted = true
     if (!this.signupForm.invalid) {
-      this.doctorService.addDoctor(this.signupForm.value).subscribe(res => {
-        console.log("Doctor Added");
+      this.doctorService.updateDoctor(this.signupForm.value).subscribe(res => {
         this.flag = true
       })
       console.table(this.signupForm.value);
@@ -79,11 +79,7 @@ export class EditDoctorComponent {
     }
 
   }
-  findDoctorById() {
-    this.doctorService.findDoctorById(this.signupForm.value.id).subscribe(res => {
-      this.doctorService.user = res
-    })
-  }
+
   // update(){
   //   this.doctorService.updateDoctor(this.signupForm.value).subscribe(res=>{
   //     console.table(res)

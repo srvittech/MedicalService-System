@@ -19,8 +19,11 @@ export class PendingPatientsComponent implements OnInit {
   doctorAssigned: any = ""
   updatedTransactionFormByKiosk: any = {}
   flag:boolean = true
+  flag1:boolean = true
+  count:number = 0;
   doctorNameGen:any =""
   doctorSpecializationGen:any = ""
+  dateOfExpectedApointment:any=""
   constructor(private transactionService: TransactionServiceService, private formBuilder: FormBuilder, private doctorService: DoctorServiceService) {
 
   }
@@ -52,6 +55,7 @@ export class PendingPatientsComponent implements OnInit {
     this.updatedTransactionFormByKiosk['doctorSpecialization'] = this.doctorSpecializationGen.trim()
     this.updatedTransactionFormByKiosk['doctorId'] = this.doctorIdGen.trim()
     this.updatedTransactionFormByKiosk['status'] = "Forwarded to Doctor"
+    this.updatedTransactionFormByKiosk['dateOfExpectedApointment'] = this.dateOfExpectedApointment
     console.table(this.updatedTransactionFormByKiosk);
     
     this.transactionService.updateTransaction(this.updatedTransactionFormByKiosk).subscribe(res => {
@@ -87,9 +91,14 @@ export class PendingPatientsComponent implements OnInit {
   }
 
   selectedData(event: any) {
-   
     this.flag = false
     this.doctorAssigned = event.target.value;
+  }
+  selectedDate(event:any){
+this.flag1 = false
+   this.dateOfExpectedApointment = event.target.value;
+   console.log(this.dateOfExpectedApointment);
+   
   }
 
 }
